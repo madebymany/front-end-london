@@ -1,9 +1,1 @@
-(function() {
-  var container = document.getElementById('fel');
-  var names = ['front', 'end', 'london'];
-  var i = names.length;
-
-  while (i--) {
-      new ExpandText(document.getElementById(names[i]), container);
-  }
-})();
+(function(){var e=document.getElementById("fel"),t=["front","end","london"],n=t.length;while(n--)new ExpandText(document.getElementById(t[n]),e)})();

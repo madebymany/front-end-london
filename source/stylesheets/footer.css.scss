@@ -1,0 +1,37 @@
+.call-for-speakers {
+  background: #40a78e;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.call-for-speakers p {
+  max-width: 760px;
+  margin: 0;
+}
+
+.call-for-speakers a {
+  color: #fff;
+}
+
+.call-for-speakers a:hover {
+  color: darken(#fff,10%);
+}
+
+.site-footer  {
+  padding: 25px 0;
+}
+
+.site-footer p {
+  font-family: 'Proxima Nova Bold';
+  color: #909090;
+  float: left;
+  text-transform: uppercase;
+}
+
+.made-by-many-logo {
+  display: block;
+  width: 140px;
+  height: 24px;
+  float: right;
+  background: url("../images/mxm-logo.png") no-repeat 0 0;
+}

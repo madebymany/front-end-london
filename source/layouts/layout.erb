@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title><%= data.page.title || "Front End London" %></title>
+    <%= stylesheet_link_tag "normalize", "all" %>
+  </head>
+  <body class="<%= page_classes %>">
+    <%= partial "header" %>
+    <%= yield %>
+    <%= partial "event-information" %>
+    <%= partial "footer" %>
+    <%= javascript_include_tag  "all" %>
+  </body>
+</html>

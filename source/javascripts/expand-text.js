@@ -6,10 +6,15 @@
 
         this.element = element;
         this.text = this.element.innerHTML;
-        this.element.innerHTML = '';
+        //this.element.innerHTML = '';
 
         parent.addEventListener('mouseover', this.addLetter.bind(this));
         parent.addEventListener('mouseout', this.removeLetter.bind(this));
+
+        this.timer = setTimeout(function() {
+            this.i = this.text.length;
+            this.removeLetter();
+        }.bind(this), 1000);
     }
 
     ExpandText.prototype.setText = function(length) {

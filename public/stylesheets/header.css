@@ -1,0 +1,18 @@
+/* line 1, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/header.css.scss */
+.site-header {
+  padding: 20px 0;
+  background: #fff;
+  text-align: center; }
+
+/* line 7, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/header.css.scss */
+.site-header .site-logo {
+  font-family: 'Sina Nova', Georgia, serif;
+  font-size: 4em;
+  line-height: .9;
+  color: #262626; }
+
+/* line 14, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/header.css.scss */
+.site-logo .inner {
+  display: inline-block;
+  padding: 0 .12em;
+  border-bottom: .07em solid #262626; }

@@ -1,0 +1,37 @@
+/* line 1, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/footer.css.scss */
+.call-for-speakers {
+  background: #40a78e;
+  color: #fff;
+  padding: 30px 0; }
+
+/* line 7, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/footer.css.scss */
+.call-for-speakers p {
+  max-width: 760px;
+  margin: 0; }
+
+/* line 12, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/footer.css.scss */
+.call-for-speakers a {
+  color: #fff; }
+
+/* line 16, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/footer.css.scss */
+.call-for-speakers a:hover {
+  color: #e6e6e6; }
+
+/* line 20, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/footer.css.scss */
+.site-footer {
+  padding: 25px 0; }
+
+/* line 24, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/footer.css.scss */
+.site-footer p {
+  font-family: 'Proxima Nova Bold';
+  color: #909090;
+  float: left;
+  text-transform: uppercase; }
+
+/* line 31, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/footer.css.scss */
+.made-by-many-logo {
+  display: block;
+  width: 140px;
+  height: 24px;
+  float: right;
+  background: url("../images/mxm-logo.png") no-repeat 0 0; }

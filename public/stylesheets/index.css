@@ -1,0 +1,97 @@
+/* line 1, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.introduction {
+  text-align: center;
+  margin: 0 2em;
+  padding: 20px 0; }
+
+/* line 7, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.introduction p {
+  font-size: 1.5em; }
+
+/* line 11, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.speakers {
+  margin: 50px 0 20px;
+  padding: 0 0 40px 0;
+  border-top: 1px dotted #d2d2d2; }
+
+/* line 17, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.speakers-list {
+  margin: 50px 0 0 0; }
+
+/* line 21, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.speaker {
+  text-align: center; }
+
+/* line 25, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.speaker h3 {
+  margin: 10px 0 0 0;
+  color: #50bfa4; }
+
+/* line 30, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.speaker em {
+  color: #909090; }
+
+/* line 34, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.speaker-profile-image {
+  border-radius: 3px; }
+
+/* line 38, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.speaker p {
+  text-align: left; }
+
+/* line 42, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.event-date {
+  text-transform: uppercase;
+  color: #909090;
+  font-size: 1em;
+  background: #f7f6f5;
+  margin: -10px auto 0 auto;
+  text-align: center;
+  padding: 0 5px;
+  width: 290px; }
+
+/* line 53, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.event-information {
+  background: #eae9e8;
+  padding: 40px 0; }
+
+/* line 58, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.jumbotron {
+  background: url("../images/diespeker_green_01.jpg") no-repeat center center;
+  background-size: cover;
+  height: 220px;
+  padding: 50px 0; }
+
+/* line 65, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.next-event-details {
+  border: 1px solid #fff;
+  padding: 35px 0;
+  height: 148px;
+  max-width: 40em;
+  margin: 0pt auto;
+  text-align: center;
+  color: #fff; }
+
+/* line 76, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.next-event-details .next-event,
+.next-event-details .next-event-date {
+  font-family: 'Proxima Nova Bold';
+  display: block; }
+
+/* line 81, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.next-event-details .next-event {
+  text-transform: uppercase;
+  margin-bottom: 5px; }
+
+/* line 86, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.next-event-details .next-event-date {
+  font-size: 3.5em;
+  margin-bottom: 0.2em; }
+
+/* line 91, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.next-event-details .next-event-time {
+  font-size: 1.5em; }
+
+/* line 95, /Users/chrisbell/Sites/front-end-london-v2/front-end-london/source/stylesheets/index.css.scss */
+.next-event-details .next-event-bullet {
+  margin: 0 10px; }

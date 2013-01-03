@@ -73,10 +73,15 @@ body {
   border: 3px solid $highlight-green;
   text-decoration: none;
   border-radius: 2px;
-  padding: 20px 0; 
+  padding: 0 15px;
   margin: 40px auto 0pt auto;
-  width: 180px;
+  max-width: 180px;
   text-align: center;
+  line-height: 4;
+
+  span {
+    vertical-align: -.3em;
+  }
 }
 
 .primary-cta:hover {

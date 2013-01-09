@@ -64,6 +64,7 @@
 
 .next-event-details {
   border: 1px solid #fff;
+  border-radius: 3px;
   padding: 35px 0;
   height: 148px;
   max-width: 40em;
@@ -74,7 +75,8 @@
 
 .next-event-details .next-event,
 .next-event-details .next-event-date {
-  font-family: 'Proxima Nova Bold'; 
+  font-family: 'Proxima Nova';
+  font-weight: bold; 
   display: block;
 }
 

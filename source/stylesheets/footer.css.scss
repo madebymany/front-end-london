@@ -19,13 +19,19 @@
 
 .site-footer  {
   padding: 25px 0;
+  background-color: #505050;
 }
 
 .site-footer p {
-  font-family: 'Proxima Nova Bold';
-  color: #909090;
+  font-family: 'Proxima Nova';
+  color: #fff;
   float: left;
   text-transform: uppercase;
+}
+
+.site-footer a {
+  font-weight: bold;
+  color: inherit;
 }
 
 .made-by-many-logo {

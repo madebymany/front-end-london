@@ -1,9 +1,7 @@
-/* 
- *= require html5bp
- *= require flynn
- *= require base
- *= require header
- *= require footer
- *= require index
- *= require respond
- */
+@import 'html5bp';
+@import 'flynn';
+@import 'base';
+@import 'header';
+@import 'footer';
+@import 'index';
+@import 'respond';

@@ -23,22 +23,42 @@
 }
 
 .site-footer p {
+  margin: 1.3em 0;
   font-family: 'Proxima Nova';
   color: #fff;
-  float: left;
-  text-transform: uppercase;
 }
 
 .site-footer a {
-  font-weight: bold;
   color: inherit;
 }
 
+.company-info {
+  text-align: right;
+}
+
 .made-by-many-logo {
-  display: block;
+  display: inline-block;
   width: 140px;
   height: 24px;
-  float: right;
-  margin-top: 15px;
   background: url("../images/mxm-logo.png") no-repeat 0 0;
+}
+
+.fel-twitter:before,
+.fel-lanyrd:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin-right: 0.8em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  vertical-align: middle;
+}
+
+.fel-twitter:before {
+  background-image: url("../images/twitter-icon.png");
+}
+
+.fel-lanyrd:before {
+  background-image: url("../images/lanyrd-icon.png");
 }

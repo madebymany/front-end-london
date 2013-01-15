@@ -31,8 +31,16 @@
 
   .introduction p {
     font-size: 1.4em;
-  } 
+  }
 
-  .site-footer p { float: none; }
-  .made-by-many-logo { float: none; }
+  .twelve-columns .social-links,
+  .twelve-columns .company-info {
+    width: 100%;
+    padding: 0;
+  }
+
+  .social-links,
+  .company-info {
+    text-align: center;
+  }
 }

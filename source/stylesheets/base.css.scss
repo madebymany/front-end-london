@@ -2,9 +2,24 @@
   Variables
 */
 
-$highlight-green: #50bfa4;
 $base-font-size: 1.2em;
 $large-font-size: 1.5em;
+
+$january: #33a687;
+$february: #3ebeb3;
+$march: #29a6b5;
+$april: #328bc4;
+$may: #6f3e86;
+$june: #d33656;
+$july: #db5131;
+$august: #b95c14;
+$september: #e68640;
+$october: #b08a3e;
+$november: #6d8646;
+$december: #327c2e;
+
+// Change to switch colour scheme
+$current-month: $june;
 
 /*
   Fonts
@@ -52,9 +67,8 @@ h1, h2, h3, h4 {
   font-family: 'Proxima Nova'; 
 }
 
-a { color: $highlight-green; }
-a:visited { color: $highlight-green; }
-a:hover { color: darken($highlight-green, 10%); }
+a { color: $current-month; }
+a:hover { color: darken($current-month, 10%); }
 
 body {
   background-color: #f7f6f5;
@@ -77,7 +91,7 @@ body {
   font-weight: bold; 
   display: block;
   text-transform: uppercase;
-  border: 3px solid $highlight-green;
+  border: 3px solid $current-month;
   border-radius: 3px;
   text-decoration: none;
   border-radius: 2px;
@@ -93,7 +107,7 @@ body {
 }
 
 .primary-cta:hover {
-  border-color: darken($highlight-green, 10%); 
+  border-color: darken($current-month, 10%); 
 }
 
 .column {

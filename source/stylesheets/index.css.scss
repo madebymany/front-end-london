@@ -24,7 +24,7 @@
 
 .speaker h3 {
   margin: 10px 0 0 0;
-  color: #50bfa4;
+  color: $current-month;
 }
 
 .speaker em {
@@ -56,10 +56,23 @@
 }
 
 .jumbotron {
-  background: url("../images/diespeker_green_01.jpg") no-repeat center center;
+  position: relative;
+  z-index: -2;
+  background: url("../images/diespeker.jpg") no-repeat center center;
   background-size: cover;
   height: 220px;
   padding: 50px 20px;
+}
+
+.jumbotron:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(darken($current-month, 10%), 0.6);
 }
 
 .next-event-details {

@@ -4,6 +4,18 @@
   padding: 30px 0;
 }
 
+.call-for-speakers:before {
+  content: "";
+  display: block;
+  width: 0; height: 0;
+  border-bottom: 16px solid $current-month;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  position: absolute;
+  margin: -46px 0 0 -16px;
+  left: 50%;
+}
+
 .call-for-speakers p {
   margin: 0;
 }

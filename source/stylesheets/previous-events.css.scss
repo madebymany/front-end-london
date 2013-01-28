@@ -1,0 +1,35 @@
+.previous-events  {
+  padding-top: 50px;
+}
+
+.previous-events-inner {
+  border-top: 1px dotted #D2D2D2;
+}
+
+.previous-months {
+  margin: 50px 0;
+}
+
+.previous-month {
+  background-color: #fff;
+}
+
+.previous-month-speakers {
+  margin-top: 20px;
+}
+
+.previous-events-title {
+  width: 180px;
+}
+
+a.previous-month-header {
+  display: block;
+  color: #fff;
+  font-size: 1.6em;
+  font-weight: bold; 
+  padding: 25px;
+  text-decoration: none;
+}
+
+.previous-month-header--january { background-color: $january; }
+.previous-month--january .speaker h3 { color: $january; }

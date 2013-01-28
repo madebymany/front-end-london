@@ -62,16 +62,12 @@ html, button, input, select, textarea { font-family: 'Proxima Nova', sans-serif;
 
 ::selection { background: #fff0a0; color: inherit; text-shadow: none; }
 
-a, a:hover, a:visited {
-  color: $current-month;
-}
-
 h1, h2, h3, h4 { 
   margin: 0;
   font-family: 'Proxima Nova'; 
 }
 
-a { color: $current-month; }
+a, a:visited { color: $current-month; }
 a:hover { color: darken($current-month, 10%); }
 
 body {

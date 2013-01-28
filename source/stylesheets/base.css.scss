@@ -19,7 +19,7 @@ $november: #6d8646;
 $december: #327c2e;
 
 // Change to switch colour scheme
-$current-month: $june;
+$current-month: $april;
 
 /*
   Fonts
@@ -62,6 +62,10 @@ html, button, input, select, textarea { font-family: 'Proxima Nova', sans-serif;
 
 ::selection { background: #fff0a0; color: inherit; text-shadow: none; }
 
+a, a:hover, a:visited {
+  color: $current-month;
+}
+
 h1, h2, h3, h4 { 
   margin: 0;
   font-family: 'Proxima Nova'; 
@@ -100,6 +104,7 @@ body {
   max-width: 180px;
   text-align: center;
   line-height: 4;
+  color: $current-month;
 
   span {
     vertical-align: -.3em;

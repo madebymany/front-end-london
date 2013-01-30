@@ -2,13 +2,15 @@
 title: Front-end London - A New London Based Meetup for Front-end Developers, hosted by Made by Many
 ---
 
-<section class="jumbotron">
-  <div class="next-event-details">
-    <span class="next-event">Next event</span>
-    <span class="next-event-date">28<span class="date-ordinal">th</span> February, 2013</span>
-    <span class="next-event-time">7pm - late <span class="next-event-bullet">&bullet;</span> Islington</span>
-  </div>
-</section>
+<% content_for :in_header do %>
+  <section class="site-header__secondary">
+    <div class="next-event-details">
+      <span class="next-event">Next event</span>
+      <span class="next-event-date">28<span class="date-ordinal">th</span> February, 2013</span>
+      <span class="next-event-time">7pm - late <span class="next-event-bullet">&bullet;</span> Islington</span>
+    </div>
+  </section>
+<% end %>
 
 <div class="site-content site-width" role="main">
 

@@ -119,7 +119,8 @@ body {
 }
 
 .primary-cta:hover {
-  border-color: darken($current-month, 10%);
+  background-color: $current-month;
+  color: #fff;
 }
 
 .column {

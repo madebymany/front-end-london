@@ -3,21 +3,24 @@
     font-size: 0.9em;
   }
 
+  p {
+    font-size: 1.111111em;
+  }
+
   .twelve-columns .span-four {
     width: 100%;
   }
 
   .site-header {
-    padding: 20px 0;
+    padding: 20px;
+  }
+
+  .site-header__secondary {
+    margin-top: 20px;
   }
 
   .site-header .site-logo {
     font-size: 3em;
-  }  
-
-  .jumbotron {
-    padding: 30px 10px;
-    height: 160px;
   }
 
   .next-event-details {
@@ -26,7 +29,7 @@
   }
 
   .next-event-details .next-event-date {
-    font-size: 2.3em;
+    font-size: 2em;
   }
 
   .introduction p {

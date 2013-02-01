@@ -1,9 +1,11 @@
 <header class="site-header">
-  <div class="site-width">
+  <div class="site-header__primary site-width">
     <a href="/" class="site-logo" id="fel">
       <span class="inner" title="Front-end London">
         f<span id="front">ront-</span>e<span id="end">nd </span>l<span id="london">ondon</span>
       </span>
     </a>
   </div>
+
+  <%= yield_content :in_header %>
 </header>

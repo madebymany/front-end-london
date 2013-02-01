@@ -1,14 +1,16 @@
 ---
-title: Front-end London - A New London Based Meetup for Front-end Developers, hosted by Made by Many 
+title: Front-end London - A New London Based Meetup for Front-end Developers, hosted by Made by Many
 ---
 
-<section class="jumbotron">
-  <div class="next-event-details">
-    <span class="next-event">Next event</span>
-    <span class="next-event-date">28<span class="date-ordinal">th</span> February, 2013</span>
-    <span class="next-event-time">7pm - late <span class="next-event-bullet">&bullet;</span> Islington</span>
-  </div>
-</section>
+<% content_for :in_header do %>
+  <section class="site-header__secondary">
+    <div class="next-event-details">
+      <span class="next-event">Next event</span>
+      <span class="next-event-date">28<span class="date-ordinal">th</span> February, 2013</span>
+      <span class="next-event-time">7pm - late <span class="next-event-bullet">&bullet;</span> Islington</span>
+    </div>
+  </section>
+<% end %>
 
 <div class="site-content site-width" role="main">
 
@@ -23,39 +25,45 @@ title: Front-end London - A New London Based Meetup for Front-end Developers, ho
   </section>
 
   <section class="speakers">
-    <h2 class="event-date">Speakers</h2>
+    <h2 class="divider-title">Speakers</h2>
 
     <div class="speakers-list twelve-columns">
 
       <div class="speaker column span-four">
-        <a href="https://twitter.com/almonk">
-          <img src="images/speakers/2013/02/al-monk.jpeg" class="speaker-profile-image" width="140" height="140">
+        <a class="speaker-profile" href="https://twitter.com/almonk">
+          <div class="speaker-profile-img">
+            <img src="images/speakers/2013/02/al-monk.jpeg" width="140" height="140">
+          </div>
+          <h3>Alasdair Monk</h3>
         </a>
 
-        <h3>Alasdair Monk</h3>
         <em class="speaker-company">GoCardless</em>
         <p class="speaker-topic">The increasing diversity of devices that access the internet is staggering. Our traditional tools and processes for designing and building for the web are failing under the new demands we place on them; demands that they were never meant to fulfil. <strong>Alasdair Monk</strong> will be exploring a new workflow for success in a bewildering new digital environment.</p>
       </div>
 
       <div class="speaker column span-four">
-        <a href="https://twitter.com/tiny_m">
-          <img src="images/speakers/2013/02/mairead.jpg" class="speaker-profile-image" width="140" height="140">
+        <a class="speaker-profile" href="https://twitter.com/tiny_m">
+          <div class="speaker-profile-img">
+            <img src="images/speakers/2013/02/mairead.jpg" width="140" height="140">
+          </div>
+          <h3>Mairead Buchan</h3>
         </a>
 
-        <h3>Mairead Buchan</h3>
         <em class="speaker-company">Head London</em>
         <p class="speaker-topic">A run down of current possible technologies for developing 3D motion sensor triggered applications with a brief demonstration of our current Kinect prototype application including the technology stack we have chosen and the steps we have gone through to create it.</p>
       </div>
 
       <div class="speaker column span-four">
-        <a href="https://twitter.com/Jack_Franklin">
-          <img src="images/speakers/2013/02/jack.jpeg" class="speaker-profile-image" width="140" height="140">
+        <a class="speaker-profile" href="https://twitter.com/Jack_Franklin">
+          <div class="speaker-profile-img">
+            <img src="images/speakers/2013/02/jack.jpeg" class="speaker-profile-image" width="140" height="140">
+          </div>
+          <h3>Jack Franklin</h3>
         </a>
 
-        <h3>Jack Franklin</h3>
         <em class="speaker-company">Javascript Playground</em>
         <p class="speaker-topic"><strong>Modular Javascript</strong>. A whirlwind tour of the options available to you if you'd like to start writing more modular code. We'll look at things like RequireJS along with more fully featured package managers like Jam, and the benefits to splitting your code into modules, and look at some JavaScript tricks to help us.</p>
-      </div> 
+      </div>
 
     </div>
 

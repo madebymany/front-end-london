@@ -54,8 +54,13 @@
   background: url("../images/mxm-logo.png") no-repeat 0 0;
 }
 
+.social-links {
+  font-size: 0.9em;
+}
+
 .fel-twitter:before,
-.fel-lanyrd:before {
+.fel-lanyrd:before,
+.fel-flickr:before {
   content: "";
   display: inline-block;
   width: 25px;
@@ -72,4 +77,8 @@
 
 .fel-lanyrd:before {
   background-image: url("../images/lanyrd-icon.png");
+}
+
+.fel-flickr:before {
+  background-image: url("../images/flickr-icon.png");
 }

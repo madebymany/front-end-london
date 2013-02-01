@@ -10,26 +10,30 @@
   margin: 50px 0 60px 0;
 }
 
-.previous-month {
-  background-color: #fff;
-}
-
 .previous-month-speakers {
-  margin-top: 20px;
+  margin-top: 0;
+  padding: 20px 0;
+  background-color: #fff;
+  border-radius: 0 0 3px 3px;
 }
 
 .previous-events-title {
   width: 180px;
 }
 
-a.previous-month-header {
-  display: block;
-  color: #fff;
+.previous-month-header {
+  padding: 0 30px;
+  border-radius: 3px 3px 0 0;
+}
+
+.previous-month-header h3 {
   font-size: 1.6em;
-  font-weight: bold; 
-  padding: 25px;
-  text-decoration: none;
+  line-height: 3;
+  font-weight: bold;
+  color: #fff;
 }
 
 .previous-month-header--january { background-color: $january; }
-.previous-month--january .speaker h3 { color: $january; }
+.previous-month--january .speaker .h3,
+.previous-month--january .speaker a { color: $january; }
+.previous-month--january .speaker-profile-img:after { background-color: rgba($january, 0.5%); }

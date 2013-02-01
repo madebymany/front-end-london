@@ -22,7 +22,8 @@
   text-align: center;
 }
 
-.speaker h3 {
+.speaker h3,
+.speaker .h3 {
   margin: 10px 0 0 0;
   color: $current-month;
 }
@@ -31,20 +32,55 @@
   color: #909090;
 }
 
-.speaker-profile-image {
+.speaker-profile {
+  text-decoration: none;
+}
+
+.speaker-profile:hover {
+  text-decoration: underline;
+}
+
+.speaker-profile-img {
+  position: relative;
+  display: inline-block;
+}
+
+.speaker-profile-img img,
+.speaker-profile-img:after {
   border-radius: 3px;
+}
+
+.speaker-profile-img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba($current-month, 0.5%) url("../images/twitter-icon-large.png") no-repeat center center;
+  line-height: 140px;
+  opacity: 0;
+}
+
+.speaker-profile:hover .speaker-profile-img:after {
+  opacity: 1;
 }
 
 .speaker p {
   text-align: left;
 }
 
-.event-date {
+.speaker-slides {
+  display: block;
+  text-align: center;
+}
+
+.divider-title {
   text-transform: uppercase;
   color: #909090;
   font-size: 1em;
   background: #f7f6f5;
-  margin: -10px auto 0 auto;
+  margin: -10px auto;
   text-align: center;
   padding: 0 5px;
   width: 130px;
@@ -53,26 +89,6 @@
 .event-information {
   background: #eae9e8;
   padding: 40px 0;
-}
-
-.jumbotron {
-  position: relative;
-  z-index: -2;
-  background: url("../images/diespeker.jpg") no-repeat center center;
-  background-size: cover;
-  height: 220px;
-  padding: 50px 20px;
-}
-
-.jumbotron:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(darken($current-month, 10%), 0.6);
 }
 
 .next-event-details {

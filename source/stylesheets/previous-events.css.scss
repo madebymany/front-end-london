@@ -10,6 +10,10 @@
   margin: 50px 0 60px 0;
 }
 
+.previous-month {
+  margin: 0 0 20px 0;
+}
+
 .previous-month-speakers {
   margin-top: 0;
   padding: 20px 0;
@@ -37,3 +41,8 @@
 .previous-month--january .speaker .h3,
 .previous-month--january .speaker a { color: $january; }
 .previous-month--january .speaker-profile-img:after { background-color: rgba($january, 0.5%); }
+
+.previous-month-header--february { background-color: $february; }
+.previous-month--february .speaker .h3,
+.previous-month--february .speaker a { color: $february; }
+.previous-month--february .speaker-profile-img:after { background-color: rgba($february, 0.5%); }

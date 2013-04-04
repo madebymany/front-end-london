@@ -2,6 +2,20 @@
   Variables
 */
 
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
+
+@mixin transition($property, $duration, $function) {
+  -webkit-transition: $property $duration $function;
+  -moz-transition: $property $duration $function;
+  -o-transition: $property $duration $function;
+  transition: $property $duration $function;
+}
+
 $base-font-size: 1.2em;
 $large-font-size: 1.5em;
 
@@ -19,7 +33,7 @@ $november: #6d8646;
 $december: #327c2e;
 
 // Change to switch colour scheme
-$current-month: $march;
+$current-month: $april;
 
 /*
   Fonts

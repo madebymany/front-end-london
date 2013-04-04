@@ -21,6 +21,14 @@
   border-radius: 0 0 3px 3px;
 }
 
+.js .previous-month-speakers {
+  display: none;
+}
+
+.js .previous-month--is-active .previous-month-speakers {
+  display: block;
+}
+
 .previous-events-title {
   width: 180px;
 }
@@ -37,6 +45,35 @@
   color: #fff;
 }
 
+.previous-month-header__toggle {
+  text-decoration: none;
+  display: block;
+}
+
+.previous-month-header__toggle:after {
+  content: "";
+  display: block;
+  width: 21px; height: 21px;
+  background: url(../images/plus_close.png) no-repeat;
+  float: right;
+  margin-top: 28px;
+  @include transform(rotate(0deg));
+  @include transition(all, 0.1s, ease-in);
+}
+
+.previous-month--is-active .previous-month-header__toggle:after {
+  @include transform(rotate(-45deg));
+}
+
+a.previous-month-header__toggle,
+a.previous-month-header__toggle:visited {
+  color: #fff;
+}
+
+a.previous-month-header__toggle:hover {
+  text-decoration: underline;
+}
+
 .previous-month-header--january { background-color: $january; }
 .previous-month--january .speaker .h3,
 .previous-month--january .speaker a { color: $january; }
@@ -46,3 +83,8 @@
 .previous-month--february .speaker .h3,
 .previous-month--february .speaker a { color: $february; }
 .previous-month--february .speaker-profile-img:after { background-color: rgba($february, 0.5%); }
+
+.previous-month-header--march { background-color: $march; }
+.previous-month--march .speaker .h3,
+.previous-month--march .speaker a { color: $march; }
+.previous-month--march .speaker-profile-img:after { background-color: rgba($march, 0.5%); }

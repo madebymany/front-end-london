@@ -1,9 +1,13 @@
 .site-header {
   position: relative;
   padding: 50px;
-  background: url("../images/diespeker.jpg") no-repeat center center;
+  background: url("../images/diespeker_small.jpg") no-repeat center center;
   background-size: cover;
   text-align: center;
+
+  @media (min-width: 30em) {
+    background-image: url(../images/diespeker.jpg);
+  }
 }
 
 .site-header:after {

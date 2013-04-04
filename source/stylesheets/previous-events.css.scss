@@ -50,18 +50,14 @@
   display: block;
 }
 
-.previous-month-header__toggle:after {
-  content: "";
-  display: block;
-  width: 21px; height: 21px;
-  background: url(../images/plus_close.png) no-repeat;
+.previous-month-header__toggle:before {
   float: right;
-  margin-top: 28px;
+  line-height:3;
   @include transform(rotate(0deg));
   @include transition(all, 0.1s, ease-in);
 }
 
-.previous-month--is-active .previous-month-header__toggle:after {
+.previous-month--is-active .previous-month-header__toggle:before {
   @include transform(rotate(-45deg));
 }
 

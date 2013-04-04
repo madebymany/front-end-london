@@ -126,6 +126,7 @@ body {
   text-align: center;
   line-height: 4;
   color: $current-month;
+  @include transition(all, 0.07s, ease-in);
 
   span {
     vertical-align: -.3em;

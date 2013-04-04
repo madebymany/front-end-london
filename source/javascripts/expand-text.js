@@ -8,8 +8,8 @@
         this.text = this.element.innerHTML;
         //this.element.innerHTML = '';
 
-        parent.addEventListener('mouseover', this.addLetter.bind(this));
-        parent.addEventListener('mouseout', this.removeLetter.bind(this));
+        parent.on('mouseover', this.addLetter.bind(this));
+        parent.on('mouseout', this.removeLetter.bind(this));
 
         this.timer = setTimeout(function() {
             this.i = this.text.length;

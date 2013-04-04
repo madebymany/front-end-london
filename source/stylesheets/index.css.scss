@@ -46,23 +46,25 @@
 }
 
 .speaker-profile-img img,
-.speaker-profile-img:after {
+.speaker-profile-img:before {
   border-radius: 3px;
 }
 
-.speaker-profile-img:after {
-  content: "";
+.speaker-profile-img:before {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba($current-month, 0.5%) url("../images/twitter-icon-large.png") no-repeat center center;
   line-height: 140px;
   opacity: 0;
+  background-color:rgba(41,166,181,0.5);
+  @include transition(opacity, 0.07s, ease-in);
+  font-size:40px;
+  color:#fff
 }
 
-.speaker-profile:hover .speaker-profile-img:after {
+.speaker-profile:hover .speaker-profile-img:before {
   opacity: 1;
 }
 

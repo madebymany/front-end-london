@@ -7,20 +7,18 @@ var Accordion = function() {
 
 Accordion.prototype.initialize = function() {
   this.$previous_months.first().addClass('previous-month--is-active');
-  this.$previous_months.find('.previous-month-header').bind('click', this.handleHeaderClick.bind(this));
+  this.$previous_months.find('.previous-month-header').on('click', this.handleHeaderClick);
 };
 
 Accordion.prototype.handleHeaderClick = function(e) {
   e.preventDefault();
-
   this.$el.find('.previous-month--is-active').removeClass('previous-month--is-active');
-  $(e.currentTarget).parent().addClass('previous-month--is-active');
+  $(e.currentTarget || e.srcElement).parent().addClass('previous-month--is-active');
 };
 
 $.domReady(function () {
-  $(document.body).addClass('js');
 
-  var container = document.getElementById('fel');
+  var container = $('#fel');
   var names = ['front', 'end', 'london'];
   var i = names.length;
 

@@ -47,38 +47,29 @@
   text-align: right;
 }
 
-.made-by-many-logo {
-  display: inline-block;
-  width: 140px;
-  height: 24px;
-  background: url("../images/mxm-logo.png") no-repeat 0 0;
+.mxm-icon {
+  font-family: 'fel';
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  color:#fff;
+  font-size: 38px;
 }
 
 .social-links {
   font-size: 0.9em;
 }
 
-.fel-twitter:before,
-.fel-lanyrd:before,
-.fel-flickr:before {
-  content: "";
+.site-footer__icon:before {
   display: inline-block;
-  width: 25px;
-  height: 20px;
-  margin-right: 0.8em;
-  background-repeat: no-repeat;
-  background-position: center center;
+  font-size: 23px;
   vertical-align: middle;
+  margin-right:12px;
 }
 
-.fel-twitter:before {
-  background-image: url("../images/twitter-icon.png");
-}
-
-.fel-lanyrd:before {
-  background-image: url("../images/lanyrd-icon.png");
-}
-
-.fel-flickr:before {
-  background-image: url("../images/flickr-icon.png");
+.lt-ie9 .mxm-icon,
+.lt-ie9 .site-footer__icon:before {
+  display:none
 }

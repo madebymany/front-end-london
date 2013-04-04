@@ -7,7 +7,7 @@ var Accordion = function() {
 
 Accordion.prototype.initialize = function() {
   this.$previous_months.first().addClass('previous-month--is-active');
-  this.$previous_months.find('.previous-month-header').on('click', this.handleHeaderClick);
+  this.$previous_months.find('.previous-month-header').on('click', this.handleHeaderClick.bind(this));
 };
 
 Accordion.prototype.handleHeaderClick = function(e) {

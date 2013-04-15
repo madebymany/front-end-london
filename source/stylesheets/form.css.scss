@@ -1,14 +1,33 @@
 .subscribe-form__label {
-  font-size:1.5em;
-  margin:20px 0;
+  font-size: 1.5em;
+  margin: 20px 0;
 }
 
 .subscribe-form__email {
   @extend .cta;
+  width: 14em;
+  margin-right: 0.5em;
+  border-color: #ddd;
+  background: #fff !important;
+  text-transform: none;
+  color: inherit;
+
+  &:focus {
+    outline: none;
+    border-color: #ccc;
+  }
 }
 
 .subscribe-form__button {
+  $colour: darken($current-month, 10%);
+
   @extend .cta;
   @extend .cta-transition;
-  background:#fff;
+  @extend .cta--dark;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $colour;
+    border-color: $colour;
+  }
 }

@@ -121,35 +121,35 @@ body {
   border: 3px solid $current-month;
   text-decoration: none;
   padding: 0 15px;
+  padding-top: 3px;
   color: $current-month;
   line-height: 3;
+  border-radius: 2px;
 }
 
-.cta-transition {
+.cta--transition {
   @include transition(all, 0.07s, ease-in);
 
   &:hover {
-    background-color: $current-month;
-    color: #fff;
+    @extend .cta--dark;
   }
 }
 
-.primary-cta {
+.cta--primary {
   @extend .cta;
   @extend .cta-transition;
-
   font-family: 'Proxima Nova';
   font-weight: bold;
   display: block;
-  border-radius: 2px;
-  margin: 40px auto 0pt auto;
+  margin: 40px auto;
   max-width: 180px;
   text-align: center;
   line-height: 4;
+}
 
-  span {
-    vertical-align: -.3em;
-  }
+.cta--dark {
+  background-color: $current-month;
+  color: #fff;
 }
 
 .column {

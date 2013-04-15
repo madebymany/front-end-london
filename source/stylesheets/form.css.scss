@@ -1,0 +1,14 @@
+.subscribe-form__label {
+  font-size:1.5em;
+  margin:20px 0;
+}
+
+.subscribe-form__email {
+  @extend .cta;
+}
+
+.subscribe-form__button {
+  @extend .cta;
+  @extend .cta-transition;
+  background:#fff;
+}

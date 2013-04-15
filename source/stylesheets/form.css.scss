@@ -22,7 +22,7 @@
   $colour: darken($current-month, 10%);
 
   @extend .cta;
-  @extend .cta-transition;
+  @extend .cta--transition;
   @extend .cta--dark;
   font-weight: bold;
 

@@ -137,7 +137,7 @@ body {
 
 .cta--primary {
   @extend .cta;
-  @extend .cta-transition;
+  @extend .cta--transition;
   font-family: 'Proxima Nova';
   font-weight: bold;
   display: block;

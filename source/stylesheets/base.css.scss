@@ -75,10 +75,15 @@ $current-month: $april;
 html, button, input, select, textarea { font-family: 'Proxima Nova', sans-serif; color: #515151; }
 
 * {
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
-::selection { background: #fff0a0; color: inherit; text-shadow: none; }
+::selection {
+  background: #fff0a0;
+  color: inherit;
+  text-shadow: none;
+}
 
 h1, h2, h3, h4 {
   margin: 0;

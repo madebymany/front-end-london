@@ -120,10 +120,9 @@ body {
   text-transform: uppercase;
   border: 3px solid $current-month;
   text-decoration: none;
-  padding: 0 15px;
-  padding-top: 3px;
+  padding: 15px;
+  padding-top: 18px;
   color: $current-month;
-  line-height: 3;
   border-radius: 2px;
 }
 
@@ -142,9 +141,10 @@ body {
   font-weight: bold;
   display: block;
   margin: 40px auto;
+  padding: 20px;
+  padding-top: 23px;
   max-width: 180px;
   text-align: center;
-  line-height: 4;
 }
 
 .cta--dark {

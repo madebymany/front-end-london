@@ -73,14 +73,19 @@ a.previous-month-header__toggle:hover {
 .previous-month-header--january { background-color: $january; }
 .previous-month--january .speaker .h3,
 .previous-month--january .speaker a { color: $january; }
-.previous-month--january .speaker-profile-img:after { background-color: rgba($january, 0.5%); }
+.previous-month--january .speaker-profile-img:before { background-color: rgba($january, 0.5%); }
 
 .previous-month-header--february { background-color: $february; }
-.previous-month--february .speaker .h3,
+.previous-month--february .speaker h3,
 .previous-month--february .speaker a { color: $february; }
-.previous-month--february .speaker-profile-img:after { background-color: rgba($february, 0.5%); }
+.previous-month--february .speaker-profile-img:before { background-color: rgba($february, 0.5%); }
 
 .previous-month-header--march { background-color: $march; }
-.previous-month--march .speaker .h3,
+.previous-month--march .speaker h3,
 .previous-month--march .speaker a { color: $march; }
-.previous-month--march .speaker-profile-img:after { background-color: rgba($march, 0.5%); }
+.previous-month--march .speaker-profile-img:before { background-color: rgba($march, 0.5%); }
+
+.previous-month-header--april { background-color: $april; }
+.previous-month--april .speaker h3,
+.previous-month--april .speaker a { color: $april; }
+.previous-month--april .speaker-profile-img:before { background-color: rgba($april, 0.5%); }

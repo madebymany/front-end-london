@@ -58,7 +58,7 @@
   left: 0;
   line-height: 140px;
   opacity: 0;
-  background-color:rgba(41,166,181,0.5);
+  background-color: rgba($current-month,0.5);
   @include transition(opacity, 0.07s, ease-in);
   font-size:40px;
   color:#fff

@@ -94,3 +94,8 @@ a.previous-month-header__toggle:hover {
 .previous-month--may .speaker h3,
 .previous-month--may .speaker a { color: $may; }
 .previous-month--may .speaker-profile-img:before { background-color: rgba($may, 0.5%); }
+
+.previous-month-header--june { background-color: $june; }
+.previous-month--june .speaker h3,
+.previous-month--june .speaker a { color: $june; }
+.previous-month--june .speaker-profile-img:before { background-color: rgba($june, 0.5%); }

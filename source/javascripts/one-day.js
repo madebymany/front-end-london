@@ -42,6 +42,10 @@ $(function () {
         return -$(this).height();
       }
     });
+
+    $('.interested-in-speaking').on('click', function(){
+      $("html, body").animate({ scrollTop: opening.height() }, 300);
+    });
   }
 
   b.addClass("body--is-loaded");

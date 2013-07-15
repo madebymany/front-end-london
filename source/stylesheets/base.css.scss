@@ -16,6 +16,13 @@
   transition: $property $duration $function;
 }
 
+@mixin transition-delay($property, $duration, $delay, $function) {
+  -webkit-transition: $property $duration $delay $function;
+  -moz-transition: $property $duration $delay $function;
+  -o-transition: $property $duration $delay $function;
+  transition: $property $duration $delay $function;
+}
+
 $base-font-size: 1.2em;
 $large-font-size: 1.5em;
 
@@ -71,6 +78,16 @@ $current-month: $july;
     font-weight: normal;
     font-style: normal;
 }
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
 
 html, button, input, select, textarea { font-family: 'Proxima Nova', sans-serif; color: #515151; }
 

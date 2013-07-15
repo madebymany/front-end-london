@@ -1,0 +1,18 @@
+.site-logo {
+  font-family: 'Sina Nova', Georgia, serif;
+  font-size: 4em;
+  line-height: .9;
+  text-transform: lowercase;
+  color: #fff;
+
+  &:visited {
+    color: #fff;
+  }
+}
+
+.site-logo .inner {
+  display: inline-block;
+  padding: 0 .12em;
+  border-bottom: .07em solid #fff;
+  white-space: nowrap;
+}

@@ -1,0 +1,325 @@
+@import "icons";
+@import "base";
+@import "logo";
+
+$green-color: #25A787;
+$red-color: #D73654;
+$blue-color: #16A6B6;
+
+$base-font-size: 16px;
+
+@function px-to-em($px, $base: $base-font-size) {
+  @return ($px / $base) * 1em;
+}
+
+body {
+}
+
+.page--is-green { background-color: darken($green-color, 10%); }
+.page--is-red { background-color: darken($red-color, 10%); }
+.page--is-blue { background-color: darken($blue-color, 10%); }
+
+.opening {
+  text-align: center;
+  border: 8px solid $green-color;
+  background: url("../images/one-day/bg_1.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.js .opening {
+  position: absolute;
+  z-index: 1;
+  top: 0; left: 0;
+  bottom: -3px; right: 0;
+}
+
+.touch .opening {
+  position: relative;
+}
+
+.opening:after {
+  content: "";
+  position: absolute;
+  top: 0; right: 0;
+  bottom: 0; left: 0;
+  background-color: rgba(darken($green-color, 10%), 0.8);
+}
+
+.site-header,
+.signup,
+.fixed-bottom {
+  position: relative;
+  z-index: 1;
+}
+
+.site-header__primary {
+  padding: px-to-em(50px) 2em;
+}
+
+.signup {
+  border: px-to-em(3px) solid #fff;
+  border-radius: px-to-em(5px);
+  margin: 0 auto;
+  width: px-to-em(480px);
+  padding: px-to-em(30px) px-to-em(80px);
+  color: #fff;
+  opacity: 0;
+
+  @include transition-delay(opacity, 0.5s, 0.5s, ease-in);
+}
+
+.body--is-loaded .signup {
+  opacity: 1;
+}
+
+.signup__title {
+  font-size: px-to-em(48px);
+  text-transform: uppercase;
+}
+
+.signup__details {
+  font-size: px-to-em(24px);
+  font-weight: 700;
+}
+
+.signup__cta {
+  margin: px-to-em(30px) 0 px-to-em(10px) ;
+}
+
+.signup-form__email {
+  border: 0;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  text-align: center;
+  padding: px-to-em(8px);
+  color: #fff;
+  width: 50%;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.signup-form__email::-webkit-input-placeholder { color: rgba(255,255,255,0.6); }
+.signup-form__email::-moz-placeholder { color: rgba(255,255,255,0.6); }
+.signup-form__email:-moz-placeholder { color: rgba(255,255,255,0.6); }
+.signup-form__email:-ms-input-placeholder { color: rgba(255,255,255,0.6); }
+
+.cta {
+  color: #fff;
+  border-color: #fff;
+  font-weight: bold;
+  display: block;
+  margin: px-to-em(20px) auto;
+  background-color: transparent;
+  text-align: center;
+
+  &:hover {
+    background-color: #fff;
+    color: $green-color;
+  }
+}
+
+.speaker__cta {
+  margin-top: px-to-em(40px);
+  width: px-to-em(130px, 18px);
+}
+
+.mxm-logo {
+  display: block;
+  width: px-to-em(190px);
+  margin: 0 auto;
+}
+
+.mxm-icon {
+  font-family: 'fel';
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  display: inline-block;
+  font-size: px-to-em(50px);
+  width: px-to-em(190px, 50px);
+  text-align: right;
+}
+
+.interested-in-speaking {
+  display: block;
+
+  text-align: center;
+  width: 100%;
+  padding: px-to-em(25px) 0 px-to-em(40px);
+  font-size: px-to-em(18px);
+  font-weight: 700;
+  color: darken($green-color, 20%);
+  background: $green-color;
+  margin: px-to-em(10px) 0 0 0;
+
+  text-decoration: none;
+
+  &:visited {
+    color: darken($green-color, 20%);
+  }
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.interested-in-speaking:after {
+  content: '';
+  width: 0; height: 0;
+  border-right: px-to-em(10px) solid transparent;
+  border-left: px-to-em(10px) solid transparent;
+  border-top: px-to-em(10px) solid darken($green-color, 20%);
+  position: absolute;
+  left: 50%;
+  margin-left: -px-to-em(10px);
+  margin-top: 2em;
+}
+
+.fixed-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.no-touch .fixed-bottom {
+  @include transition-delay(all, .3s, 0.5s, ease-in);
+  @include transform(translateY(5.2em));
+}
+
+.touch .fixed-bottom {
+  position: relative;
+  left: auto; bottom: auto;
+  margin-top: px-to-em(30px);
+}
+
+.body--is-loaded .fixed-bottom {
+  @include transform(translateY(0));
+}
+
+.reveal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.touch .reveal {
+  position: static;
+}
+
+.speaker {
+  height: auto;
+  min-height: 100%;
+  width: 640px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: px-to-em(18px);
+}
+
+.call-for-speakers {
+  margin-top: 50px;
+}
+
+ul {
+  padding: 0 0 0 px-to-em(20px);
+}
+
+.page--is-red {
+  .opening {
+    background-image: url(../images/one-day/bg_2.jpg);
+    border-color: $red-color;
+  }
+
+  .opening:after { background-color: rgba(darken($red-color, 10%), 0.8); }
+
+  .cta:hover { color: $red-color; }
+
+  .interested-in-speaking {
+    background-color: $red-color;
+    color: darken($red-color, 20%);
+  }
+
+  .interested-in-speaking:visited {
+    color: darken($red-color, 20%);
+  }
+
+  .interested-in-speaking:after {
+    border-top-color: darken($red-color, 20%);
+  }
+}
+
+.page--is-blue {
+  .opening {
+    background-image: url(../images/one-day/bg_3.jpg);
+    border-color: $blue-color;
+  }
+
+  .opening:after { background-color: rgba(darken($blue-color, 10%), 0.8); }
+
+  .cta:hover { color: $blue-color; }
+
+  .interested-in-speaking {
+    background-color: $blue-color;
+    color: darken($blue-color, 20%);
+  }
+
+  .interested-in-speaking:visited {
+    color: darken($blue-color, 20%);
+  }
+
+  .interested-in-speaking:after {
+    border-top-color: darken($blue-color, 20%);
+  }
+}
+
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+@media (max-width: px-to-em(660px)) {
+
+  html {
+    font-size: 90%;
+  }
+
+  .site-logo,
+  .signup__title {
+    font-size: 2.5em;
+  }
+
+  .signup__cta {
+    font-size: 1.4em;
+  }
+
+  p {
+    line-height: 1.4;
+  }
+
+  .signup,
+  .speaker {
+    width: auto;
+    padding-left: px-to-em(20px);
+    padding-right: px-to-em(20px);
+    margin: 0 2%;
+  }
+
+  .speaker {
+    padding-bottom: 3em;
+  }
+
+  .interested-in-speaking {
+    font-size: px-to-em(16px);
+  }
+
+  .signup-form__email {
+    margin-bottom: px-to-em(10px);
+    width: 90%;
+  }
+
+}

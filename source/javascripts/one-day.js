@@ -44,7 +44,7 @@ $(function () {
     });
 
     $('.interested-in-speaking').on('click', function(){
-      $("html, body").animate({ scrollTop: opening.height() }, 300);
+      $("html, body").animate({ scrollTop: opening.height() }, 200);
     });
   }
 

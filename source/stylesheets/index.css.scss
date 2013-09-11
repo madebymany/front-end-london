@@ -14,6 +14,13 @@
   border-top: 1px dotted #d2d2d2;
 }
 
+.speakers__placeholder {
+  font-size: 1.5em;
+  width: 75%;
+  margin: 2em auto 0;
+  text-align: center;
+}
+
 .speakers-list {
   margin: 50px 0 0 0;
 }
@@ -103,6 +110,7 @@
   margin: 0pt auto;
   text-align: center;
   color: #fff;
+  position: relative;
 }
 
 .next-event-details .next-event,
@@ -117,7 +125,7 @@
 }
 
 .next-event-details .next-event-date {
-  font-size: 3.5em;
+  font-size: 3.25em;
   font-weight: bold;
   margin-bottom: 0.2em;
 }
@@ -128,4 +136,14 @@
 
 .next-event-details .next-event-bullet {
   margin: 0 10px;
+}
+
+.day-event-banner {
+  position: absolute;
+  text-transform: uppercase;
+  bottom: 1em; left: 0;
+  font-size: 1em;
+  padding: .25em 0;
+  width: 100%;
+
 }

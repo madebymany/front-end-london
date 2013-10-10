@@ -120,6 +120,7 @@ a:hover { color: darken($current-month, 10%); }
 body {
   background-color: #f7f6f5;
   min-width: 320px;
+  margin:0;
 }
 
 .date-ordinal {

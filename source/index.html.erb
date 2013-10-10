@@ -6,10 +6,9 @@ title: Front-end London - A New London Based Meetup for Front-end Developers, ho
   <section class="site-header__secondary">
     <div class="next-event-details">
       <span class="next-event">Next event</span>
-      <span class="next-event-date">28<span class="date-ordinal">th</span> September, 2013</span>
-      <span class="next-event-time">10am - 6pm <span class="next-event-bullet">&bullet;</span> Islington</span>
+      <span class="next-event-date">31<span class="date-ordinal">st</span> October, 2013</span>
+      <span class="next-event-time">7pm - 9:30pm<span class="next-event-bullet">&bullet;</span> Islington</span>
 
-      <span class="day-event-banner">Special one day event</span>
     </div>
   </section>
 <% end %>
@@ -18,11 +17,11 @@ title: Front-end London - A New London Based Meetup for Front-end Developers, ho
 
   <section class="introduction">
 
-    <p>Front-end London is an <strong>evening meetup</strong> hosted by <a href="http://madebymany.co.uk">Made by Many</a> that's dedicated to all aspects of front-end development. For one month only, we'll be turning Front-end London into a <strong>special one day event</strong>.</p>
+    <p>Front-end London is an <strong>evening meetup</strong> hosted by <a href="http://madebymany.co.uk">Made by Many</a> that's dedicated to all aspects of front-end development.</p>
 
     <p>We aim to cover a wide variety of topics such as CSS, Sass / LESS, RWD and JavaScript, with thought-provoking talks from a variety of speakers.</p>
 
-    <a href="https://tito.io/front-end-london/one-day" class="cta--primary" target="_blank">Full event details</a>
+    <a href="https://front-end-london-10.eventbrite.com/" class="cta--primary" target="_blank">Get tickets</a>
 
     <form action="http://madebymany.us6.list-manage.com/subscribe/post?u=2069e586d651ff50b3844c372&amp;id=12bc29b23c" method="post" name="subscribe-form">
       <p>Subscribe to our mailing list for ticket reminders.</p>
@@ -34,9 +33,6 @@ title: Front-end London - A New London Based Meetup for Front-end Developers, ho
 
   <section class="speakers">
     <h2 class="divider-title">Speakers</h2>
-
-    <%#= partial "speakers" %>
-    <p class="speakers__placeholder">Speakers for the one day event will be announced on the <strong>13th September</strong>. Until then, you can vote for which talks you'd like at the event using our <a href="http://fel-one-day-votr.herokuapp.com/">Votr app</a>.</p>
-
+    <%= partial "speakers" %>
   </section>
 </div>

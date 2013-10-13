@@ -1,24 +1,24 @@
 .site-header {
   position: relative;
   padding: 50px;
-  background: url("../images/diespeker_small.jpg") no-repeat center center;
+  background: url("../images/backgrounds/diespeker_small-october.jpg") no-repeat center center;
   background-size: cover;
   text-align: center;
 
   @media (min-width: 30em) {
-    background-image: url(../images/diespeker.jpg);
+    background-image: url(../images/backgrounds/diespeker-october.jpg);
   }
 }
 
-.site-header:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(darken($current-month, 10%), 0.6);
-}
+// .site-header:after {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   background-color: rgba(darken($current-month, 10%), 0.6);
+// }
 
 .site-header__primary,
 .site-header__secondary {

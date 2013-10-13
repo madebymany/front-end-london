@@ -60,6 +60,8 @@ set :images_dir, 'images'
 
 set :build_dir, 'build'
 
+ignore 'previous_months/*'
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment

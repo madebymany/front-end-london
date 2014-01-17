@@ -1,24 +1,14 @@
 .site-header {
   position: relative;
   padding: 50px;
-  background: url("../images/backgrounds/diespeker_small-november.jpg") no-repeat center center $current-month;
+  background: url("../images/backgrounds/diespeker_small-january.jpg") no-repeat center center $current-month;
   background-size: cover;
   text-align: center;
 
   @media (min-width: 30em) {
-    background-image: url(../images/backgrounds/diespeker-november.jpg);
+    background-image: url(../images/backgrounds/diespeker-january.jpg);
   }
 }
-
-// .site-header:after {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-//   background-color: rgba(darken($current-month, 10%), 0.6);
-// }
 
 .site-header__primary,
 .site-header__secondary {

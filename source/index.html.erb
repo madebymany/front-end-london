@@ -6,6 +6,7 @@ title: Front-end London - A New London Based Meetup for Front-end Developers, ho
 next_event = Chronic.parse('2014-03-27 19:00')
 next_event_signup = ''
 next_event_duration = 2.5 # hours
+is_event_upcoming = ((next_event + next_event_duration*60*60) > Time.now)
 
 %>
 <% content_for :in_header do %>
@@ -13,7 +14,7 @@ next_event_duration = 2.5 # hours
     <div class="next-event-details">
       <span class="next-event">
         <%=
-        if ((next_event + next_event_duration*60*60) > Time.now)
+        if is_event_upcoming
           'Next event'
         else
           'Previous event'
@@ -37,10 +38,12 @@ next_event_duration = 2.5 # hours
 
     <%=
 
-    if next_event_signup.present?
-      "<a href=\"#{next_event_signup}\" class=\"cta--primary\" target=\"_blank\">Get tickets</a>"
-    else
-      '<p><em>Tickets not yet released</em></p>'
+    if is_event_upcoming
+      if next_event_signup.present?
+        "<a href=\"#{next_event_signup}\" class=\"cta--primary\" target=\"_blank\">Get tickets</a>"
+      else
+        '<p><em>Tickets not yet released</em></p>'
+      end
     end
 
     %>

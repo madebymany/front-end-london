@@ -1,0 +1,48 @@
+<div class="previous-month previous-month--january">
+
+  <header class="previous-month-header previous-month-header--january">
+    <h3><a href="#" class="previous-month-header__toggle" data-icon="+">30th January, 2014</a></h3>
+  </header>
+
+  <div class="previous-month-speakers speakers-list twelve-columns">
+
+  <% speakers = [
+    {
+      name: "Todd Motto",
+      pic: "01/todd-motto.jpg",
+      company: "Appsbroker",
+      twitter: "toddmotto",
+      topic: "Todd will be kickstarting your next app by guiding you through some of the most crucial parts of the AngularJS framework. Taking a holistic and high level view, the session will prime you on all the basics and how you can leverage the framework to rapidly develop new applications the modern way, touching on MVC and data-binding methodologies."
+    },
+    {
+      name: "Steve Workman",
+      pic: "01/steve-workman2.jpg",
+      company: "Yell.com",
+      twitter: "steveworkman",
+      topic: "Responsive Web Design has, so far, been about designing and building for the smaller device, but how about bigger devices like TVs? Is the Internet on TV really a thing? Will the next generation consoles push it over the line and into our hearts? How can we make it all work from our sofa and is it even possible?"
+    },
+    {
+      name: "Tom Ashworth",
+      pic: "01/tom-ashworth2.jpg",
+      company: "Twitter",
+      twitter: "phuunet",
+      topic: "Native platforms hold something over the web: we do not have a meaningful way to ensure that, no matter what the connection of the user is like, we can always deliver code and content. ServiceWorker aims to fix this, allowing developers to take control of navigations and resource fetching before they go to the network. We'll go through the state of things today, look at the ServiceWorker proposal and try out the polyfill that you can use today."
+    }
+  ] %>
+
+    <% speakers.each do |speaker| %>
+      <div class="speaker column span-four">
+        <a class="speaker-profile" href="https://twitter.com/<%= speaker[:twitter] %>">
+          <div class="speaker-profile-img" data-icon="">
+            <img src="images/speakers/2014/<%= speaker[:pic] %>" alt="<%= speaker[:name] %>" width="140" height="140">
+          </div>
+          <h3><%= speaker[:name] %></h3>
+        </a>
+
+        <em class="speaker-company"><%= speaker[:company] %></em>
+      </div>
+    <% end %>
+
+  </div>
+
+</div>

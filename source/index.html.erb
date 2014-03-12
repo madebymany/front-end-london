@@ -1,13 +1,27 @@
 ---
 title: Front-end London - A New London Based Meetup for Front-end Developers, hosted by Made by Many
 ---
+<%
 
+next_event = Chronic.parse('2014-03-27 19:00')
+next_event_signup = ''
+next_event_duration = 2.5 # hours
+
+%>
 <% content_for :in_header do %>
   <section class="site-header__secondary">
     <div class="next-event-details">
-      <span class="next-event">Next event</span>
-      <span class="next-event-date">30<span class="date-ordinal">th</span> January, 2014</span>
-      <span class="next-event-time">7pm - 9:30pm<span class="next-event-bullet">&bullet;</span> Islington</span>
+      <span class="next-event">
+        <%=
+        if ((next_event + next_event_duration*60*60) > Time.now)
+          'Next event'
+        else
+          'Last event'
+        end
+        %>
+      </span>
+      <span class="next-event-date"><%= next_event.strftime('%-d') %><span class="date-ordinal"><%= next_event.day.ordinalize.gsub(/\d/, '') %></span> <%= next_event.strftime('%B, %Y') %></span>
+      <span class="next-event-time"><%= next_event.strftime('%-l%P') %>–<%= (next_event + next_event_duration*60*60).strftime('%-l:%M%P') %><span class="next-event-bullet">&bullet;</span> Islington</span>
 
     </div>
   </section>
@@ -17,11 +31,19 @@ title: Front-end London - A New London Based Meetup for Front-end Developers, ho
 
   <section class="introduction">
 
-    <p>Front-end London is an <strong>evening meetup</strong> hosted by <a href="http://madebymany.co.uk">Made by Many</a> that's dedicated to all aspects of front-end development.</p>
+    <p><%= @foo %> Front-end London is an <strong>evening meetup</strong> hosted by <a href="http://madebymany.co.uk">Made by Many</a> that's dedicated to all aspects of front-end development.</p>
 
     <p>We aim to cover a wide variety of topics such as CSS, Sass / LESS, RWD and JavaScript, with thought-provoking talks from a variety of speakers.</p>
 
-    <a href="https://front-end-london-01-2014.eventbrite.com/" class="cta--primary" target="_blank">Get tickets</a>
+    <%=
+
+    if next_event_signup.present?
+      "<a href=\"#{next_event_signup}\" class=\"cta--primary\" target=\"_blank\">Get tickets</a>"
+    else
+      '<p><em>Tickets not yet released</em></p>'
+    end
+
+    %>
 
     <form action="http://madebymany.us6.list-manage.com/subscribe/post?u=2069e586d651ff50b3844c372&amp;id=12bc29b23c" method="post" name="subscribe-form">
       <p>Subscribe to our mailing list for ticket reminders.</p>

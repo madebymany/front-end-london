@@ -10,6 +10,7 @@
 # Ignore the build directory
 /public
 /build
+/vendor/bundle
 
 # Ignore Sass' cache
 /.sass-cache

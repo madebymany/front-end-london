@@ -1,10 +1,17 @@
+<%
+
+next_event = Chronic.parse('2014-03-27 19:00')
+next_event_signup = ''
+next_event_duration = 2.5 # hours
+
+%>
 <section class="event-information">
   <div class="site-width twelve-columns">
 
     <div class="column span-four">
 
       <h2>When is FEL?</h2>
-      <p>The next Front-end London will be on the 30<sup>th</sup> January, 2014. 7pm - 9:30pm.</p>
+      <p>The next Front-end London will be on the <%= next_event.strftime('%-d') %><sup><%= next_event.day.ordinalize.gsub(/\d/, '') %></sup> <%= next_event.strftime('%B, %Y') %>. <%= next_event.strftime('%l%P') %>—<%= (next_event + next_event_duration*60*60).strftime('%-l:%M%P') %>.</p>
 
     </div>
 

@@ -1,12 +1,12 @@
 .site-header {
   position: relative;
   padding: 50px;
-  background: url("../images/backgrounds/diespeker_small-january.jpg") no-repeat center center $current-month;
+  background: url("../images/backgrounds/diespeker_small-march.jpg") no-repeat center center $current-month;
   background-size: cover;
   text-align: center;
 
   @media (min-width: 30em) {
-    background-image: url(../images/backgrounds/diespeker-january.jpg);
+    background-image: url(../images/backgrounds/diespeker-march.jpg);
   }
 }
 

@@ -1,28 +1,27 @@
 ---
-title: Front-end London - A New London Based Meetup for Front-end Developers, hosted by Made by Many
+title: Front-end London - A meetup for front-end developers, hosted by Made by Many
 ---
 <%
 
-next_event = Chronic.parse('2014-03-27 19:00')
-next_event_signup = 'http://www.eventbrite.com/e/front-end-london-march-2014-tickets-10941100125'
-next_event_duration = 2.5 # hours
-is_event_upcoming = ((next_event + next_event_duration*60*60) > Time.now)
+latest_event = data.events.events.first
+latest_event_date = Chronic.parse(latest_event.date)
+is_event_upcoming = ((latest_event_date + latest_event.duration*60*60) > Time.now)
 
 %>
 <% content_for :in_header do %>
   <section class="site-header__secondary">
     <div class="next-event-details">
-      <span class="next-event">
+      <span class="next-event" id="next-event-handle" data-eventdate="<%= latest_event_date %>">
         <%=
         if is_event_upcoming
           'Next event'
         else
-          'Previous event'
+          'Latest event'
         end
         %>
       </span>
-      <span class="next-event-date"><%= next_event.strftime('%-d') %><span class="date-ordinal"><%= next_event.day.ordinalize.gsub(/\d/, '') %></span> <%= next_event.strftime('%B, %Y') %></span>
-      <span class="next-event-time"><%= next_event.strftime('%-l%P') %>–<%= (next_event + next_event_duration*60*60).strftime('%-l:%M%P') %><span class="next-event-bullet">&bullet;</span> Islington</span>
+      <span class="next-event-date"><%= latest_event_date.strftime('%-d') %><span class="date-ordinal"><%= latest_event_date.day.ordinalize.gsub(/\d/, '') %></span> <%= latest_event_date.strftime('%B, %Y') %></span>
+      <span class="next-event-time"><%= latest_event_date.strftime('%-l%P') %>–<%= (latest_event_date + latest_event.duration*60*60).strftime('%-l:%M%P') %><span class="next-event-bullet">&bullet;</span> Islington</span>
 
     </div>
   </section>
@@ -32,15 +31,15 @@ is_event_upcoming = ((next_event + next_event_duration*60*60) > Time.now)
 
   <section class="introduction">
 
-    <p><%= @foo %> Front-end London is an <strong>evening meetup</strong> hosted by <a href="http://madebymany.co.uk">Made by Many</a> that's dedicated to all aspects of front-end development.</p>
+    <p>Front-end London is an <strong>evening meetup</strong> hosted by <a href="http://madebymany.co.uk">Made by Many</a> that's dedicated to all aspects of front-end development.</p>
 
     <p>We aim to cover a wide variety of topics such as CSS, Sass / LESS, RWD and JavaScript, with thought-provoking talks from a variety of speakers.</p>
 
     <%=
 
     if is_event_upcoming
-      if next_event_signup.present?
-        "<a href=\"#{next_event_signup}\" class=\"cta--primary\" target=\"_blank\">Get tickets</a>"
+      if latest_event.registration_url.present?
+        "<a href=\"#{latest_event.registration_url}\" class=\"cta--primary\" target=\"_blank\">Get tickets</a>"
       else
         '<p><em>Tickets not yet released</em></p>'
       end
@@ -58,6 +57,6 @@ is_event_upcoming = ((next_event + next_event_duration*60*60) > Time.now)
 
   <section class="speakers">
     <h2 class="divider-title">Speakers</h2>
-    <%= partial "speakers" %>
+    <%= partial "speakers", :locals => {:event => latest_event} %>
   </section>
 </div>

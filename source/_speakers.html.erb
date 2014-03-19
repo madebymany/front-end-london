@@ -1,40 +1,19 @@
 <div class="speakers-list twelve-columns">
 
-  <% speakers = [
-    {
-      name: "Daniel Grant",
-      pic: "03/daniel-grant.png",
-      company: "freelance",
-      twitter: "danieljohngrant",
-      topic: "backface-visibility, preserve-3d, translateZ… Since the launch of CSS3, these properties have gradually been creeping into our stylesheets, more often that not, as quick fixes for rendering bugs. But what do these properties actually do? We’ll take a journey through space itself to discover their potential and uncover the mysteries of CSS’s 3D spec."
-    },
-    {
-      name: "Adam Rogers",
-      pic: "03/adam-rogers.jpg",
-      company: "Mint Digital",
-      twitter: "rodreegez",
-      topic: "‘How to Win Designers and Influence Developers’ explores ways to hack your team for a more efficient, productive and ultimately happier existence. That’s the good news. The bad news is hacking your team starts with hacking yourself. In 1936, Dale Carnegie published a book called ‘How to Win Friends and Influence People’. What can this and other books teach us about working as part of a modern software team today?"
-    },
-    {
-      name: "Tim Ruffles",
-      pic: "03/tim-ruffles.png",
-      company: "SidekickJS",
-      twitter: "timruffles",
-      topic: "We talk about code-quality a lot, but it's often just prejudice. Does code quality mean anything beyond “my kind of code”? Is it useful? Can it be measured?"
-    }
-  ] %>
-
-  <% speakers.each do |speaker| %>
+  <% event.speakers.each do |speaker| %>
     <div class="speaker column span-four">
       <a class="speaker-profile" href="https://twitter.com/<%= speaker[:twitter] %>">
         <div class="speaker-profile-img" data-icon="">
-          <img src="images/speakers/2014/<%= speaker[:pic] %>" alt="<%= speaker[:name] %>" width="140" height="140">
+          <img src="images/speakers/<%= speaker[:pic] %>" alt="<%= speaker[:name] %>" width="140" height="140">
         </div>
         <h3><%= speaker[:name] %></h3>
       </a>
 
       <em class="speaker-company"><%= speaker[:company] %></em>
-      <p class="speaker-topic"><%= speaker[:topic] %></p>
+      <p class="speaker-topic">
+        <strong><%= speaker[:topic] %></strong><br>
+        <%= speaker[:description] %>
+      </p>
     </div>
   <% end %>
 

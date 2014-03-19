@@ -4,17 +4,12 @@
     <h2 class="divider-title previous-events-title">Previous events</h2>
 
     <div class="previous-months">
-      <%= partial "previous_months/2014-january" %>
-      <%= partial "previous_months/november" %>
-      <%= partial "previous_months/october" %>
-      <%= partial "previous_months/august" %>
-      <%= partial "previous_months/july" %>
-      <%= partial "previous_months/june" %>
-      <%= partial "previous_months/may" %>
-      <%= partial "previous_months/april" %>
-      <%= partial "previous_months/march" %>
-      <%= partial "previous_months/february" %>
-      <%= partial "previous_months/january" %>
+      <% data.events.events.each do |event| %>
+        <% if Chronic.parse(event.date) < Time.now %>
+        <%= partial "previous-event", :locals => {:event => event} %>
+        <% end %>
+      <% end %>
     </div>
+
   </div>
 </section>

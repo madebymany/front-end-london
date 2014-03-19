@@ -1,8 +1,8 @@
 <%
 
-next_event = Chronic.parse('2014-03-27 19:00')
-next_event_signup = ''
-next_event_duration = 2.5 # hours
+latest_event = data.events.events.first
+latest_event_date = Chronic.parse(latest_event.date)
+is_event_upcoming = ((latest_event_date + latest_event.duration*60*60) > Time.now)
 
 %>
 <section class="event-information">
@@ -11,8 +11,13 @@ next_event_duration = 2.5 # hours
     <div class="column span-four">
 
       <h2>When is FEL?</h2>
-      <p>The next Front-end London will be on the <%= next_event.strftime('%-d') %><sup><%= next_event.day.ordinalize.gsub(/\d/, '') %></sup> <%= next_event.strftime('%B, %Y') %>. <%= next_event.strftime('%l%P') %>—<%= (next_event + next_event_duration*60*60).strftime('%-l:%M%P') %>.</p>
-
+      <p id="next-event-text-handle">
+        <% if is_event_upcoming %>
+        The next Front-end London will be on <%= latest_event_date.strftime('%A, %B %-d') %> at <%= latest_event_date.strftime('%l%P') %>—<%= (latest_event_date + latest_event.duration*60*60).strftime('%-l:%M%P') %>.
+        <% else %>
+        The next Front-end London is yet to be announced. The event usually takes place on the last Thursday of the month.
+        <% end %>
+      </p>
     </div>
 
     <div class="column span-four">

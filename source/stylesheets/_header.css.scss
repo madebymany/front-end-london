@@ -10,6 +10,81 @@
   }
 }
 
+.site-header--january {
+  background: url("../images/backgrounds/diespeker_small-january.jpg") no-repeat center center $january;
+  @media (min-width: 30em) {
+    background-image: url(../images/backgrounds/diespeker-january.jpg);
+  }
+}
+.site-header--february {
+  background: url("../images/backgrounds/diespeker_small-february.jpg") no-repeat center center $february;
+  @media (min-width: 30em) {
+    background-image: url(../images/backgrounds/diespeker-february.jpg);
+  }
+}
+.site-header--march {
+  background: url("../images/backgrounds/diespeker_small-march.jpg") no-repeat center center $march;
+  @media (min-width: 30em) {
+    background-image: url(../images/backgrounds/diespeker-march.jpg);
+  }
+}
+.site-header--april {
+  background: url("../images/backgrounds/diespeker_small-april.jpg") no-repeat center center $april;
+  @media (min-width: 30em) {
+    background-image: url(../images/backgrounds/diespeker-april.jpg);
+  }
+}
+.site-header--may {
+  background: url("../images/backgrounds/diespeker_small-may.jpg") no-repeat center center $may;
+  @media (min-width: 30em) {
+    background-image: url(../images/backgrounds/diespeker-may.jpg);
+  }
+}
+.site-header--june {
+  background: url("../images/backgrounds/diespeker_small-june.jpg") no-repeat center center $june;
+  @media (min-width: 30em) {
+    background-image: url(../images/backgrounds/diespeker-june.jpg);
+  }
+}
+.site-header--july {
+  background: url("../images/backgrounds/diespeker_small-july.jpg") no-repeat center center $july;
+  @media (min-width: 30em) {
+    background-image: url(../images/backgrounds/diespeker-july.jpg);
+  }
+}
+.site-header--august {
+  background: url("../images/backgrounds/diespeker_small-august.jpg") no-repeat center center $august;
+  @media (min-width: 30em) {
+    background-image: url(../images/backgrounds/diespeker-august.jpg);
+  }
+}
+.site-header--september {
+  background: url("../images/backgrounds/diespeker_small-september.jpg") no-repeat center center $september;
+  @media (min-width: 30em) {
+    background-image: url(../images/backgrounds/diespeker-september.jpg);
+  }
+}
+.site-header--october {
+  background: url("../images/backgrounds/diespeker_small-october.jpg") no-repeat center center $october;
+  @media (min-width: 30em) {
+    background-image: url(../images/backgrounds/diespeker-october.jpg);
+  }
+}
+.site-header--november {
+  background: url("../images/backgrounds/diespeker_small-november.jpg") no-repeat center center $november;
+  @media (min-width: 30em) {
+    background-image: url(../images/backgrounds/diespeker-november.jpg);
+  }
+}
+
+.site-header--december {
+  background: url("../images/backgrounds/diespeker_small-december.jpg") no-repeat center center $december;
+  @media (min-width: 30em) {
+    background-image: url(../images/backgrounds/diespeker-december.jpg);
+  }
+}
+
+
 .site-header__primary,
 .site-header__secondary {
   position: relative;

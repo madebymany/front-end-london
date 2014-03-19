@@ -51,7 +51,6 @@ compass_config do |config|
   config.sass_options = {:debug_info => true}
 end
 
-
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'

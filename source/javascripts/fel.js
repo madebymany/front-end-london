@@ -26,5 +26,12 @@ $.domReady(function () {
       new ExpandText(document.getElementById(names[i]), container);
   }
 
+  var $ne = $('#next-event-handle');
+  if (new Date($ne.attr('data-eventdate')).getTime() < new Date().getTime()) {
+    $ne.text('Previous event');
+    var $netxt = $('#next-event-text-handle');
+    $netxt.text("The next Front-end London is yet to be announced. The event usually takes place on the last Thursday of the month.");
+  }
+
   new Accordion();
 });

@@ -234,7 +234,7 @@ events:
         pic: "2013/07/edd.jpg"
         company: "GDS"
         twitter: "edds"
-        topic: ""
+        topic: "Using SASS on GOV.UK"
         description: ""
         slides_url: "https://speakerdeck.com/edds/using-sass-on-gov-dot-uk"
   - 

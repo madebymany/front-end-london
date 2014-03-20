@@ -24,7 +24,7 @@ e = Chronic.parse(event.date)
 
     writeups = ''
     if event_writeups.any?
-      writeups << 'Write-up'
+      writeups << 'Don’t miss the write-up'
       writeups << 's' unless event_writeups.length == 1
       writeups << ' from '
       writeups << event_writeups.join(', ').gsub(/,([^,]*)$/, ' and \1')

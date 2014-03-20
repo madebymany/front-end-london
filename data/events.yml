@@ -302,18 +302,18 @@ events:
         pic: "2013/05/jake.jpg"
         company: "Google"
         twitter: "jaffathecake"
-        topic: ""
+        topic: "Rendering without the lumpy bits"
         description: ""
-        slides_url: ""
+        slides_url: "https://speakerdeck.com/jaffathecake/rendering-without-lumps"
   - 
     date: "2013-04-24 19:00"
     registration_url: "http://www.eventbrite.com/e/front-end-london-april-tickets-6102377375"
     duration: 2.5
     writeups: 
       - 
-        author: ""
-        twitter: ""
-        writeup_url: ""
+        author: "Sophie Plimbley"
+        twitter: "plimbs"
+        writeup_url: "http://clock.co.uk/creative-blogs/front-end-london-april"
     speakers: 
       - 
         name: "Ricky Clegg"
@@ -346,7 +346,7 @@ events:
     writeups: 
       - 
         author: "Sophie Plimbley"
-        twitter: "pilmbs"
+        twitter: "plimbs"
         writeup_url: "http://clock.co.uk/creative-blogs/front-end-london-march"
     speakers: 
       - 
@@ -354,9 +354,9 @@ events:
         pic: "2013/03/josh.jpeg"
         company: "Clearleft"
         twitter: "joshje"
-        topic: ""
+        topic: "Resolution independent designs"
         description: ""
-        slides_url: ""
+        slides_url: "https://speakerdeck.com/joshje/asset-fonts"
       - 
         name: "Phil Nash"
         pic: "2013/03/phil.jpg"
@@ -382,6 +382,10 @@ events:
         author: "Charlotte Spencer"
         twitter: "@charlotteis"
         writeup_url: "http://charlotteis.tumblr.com/post/44252685703/frontendlondon-february"
+      - 
+        author: "Sophie Plimbley"
+        twitter: "@plimbs"
+        writeup_url: "http://clock.co.uk/creative-blogs/clock-goes-to-front-end-london"
     speakers: 
       - 
         name: "Alasdair Monk"

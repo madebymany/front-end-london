@@ -219,7 +219,7 @@ events:
         company: "GDS"
         twitter: "phae"
         topic: ""
-        description: ""
+        description: "Building amazing digital services is a dream we all have, but many of us are working for companies that aren't quite with the programme yet. So how on Earth would we manage to do it in one of the oldest, red-tapped, institutions in the UK?  I'll show you how we managed to restate the mission for the government's digital services using our Design Principles."
         slides_url: ""
       - 
         name: "Shaun Dunne"
@@ -227,7 +227,7 @@ events:
         company: "SapientNitro"
         twitter: "shaundunne"
         topic: ""
-        description: ""
+        description: "A solid introduction to using Grunt if you’ve never used it before and maybe some additional goodies for those who are already using it. Whatever your experience with build scripts and task automation, you will leave with the urge to bin those Ant scripts and get up and running with Grunt."
         slides_url: ""
       - 
         name: "Edd Sowden"
@@ -235,7 +235,7 @@ events:
         company: "GDS"
         twitter: "edds"
         topic: "Using SASS on GOV.UK"
-        description: ""
+        description: "Responsive design might be easy enough for a small blog but how does it scale to a large government website? At GOV.UK we have managed to create a responsive site powered by over 18,000 lines of Sass. Learn how we scale our CSS approach to work across numerous teams while giving a coherent experience."
         slides_url: "https://speakerdeck.com/edds/using-sass-on-gov-dot-uk"
   - 
     date: "2013-06-27 19:00"
@@ -253,15 +253,15 @@ events:
         company: "BBC"
         twitter: "BPScott"
         topic: "Typography for developers"
-        description: ""
+        description: "It has been said that the web is 90% typography, but what makes good typography? Ben Scott shows how to get started creating readable text and how CSS preprocessors can be used to take some of the thinking away."
         slides_url: "http://www.reload.me.uk/talk-typography-for-developers/#/"
       - 
         name: "Clare Evans & Mark Jones"
         pic: "2013/06/clare.jpg"
         company: "Kaldor"
         twitter: "clare_lisbeth"
-        topic: ""
-        description: ""
+        topic: "Modern Front-end Development workflows"
+        description: "How we're using tools such as Yeoman, Karma and Sass at Kaldor Group to increase productivity and improve our workflow."
         slides_url: ""
       - 
         name: "Josh Emerson"
@@ -269,7 +269,7 @@ events:
         company: "Clearleft"
         twitter: "joshje"
         topic: ""
-        description: ""
+        description: "How did you discover that you wanted to be a front end developer? For most of you it was in your spare time that you developed a passion for coding. Why don’t schools offer a chance for kids to learn how to code? Josh has been running an after school coding club, or [Code Club](http://codeclub.org.uk/) at a primary school in Brighton. He’ll talk about how Code Club came to be, why it’s awesome and show some of the amazing things his kids have created."
         slides_url: ""
   - 
     date: "2013-05-30 19:00"
@@ -287,7 +287,7 @@ events:
         company: "Lonely Planet"
         twitter: "ianfeather"
         topic: "Web fonts vs Web performance"
-        description: ""
+        description: "Web fonts have brought us beautiful online type but they’ve also brought us interminable blank screens while we wait for them to load. Ian Feather will highlight a few different alternatives for moving web fonts off the critical path, dealing with FOUT, and take a look at the performance benefits of each approach."
         slides_url: "http://www.slideshare.net/ianfeather/fel-presentation"
       - 
         name: "Siavash Ghorbani"
@@ -295,7 +295,7 @@ events:
         company: "Tictail"
         twitter: "siavashg"
         topic: ""
-        description: ""
+        description: "The development of JavaScript at Tictail, from zero to Tictail and how Tictail became a front end application that runs in your browser."
         slides_url: ""
       - 
         name: "Jake Archibald"
@@ -303,7 +303,7 @@ events:
         company: "Google"
         twitter: "jaffathecake"
         topic: "Rendering without the lumpy bits"
-        description: ""
+        description: "We’ll look at a series of real-world rendering issues and how to combat them, understanding why particular hacks work, and how sometimes working against the browser can trick it into performing better. Covering basic html layout and animation, GPU interaction and high-dpi (retina) considerations across browsers and devices."
         slides_url: "https://speakerdeck.com/jaffathecake/rendering-without-lumps"
   - 
     date: "2013-04-24 19:00"
@@ -329,7 +329,7 @@ events:
         company: "TheLab"
         twitter: "Rumyra"
         topic: "Building apps for FirefoxOS"
-        description: ""
+        description: "This talk introduces what Firefox OS is and how to start building apps for it, using familiar front end technologies. We’ll also delve into an exciting world of cool api’s that are being currently being developed for devices — like the popular ‘vibration API’."
         slides_url: "https://speakerdeck.com/rumyra/building-apps-for-firefoxos "
       - 
         name: "Patrick Hamann"
@@ -337,7 +337,7 @@ events:
         company: "The Guardian"
         twitter: "patrickhamann"
         topic: "Why performance matters"
-        description: ""
+        description: "Sadly, our websites are getting increasingly slower every year. In the mean time, users are accessing these sites from a magnitude of devices and their expectations for load time are getting higher. Patrick will demonstrate how to accurately measure your websites performance and discuss a few techniques for achieving faster and perceived load."
         slides_url: "https://speakerdeck.com/patrickhamann/why-performance-matters-measuring-your-websites-performance"
   - 
     date: "2013-03-28 19:00"
@@ -355,7 +355,7 @@ events:
         company: "Clearleft"
         twitter: "joshje"
         topic: "Resolution independent designs"
-        description: ""
+        description: "Fonts look great on high dpi displays, but bitmap images, not so much. Josh Emerson will discuss a few techniques for achieving resolution independence on your site including asset fonts, where your sites icons are stored inside a web font, and SVG graphics for vectors that can be interactive."
         slides_url: "https://speakerdeck.com/joshje/asset-fonts"
       - 
         name: "Phil Nash"
@@ -371,7 +371,7 @@ events:
         company: "Clearleft"
         twitter: "paulrobertlloyd"
         topic: "The edge of the Web redux"
-        description: ""
+        description: "Graphic designers have long honed their craft to meet the specific constraints of television. As web designers begin to understand the true nature of our own medium, isn’t about time we did the same?"
         slides_url: "https://speakerdeck.com/paulrobertlloyd/the-edge-of-the-web-redux"
   - 
     date: "2013-02-28 19:00"

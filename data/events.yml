@@ -39,9 +39,9 @@ events:
     duration: 2.5
     writeups: 
       - 
-        author: ""
-        twitter: ""
-        writeup_url: ""
+        author: "Michael Strutt"
+        twitter: "mstrutt_co_uk"
+        writeup_url: "http://mstrutt.co.uk/blog/2014/03/notes-from-front-end-london-march/"
     speakers: 
       - 
         name: "Daniel Grant"

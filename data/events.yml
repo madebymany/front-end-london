@@ -48,14 +48,6 @@ events:
         writeup_url: "http://blog.eventhandler.co.uk/front-end-london-march-2014/"
     speakers: 
       - 
-        name: "Daniel Grant"
-        pic: "2014/03/daniel-grant.png"
-        company: "freelance"
-        twitter: "danieljohngrant"
-        topic: "Exploring CSS3's 3D space"
-        description: "backface-visibility, preserve-3d, translateZ… Since the launch of CSS3, these properties have gradually been creeping into our stylesheets, more often that not, as quick fixes for rendering bugs. But what do these properties actually do? We’ll take a journey through space itself to discover their potential and uncover the mysteries of CSS’s 3D spec."
-        slides_url: "http://codepen.io/collection/gKutL/"
-      - 
         name: "Adam Rogers"
         pic: "2014/03/adam-rogers.jpg"
         company: "Mint Digital"
@@ -63,6 +55,14 @@ events:
         topic: "How to Win Designers and Influence Developers"
         description: "This talk explores ways to hack your team for a more efficient, productive and ultimately happier existence. That’s the good news. The bad news is hacking your team starts with hacking yourself. In 1936, Dale Carnegie published a book called ‘How to Win Friends and Influence People’. What can this and other books teach us about working as part of a modern software team today?"
         slides_url: "https://speakerdeck.com/rodreegez/how-to-win-designers-and-influence-developers"
+      - 
+        name: "Daniel Grant"
+        pic: "2014/03/daniel-grant.png"
+        company: "freelance"
+        twitter: "danieljohngrant"
+        topic: "Exploring CSS3's 3D space"
+        description: "backface-visibility, preserve-3d, translateZ… Since the launch of CSS3, these properties have gradually been creeping into our stylesheets, more often that not, as quick fixes for rendering bugs. But what do these properties actually do? We’ll take a journey through space itself to discover their potential and uncover the mysteries of CSS’s 3D spec."
+        slides_url: "http://codepen.io/collection/gKutL/"
       - 
         name: "Tim Ruffles"
         pic: "2014/03/tim-ruffles.png"

@@ -1,3 +1,5 @@
+<% month_name = Chronic.parse(data.events.events.first.date).strftime('%B').downcase %>
+
 $january: #33a687;
 $february: #3ebeb3;
 $march: #29a6b5;
@@ -11,5 +13,5 @@ $october: #b08a3e;
 $november: #6d8646;
 $december: #327c2e;
 
-$current-month: $<%= Chronic.parse(data.events.events.first.date).strftime('%B').downcase %>;
-/* Foo: $current-month: $<%= Chronic.parse('2014-07-01').strftime('%B').downcase %>; */
+$current-month: $<%= month_name %>;
+$month-name: <%= month_name %>;

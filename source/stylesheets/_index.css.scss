@@ -80,6 +80,18 @@
   text-align: left;
 }
 
+.speaker--tbc {
+  h3 {
+    color: #ccc;
+    font-size: .75em;
+    text-transform: uppercase;
+    letter-spacing: .01em;
+  }
+  .speaker-profile:hover {
+    text-decoration: none;
+  }
+}
+
 .speaker-slides {
   display: block;
   text-align: center;

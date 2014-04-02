@@ -1,6 +1,9 @@
 <div class="speakers-list twelve-columns">
 
   <% event.speakers.each do |speaker| %>
+
+    <% if speaker[:name].present? %>
+
     <div class="speaker column span-four">
       <a class="speaker-profile" href="https://twitter.com/<%= speaker[:twitter] %>">
         <div class="speaker-profile-img" data-icon="">
@@ -15,6 +18,20 @@
         <%= speaker[:description] %>
       </p>
     </div>
+
+    <% else %>
+
+    <div class="speaker column span-four speaker--tbc">
+      <a class="speaker-profile">
+        <div class="speaker-profile-img">
+          <img src="images/speakers/anonymous.png" alt="" width="140" height="140">
+        </div>
+        <h3>To be announced</h3>
+      </a>
+    </div>
+
+    <% end %>
+
   <% end %>
 
 </div>

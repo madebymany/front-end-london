@@ -34,6 +34,40 @@ events:
   #       description: ""
   #       slides_url: ""
   - 
+    date: "2014-04-24 19:00"
+    registration_url: ""
+    duration: 2.5
+    writeups: 
+      - 
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers: 
+      - 
+        name: ""
+        pic: ""
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+      - 
+        name: ""
+        pic: ""
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+      - 
+        name: ""
+        pic: ""
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+  - 
     date: "2014-03-27 19:00"
     registration_url: "http://www.eventbrite.com/e/front-end-london-march-2014-tickets-10941100125"
     duration: 2.5

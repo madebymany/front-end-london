@@ -52,12 +52,12 @@ events:
         description: ""
         slides_url: ""
       - 
-        name: ""
-        pic: ""
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Kaelig Deloumeau-Prigent"
+        pic: "2014/04/kaelig.jpg"
+        company: "The Guardian"
+        twitter: "kaelig"
+        topic: "Bridging the gap between developers and designers with Sass"
+        description: "There is often a vocabulary gap between designers an developers, who should aim towards a ubiquitous way of conversing about colours, typography, viewport sizes, or the responsive grid system of a digital product… To bridge this gap at the Guardian, we use a CSS pre-processor as a communication enabler through the abstractions it allows us to put in place."
         slides_url: ""
       - 
         name: ""

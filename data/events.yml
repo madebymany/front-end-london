@@ -44,12 +44,12 @@ events:
         writeup_url: ""
     speakers: 
       - 
-        name: ""
-        pic: ""
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Peter Gasston"
+        pic: "2014/04/peter-gasston.jpg"
+        company: "rehabstudio"
+        twitter: "stopsatgreen"
+        topic: "Over promised and under delivered"
+        description: "The mobile web arrived suddenly and grew exponentially. It’s created potential markets in new territories all over the world. So why is it so damned annoying to use? This talk will try to find out where we’re going wrong, using copious examples of bad practice and bitter experience."
         slides_url: ""
       - 
         name: "Kaelig Deloumeau-Prigent"

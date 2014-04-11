@@ -80,6 +80,10 @@ events:
         author: "Charlotte Spencer"
         twitter: "charlotteis"
         writeup_url: "http://blog.eventhandler.co.uk/front-end-london-march-2014/"
+      - 
+        author: "Matt Soczywko"
+        twitter: "copybymatt"
+        writeup_url: "http://writing.attending.io/pieces/minimum-viable-pundit-what-went-down-at-front-end-london-12"
     speakers: 
       - 
         name: "Adam Rogers"

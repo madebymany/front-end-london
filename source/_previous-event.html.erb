@@ -4,7 +4,7 @@ e = Chronic.parse(event.date)
 
 %>
 
-<div class="previous-month previous-month--<%= e.strftime('%B').downcase %>">
+<div id="<%= e.strftime('%B-%Y').downcase %>" class="previous-month previous-month--<%= e.strftime('%B').downcase %>">
 
   <header class="previous-month-header previous-month-header--<%= e.strftime('%B').downcase %>">
     <h3><a href="#" class="previous-month-header__toggle" data-icon="+"><%= e.day.ordinalize %> <%= e.strftime('%B, %Y') %></a></h3>

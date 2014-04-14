@@ -44,12 +44,12 @@ events:
         writeup_url: ""
     speakers: 
       - 
-        name: "Peter Gasston"
-        pic: "2014/04/peter-gasston.jpg"
-        company: "rehabstudio"
-        twitter: "stopsatgreen"
-        topic: "Over promised and under delivered"
-        description: "The mobile web arrived suddenly and grew exponentially. It’s created potential markets in new territories all over the world. So why is it so damned annoying to use? This talk will try to find out where we’re going wrong, using copious examples of bad practice and bitter experience."
+        name: "Arran Ross-Paterson"
+        pic: "2014/04/arran-ross-paterson.jpg"
+        company: "Event Handler"
+        twitter: "arranrp"
+        topic: "The world keeps spinning round and round"
+        description: ""
         slides_url: ""
       - 
         name: "Kaelig Deloumeau-Prigent"
@@ -60,12 +60,12 @@ events:
         description: "There is often a vocabulary gap between designers an developers, who should aim towards a ubiquitous way of conversing about colours, typography, viewport sizes, or the responsive grid system of a digital product… To bridge this gap at the Guardian, we use a CSS pre-processor as a communication enabler through the abstractions it allows us to put in place."
         slides_url: ""
       - 
-        name: ""
-        pic: ""
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Peter Gasston"
+        pic: "2014/04/peter-gasston.jpg"
+        company: "rehabstudio"
+        twitter: "stopsatgreen"
+        topic: "Over promised and under delivered"
+        description: "The mobile web arrived suddenly and grew exponentially. It’s created potential markets in new territories all over the world. So why is it so damned annoying to use? This talk will try to find out where we’re going wrong, using copious examples of bad practice and bitter experience."
         slides_url: ""
   - 
     date: "2014-03-27 19:00"

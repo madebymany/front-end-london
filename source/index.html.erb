@@ -55,8 +55,11 @@ is_event_upcoming = ((latest_event_date + latest_event.duration*60*60) > Time.no
 
   </section>
 
+  <% if (is_event_upcoming) %>
   <section class="speakers">
     <h2 class="divider-title">Speakers</h2>
-    <%= partial "speakers", :locals => {:event => latest_event} %>
+    <%= partial "speakers", :locals => {:event => latest_event, :is_event_upcoming => is_event_upcoming} %>
   </section>
+  <% end %>
+  
 </div>

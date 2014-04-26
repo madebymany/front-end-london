@@ -33,7 +33,7 @@ is_event_upcoming = ((latest_event_date + latest_event.duration*60*60) > Time.no
 
     <p>Front-end London is an <strong>evening meetup</strong> hosted by <a href="http://madebymany.co.uk">Made by Many</a> that's dedicated to all aspects of front-end development.</p>
 
-    <p>We aim to cover a wide variety of topics such as CSS, Sass / LESS, RWD and JavaScript, with thought-provoking talks from a variety of speakers.</p>
+    <p>We aim to cover a wide variety of topics around the technology, tools, processes, and experiences of front-end development, with thought-provoking talks from a variety of speakers.</p>
 
     <%=
 
@@ -61,5 +61,18 @@ is_event_upcoming = ((latest_event_date + latest_event.duration*60*60) > Time.no
     <%= partial "speakers", :locals => {:event => latest_event, :is_event_upcoming => is_event_upcoming} %>
   </section>
   <% end %>
-  
+
 </div>
+
+<% content_for :small_cfp do %>
+  <section class="cfp">
+    <div class="site-width twelve-columns">
+      <div class="column span-twelve">
+        <h3>Want to speak at Front-end London?</h3>
+        <p>
+          We’re keen to hear from seasoned speakers and first-timers alike, so please do get in touch if you'd like to propose a talk or make a recommendation for a speaker. For more info check out our <a href="/call-for-speakers.html">call for speakers</a> or contact us through <a href="mailto:fel@madebymany.co.uk">fel@madebymany.co.uk</a> or <a href="http://twitter.com/frontendlondon">@frontendlondon</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+<% end %>

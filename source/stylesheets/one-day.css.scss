@@ -1,3 +1,4 @@
+@import "colors";
 @import "icons";
 @import "base";
 @import "logo";
@@ -14,6 +15,7 @@ $base-font-size: 16px;
 
 body {
 }
+
 
 .page--is-green { background-color: darken($green-color, 10%); }
 .page--is-red { background-color: darken($red-color, 10%); }

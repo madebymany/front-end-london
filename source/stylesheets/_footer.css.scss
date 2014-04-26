@@ -1,10 +1,10 @@
-.call-for-speakers {
+.cfp {
   background: $current-month;
   color: #fff;
   padding: 30px 0;
 }
 
-.call-for-speakers:before {
+.cfp:before {
   content: "";
   display: block;
   width: 0; height: 0;
@@ -16,15 +16,15 @@
   left: 50%;
 }
 
-.call-for-speakers p {
+.cfp p {
   margin: 0;
 }
 
-.call-for-speakers a {
+.cfp a {
   color: #fff;
 }
 
-.call-for-speakers a:hover {
+.cfp a:hover {
   color: darken(#fff,10%);
 }
 

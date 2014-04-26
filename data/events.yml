@@ -1,15 +1,15 @@
 events:
-  # - 
+  # -
   #   date: "2013-10-31 19:00"
   #   registration_url: ""
   #   duration: 2.5
-  #   writeups: 
-  #     - 
+  #   writeups:
+  #     -
   #       author: ""
   #       twitter: ""
   #       writeup_url: ""
-  #   speakers: 
-  #     - 
+  #   speakers:
+  #     -
   #       name: ""
   #       pic: "2013/10/"
   #       company: ""
@@ -17,7 +17,7 @@ events:
   #       topic: ""
   #       description: ""
   #       slides_url: ""
-  #     - 
+  #     -
   #       name: ""
   #       pic: "2013/10/"
   #       company: ""
@@ -25,7 +25,7 @@ events:
   #       topic: ""
   #       description: ""
   #       slides_url: ""
-  #     - 
+  #     -
   #       name: ""
   #       pic: "2013/10/"
   #       company: ""
@@ -33,17 +33,21 @@ events:
   #       topic: ""
   #       description: ""
   #       slides_url: ""
-  - 
+  -
     date: "2014-04-24 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-april-2014-tickets-11279091065"
     duration: 2.5
-    writeups: 
-      - 
+    writeups:
+      -
         author: "Michael Strutt"
         twitter: "mstrutt_co_uk"
         writeup_url: "http://mstrutt.co.uk/blog/2014/04/notes-from-front-end-london-april/"
-    speakers: 
-      - 
+      -
+        author: "Dominic Busby"
+        twitter: "busbytweets"
+        writeup_url: "http://busbyblog.com/posts/return-to-front-end-london"
+    speakers:
+      -
         name: "Arran Ross-Paterson"
         pic: "2014/04/arran-ross-paterson.jpg"
         company: "Event Handler"
@@ -51,7 +55,7 @@ events:
         topic: "The world keeps spinning round and round"
         description: "The importance of educating yourself."
         slides_url: "http://slides.com/arranrp/fel"
-      - 
+      -
         name: "Kaelig Deloumeau-Prigent"
         pic: "2014/04/kaelig.jpg"
         company: "The Guardian"
@@ -59,7 +63,7 @@ events:
         topic: "Bridging the gap between developers and designers with Sass"
         description: "There is often a vocabulary gap between designers an developers, who should aim towards a ubiquitous way of conversing about colours, typography, viewport sizes, or the responsive grid system of a digital product… To bridge this gap at the Guardian, we use a CSS pre-processor as a communication enabler through the abstractions it allows us to put in place."
         slides_url: "http://www.slideshare.net/kaelig/bridging-the-gap-between-designers-and-developers-a-theguardian"
-      - 
+      -
         name: "Peter Gasston"
         pic: "2014/04/peter-gasston.jpg"
         company: "rehabstudio"
@@ -67,25 +71,25 @@ events:
         topic: "Over promised and under delivered"
         description: "The mobile web arrived suddenly and grew exponentially. It’s created potential markets in new territories all over the world. So why is it so damned annoying to use? This talk will try to find out where we’re going wrong, using copious examples of bad practice and bitter experience."
         slides_url: "https://speakerdeck.com/stopsatgreen/over-promised-and-under-delivered"
-  - 
+  -
     date: "2014-03-27 19:00"
     registration_url: "http://www.eventbrite.com/e/front-end-london-march-2014-tickets-10941100125"
     duration: 2.5
-    writeups: 
-      - 
+    writeups:
+      -
         author: "Michael Strutt"
         twitter: "mstrutt_co_uk"
         writeup_url: "http://mstrutt.co.uk/blog/2014/03/notes-from-front-end-london-march/"
-      - 
+      -
         author: "Charlotte Spencer"
         twitter: "charlotteis"
         writeup_url: "http://blog.eventhandler.co.uk/front-end-london-march-2014/"
-      - 
+      -
         author: "Matt Soczywko"
         twitter: "copybymatt"
         writeup_url: "http://writing.attending.io/pieces/minimum-viable-pundit-what-went-down-at-front-end-london-12"
-    speakers: 
-      - 
+    speakers:
+      -
         name: "Adam Rogers"
         pic: "2014/03/adam-rogers.jpg"
         company: "Mint Digital"
@@ -93,7 +97,7 @@ events:
         topic: "How to Win Designers and Influence Developers"
         description: "This talk explores ways to hack your team for a more efficient, productive and ultimately happier existence. That’s the good news. The bad news is hacking your team starts with hacking yourself. In 1936, Dale Carnegie published a book called ‘How to Win Friends and Influence People’. What can this and other books teach us about working as part of a modern software team today?"
         slides_url: "https://speakerdeck.com/rodreegez/how-to-win-designers-and-influence-developers"
-      - 
+      -
         name: "Daniel Grant"
         pic: "2014/03/daniel-grant.png"
         company: "freelance"
@@ -101,7 +105,7 @@ events:
         topic: "Exploring CSS3's 3D space"
         description: "backface-visibility, preserve-3d, translateZ… Since the launch of CSS3, these properties have gradually been creeping into our stylesheets, more often that not, as quick fixes for rendering bugs. But what do these properties actually do? We’ll take a journey through space itself to discover their potential and uncover the mysteries of CSS’s 3D spec."
         slides_url: "http://codepen.io/collection/gKutL/"
-      - 
+      -
         name: "Tim Ruffles"
         pic: "2014/03/tim-ruffles.png"
         company: "SidekickJS"
@@ -109,17 +113,17 @@ events:
         topic: "Can code quality be measured?"
         description: "We talk about code-quality a lot, but it's often just prejudice. Does code quality mean anything beyond “my kind of code”? Is it useful? Can it be measured?"
         slides_url: "http://timruffles.github.io/javascript-code-quality/#/"
-  - 
+  -
     date: "2014-01-30 19:00"
     registration_url: "http://www.eventbrite.com/e/front-end-london-january-2014-tickets-10218879945"
     duration: 2.5
-    writeups: 
-      - 
+    writeups:
+      -
         author: "Michael Strutt"
         twitter: "mstrutt_co_uk"
         writeup_url: "http://mstrutt.co.uk/blog/2014/01/notes-from-front-end-london-january/"
-    speakers: 
-      - 
+    speakers:
+      -
         name: "Todd Motto"
         pic: "2014/01/todd-motto.jpg"
         company: "Appsbroker"
@@ -127,7 +131,7 @@ events:
         topic: "Building the modern Web with AngularJS"
         description: "Todd will be kickstarting your next app by guiding you through some of the most crucial parts of the AngularJS framework. Taking a holistic and high level view, the session will prime you on all the basics and how you can leverage the framework to rapidly develop new applications the modern way, touching on MVC and data-binding methodologies."
         slides_url: "https://speakerdeck.com/toddmotto/building-the-modern-web-with-angularjs"
-      - 
+      -
         name: "Steve Workman"
         pic: "2014/01/steve-workman2.jpg"
         company: "Yell.com"
@@ -135,7 +139,7 @@ events:
         topic: "Are you browsing comfortably?"
         description: "Responsive Web Design has, so far, been about designing and building for the smaller device, but how about bigger devices like TVs? Is the Internet on TV really a thing? Will the next generation consoles push it over the line and into our hearts? How can we make it all work from our sofa and is it even possible?"
         slides_url: "https://speakerdeck.com/steveworkman/are-you-browsing-comfortably"
-      - 
+      -
         name: "Tom Ashworth"
         pic: "2014/01/tom-ashworth2.jpg"
         company: "Twitter"
@@ -143,17 +147,17 @@ events:
         topic: "ServiceWorker and the offline Web"
         description: "Native platforms hold something over the web: we do not have a meaningful way to ensure that, no matter what the connection of the user is like, we can always deliver code and content. ServiceWorker aims to fix this, allowing developers to take control of navigations and resource fetching before they go to the network. We'll go through the state of things today, look at the ServiceWorker proposal and try out the polyfill that you can use today."
         slides_url: "https://speakerdeck.com/phuu/frontendlondon-serviceworker-and-the-offline-web"
-  - 
+  -
     date: "2013-11-28 19:00"
     registration_url: "http://www.eventbrite.com/e/front-end-london-november-tickets-9382728995"
     duration: 2.5
-    writeups: 
-      - 
+    writeups:
+      -
         author: "Charlotte Spencer"
         twitter: "charlotteis"
         writeup_url: "http://blog.eventhandler.co.uk/front-end-london-november/"
-    speakers: 
-      - 
+    speakers:
+      -
         name: "Alex Roche"
         pic: "2013/11/alex-roche.jpeg"
         company: "WeLikePie"
@@ -161,7 +165,7 @@ events:
         topic: "An intro to two frameworks for Arduino"
         description: "An introduction to Johnny Five and Breakout frameworks to write code to run on an Arduino. Not only that, but we can use them to connect to the web too. The practical side effect of this is that we can query web API's for information and create an internet of things in our own home."
         slides_url: "http://www.slideshare.net/AlexanderRoche/how-to-electrocute-yourself-using-the-internet"
-      - 
+      -
         name: "Sébastien Cevey"
         pic: "2013/11/seb.jpg"
         company: "The Guardian"
@@ -169,7 +173,7 @@ events:
         topic: "The Symbiotic Web"
         description: "For some, the Web is the largest graph of information ever created. For others, it's an ubiquitous environment to run applications. Can it be both? By going back to key concepts such as URIs and HTML affordances, we will see how progressive enhancement and emerging semantics are all facets of the same drive to make our data available to humans and machines alike, whether you make static pages or SPAs."
         slides_url: "http://bytes.inso.cc/talks/symbiotic-web/"
-      - 
+      -
         name: "Ian Feather"
         pic: "2013/11/ian-feather.jpeg"
         company: "Lonely Planet"
@@ -177,17 +181,17 @@ events:
         topic: "Fundamentals of Front End Ops"
         description: "Working on large sites with many engineers requires some new skills outside of the trinity of HTML, CSS and JS. Unfortunately, the catch 22 is that often the only way to learn these skills is to actually work on a large site. We'll cover the fundamentals of Front End Operations and break down this barrier using the knowledge I've learnt over the past two years in a DevOps environment."
         slides_url: "http://www.ianfeather.co.uk/presentations/front-end-ops/"
-  - 
+  -
     date: "2013-10-31 19:00"
     registration_url: "http://www.eventbrite.com/e/front-end-london-october-tickets-8762483825"
     duration: 2.5
-    writeups: 
-      - 
+    writeups:
+      -
         author: ""
         twitter: ""
         writeup_url: ""
-    speakers: 
-      - 
+    speakers:
+      -
         name: "James Cryer"
         pic: "2013/10/james-cryer.jpg"
         company: "Huddle"
@@ -195,7 +199,7 @@ events:
         topic: "UI testing with PhantomCSS"
         description: "In the age of SPA’s and responsive layouts, the design of UI is more important than ever and yet woefully under supported by today’s development workflows and testing strategies.  We need to take a step back and reconsider what ‘unit’ testing really means and how automated visual regression testing tools like PhantomCSS can help us maintain and change the most fragile code in our websites, our CSS."
         slides_url: "https://speakerdeck.com/jamescryer/phantomcss-complete-ui-testing"
-      - 
+      -
         name: "Tom Hamshere"
         pic: "2013/10/tom-hamshere.jpg"
         company: "Twitter"
@@ -203,7 +207,7 @@ events:
         topic: "Flight, Twitter's component-based JavaScript framework"
         description: "A brief dive in to Flight, Twitter's component-based JavaScript framework, covering why Flight was created and how you can use it to create simple, scalable and performant web applications."
         slides_url: "https://docs.google.com/presentation/d/1owPNN0Vz44UUQJ3VU62PPE3aiNjiLUdzex9gVwx-ogo/pub?start=false&loop=false&delayms=3000#slide=id.p"
-      - 
+      -
         name: "Ramon Lapenta"
         pic: "2013/10/ramon-lapenta.jpg"
         company: "Cyber-Duck"
@@ -211,17 +215,17 @@ events:
         topic: "Myths about CSS preprocessors"
         description: "This talk will break some of the myths regarding pre-processors and explain how they can help you be more efficient coding CSS, by showing examples and practical information about them, available tools, and some useful techniques to get you started and get the most out of them and put you in the right track."
         slides_url: "http://www.slideshare.net/ramono1/myths-about-css-pre-processors"
-  - 
+  -
     date: "2013-08-29 19:00"
     registration_url: "http://www.eventbrite.com/e/front-end-london-august-tickets-7801812431"
     duration: 2.5
-    writeups: 
-      - 
+    writeups:
+      -
         author: "Charlotte Spencer"
         twitter: "charlotteis"
         writeup_url: "http://blog.eventhandler.co.uk/front-end-london-august-2013/"
-    speakers: 
-      - 
+    speakers:
+      -
         name: "Adam Onishi"
         pic: "2013/08/adam.jpg"
         company: "Architect"
@@ -229,7 +233,7 @@ events:
         topic: "Nurturing the roots"
         description: "Web development has a plethora of tools to learn and evolving technologies to keep up with. It's easy to be overwhelmed. To combat this we should be focusing on the core skills of our field first, growing our skill set over time, adding tools and systems as we need them. The vibrant community in this industry makes that easy, with experienced developers always out there to help others in so many ways. Not forgetting that we can all be novices in some form so sharing with the community whatever your level will always be useful to someone at sometime."
         slides_url: "https://speakerdeck.com/onishiweb/nurturing-the-roots"
-      - 
+      -
         name: "Laura Kalbag"
         pic: "2013/08/laura.jpg"
         company: "freelance"
@@ -237,7 +241,7 @@ events:
         topic: "Designing for accessibility"
         description: "There are two dangerous myths when it comes to accessibility: 1, accessibility only affects a few users. 2, accessibility is something which is applied during development. This talk will include guidelines for top accessible design considerations, examples of the mistakes designers make again and again, and tips to take away and use in your next project, making your interfaces a better, and more inclusive, experience"
         slides_url: "https://speakerdeck.com/laurakalbag/designing-for-accessibility"
-      - 
+      -
         name: "Ben Howdle"
         pic: "2013/08/ben.jpg"
         company: "KashFlow"
@@ -245,17 +249,17 @@ events:
         topic: "Will the real DOM manipulator please stand up"
         description: "Without a doubt, jQuery has been tremendous in standardising browser quirks and abstracting more verbose native JavaScript methods. Since it's inception in 2006, the popular library has been a 'go to' for many a developer and designer. However, in recent years, native JavaScript has got all grown up and improved a lot of it's methods to be more concise and readable. I hope to give you a primer on modern JavaScript techniques for managing the DOM and AJAX without using jQuery!"
         slides_url: "http://slid.es/benhowdle89/real-dom-manipulator"
-  - 
+  -
     date: "2013-07-25 19:00"
     registration_url: "http://www.eventbrite.com/e/front-end-london-july-tickets-7330039345"
     duration: 2.5
-    writeups: 
-      - 
+    writeups:
+      -
         author: ""
         twitter: ""
         writeup_url: ""
-    speakers: 
-      - 
+    speakers:
+      -
         name: "Frances Berriman"
         pic: "2013/07/frances.jpg"
         company: "GDS"
@@ -263,7 +267,7 @@ events:
         topic: ""
         description: "Building amazing digital services is a dream we all have, but many of us are working for companies that aren't quite with the programme yet. So how on Earth would we manage to do it in one of the oldest, red-tapped, institutions in the UK?  I'll show you how we managed to restate the mission for the government's digital services using our Design Principles."
         slides_url: ""
-      - 
+      -
         name: "Shaun Dunne"
         pic: "2013/07/shaun.jpg"
         company: "SapientNitro"
@@ -271,7 +275,7 @@ events:
         topic: ""
         description: "A solid introduction to using Grunt if you’ve never used it before and maybe some additional goodies for those who are already using it. Whatever your experience with build scripts and task automation, you will leave with the urge to bin those Ant scripts and get up and running with Grunt."
         slides_url: ""
-      - 
+      -
         name: "Edd Sowden"
         pic: "2013/07/edd.jpg"
         company: "GDS"
@@ -279,17 +283,17 @@ events:
         topic: "Using SASS on GOV.UK"
         description: "Responsive design might be easy enough for a small blog but how does it scale to a large government website? At GOV.UK we have managed to create a responsive site powered by over 18,000 lines of Sass. Learn how we scale our CSS approach to work across numerous teams while giving a coherent experience."
         slides_url: "https://speakerdeck.com/edds/using-sass-on-gov-dot-uk"
-  - 
+  -
     date: "2013-06-27 19:00"
     registration_url: "http://www.eventbrite.com/e/front-end-london-june-tickets-7031640827"
     duration: 2.5
-    writeups: 
-      - 
+    writeups:
+      -
         author: ""
         twitter: ""
         writeup_url: ""
-    speakers: 
-      - 
+    speakers:
+      -
         name: "Ben Scott"
         pic: "2013/06/ben.jpg"
         company: "BBC"
@@ -297,7 +301,7 @@ events:
         topic: "Typography for developers"
         description: "It has been said that the web is 90% typography, but what makes good typography? Ben Scott shows how to get started creating readable text and how CSS preprocessors can be used to take some of the thinking away."
         slides_url: "http://www.reload.me.uk/talk-typography-for-developers/#/"
-      - 
+      -
         name: "Clare Evans & Mark Jones"
         pic: "2013/06/clare.jpg"
         company: "Kaldor"
@@ -305,7 +309,7 @@ events:
         topic: "Modern Front-end Development workflows"
         description: "How we're using tools such as Yeoman, Karma and Sass at Kaldor Group to increase productivity and improve our workflow."
         slides_url: ""
-      - 
+      -
         name: "Josh Emerson"
         pic: "2013/06/josh.jpeg"
         company: "Clearleft"
@@ -313,17 +317,17 @@ events:
         topic: ""
         description: "How did you discover that you wanted to be a front end developer? For most of you it was in your spare time that you developed a passion for coding. Why don’t schools offer a chance for kids to learn how to code? Josh has been running an after school coding club, or [Code Club](http://codeclub.org.uk/) at a primary school in Brighton. He’ll talk about how Code Club came to be, why it’s awesome and show some of the amazing things his kids have created."
         slides_url: ""
-  - 
+  -
     date: "2013-05-30 19:00"
     registration_url: "http://www.eventbrite.com/e/front-end-london-may-tickets-6617020687"
     duration: 2.5
-    writeups: 
-      - 
+    writeups:
+      -
         author: ""
         twitter: ""
         writeup_url: ""
-    speakers: 
-      - 
+    speakers:
+      -
         name: "Ian Feather"
         pic: "2013/05/ian.jpg"
         company: "Lonely Planet"
@@ -331,7 +335,7 @@ events:
         topic: "Web fonts vs Web performance"
         description: "Web fonts have brought us beautiful online type but they’ve also brought us interminable blank screens while we wait for them to load. Ian Feather will highlight a few different alternatives for moving web fonts off the critical path, dealing with FOUT, and take a look at the performance benefits of each approach."
         slides_url: "http://www.slideshare.net/ianfeather/fel-presentation"
-      - 
+      -
         name: "Siavash Ghorbani"
         pic: "2013/05/siavash.jpg"
         company: "Tictail"
@@ -339,7 +343,7 @@ events:
         topic: ""
         description: "The development of JavaScript at Tictail, from zero to Tictail and how Tictail became a front end application that runs in your browser."
         slides_url: ""
-      - 
+      -
         name: "Jake Archibald"
         pic: "2013/05/jake.jpg"
         company: "Google"
@@ -347,17 +351,17 @@ events:
         topic: "Rendering without the lumpy bits"
         description: "We’ll look at a series of real-world rendering issues and how to combat them, understanding why particular hacks work, and how sometimes working against the browser can trick it into performing better. Covering basic html layout and animation, GPU interaction and high-dpi (retina) considerations across browsers and devices."
         slides_url: "https://speakerdeck.com/jaffathecake/rendering-without-lumps"
-  - 
+  -
     date: "2013-04-24 19:00"
     registration_url: "http://www.eventbrite.com/e/front-end-london-april-tickets-6102377375"
     duration: 2.5
-    writeups: 
-      - 
+    writeups:
+      -
         author: "Sophie Plimbley"
         twitter: "plimbs"
         writeup_url: "http://clock.co.uk/creative-blogs/front-end-london-april"
-    speakers: 
-      - 
+    speakers:
+      -
         name: "Ricky Clegg"
         pic: "2013/04/ricky.png"
         company: "Burrows"
@@ -365,7 +369,7 @@ events:
         topic: ""
         description: ""
         slides_url: ""
-      - 
+      -
         name: "Ruth John"
         pic: "2013/04/ruth.jpg"
         company: "TheLab"
@@ -373,7 +377,7 @@ events:
         topic: "Building apps for FirefoxOS"
         description: "This talk introduces what Firefox OS is and how to start building apps for it, using familiar front end technologies. We’ll also delve into an exciting world of cool api’s that are being currently being developed for devices — like the popular ‘vibration API’."
         slides_url: "https://speakerdeck.com/rumyra/building-apps-for-firefoxos "
-      - 
+      -
         name: "Patrick Hamann"
         pic: "2013/04/patrick.jpg"
         company: "The Guardian"
@@ -381,17 +385,17 @@ events:
         topic: "Why performance matters"
         description: "Sadly, our websites are getting increasingly slower every year. In the mean time, users are accessing these sites from a magnitude of devices and their expectations for load time are getting higher. Patrick will demonstrate how to accurately measure your websites performance and discuss a few techniques for achieving faster and perceived load."
         slides_url: "https://speakerdeck.com/patrickhamann/why-performance-matters-measuring-your-websites-performance"
-  - 
+  -
     date: "2013-03-28 19:00"
     registration_url: "http://www.eventbrite.com/e/front-end-london-march-tickets-5751910118"
     duration: 2.5
-    writeups: 
-      - 
+    writeups:
+      -
         author: "Sophie Plimbley"
         twitter: "plimbs"
         writeup_url: "http://clock.co.uk/creative-blogs/front-end-london-march"
-    speakers: 
-      - 
+    speakers:
+      -
         name: "Josh Emerson"
         pic: "2013/03/josh.jpeg"
         company: "Clearleft"
@@ -399,7 +403,7 @@ events:
         topic: "Resolution independent designs"
         description: "Fonts look great on high dpi displays, but bitmap images, not so much. Josh Emerson will discuss a few techniques for achieving resolution independence on your site including asset fonts, where your sites icons are stored inside a web font, and SVG graphics for vectors that can be interactive."
         slides_url: "https://speakerdeck.com/joshje/asset-fonts"
-      - 
+      -
         name: "Phil Nash"
         pic: "2013/03/phil.jpg"
         company: "Mint Digital"
@@ -407,7 +411,7 @@ events:
         topic: "CSS laid out"
         description: ""
         slides_url: "http://philnash.github.io/css-laid-out/"
-      - 
+      -
         name: "Paul Lloyd"
         pic: "2013/03/paul.png"
         company: "Clearleft"
@@ -415,21 +419,21 @@ events:
         topic: "The edge of the Web redux"
         description: "Graphic designers have long honed their craft to meet the specific constraints of television. As web designers begin to understand the true nature of our own medium, isn’t about time we did the same?"
         slides_url: "https://speakerdeck.com/paulrobertlloyd/the-edge-of-the-web-redux"
-  - 
+  -
     date: "2013-02-28 19:00"
     registration_url: "http://www.eventbrite.com/e/front-end-london-february-tickets-5358258696"
     duration: 2.5
-    writeups: 
-      - 
+    writeups:
+      -
         author: "Charlotte Spencer"
         twitter: "@charlotteis"
         writeup_url: "http://charlotteis.tumblr.com/post/44252685703/frontendlondon-february"
-      - 
+      -
         author: "Sophie Plimbley"
         twitter: "@plimbs"
         writeup_url: "http://clock.co.uk/creative-blogs/clock-goes-to-front-end-london"
-    speakers: 
-      - 
+    speakers:
+      -
         name: "Alasdair Monk"
         pic: "2013/02/al-monk.jpeg"
         company: "GoCardless"
@@ -437,7 +441,7 @@ events:
         topic: "Building for tomorrows devices"
         description: ""
         slides_url: "http://www.slideshare.net/alilm/designing-a-better-workflow"
-      - 
+      -
         name: "Mairead Buchan"
         pic: "2013/02/mairead.jpg"
         company: "Head London"
@@ -445,7 +449,7 @@ events:
         topic: "Kinect in the browser"
         description: ""
         slides_url: ""
-      - 
+      -
         name: "Jack Franklin"
         pic: "2013/02/jack.jpeg"
         company: "Javascript Playground"
@@ -453,17 +457,17 @@ events:
         topic: "Introduction to modular JS"
         description: ""
         slides_url: "https://speakerdeck.com/jackfranklin/modular-javascript-fel-feb-2013"
-  - 
+  -
     date: "2013-01-31 19:00"
     registration_url: ""
     duration: 2.5
-    writeups: 
-      - 
+    writeups:
+      -
         author: ""
         twitter: ""
         writeup_url: ""
-    speakers: 
-      - 
+    speakers:
+      -
         name: "Andy Hume"
         pic: "2013/01/andy-hume.jpg"
         company: "The Guardian"
@@ -471,7 +475,7 @@ events:
         topic: "Responsive Guardian"
         description: ""
         slides_url: "https://speakerdeck.com/andyhume/responsive-guardian"
-      - 
+      -
         name: "Anna Powell-Smith"
         pic: "2013/01/anna-powell-smith.png"
         company: "freelance"
@@ -479,7 +483,7 @@ events:
         topic: "D3.JS: Data-driven Delight"
         description: ""
         slides_url: "http://anna.ps/talks/fel/"
-      - 
+      -
         name: "Charlie Perrins"
         pic: "2013/01/charlie-perrins.jpg"
         company: "Dare"

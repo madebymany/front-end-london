@@ -75,7 +75,7 @@ a.previous-month-header__toggle:hover {
 }
 
 .previous-month-header--january { background-color: $january; }
-.previous-month--january .speaker .h3,
+.previous-month--january .speaker h3,
 .previous-month--january .speaker a { color: $january; }
 .previous-month--january .speaker-profile-img:before { background-color: rgba($january, 0.5%); }
 

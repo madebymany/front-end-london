@@ -307,8 +307,8 @@ events:
         company: "Kaldor"
         twitter: "clare_lisbeth"
         topic: "Modern Front-end Development workflows"
-        description: "How we're using tools such as Yeoman, Karma and Sass at Kaldor Group to increase productivity and improve our workflow."
-        slides_url: ""
+        description: "How we’re using tools such as Yeoman, Karma and Sass at Kaldor Group to increase productivity and improve our workflow."
+        slides_url: "http://www.slideshare.net/clare_lisbeth/frontend-london-one-day-2014"
       -
         name: "Josh Emerson"
         pic: "2013/06/josh.jpeg"

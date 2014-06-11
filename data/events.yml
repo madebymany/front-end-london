@@ -34,6 +34,40 @@ events:
   #       description: ""
   #       slides_url: ""
   -
+    date: "2014-06-26 19:00"
+    registration_url: ""
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Mike MacCana"
+        pic: "2014/06/mike-maccana.jpg"
+        company: "Sandpit Labs"
+        twitter: "mikemaccana"
+        topic: "Using the Web with super-powers"
+        description: "Historical fact: 2500 years ago Xerces, the God-King of the Persians, built an empire based entirely on Chrome Extensions. Today we will recreate history."
+        slides_url: ""
+      -
+        name: "Ashley Nolan"
+        pic: "2014/06/ashley-nolan.jpg"
+        company: "TMW"
+        twitter: "AshNolan_"
+        topic: ""
+        description: ""
+        slides_url: ""
+      -
+        name: ""
+        pic: "2014/06/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+  -
     date: "2014-05-29 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-may-2014-tickets-11635553253"
     duration: 2.5
@@ -50,7 +84,7 @@ events:
         twitter: "benmacgowan"
         topic: "The Era of Gratuitous Animations"
         description: "With technologies constantly evolving, it is becoming easier to bring our interfaces alive with animations. But that doesn’t necessarily mean we should always make that piece of text fly in like it’s Superman. In this talk, we will explore the things we should be considering when making these decisions, looking at interfaces that got it right and others, not so much."
-        slides_url: ""
+        slides_url: "https://www.youtube.com/watch?v=_FtN4OzTNCI"
       -
         name: "Mark Jones"
         pic: "2014/05/mark-jones.jpg"
@@ -58,7 +92,7 @@ events:
         twitter: "mark_jones"
         topic: "Be Famous?"
         description: "An introduction to the <a href=\"https://famo.us/\">Famo.us</a> JavaScript platform. The talk will cover the fundamentals of Famo.us using live examples whilst questioning whether this is the framework that will finally bring native performance to web applications."
-        slides_url: ""
+        slides_url: "https://www.youtube.com/watch?v=S9U9HUb2UWA"
       -
         name: "Anna Dahlström"
         pic: "2014/05/anna-dahlstrom.jpg"
@@ -66,7 +100,7 @@ events:
         twitter: "annadahlstrom"
         topic: "10 Things That Excite Me About the Future"
         description: "When you look back at the technological advances that have taken place over the last few years, it’s quite mind blowing. But what lies ahead is even more exciting. In this talk Anna is going to share what excites her the most about the future. From the small to the big things in design, technology and how we work."
-        slides_url: ""
+        slides_url: "https://www.youtube.com/watch?v=jryFxpDgi_M"
   -
     date: "2014-04-24 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-april-2014-tickets-11279091065"

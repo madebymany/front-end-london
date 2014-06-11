@@ -5,6 +5,7 @@ title: Front-end London - A meetup for front-end developers, hosted by Made by M
 
 latest_event = data.events.events.first
 latest_event_date = Chronic.parse(latest_event.date)
+release_date = Chronic.parse(latest_event.tickets_released)
 is_event_upcoming = ((latest_event_date + latest_event.duration*60*60) > Time.now)
 
 %>
@@ -35,17 +36,22 @@ is_event_upcoming = ((latest_event_date + latest_event.duration*60*60) > Time.no
 
     <p>We aim to cover a wide variety of topics around the technology, tools, processes, and experiences of front-end development, with thought-provoking talks from a variety of speakers.</p>
 
-    <%=
 
-    if is_event_upcoming
-      if latest_event.registration_url.present?
-        "<a href=\"#{latest_event.registration_url}\" class=\"cta--primary\" target=\"_blank\">Get tickets</a>"
-      else
-        '<p><em>Tickets not yet released</em></p>'
-      end
-    end
+    <% if is_event_upcoming %>
 
-    %>
+      <% if latest_event.registration_url.present? %>
+        <%= link_to "Get tickets", latest_event.registration_url, class: "cta--primary", target: "_blank" %>
+      <% end %>
+
+      <% if release_date > Time.now %>
+        Tickets will be released on <%= release_date.strftime('%B %-d') %> at 10am and 4pm
+      <% end %>
+
+      <% if latest_event.tickets_released.empty? && latest_event.registration_url.empty? %>
+        <p><em>Tickets not yet released</em></p>
+      <% end %>
+ 
+    <% end %>
 
     <form action="http://madebymany.us6.list-manage.com/subscribe/post?u=2069e586d651ff50b3844c372&amp;id=12bc29b23c" method="post" name="subscribe-form">
       <p>Subscribe to our mailing list for ticket reminders.</p>

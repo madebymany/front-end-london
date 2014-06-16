@@ -53,19 +53,19 @@ events:
         description: "Historical fact: 2500 years ago Xerces, the God-King of the Persians, built an empire based entirely on Chrome Extensions. Today we will recreate history."
         slides_url: ""
       -
+        name: "Clare Evans"
+        pic: "2014/06/clare-evans.jpg"
+        company: "Kaldor Group"
+        twitter: "clare_lisbeth"
+        topic: "Why is using typography on Web so difficult?"
+        description: "A quick dive into the state of typography on Web, a look at some exciting new things we’ll be able to do in the near future, and a scrutinising eye on why browsers render stuff in certain ways."
+        slides_url: ""
+      -
         name: "Ashley Nolan"
         pic: "2014/06/ashley-nolan.jpg"
         company: "TMW"
         twitter: "AshNolan_"
-        topic: ""
-        description: ""
-        slides_url: ""
-      -
-        name: ""
-        pic: "2014/06/"
-        company: ""
-        twitter: ""
-        topic: ""
+        topic: "Using Node.js to hook into realtime data APIs on the Web"
         description: ""
         slides_url: ""
   -

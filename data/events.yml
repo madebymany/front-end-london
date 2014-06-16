@@ -65,8 +65,8 @@ events:
         pic: "2014/06/ashley-nolan.jpg"
         company: "TMW"
         twitter: "AshNolan_"
-        topic: "Using Node.js to hook into realtime data APIs on the Web"
-        description: ""
+        topic: "Know Thy Interaction"
+        description: "Visual Interaction on the web has progressed at a fascinating rate over the last few years. We’ll be looking back at this evolution, how we can learn from the past and at some of the most inspiring interaction work being developed at the moment, as well as what could be shaping our interaction experiences in the years to come."
         slides_url: ""
   -
     date: "2014-05-29 19:00"

@@ -29,6 +29,13 @@
   &::-webkit-input-placeholder { @content }
 }
 
+@mixin appearance($value) {
+  -webkit-appearance: $value;
+  -moz-appearance: $value;
+  -o-appearance: $value;
+  appearance: $value;
+}
+
 $base-font-size: 1.2em;
 $large-font-size: 1.5em;
 
@@ -169,6 +176,7 @@ body {
   padding: 0;
   border: none;
   outline: none;
-  border-radius: none;
+  border-radius: 0;
   background-color: transparent;
+  @include appearance(none);
 }

@@ -51,7 +51,7 @@ events:
         twitter: "mikemaccana"
         topic: "BROWSE THE WEB LIKE XERCES, THE GOD-KING OF THE PERSIANS"
         description: "Historical fact: 2500 years ago Xerces, the God-King of the Persians, built an empire based entirely on Chrome Extensions. Today we will recreate history."
-        slides_url: ""
+        slides_url: "http://mikemaccana.github.io/jsfest/"
       -
         name: "Clare Evans"
         pic: "2014/06/clare-evans.jpg"
@@ -59,7 +59,7 @@ events:
         twitter: "clare_lisbeth"
         topic: "Why is using typography on Web so difficult?"
         description: "A quick dive into the state of typography on Web, a look at some exciting new things we’ll be able to do in the near future, and a scrutinising eye on why browsers render stuff in certain ways."
-        slides_url: ""
+        slides_url: "http://www.slideshare.net/clare_lisbeth/web-typography-in-digital-publishing"
       -
         name: "Ashley Nolan"
         pic: "2014/06/ashley-nolan.jpg"
@@ -67,7 +67,7 @@ events:
         twitter: "AshNolan_"
         topic: "Know Thy Interaction"
         description: "Visual Interaction on the web has progressed at a fascinating rate over the last few years. We’ll be looking back at this evolution, how we can learn from the past and at some of the most inspiring interaction work being developed at the moment, as well as what could be shaping our interaction experiences in the years to come."
-        slides_url: ""
+        slides_url: "http://ashleynolan.co.uk/blog/know-thy-interaction"
   -
     date: "2014-05-29 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-may-2014-tickets-11635553253"

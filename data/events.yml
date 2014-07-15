@@ -45,12 +45,12 @@ events:
         writeup_url: ""
     speakers:
       -
-        name: ""
-        pic: ""
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Peter O'Shaughnessy"
+        pic: "2014/07/poshaughnessy.jpg"
+        company: "Future Technologies, Pearson"
+        twitter: "poshaughnessy"
+        topic: "Interfaces of the Future... and How to Hack Around With Them Now"
+        description: "Virtual Reality, Smartwatches, Google Glass... Might one of these be the \"next big thing\" after Mobile? And what will these new kind of devices mean for Web developers? Starting with Oculus Rift and Google Cardboard, let's get prepared by hacking around with some good old JavaScript..."
         slides_url: ""
       -
         name: "Jonas Ohlsson"

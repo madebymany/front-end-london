@@ -34,6 +34,41 @@ events:
   #       description: ""
   #       slides_url: ""
   -
+    date: "2014-07-31 19:00"
+    registration_url: "http://www.eventbrite.com/e/front-end-london-july-2014-tickets-12286161239"
+    tickets_released: "2017-07-22 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: ""
+        pic: ""
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+      -
+        name: "Jonas Ohlsson"
+        pic: "2014/07/jonas-ohlsson--large.jpg"
+        company: "Independant"
+        twitter: "pocketjoso"
+        topic: "Automating Faster Page Rendering"
+        description: "You might have heard of critical path CSS and its impact on performance, but how can we take care of this problem today? Doing it manually is time consuming, error prone, and a nightmare to maintain. In this talk I will show you how to automate the process, using a tool that I built for this purpose."
+        slides_url: ""
+      -
+        name: ""
+        pic: ""
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+  -
     date: "2014-06-26 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-june-2014-tickets-11933063113"
     tickets_released: "2014-06-17"

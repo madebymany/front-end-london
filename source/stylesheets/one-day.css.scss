@@ -34,6 +34,10 @@ $color-primary-accent: darken($color-primary, 2%);
   border-radius: 0;
 }
 
+.body-copy {
+  font-size:24px;
+}
+
 .button--fixed {
   display: block;
   width: 14em;
@@ -120,7 +124,7 @@ $color-primary-accent: darken($color-primary, 2%);
 
 .signup__blurb {
   margin: 2em 0;
-  font-size: 1.1em;
+  font-size: 24px;
 }
 
 .signup-form__title {
@@ -186,6 +190,12 @@ $color-primary-accent: darken($color-primary, 2%);
 
 .content {
   @extend .wrap;
+  max-width:37em;
+}
+
+a.content-link {
+  color:$color-primary-accent;
+  font-weight:bold;
 }
 
 .content__section {
@@ -195,7 +205,7 @@ $color-primary-accent: darken($color-primary, 2%);
 .content__title {
   font-family: "Nanami", sans-serif;
   font-weight: 200;
-  font-size: 1.2em;
+  font-size: 30px;
   text-transform: uppercase;
 }
 

@@ -29,13 +29,15 @@
   text-align: center;
 }
 
-.speaker h3,
-.speaker .h3 {
+.speaker__name {
   margin: 10px 0 0 0;
+  font-size: 1.17em;
+  display:block;
+  font-weight:bold;
   color: $current-month;
 }
 
-.speaker em {
+.speaker__company {
   color: #909090;
 }
 
@@ -76,8 +78,17 @@
   opacity: 1;
 }
 
-.speaker p {
+.speaker__topic {
   text-align: left;
+}
+
+.speaker__topic {
+  margin-top:.8em;
+}
+
+.speaker__topic-title {
+  font-size:1.1em;
+  margin:1em 0 .8em;
 }
 
 .speaker--tbc {

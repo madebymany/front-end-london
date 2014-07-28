@@ -9,12 +9,12 @@
         <div class="speaker-profile-img" data-icon="">
           <img src="images/speakers/<%= speaker[:pic] %>" alt="<%= speaker[:name] %>" width="140" height="140">
         </div>
-        <h3><%= speaker[:name] %></h3>
+        <cite class="speaker__name"><%= speaker[:name] %></cite>
       </a>
 
-      <em class="speaker-company"><%= speaker[:company] %></em>
-      <p class="speaker-topic">
-        <strong><%= speaker[:topic] %></strong><br>
+      <em class="speaker__company"><%= speaker[:company] %></em>
+      <h3 class="speaker__topic-title"><%= speaker[:topic] %></h3>
+      <p class="speaker__topic">
         <%= speaker[:description] %>
       </p>
     </div>

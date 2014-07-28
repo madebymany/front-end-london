@@ -47,7 +47,7 @@ events:
       -
         name: "Jonas Ohlsson"
         pic: "2014/07/jonas-ohlsson--large.jpg"
-        company: "Independant"
+        company: "Independent"
         twitter: "pocketjoso"
         topic: "Automating Faster Page Rendering"
         description: "You might have heard of critical path CSS and its impact on performance, but how can we take care of this problem today? Doing it manually is time consuming, error prone, and a nightmare to maintain. In this talk I will show you how to automate the process, using a tool that I built for this purpose."

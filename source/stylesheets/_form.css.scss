@@ -6,6 +6,7 @@
   background: #fff !important;
   text-transform: none;
   color: inherit;
+  @include appearance(none);
 
   &:focus {
     outline: none;

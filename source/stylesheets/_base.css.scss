@@ -23,6 +23,19 @@
   transition: $property $duration $delay $function;
 }
 
+@mixin placeholder {
+  &.placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-webkit-input-placeholder { @content }
+}
+
+@mixin appearance($value) {
+  -webkit-appearance: $value;
+  -moz-appearance: $value;
+  -o-appearance: $value;
+  appearance: $value;
+}
+
 $base-font-size: 1.2em;
 $large-font-size: 1.5em;
 
@@ -156,4 +169,14 @@ body {
 
 .column {
   padding: 1em;
+}
+
+.unstyled-input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  background-color: transparent;
+  @include appearance(none);
 }

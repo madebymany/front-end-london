@@ -1,344 +1,254 @@
+@import "normalize";
 @import "colors";
 @import "icons";
 @import "base";
 @import "logo";
 
-$green-color: #25A787;
-$red-color: #D73654;
-$blue-color: #16A6B6;
+$color-primary: #8c6eff;
+$color-primary-accent: darken($color-primary, 2%);
 
-$base-font-size: 16px;
-
-@function px-to-em($px, $base: $base-font-size) {
-  @return ($px / $base) * 1em;
+@font-face {
+  font-family: "Nanami";
+  font-weight: normal;
+  font-style: normal;
+  src: url("fonts/nanami-regular-webfont.eot");
+  src: url("fonts/nanami-regular-webfont.eot?#iefix") format("embedded-opentype"),
+       url("fonts/nanami-regular-webfont.woff") format("woff"),
+       url("fonts/nanami-regular-webfont.ttf") format("truetype");
 }
 
-body {
-}
-
-
-.page--is-green { background-color: darken($green-color, 10%); }
-.page--is-red { background-color: darken($red-color, 10%); }
-.page--is-blue { background-color: darken($blue-color, 10%); }
-
-.opening {
-  text-align: center;
-  border: 8px solid $green-color;
-  background: url("../images/one-day/bg_1.jpg") no-repeat center center;
-  background-size: cover;
-}
-
-.js .opening {
-  position: absolute;
-  z-index: 1;
-  top: 0; left: 0;
-  bottom: -3px; right: 0;
-}
-
-.touch .opening {
-  position: relative;
-}
-
-.opening:after {
-  content: "";
-  position: absolute;
-  top: 0; right: 0;
-  bottom: 0; left: 0;
-  background-color: rgba(darken($green-color, 10%), 0.8);
-}
-
-.site-header,
-.signup,
-.fixed-bottom {
-  position: relative;
-  z-index: 1;
-}
-
-.site-header__primary {
-  padding: px-to-em(50px) 2em;
-}
-
-.signup {
-  border: px-to-em(3px) solid #fff;
-  border-radius: px-to-em(5px);
-  margin: 0 auto;
-  width: px-to-em(480px);
-  padding: px-to-em(30px) px-to-em(80px);
-  color: #fff;
-  opacity: 0;
-
-  @include transition-delay(opacity, 0.5s, 0.5s, ease-in);
-}
-
-.body--is-loaded .signup {
-  opacity: 1;
-}
-
-.signup__title {
-  font-size: px-to-em(48px);
-  text-transform: uppercase;
-}
-
-.signup__details {
-  font-size: px-to-em(24px);
-  font-weight: 700;
-}
-
-.signup__cta {
-  margin: px-to-em(20px) 0 px-to-em(10px) ;
-}
-
-.signup-form__email {
-  border: 0;
-  border-bottom: 1px solid #fff;
-  background: transparent;
-  text-align: center;
-  padding: px-to-em(8px);
-  color: #fff;
-  width: 50%;
-
-  &:focus {
-    outline: 0;
+@mixin nanami-offset {
+  span {
+    position: relative;
+    top: .13em;
   }
 }
 
-.signup-form__email::-webkit-input-placeholder { color: rgba(255,255,255,0.6); }
-.signup-form__email::-moz-placeholder { color: rgba(255,255,255,0.6); }
-.signup-form__email:-moz-placeholder { color: rgba(255,255,255,0.6); }
-.signup-form__email:-ms-input-placeholder { color: rgba(255,255,255,0.6); }
+.button {
+  @extend .cta;
+  @include transition(background-color, 50ms, linear);
+  @include nanami-offset;
+  padding: 1.2em;
+  font-family: "Nanami", sans-serif;
+  border: none;
+  border-radius: 0;
+}
 
-.cta {
-  color: #fff;
-  border-color: #fff;
-  font-weight: bold;
+.body-copy {
+  font-size:24px;
+}
+
+.button--fixed {
   display: block;
-  margin: px-to-em(20px) auto;
-  background-color: transparent;
+  width: 14em;
+  margin: auto;
   text-align: center;
-
-  &:hover {
-    background-color: #fff;
-    color: $green-color;
-  }
 }
 
-.speaker__cta {
-  margin-top: px-to-em(40px);
-  width: px-to-em(130px, 18px);
+.one-day {
+  background-color: #fff;
+  color: $color-primary;
+
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
 .mxm-logo {
   display: block;
-  width: px-to-em(190px);
-  margin: 0 auto;
+  width: 9em;
+  margin: auto;
 }
 
-.mxm-icon {
-  font-family: 'fel';
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  color: #fff;
-  display: inline-block;
-  font-size: px-to-em(50px);
-  width: px-to-em(190px, 50px);
-  text-align: right;
+.wrap {
+  max-width: 40em;
+  margin: auto;
+  padding: 1em;
 }
 
-.interested-in-speaking {
-  display: block;
-
+.opening {
+  background-image: url("../images/one-day/background-small.jpg");
+  background-position: center center;
+  background-size: cover;
   text-align: center;
-  width: 100%;
-  padding: px-to-em(15px) 0 px-to-em(30px);
-  font-size: px-to-em(18px);
-  font-weight: 700;
-  color: darken($green-color, 20%);
-  background: $green-color;
-  margin: px-to-em(10px) 0 0 0;
+  color: #fff;
+}
 
+.logo {
+  display: block;
+  margin: 2em 0;
   text-decoration: none;
 
-  &:visited {
-    color: darken($green-color, 20%);
-  }
-
+  &,
   &:hover {
     color: #fff;
   }
 }
 
-.interested-in-speaking:after {
-  content: '';
-  width: 0; height: 0;
-  border-right: px-to-em(10px) solid transparent;
-  border-left: px-to-em(10px) solid transparent;
-  border-top: px-to-em(10px) solid darken($green-color, 20%);
-  position: absolute;
-  left: 50%;
-  margin-left: -px-to-em(10px);
-  margin-top: 1.7em;
-}
-
-.fixed-bottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.no-touch .fixed-bottom {
-  @include transition-delay(all, .3s, 0.5s, ease-in);
-  @include transform(translateY(5.2em));
-}
-
-.touch .fixed-bottom {
-  position: relative;
-  left: auto; bottom: auto;
-  margin-top: px-to-em(30px);
-}
-
-.body--is-loaded .fixed-bottom {
-  @include transform(translateY(0));
-}
-
-.reveal {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  z-index: 0;
-}
-
-.touch .reveal {
-  position: static;
-}
-
-.speaker {
-  height: auto;
-  min-height: 100%;
-  width: 640px;
-  margin: 0 auto;
+.logo__fel {
+  @extend .site-logo;
   color: #fff;
-  font-size: px-to-em(18px);
 }
 
-.call-for-speakers {
-  margin-top: 50px;
+.logo__fel,
+.logo__one-day {
+  color: inherit;
 }
 
-ul {
-  padding: 0 0 0 px-to-em(20px);
+.logo__one-day {
+  @include nanami-offset;
+  display: inline-block;
+  padding: .08em .1em;
+  border: .065em solid;
+  border-left: none;
+  border-right: none;
+  font-family: "Nanami", sans-serif;
+  font-size: 3em;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
-.page--is-red {
+
+// Sign up
+
+.signup {
+}
+
+.signup__details {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.signup__blurb {
+  margin: 2em 0;
+  font-size: 24px;
+}
+
+.signup-form__title {
+  @extend .h3;
+}
+
+
+// Sign-up form
+
+.signup-form {
+  margin: 3em 0;
+}
+
+.signup-form__title {
+  margin-bottom: .5em;
+}
+
+.signup-form__email,
+.signup-form__button {
+  vertical-align: top;
+  height: 52px;
+  padding: 1em;
+  border: 3px solid #fff;
+  font-size: .8em;
+}
+
+.signup-form__email {
+  @extend .unstyled-input;
+  margin-right: .3em;
+  font-weight: bold;
+  color: #fff;
+
+  &:invalid {
+    box-shadow: none;
+  }
+
+  @include placeholder {
+    color: #fff;
+  }
+}
+
+.signup-form__button {
+  @extend .button;
+  @extend .button--light;
+  padding: .95em 1em 1.05em;
+  border-color: transparent;
+  background-color: rgba(#fff, .9);
+
+  &,
+  &:hover,
+  &:focus {
+    color: $color-primary;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+  }
+}
+
+
+// Content
+
+.content {
+  @extend .wrap;
+  max-width:40em;
+}
+
+a.content-link {
+  color:inherit;
+  font-weight:bold;
+}
+
+.content__section {
+  margin: 2.5em 0 3em;
+}
+
+.content__title {
+  font-family: "Nanami", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.content__title--main {
+  margin-bottom: 1.5em;
+  padding-bottom: .5em;
+  border-bottom: 2px solid;
+  font-size: 1.8em;
+}
+
+.content__cta {
+  @extend .button;
+  @extend .button--fixed;
+  margin-top: 2em;
+  background-color: $color-primary;
+
+  &,
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary-accent;
+  }
+}
+
+
+@media (min-width: 40em) {
+  .one-day {
+    font-size: 1.2em;
+  }
+
+  .wrap {
+    padding: 2em;
+  }
+
   .opening {
-    background-image: url(../images/one-day/bg_2.jpg);
-    border-color: $red-color;
+    background-image: url("../images/one-day/background.jpg");
   }
 
-  .opening:after { background-color: rgba(darken($red-color, 10%), 0.8); }
-
-  .cta:hover { color: $red-color; }
-
-  .interested-in-speaking {
-    background-color: $red-color;
-    color: darken($red-color, 20%);
+  .logo__one-day {
+    font-size: 4.2em;
   }
-
-  .interested-in-speaking:visited {
-    color: darken($red-color, 20%);
-  }
-
-  .interested-in-speaking:after {
-    border-top-color: darken($red-color, 20%);
-  }
-}
-
-.page--is-blue {
-  .opening {
-    background-image: url(../images/one-day/bg_3.jpg);
-    border-color: $blue-color;
-  }
-
-  .opening:after { background-color: rgba(darken($blue-color, 10%), 0.8); }
-
-  .cta:hover { color: $blue-color; }
-
-  .interested-in-speaking {
-    background-color: $blue-color;
-    color: darken($blue-color, 20%);
-  }
-
-  .interested-in-speaking:visited {
-    color: darken($blue-color, 20%);
-  }
-
-  .interested-in-speaking:after {
-    border-top-color: darken($blue-color, 20%);
-  }
-}
-
-input {
-    -webkit-appearance: none;
-    border-radius: 0;
-}
-
-@media (max-height: px-to-em(770px)) {
-
-  .site-logo {
-    font-size: 3em;
-  }
-
-  .site-header__primary {
-    padding: px-to-em(30px) 2em;
-  }
-
-  .signup {
-    padding-top: px-to-em(10px);
-    padding-bottom: px-to-em(10px);
-  }
-
-}
-
-@media (max-width: px-to-em(660px)) {
-
-  html {
-    font-size: 90%;
-  }
-
-  .site-logo,
-  .signup__title {
-    font-size: 2.5em;
-  }
-
-  .signup__cta {
-    font-size: 1.4em;
-  }
-
-  p {
-    line-height: 1.4;
-  }
-
-  .signup,
-  .speaker {
-    width: auto;
-    padding-left: px-to-em(20px);
-    padding-right: px-to-em(20px);
-    margin: 0 2%;
-  }
-
-  .speaker {
-    padding-bottom: 3em;
-  }
-
-  .interested-in-speaking {
-    font-size: px-to-em(16px);
-  }
-
-  .signup-form__email {
-    margin-bottom: px-to-em(10px);
-    width: 90%;
-  }
-
 }

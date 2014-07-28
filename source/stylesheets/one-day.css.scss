@@ -64,7 +64,7 @@ $color-primary-accent: darken($color-primary, 2%);
 }
 
 .wrap {
-  max-width: 32em;
+  max-width: 40em;
   margin: auto;
   padding: 1em;
 }
@@ -190,16 +190,16 @@ $color-primary-accent: darken($color-primary, 2%);
 
 .content {
   @extend .wrap;
-  max-width:37em;
+  max-width:40em;
 }
 
 a.content-link {
-  color:$color-primary-accent;
+  color:inherit;
   font-weight:bold;
 }
 
 .content__section {
-  margin: 2.5em 0;
+  margin: 2.5em 0 3em;
 }
 
 .content__title {

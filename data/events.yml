@@ -48,10 +48,10 @@ events:
       -
         name: "Léonie Watson"
         pic: "2014/08/leonie.jpg"
-        company: ""
+        company: "The Paciello Group"
         twitter: "LeonieWatson"
-        topic: "TBA"
-        description: ""
+        topic: "A quick &amp; dirty introduction to ARIA"
+        description: "An introduction to Accessible Rich Internet Applications (ARIA) 1.0. ARIA can be used to enhance the accessibility of content created with markup languages like HTML and SVG. With code examples and screen reader demonstrations, find out where ARIA fits into the web technology stack and how it helps improve cross-device accessibility."
         slides_url: ""
       -
         name: "Ben Scott"
@@ -63,9 +63,9 @@ events:
         slides_url: ""
       -
         name: "Sébastien Cevey &amp; Oliver Joseph Ash"
-        pic: "2014/08/sebastien-cevey.jpg"
+        pic: "2014/08/sebastien-and-oliver.jpg"
         company: "The Guardian"
-        twitter: "theefer"
+        twitter: ""
         topic: "TBA"
         description: ""
         slides_url: ""

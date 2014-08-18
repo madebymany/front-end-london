@@ -36,7 +36,7 @@ events:
   #       slides_url: ""
   -
     date: "2014-08-28 19:00"
-    registration_url: ""
+    registration_url: "https://www.eventbrite.com/e/front-end-london-august-2014-tickets-12687732349"
     tickets_released: "2014-08-19 10:00"
     duration: 2.5
     writeups:
@@ -46,6 +46,14 @@ events:
         writeup_url: ""
     speakers:
       -
+        name: "Léonie Watson"
+        pic: "2014/08/leonie.jpg"
+        company: ""
+        twitter: "LeonieWatson"
+        topic: "TBA"
+        description: ""
+        slides_url: ""
+      -
         name: "Ben Scott"
         pic: "2014/08/ben-scott.jpg"
         company: "BBC"
@@ -54,19 +62,11 @@ events:
         description: "Branding is all about the look and feel of your website, but how does that work when you have to deal with not one brand but one hundred? This talk shall show how the BBC’s /programmes team handles branding its multitude of shows and some of the lessons he’s learnt along the way."
         slides_url: ""
       -
-        name: "Léonie Watson"
-        #pic: "2014/08/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
-        slides_url: ""
-      -
         name: "Sébastien Cevey &amp; Oliver Joseph Ash"
-        pic: "2013/10/"
+        pic: "2014/08/sebastien-cevey.jpg"
         company: "The Guardian"
-        twitter: ""
-        topic: ""
+        twitter: "theefer"
+        topic: "TBA"
         description: ""
         slides_url: ""
   -

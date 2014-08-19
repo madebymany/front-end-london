@@ -66,8 +66,8 @@ events:
         pic: "2014/08/sebastien-and-oliver.jpg"
         company: "The Guardian"
         twitter: ""
-        topic: "TBA"
-        description: ""
+        topic: "A look at how The Guardian handles creating responsive content"
+        description: "In light of responsive web design, people often focus heavily on how content should be rendered, but how it is produced is usually overlooked. This talk will review how the challenges of responsive web design can bleed into issues of content production, and how the Guardian solves these issues with Composer – our web-based, digital content-management system."
         slides_url: ""
   -
     date: "2014-07-31 19:00"

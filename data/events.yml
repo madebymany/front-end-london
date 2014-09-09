@@ -35,6 +35,41 @@ events:
   #       description: ""
   #       slides_url: ""
   -
+    date: "2014-10-04 09:00"
+    registration_url: "https://ti.to/front-end-london/epicfel-2014"
+    tickets_released: "2014-09-10 10:00"
+    duration: 8
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: ""
+        pic: "2013/10/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+      -
+        name: ""
+        pic: "2013/10/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+      -
+        name: ""
+        pic: "2013/10/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+  -
     date: "2014-08-28 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-august-2014-tickets-12687732349"
     tickets_released: "2014-08-19 10:00"
@@ -52,7 +87,7 @@ events:
         twitter: "LeonieWatson"
         topic: "A quick &amp; dirty introduction to ARIA"
         description: "An introduction to Accessible Rich Internet Applications (ARIA) 1.0. ARIA can be used to enhance the accessibility of content created with markup languages like HTML and SVG. With code examples and screen reader demonstrations, find out where ARIA fits into the web technology stack and how it helps improve cross-device accessibility."
-        slides_url: ""
+        slides_url: "http://www.slideshare.net/LeonieWatson/a-quickanddirtyintroductiontoaria-201408"
       -
         name: "Ben Scott"
         pic: "2014/08/ben-scott.jpg"
@@ -60,7 +95,7 @@ events:
         twitter: "BPScott"
         topic: "Branding at the BBC"
         description: "Branding is all about the look and feel of your website, but how does that work when you have to deal with not one brand but one hundred? This talk shall show how the BBC’s /programmes team handles branding its multitude of shows and some of the lessons they’ve learnt along the way."
-        slides_url: ""
+        slides_url: "http://www.reload.me.uk/talk-branding-at-the-bbc/#/"
       -
         name: "Sébastien Cevey &amp; Oliver Joseph Ash"
         pic: "2014/08/sebastien-and-oliver.jpg"

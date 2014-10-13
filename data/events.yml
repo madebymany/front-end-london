@@ -35,6 +35,41 @@ events:
   #       description: ""
   #       slides_url: ""
   -
+    date: "2014-10-30 18:45"
+    registration_url: ""
+    tickets_released: "2014-10-21 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: ""
+        pic: "2013/10/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+      -
+        name: ""
+        pic: "2013/10/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+      -
+        name: ""
+        pic: "2013/10/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+  -
     date: "2014-10-04 09:00"
     registration_url: "https://ti.to/front-end-london/epicfel-2014"
     tickets_released: "2014-09-10 10:00"

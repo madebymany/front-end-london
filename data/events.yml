@@ -36,7 +36,7 @@ events:
   #       slides_url: ""
   -
     date: "2014-10-30 18:45"
-    registration_url: ""
+    registration_url: "https://www.eventbrite.com/e/front-end-london-october-2014-tickets-13776482831"
     tickets_released: "2014-10-21 10:00"
     duration: 2.5
     writeups:
@@ -46,63 +46,28 @@ events:
         writeup_url: ""
     speakers:
       -
-        name: ""
-        pic: "2013/10/"
+        name: "Charlie"
+        pic: "2014/10/charlie.jpeg"
         company: ""
-        twitter: ""
+        twitter: "sonniesedge"
         topic: ""
         description: ""
         slides_url: ""
       -
-        name: ""
-        pic: "2013/10/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Alex Barlow"
+        pic: "2014/10/barlow.jpeg"
+        company: "Made by Many"
+        twitter: "alexrbarlow"
+        topic: "Vim for frontenders"
+        description: "A talk about why some people are using a 24 year old text editor. We'll go through the basics and then I'll finally reveal the secret of how to quit Vim."
         slides_url: ""
       -
-        name: ""
-        pic: "2013/10/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
-        slides_url: ""
-  -
-    date: "2014-10-04 09:00"
-    registration_url: "https://ti.to/front-end-london/epicfel-2014"
-    tickets_released: "2014-09-10 10:00"
-    duration: 8
-    writeups:
-      -
-        author: ""
-        twitter: ""
-        writeup_url: ""
-    speakers:
-      -
-        name: ""
-        pic: "2013/10/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
-        slides_url: ""
-      -
-        name: ""
-        pic: "2013/10/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
-        slides_url: ""
-      -
-        name: ""
-        pic: "2013/10/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Ian Feather"
+        pic: "2014/10/ian.jpeg"
+        company: "Lonely Planet"
+        twitter: "ianfeather"
+        topic: "Defining Performance Contexts"
+        description: "This talk is around understanding the different contexts your users may have on how your site performs. How fast does a user expect it to be and how can we find out? Knowing this allows us to create different levels of experience and gives the user more control over how a website can perform for them."
         slides_url: ""
   -
     date: "2014-08-28 19:00"

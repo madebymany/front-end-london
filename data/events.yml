@@ -46,12 +46,12 @@ events:
         writeup_url: ""
     speakers:
       -
-        name: "Charlie"
+        name: "Charlie Owen"
         pic: "2014/10/charlie.jpeg"
         company: ""
         twitter: "sonniesedge"
-        topic: ""
-        description: ""
+        topic: "Visual Regression Testing"
+        description: "In large teams it's all too easy to introduce subtle and not-so-subtle visual bugs into a project. I'll show you how easy it is to set-up automated tests that will catch these visual regressions before they get into your codebase. "
         slides_url: ""
       -
         name: "Alex Barlow"

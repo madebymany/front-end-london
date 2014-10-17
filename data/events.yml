@@ -58,7 +58,7 @@ events:
         pic: "2014/10/barlow.jpeg"
         company: "Made by Many"
         twitter: "alexrbarlow"
-        topic: "Vim for frontenders"
+        topic: "Vim for Front End Devs"
         description: "A talk about why some people are using a 24 year old text editor. We'll go through the basics and then I'll finally reveal the secret of how to quit Vim."
         slides_url: ""
       -

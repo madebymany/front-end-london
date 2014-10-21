@@ -35,10 +35,10 @@ events:
   #       description: ""
   #       slides_url: ""
   -
-    date: "2014-10-30 18:45"
-    registration_url: "https://www.eventbrite.com/e/front-end-london-october-2014-tickets-13776482831"
-    tickets_released: "2014-10-21 10:00"
-    duration: 2.5
+    date: "2014-11-27 18:45"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-november-2014-tickets-13776482831"
+    tickets_released: "2014-11-18 10:00"
+    duration: 2.75
     writeups:
       -
         author: ""
@@ -46,28 +46,28 @@ events:
         writeup_url: ""
     speakers:
       -
-        name: "Charlie Owen"
-        pic: "2014/10/charlie.jpeg"
-        company: "&nbsp;"
-        twitter: "sonniesedge"
-        topic: "Visual Regression Testing"
-        description: "In large teams it's all too easy to introduce subtle and not-so-subtle visual bugs into a project. I'll show you how easy it is to set-up automated tests that will catch these visual regressions before they get into your codebase. "
+        name: ""
+        pic: "2013/10/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
         slides_url: ""
       -
-        name: "Alex Barlow"
-        pic: "2014/10/barlow.jpeg"
-        company: "Made by Many"
-        twitter: "alexrbarlow"
-        topic: "Vim for Front End Devs"
-        description: "A talk about why some people are using a 24 year old text editor. We'll go through the basics and then I'll finally reveal the secret of how to quit Vim."
+        name: ""
+        pic: "2013/10/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
         slides_url: ""
       -
-        name: "Ian Feather"
-        pic: "2014/10/ian.jpeg"
-        company: "Lonely Planet"
-        twitter: "ianfeather"
-        topic: "Defining Performance Contexts"
-        description: "This talk is around understanding the different contexts your users may have on how your site performs. How fast does a user expect it to be and how can we find out? Knowing this allows us to create different levels of experience and gives the user more control over how a website can perform for them."
+        name: ""
+        pic: "2013/10/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
         slides_url: ""
   -
     date: "2014-08-28 19:00"

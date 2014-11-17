@@ -59,7 +59,7 @@ events:
         company: "Softwire"
         twitter: "pimterry"
         topic: "What the hell are web components?"
-        description: ""
+        description: "Web components are the next Next Big Thing for the front-end, offering a fundamental change to how we build the web. There's lots of people talking about them at a high-level, but it's hard to tell how this fits together in practice, or why it's interesting. Let's talk about that."
         slides_url: ""
       -
         name: "Phil Nash"

@@ -49,9 +49,9 @@ events:
         name: "James Higgs"
         pic: "2014/11/james.jpeg"
         company: "Made by Many"
-        twitter: "higgs"
+        twitter: "higgis"
         topic: "Making tradeoffs"
-        description: ""
+        description: "There are no absolutes in technology except this one."
         slides_url: ""
       -
         name: "Tim Perry"
@@ -66,7 +66,7 @@ events:
         pic: "2013/03/phil.jpg"
         company: "Twilio"
         twitter: "philnash"
-        topic: "WhatRTC? Everything you need to know to connect browsers to the world."
+        topic: "WhatRTC? Everything you need to know to connect browsers to the world"
         description: "Traditionally browsers talk to servers, but what if they could speak to each other? WebRTC is a small set of APIs that make peer to peer communication possible between browsers. Video, audio and data can flow from browser to browser opening up a new set of possibilities for the web. We'll take a look at what WebRTC gives you and, importantly, what it leaves out. We'll take a look at implementing a simple chat application and speculate over more complicated use cases and examples."
         slides_url: ""
   -

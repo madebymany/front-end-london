@@ -1,0 +1,9 @@
+%background {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 10px;
+
+  @media (min-width: $breakpoint-b) {
+    padding: 0 20px;
+  }
+}

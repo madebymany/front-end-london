@@ -1,0 +1,30 @@
+%heading {
+  margin: 0;
+  margin-bottom: .4em;
+  font-family: $font-secondary;
+  font-size: 24px;
+
+  @media (min-width: $breakpoint-a) {
+    font-size: 28px;
+  }
+
+  @media (min-width: $breakpoint-b) {
+    font-size: 32px;
+  }
+
+  @media (min-width: $breakpoint-c) {
+    font-size: 36px;
+  }
+}
+
+%heading--small {
+  font-size: 20px;
+
+  @media (min-width: $breakpoint-a) {
+    font-size: 24px;
+  }
+
+  @media (min-width: $breakpoint-b) {
+    font-size: 28px;
+  }
+}

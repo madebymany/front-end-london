@@ -1,0 +1,51 @@
+.lineup {
+  @extend %background;
+  background-color: $color-box-primary;
+  font-family: $font-secondary;
+}
+
+.lineup__container {
+  @extend %container;
+}
+
+.lineup__heading {
+  @extend %heading;
+  margin-bottom: .8em;
+  color: #fff;
+}
+
+.lineup__speakers {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.lineup__speaker {
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: $breakpoint-a) {
+  .lineup__speaker {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-b) {
+  .lineup__speaker {
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-c) {
+  .lineup__speaker {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+}

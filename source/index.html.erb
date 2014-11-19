@@ -1,84 +1,80 @@
 ---
-title: Front-end London - A meetup for front-end developers, hosted by Made by Many
+title: Front-end London – A meetup for front-end developers
 ---
-<%
 
-latest_event = data.events.events.first
-latest_event_date = Chronic.parse(latest_event.date)
-release_date = Chronic.parse(latest_event.tickets_released)
-is_event_upcoming = ((latest_event_date + latest_event.duration*60*60) > Time.now)
+<section class="intro">
+  <div class="intro__container">
+    <h1 class="intro__heading">
+      Front-end London is a free monthly meetup dedicated to
+      front-end development and design.
+    </h1>
+  </div>
+</section>
 
-%>
-<% content_for :in_header do %>
-  <section class="site-header__secondary">
-    <div class="next-event-details">
-      <span class="next-event" id="next-event-handle" data-eventdate="<%= latest_event_date %>">
-        <%=
-        if is_event_upcoming
-          'Next event'
-        else
-          'Latest event'
-        end
-        %>
-      </span>
-      <span class="next-event-date"><%= latest_event_date.strftime('%-d') %><span class="date-ordinal"><%= latest_event_date.day.ordinalize.gsub(/\d/, '') %></span> <%= latest_event_date.strftime('%B, %Y') %></span>
-      <span class="next-event-time"><%= latest_event_date.strftime('%-l%P') %>–<%= (latest_event_date + latest_event.duration*60*60).strftime('%-l:%M%P') %><span class="next-event-bullet">&bullet;</span> Islington</span>
+<main class="event">
+  <%= partial 'info' %>
+  <%= partial 'lineup' %>
 
+  <footer class="event__footer">
+    <div class="event__container">
+      <%= link_to 'Previous events', '/archive', class: 'event__archive' %>
     </div>
-  </section>
-<% end %>
+  </footer>
+</main>
 
-<div class="site-content site-width" role="main">
+<section class="about">
+  <div class="about__container">
+    <h1 class="about__heading">
+      About the event
+    </h1>
 
-  <section class="introduction">
+    <p class="about__body">
+      We aim to provide a variety of interesting talks on peoples’ experiences
+      in front-end development. Previously we’ve had talks on process, tooling,
+      performance and technology, to name a few.
+      Expect more of the same and lots more.
+    </p>
 
-    <p>Front-end London is a free <strong>evening meetup</strong> hosted by <a href="http://madebymany.co.uk">Made by Many</a> that's dedicated to all aspects of front-end development.</p>
+    <p class="about__body">
+      To kick off the evening there’s pizza (with veggie/vegan options)
+      and refreshments (wine/beer/soft drinks/etc). All finished up
+      with an obligatory trip to the local pub — if that’s your kind of thing.
+    </p>
 
-    <p>We aim to cover a wide variety of topics around the technology, tools, processes, and experiences of front-end development, with thought-provoking talks from a variety of speakers.</p>
+    <p class="about__body">
+      See our <%= link_to 'code of conduct', '/conduct' %>.
+    </p>
+  </div>
+</section>
 
+<section id="mailing-list" class="mailing-list">
+  <div class="mailing-list__container">
+    <h2 class="mailing-list__heading">
+      Mailing list
+    </h2>
 
-    <% if is_event_upcoming %>
+    <p class="mailing-list__body">
+      Subscribe to our mailing list for ticket reminders and other event information.
+    </p>
 
-      <% if latest_event.registration_url.present? %>
-        <%= link_to "Get tickets", latest_event.registration_url, class: "cta--primary", target: "_blank" %>
-      <% end %>
-
-      <% if release_date > Time.now %>
-        Tickets will be released on <%= release_date.strftime('%B %-d') %> at 10am and 4pm
-      <% end %>
-
-      <% if latest_event.tickets_released.empty? && latest_event.registration_url.empty? %>
-        <p><em>Tickets not yet released</em></p>
-      <% end %>
- 
-    <% end %>
-
-    <form action="http://madebymany.us6.list-manage.com/subscribe/post?u=2069e586d651ff50b3844c372&amp;id=12bc29b23c" method="post" name="subscribe-form">
-      <p>Subscribe to our mailing list for ticket reminders.</p>
-      <input type="email" value="" name="EMAIL" class="subscribe-form__email" id="EMAIL" placeholder="Email address" required>
-      <input type="submit" value="Subscribe" name="subscribe" id="embedded-subscribe" class="subscribe-form__button cta cta-transition">
+    <form action="http://madebymany.us6.list-manage.com/subscribe/post?u=2069e586d651ff50b3844c372&id=12bc29b23c" method="post" class="mailing-list__form">
+      <input type="email" name="EMAIL" placeholder="Your email" class="mailing-list__email">
+      <input type="submit" value="Subscribe" name="subscribe" class="mailing-list__submit">
     </form>
+  </div>
+</section>
 
-  </section>
+<section id="speaking" class="speaking">
+  <div class="speaking__container">
+    <h2 class="speaking__heading">
+      Speaking at Front-end London
+    </h2>
 
-  <% if (is_event_upcoming) %>
-  <section class="speakers">
-    <h2 class="divider-title">Speakers</h2>
-    <%= partial "speakers", :locals => {:event => latest_event, :is_event_upcoming => is_event_upcoming} %>
-  </section>
-  <% end %>
-
-</div>
-
-<% content_for :small_cfp do %>
-  <section class="cfp">
-    <div class="site-width twelve-columns">
-      <div class="column span-twelve">
-        <h3>Want to speak at Front-end London?</h3>
-        <p>
-          We’re keen to hear from seasoned speakers and first-timers alike, so please do get in touch if you'd like to propose a talk or make a recommendation for a speaker. For more info check out our <a href="/call-for-speakers.html">call for speakers</a> or contact us through <a href="mailto:fel@madebymany.co.uk">fel@madebymany.co.uk</a> or <a href="http://twitter.com/frontendlondon">@frontendlondon</a>.
-        </p>
-      </div>
-    </div>
-  </section>
-<% end %>
+    <p class="speaking__body">
+      We would like to hear from first-time and seasoned speakers alike.
+      Get in touch if you’d like to propose a talk or recommend a speaker.
+      For more information contact us through <%= mail_to 'fel@madebymany.co.uk' %> or
+      <%= link_to '@frontendlondon', 'http://twitter.com/frontendlondon' %>.
+    </p>
+  </div>
+</section>

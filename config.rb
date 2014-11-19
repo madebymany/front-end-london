@@ -47,6 +47,9 @@
 #   end
 # end
 
+require "lib/event_helper"
+helpers EventHelper
+
 compass_config do |config|
   config.sass_options = {:debug_info => true}
 end
@@ -57,9 +60,13 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+set :fonts_dir, 'fonts'
+
 set :build_dir, 'build'
 
 ignore 'previous_months/*'
+
+activate :directory_indexes
 
 # Build-specific configuration
 configure :build do

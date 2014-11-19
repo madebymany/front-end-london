@@ -1,0 +1,43 @@
+<section id="lineup" class="lineup">
+  <div class="lineup__container">
+    <h2 class="lineup__heading">
+      Speakers
+    </h2>
+
+    <ul class="lineup__speakers">
+      <% latest_event.speakers.each do |speaker| %>
+        <li class="lineup__speaker">
+          <div class="speaker">
+            <figure class="speaker__photo">
+              <%= image_tag "speakers/#{speaker.pic}", alt: speaker.name,
+                    class: 'speaker__photo__img' %>
+            </figure>
+
+            <main class="speaker__info">
+              <h3 class="speaker__name">
+                <% if speaker.twitter.present? %>
+                  <%= link_to speaker.name,
+                        "//twitter.com/#{speaker.twitter}",
+                        title: "#{speaker.name} on Twitter",
+                        class: 'speaker__twitter' %>
+                <% else %>
+                  <%= speaker.name %>
+                <% end %>
+              </h3>
+
+              <h2 class="speaker__topic">
+                <%= speaker.topic %>
+              </h2>
+
+              <% if speaker.description.present? %>
+                <p class="speaker__description">
+                  <%= speaker.description %>
+                </p>
+              <% end %>
+            </main>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</section>

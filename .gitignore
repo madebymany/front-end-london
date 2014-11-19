@@ -11,10 +11,10 @@
 /public
 /build
 /vendor/bundle
+/tmp
 
 # Ignore Sass' cache
 /.sass-cache
-/*/node_modules
 
 # Ignore OS files
 .DS_Store

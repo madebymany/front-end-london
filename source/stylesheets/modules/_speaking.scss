@@ -1,0 +1,20 @@
+.speaking {
+  @extend %background;
+}
+
+.speaking__container {
+  @extend %container;
+}
+
+.speaking__heading {
+  @extend %heading;
+}
+
+.speaking__body {
+  @extend %body;
+  color: #444;
+
+  a {
+    color: $color-box-secondary;
+  }
+}

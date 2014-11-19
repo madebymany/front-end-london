@@ -1,0 +1,27 @@
+%button {
+  @extend %text-box;
+  display: block;
+  font-family: $font-secondary;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    border-color: transparent;
+    background-color: $color-highlight;
+  }
+}
+
+@media (min-width: $breakpoint-b) {
+  %button {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: $breakpoint-c) {
+  %button {
+    font-size: 26px;
+  }
+}

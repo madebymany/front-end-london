@@ -1,11 +1,10 @@
-<header class="site-header site-header--<%= Chronic.parse(data.events.events.first.date).strftime('%B').downcase %>">
-  <div class="site-header__primary site-width">
-    <a href="/" class="site-logo" id="fel">
-      <span class="inner" title="Front-end London">
-        F<span id="front">ront-</span>E<span id="end">nd </span>L<span id="london">ondon</span>
-      </span>
-    </a>
+<header class="header">
+  <div class="header__container">
+    <div class="header__content">
+      <%= link_to image_tag('fel-oval.svg', alt: 'Front-end London',
+            class: 'header__logo'), '/' %>
+      <%= link_to image_tag('mxm-dark.svg', alt: 'Presented by Made by Many',
+            class: 'header__presented-by'), '//madebymany.com' %>
+    </div>
   </div>
-
-  <%= yield_content :in_header %>
 </header>

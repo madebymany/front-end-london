@@ -1,0 +1,12 @@
+%text-box {
+  padding: 15px 20px;
+  border: 1px solid;
+
+  @media (min-width: $breakpoint-b) {
+    padding: 20px 26px;
+  }
+
+  @media (min-width: $breakpoint-c) {
+    padding: 22px 28px;
+  }
+}

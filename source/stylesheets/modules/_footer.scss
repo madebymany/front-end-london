@@ -1,0 +1,159 @@
+.footer {
+  @extend %background;
+  max-width: none;
+  margin-top: 20px;
+  background-color: #000;
+}
+
+.footer__container {
+  @extend %container;
+}
+
+.footer__heading {
+  @extend %heading;
+  margin-bottom: 15px;
+  font-size: 14px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: $color-highlight;
+}
+
+.footer__location {
+  margin-bottom: 15px;
+}
+
+.footer__find-on {
+  margin-bottom: 25px;
+}
+
+.footer__address {
+  @extend %body;
+  font-family: $font-secondary;
+  color: #fff;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer__sites {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__site {
+  line-height: 1.5;
+}
+
+.footer__link {
+  font-family: $font-secondary;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.footer__credit {
+  text-align: center;
+}
+
+.footer__logo,
+.footer__presented-by {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer__logo {
+  width: 44px;
+}
+
+.footer__presented-by {
+  width: 120px;
+  margin-left: 20px;
+}
+
+@media (min-width: $breakpoint-a) {
+  .footer {
+    margin-top: 60px;
+  }
+
+  .footer__link {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $breakpoint-b) {
+  .footer {
+    margin-top: 100px;
+  }
+
+  .footer__container {
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .footer__location,
+  .footer__find-on,
+  .footer__credit {
+    float: left;
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .footer__credit {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .footer__logo {
+    width: auto;
+  }
+
+  .footer__presented-by {
+    width: auto;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: $breakpoint-c) {
+  .footer {
+    margin-top: 160px;
+  }
+
+  .footer__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer__location,
+  .footer__find-on,
+  .footer__credit {
+    width: 33.333%;
+  }
+
+  .footer__credit {
+    margin-top: 0;
+  }
+
+  .footer__logo,
+  .footer__presented-by {
+    display: block;
+    margin: auto;
+  }
+
+  .footer__logo {
+    margin-bottom: 30px;
+  }
+}

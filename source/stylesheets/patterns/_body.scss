@@ -1,0 +1,22 @@
+%body {
+  margin: 0;
+  font-family: $font-primary;
+  font-size: 18px;
+  line-height: 1.4;
+
+  + %body {
+    margin-top: 1em;
+  }
+
+  @media (min-width: $breakpoint-a) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $breakpoint-b) {
+    font-size: 22px;
+  }
+
+  @media (min-width: $breakpoint-c) {
+    font-size: 24px;
+  }
+}

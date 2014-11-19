@@ -1,0 +1,49 @@
+.header {
+}
+
+.header__container {
+  @extend %container;
+}
+
+.header__logo,
+.header__presented-by {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header__logo {
+  width: 100px;
+  height: 100px;
+}
+
+.header__presented-by {
+  width: 120px;
+  margin-left: 20px;
+}
+
+@media (min-width: $breakpoint-b) {
+  .header {
+    text-align: center;
+  }
+
+  .header__content {
+    position: relative;
+  }
+
+  .header__logo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .header__presented-by {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: auto;
+    margin: auto;
+    margin-right: 0;
+  }
+}

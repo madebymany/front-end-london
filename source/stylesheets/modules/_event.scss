@@ -1,0 +1,18 @@
+.event {
+}
+
+.event__footer {
+  @extend %background;
+  background-color: $color-box-primary;
+}
+
+.event__container {
+  @extend %container;
+  padding-top: 0;
+}
+
+.event__archive {
+  @extend %button;
+  margin: auto;
+  max-width: 250px;
+}

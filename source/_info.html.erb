@@ -1,0 +1,50 @@
+<header id="info" class="info">
+  <div class="info__container">
+    <div class="info__content">
+      <h2 class="info__heading">
+        <% if event_upcoming? %>
+          Next event
+        <% else %>
+          Previous event
+        <% end %>
+      </h2>
+
+      <time datetime="" class="info__date">
+        <span class="info__date__day">
+          <%= latest_event_date.day.ordinalize %>
+          <%= latest_event_date.strftime("%B") %>
+        </span>
+        <span class="info__date__time">
+          <%= latest_event_date.strftime("%H:%M") %> –
+          <%= latest_event_date_end.strftime("%H:%M") %>
+        </span>
+      </time>
+
+      <address class="info__location">
+        <a href="#address" class="info__address-anchor">
+          Made by Many, London
+        </a>
+      </address>
+
+      <% if event_upcoming? %>
+        <% if latest_event.registration_url.present? %>
+          <a href="<%= latest_event.registration_url %>" target="_blank" class="info__tickets info__tickets--available">
+            Get tickets
+          </a>
+        <% else %>
+          <a href="#mailing-list" class="info__tickets info__tickets--unavailable">
+            <span>
+              <% if latest_event.tickets_released.present? %>
+                Tickets available
+                <%= tickets_released_date.day.ordinalize %>
+                <%= tickets_released_date.strftime("%B") %>
+              <% else %>
+                Tickets to be announced
+              <% end %>
+            </span>
+          </a>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,77 @@
+---
+title: Event archive – Front-end London
+---
+
+<main class="archive">
+  <div class="archive__container">
+    <h1 class="archive__heading">
+      Event archive
+    </h1>
+  </div>
+
+  <% previous_events.each_with_index do |event, i| %>
+    <% num = previous_events.length - i %>
+
+    <article id="fel<%= num %>" class="archived-event">
+      <header class="archived-event__header">
+        <h2 class="archived-event__heading">
+          FEL <%= num %> &middot;
+          <time class="archived-event__date">
+            <%= event_date(event).day.ordinalize %>
+            <%= event_date(event).strftime("%B %Y") %>
+          </time>
+        </h2>
+      </header>
+
+      <ol class="archived-event__lineup">
+        <% event.speakers.each do |speaker| %>
+          <li class="archived-event__speaker">
+            <div class="archived-speaker">
+              <h3 class="archived-speaker__topic">
+                <%= speaker.topic %>
+              </h3>
+
+              <h4 class="archived-speaker__name">
+                <% if speaker.twitter.present? %>
+                  <%= link_to speaker.name,
+                        "//twitter.com/#{speaker.twitter}",
+                        title: "#{speaker.name} on Twitter",
+                        class: 'archived-speaker__twitter' %>
+                <% else %>
+                  <%= speaker.name %>
+                <% end %>
+              </h4>
+
+              <% if speaker.video_url.present? ||
+                    speaker.slides_url.present? %>
+                <ul class="archived-speaker__resources">
+                  <% if speaker.video_url.present? %>
+                    <li class="archived-speaker__resource">
+                      <%= link_to 'Watch this talk', speaker.video_url,
+                            class: 'archived-speaker__link archived-speaker__link--video' %>
+                    </li>
+                  <% end %>
+                  <% if speaker.slides_url.present? %>
+                    <li class="archived-speaker__resource">
+                      <%= link_to 'View slides', speaker.slides_url,
+                            class: 'archived-speaker__link archived-speaker__link--slides' %>
+                    </li>
+                  <% end %>
+                </ul>
+              <% end %>
+            </div>
+          </li>
+        <% end %>
+      </ol>
+
+      <% if (writeups = event_writeups(event)) && writeups.count > 0 %>
+        <footer class="archived-event__footer">
+          <p class="archived-event__writeups">
+            <%= writeups.count > 1 ? 'Writeups' : 'Writeup' %> from
+            <%= writeups.collect { |w| link_to(w.author, w.writeup_url) }.to_sentence %>.
+          </p>
+        </footer>
+      <% end %>
+    </article>
+  <% end %>
+</main>

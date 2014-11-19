@@ -1,0 +1,72 @@
+.speaker {
+}
+
+.speaker__photo {
+  display: none;
+}
+
+.speaker__name {
+  margin: 0;
+  margin-bottom: .1em;
+  font-size: 18px;
+  font-weight: normal;
+  color: $color-highlight;
+}
+
+.speaker__twitter {
+  text-decoration: none;
+  color: inherit;
+}
+
+.speaker__topic {
+  @extend %heading;
+  margin-bottom: .4em;
+  font-weight: normal;
+  color: #fff;
+}
+
+.speaker__description {
+  @extend %body;
+  color: light-on-dark($color-box-primary);
+
+  a {
+    color: $color-box-secondary;
+  }
+}
+
+@media (min-width: $breakpoint-a) {
+  .speaker__name {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $breakpoint-b) {
+  .speaker,
+  .speaker__info {
+    overflow: hidden;
+  }
+
+  .speaker__photo {
+    display: block;
+    float: left;
+    max-width: 100px;
+    margin: 0;
+    margin-right: 30px;
+  }
+
+  .speaker__photo__img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .speaker__name {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: $breakpoint-c) {
+  .speaker__photo {
+    max-width: 140px;
+    margin-right: 40px;
+  }
+}

@@ -1,12 +1,21 @@
 .cfp-copy {
-  margin: 1em 1em 0;
-  padding: 20px 0;
+  margin: 1em auto 0;
+  padding: 0 1em 0;
+  max-width:800px;
 }
 
 .cfp-copy__heading {
-  text-align:center;
+  margin-top:1.5em;
 }
 
-.cfp-copy p {
+.cfp-copy p, .cfp-copy li {
   font-size: 1.2em;
+}
+
+.cfp-copy li {
+  margin-bottom:.3em;
+}
+
+.cfp-copy ul {
+  margin-bottom:2em;
 }

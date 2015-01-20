@@ -50,7 +50,7 @@ events:
         name: "Charlie Owen"
         pic: "2015/01/charlie.jpg"
         company: "Freelance"
-        twitter: "charliedontsurf"
+        twitter: "sonniesedge"
         topic: "Visual Regression Testing"
         description: "In large teams it's all too easy to introduce subtle and not-so-subtle visual bugs into a project. I'll show you how easy it is to set-up automated tests that will catch these visual regressions before they get into your codebase."
         slides_url: ""

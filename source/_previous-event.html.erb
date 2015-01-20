@@ -37,8 +37,7 @@ e = Chronic.parse(event.date)
     <% event.speakers.each do |speaker| %>
       <div class="speaker column span-four">
         <a class="speaker-profile" href="https://twitter.com/<%= speaker[:twitter] %>">
-          <div class="speaker-profile-img" data-icon="">
-            <img src="images/speakers/<%= speaker[:pic] %>" alt="<%= speaker[:name] %>" width="140" height="140">
+          <div class="speaker-profile-img--previous speaker-profile-img" data-icon="" style="background-image:url(images/speakers/<%= speaker[:pic] %>)">
           </div>
           <h3><%= speaker[:name] %></h3>
         </a>

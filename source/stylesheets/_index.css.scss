@@ -56,6 +56,7 @@
 }
 
 .speaker-profile-img img,
+.speaker-profile-img--previous,
 .speaker-profile-img:before {
   border-radius: 3px;
 }
@@ -72,6 +73,13 @@
   @include transition(opacity, 0.07s, ease-in);
   font-size:40px;
   color:#fff
+}
+
+.speaker-profile-img--previous {
+  width: 140px;
+  height: 140px;
+  background-position:center;
+  background-size:cover;
 }
 
 .speaker-profile:hover .speaker-profile-img:before {

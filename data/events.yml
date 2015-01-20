@@ -37,8 +37,8 @@ events:
 
   -
     date: "2015-01-29 19:00"
-    registration_url: ""
-    tickets_released: "2015-01-20 10:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-january-2015-tickets-15356871817"
+    tickets_released: "2015-01-21 10:00"
     duration: 2.5
     writeups:
       -
@@ -47,33 +47,35 @@ events:
         writeup_url: ""
     speakers:
       -
-        name: ""
-        pic: "2013/10/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Charlie Owen"
+        pic: "2015/01/charlie.jpg"
+        company: "Freelance"
+        twitter: "charliedontsurf"
+        topic: "Visual Regression Testing"
+        description: "In large teams it's all too easy to introduce subtle and not-so-subtle visual bugs into a project. I'll show you how easy it is to set-up automated tests that will catch these visual regressions before they get into your codebase."
         slides_url: ""
       -
-        name: ""
-        pic: "2013/10/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Tom Alterman"
+        pic: "2015/01/tom-alterman.jpg"
+        company: "TrialReach"
+        twitter: "@tomalterman"
+        topic: "Hackers guide to testing with real users"
+        description: "We all know how valuable it is to get feedback from real users on the websites and apps we build. We can often waste days if not weeks of development time when we don't know what our users really care about.
+          Unfortunately we tend to not do it because it's hard to do, takes time and can be really expensive. Isn't it also someone else's job?
+          From my experience going from a big agency to small startup, I'll show you how to do it quickly, cheaply and also explain why it will make you a better developer."
         slides_url: ""
       -
-        name: ""
-        pic: "2013/10/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Peter Gasston"
+        pic: "2014/04/peter-gasston.jpg"
+        company: "rehabstudio"
+        twitter: "@stopsatgreen"
+        topic: "OK Computer"
+        description: "People mostly communicate by talking, but with computers we are often impeded by keyboards.This talk looks at ways we can talk directly to our devices, and have them talk back to us"
         slides_url: ""
   -
     date: "2014-11-27 18:45"
-    registration_url: "https://www.eventbrite.com/e/front-end-london-november-2014-tickets-13776482831"
-    tickets_released: "2014-11-18 10:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-january-2015-tickets-15356871817"
+    tickets_released: "2015-01-20 10:00"
     duration: 2.75
     writeups:
       -

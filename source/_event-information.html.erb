@@ -13,7 +13,8 @@ is_event_upcoming = ((latest_event_date + latest_event.duration*60*60) > Time.no
       <h2>When is FEL?</h2>
       <p id="next-event-text-handle">
         <% if is_event_upcoming %>
-        The next Front-end London will be on <%= latest_event_date.strftime('%A, %B %-d') %> at <%= latest_event_date.strftime('%l%P') %>—<%= (latest_event_date + latest_event.duration*60*60).strftime('%-l:%M%P') %>.
+          The next Front-end London will be on <%= latest_event_date.strftime('%A, %B %-d') %> at <%= latest_event_date.strftime('%l%P') %>—<%= (latest_event_date + latest_event.duration*60*60).strftime('%-l:%M%P') %>.<br /> 
+          Doors open at 6:30pm.
         <% else %>
         The next Front-end London is yet to be announced. The event usually takes place on the last Thursday of the month.
         <% end %>

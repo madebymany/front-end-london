@@ -82,6 +82,14 @@ events:
         writeup_url: ""
     speakers:
       -
+        name: "Peter Gasston"
+        pic: "2014/04/peter-gasston.jpg"
+        company: "rehabstudio"
+        twitter: "@stopsatgreen"
+        topic: "OK Computer"
+        description: "People mostly communicate by talking, but with computers we are often impeded by keyboards.This talk looks at ways we can talk directly to our devices, and have them talk back to us"
+        slides_url: "https://github.com/stopsatgreen/speech-felondon"
+      -
         name: "Charlie Owen"
         pic: "2015/01/charlie.jpg"
         company: "Freelance"
@@ -99,14 +107,6 @@ events:
           Unfortunately we tend to not do it because it's hard to do, takes time and can be really expensive. Isn't it also someone else's job?
           From my experience going from a big agency to small startup, I'll show you how to do it quickly, cheaply and also explain why it will make you a better developer."
         slides_url: "http://tomalterman.com/pages/talks-fel.html"
-      -
-        name: "Peter Gasston"
-        pic: "2014/04/peter-gasston.jpg"
-        company: "rehabstudio"
-        twitter: "@stopsatgreen"
-        topic: "OK Computer"
-        description: "People mostly communicate by talking, but with computers we are often impeded by keyboards.This talk looks at ways we can talk directly to our devices, and have them talk back to us"
-        slides_url: "https://github.com/stopsatgreen/speech-felondon"
   -
     date: "2014-11-27 18:45"
     registration_url: "https://www.eventbrite.com/e/front-end-london-january-2015-tickets-15356871817"

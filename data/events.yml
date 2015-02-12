@@ -37,7 +37,7 @@ events:
 
   -
     date: "2015-02-26 19:00"
-    registration_url: ""
+    registration_url: "https://www.eventbrite.com/e/front-end-london-february-2015-tickets-15740651713"
     tickets_released: "2015-02-17 10:00"
     duration: 2.5
     writeups:
@@ -47,7 +47,21 @@ events:
         writeup_url: ""
     speakers:
       -
-        name: ""
+        name: "Jack Franklin"
+        pic: "2015/02/jack.jpg"
+        company: "GoCardless"
+        twitter: "Jack_Franklin"
+        topic: "Using ES6 Modules today"
+        description: "The next big release of JavaScript, ES6, will be coming to browsers
+near you very soon, and as developers it's important to stay ahead of
+the curve.
+
+Traditionally modules in JS have been difficult - we've fantastic, but
+complex, solutions like Browserify or RequireJS - but ES6 brings its
+own module system that is fantastic to work with."
+        slides_url: ""
+      -
+        name: "Ana Gasston"
         pic: ""
         company: ""
         twitter: ""
@@ -55,20 +69,14 @@ events:
         description: ""
         slides_url: ""
       -
-        name: ""
-        pic: ""
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
-        slides_url: ""
-      -
-        name: ""
-        pic: ""
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Bodil Stokke"
+        pic: "2015/02/bodil.jpg"
+        company: "Future Ad Labs"
+        twitter: "bodil"
+        topic: "Reactive game development for the discerning hipster"
+        description: "To most people in JS, functional programmers are perceived as academic hipsters raving about things like applicative functors, semigroup homomorphisms and Yoneda lemmas for no good reason except to make the rest of us feel stupid. And this is fair; there’s no better way to make you feel pitifully mainstream than throwing category theory at you. Conversely, JS programmers tend to believe functional programming, therefore, can have no real world application because nobody in the real world has any idea what a Yoneda lemma is and they seem to be getting by just fine without it.
+
+Except we aren’t."
         slides_url: ""
   -
     date: "2015-01-29 19:00"
@@ -96,7 +104,7 @@ events:
         twitter: "sonniesedge"
         topic: "Visual Regression Testing"
         description: "In large teams it's all too easy to introduce subtle and not-so-subtle visual bugs into a project. I'll show you how easy it is to set-up automated tests that will catch these visual regressions before they get into your codebase."
-        slides_url: ""
+        slides_url: "http://www.slideshare.net/sonniesedge/visual-regression-testing"
       -
         name: "Tom Alterman"
         pic: "2015/01/tom-alterman.jpg"

@@ -62,8 +62,8 @@ own module system that is fantastic to work with."
         slides_url: ""
       -
         name: "Ana Gasston"
-        pic: ""
-        company: ""
+        pic: "2015/02/"
+        company: "Web Behaviour Specialists"
         twitter: ""
         topic: ""
         description: ""
@@ -74,9 +74,7 @@ own module system that is fantastic to work with."
         company: "Future Ad Labs"
         twitter: "bodil"
         topic: "Reactive game development for the discerning hipster"
-        description: "To most people in JS, functional programmers are perceived as academic hipsters raving about things like applicative functors, semigroup homomorphisms and Yoneda lemmas for no good reason except to make the rest of us feel stupid. And this is fair; there’s no better way to make you feel pitifully mainstream than throwing category theory at you. Conversely, JS programmers tend to believe functional programming, therefore, can have no real world application because nobody in the real world has any idea what a Yoneda lemma is and they seem to be getting by just fine without it.
-
-Except we aren’t."
+        description: "We’ve been living in callback hell for almost two decades now, and no matter how many control flow libraries we submit to npm, things don’t seem to be getting any better. And that’s where functional programming comes in—turns out callbacks are just functions, and those academics in their ivory towers with their Haskell compilers actually encountered and solved these problems long ago. And now we can have their solutions in JS too, because of functional reactive programming."
         slides_url: ""
   -
     date: "2015-01-29 19:00"

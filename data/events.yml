@@ -36,6 +36,42 @@ events:
   #       slides_url: ""
 
   -
+    date: "2015-03-26 19:00"
+    registration_url: ""
+    tickets_released: "2015-03-17 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: ""
+        pic: "2013/10/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+      -
+        name: ""
+        pic: "2013/10/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+      -
+        name: ""
+        pic: "2013/10/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+
+  -
     date: "2015-02-26 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-february-2015-tickets-15740651713"
     tickets_released: "2015-02-17 10:00"
@@ -59,7 +95,7 @@ the curve.
 Traditionally modules in JS have been difficult - we've fantastic, but
 complex, solutions like Browserify or RequireJS - but ES6 brings its
 own module system that is fantastic to work with."
-        slides_url: ""
+        slides_url: "https://github.com/jackfranklin/frontendlondonfeb2015-jspm-demo/tree/master/open-sauce"
       -
         name: "Ana Gasston"
         pic: "2015/02/ana.jpg"
@@ -67,7 +103,7 @@ own module system that is fantastic to work with."
         twitter: "anagasston"
         topic: "Better findability with Schema"
         description: "Most search engines reward well-built sites that use structured markup. Find out how Schema can help them understand the intent behind your content."
-        slides_url: ""
+        slides_url: "https://www.dropbox.com/s/p92kzv41d36rof1/better-findability-with-schema.key?dl=0"
       -
         name: "Bodil Stokke"
         pic: "2015/02/bodil.jpg"

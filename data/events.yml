@@ -1,6 +1,6 @@
 events:
   # -
-  #   date: "2013-10-31 19:00"
+  #   date: "2015-10-31 19:00"
   #   registration_url: ""
   #   tickets_released: "2017-07-22 10:00"
   #   duration: 2.5
@@ -12,7 +12,7 @@ events:
   #   speakers:
   #     -
   #       name: ""
-  #       pic: "2013/10/"
+  #       pic: "2015/10/"
   #       company: ""
   #       twitter: ""
   #       topic: ""
@@ -20,7 +20,7 @@ events:
   #       slides_url: ""
   #     -
   #       name: ""
-  #       pic: "2013/10/"
+  #       pic: "2015/10/"
   #       company: ""
   #       twitter: ""
   #       topic: ""
@@ -28,7 +28,7 @@ events:
   #       slides_url: ""
   #     -
   #       name: ""
-  #       pic: "2013/10/"
+  #       pic: "2015/10/"
   #       company: ""
   #       twitter: ""
   #       topic: ""
@@ -47,12 +47,12 @@ events:
         writeup_url: ""
     speakers:
       -
-        name: ""
-        pic: "2013/10/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Adam Onishi"
+        pic: "2015/03/onishi-adam.jpg"
+        company: "Architect"
+        twitter: "onishiweb"
+        topic: "Taking the pain out of refactoring"
+        description: "Refactoring can be tough. In this talk, I'll cover some of the great sides to refactoring a front-end project, looking at recent work from a large project refactor I've been working on. I'll look at how you can set some good rules and goals for your refactoring. Take a look at tools to make the job easier."
         slides_url: ""
       -
         name: ""
@@ -130,7 +130,7 @@ own module system that is fantastic to work with."
         twitter: "@stopsatgreen"
         topic: "OK Computer"
         description: "People mostly communicate by talking, but with computers we are often impeded by keyboards.This talk looks at ways we can talk directly to our devices, and have them talk back to us"
-        slides_url: "https://github.com/stopsatgreen/speech-felondon"
+        slides_url: "https://github.com/stopsatgreen/speech-felondon" # https://www.youtube.com/watch?v=Y9mh4SSz2es
       -
         name: "Charlie Owen"
         pic: "2015/01/charlie.jpg"
@@ -148,7 +148,7 @@ own module system that is fantastic to work with."
         description: "We all know how valuable it is to get feedback from real users on the websites and apps we build. We can often waste days if not weeks of development time when we don't know what our users really care about.
           Unfortunately we tend to not do it because it's hard to do, takes time and can be really expensive. Isn't it also someone else's job?
           From my experience going from a big agency to small startup, I'll show you how to do it quickly, cheaply and also explain why it will make you a better developer."
-        slides_url: "http://tomalterman.com/pages/talks-fel.html"
+        slides_url: "http://tomalterman.com/pages/talks-fel.html" # https://www.youtube.com/watch?v=SBFx6J0mnFI
   -
     date: "2014-11-27 18:45"
     registration_url: "https://www.eventbrite.com/e/front-end-london-january-2015-tickets-15356871817"
@@ -175,7 +175,7 @@ own module system that is fantastic to work with."
         twitter: "pimterry"
         topic: "What the hell are web components?"
         description: "Web components are the next Next Big Thing for the front-end, offering a fundamental change to how we build the web. There's lots of people talking about them at a high-level, but it's hard to tell how this fits together in practice, or why it's interesting. Let's talk about that."
-        slides_url: ""
+        slides_url: "http://pimterry.github.io/What-the-hell-are-web-components/"
       -
         name: "Phil Nash"
         pic: "2013/03/phil.jpg"
@@ -183,7 +183,7 @@ own module system that is fantastic to work with."
         twitter: "philnash"
         topic: "WhatRTC? Everything you need to know to connect browsers to the world"
         description: "Traditionally browsers talk to servers, but what if they could speak to each other? WebRTC is a small set of APIs that make peer to peer communication possible between browsers. Video, audio and data can flow from browser to browser opening up a new set of possibilities for the web. We'll take a look at what WebRTC gives you and, importantly, what it leaves out. We'll take a look at implementing a simple chat application and speculate over more complicated use cases and examples."
-        slides_url: ""
+        slides_url: "https://github.com/philnash/whatrtc"
   -
     date: "2014-08-28 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-august-2014-tickets-12687732349"

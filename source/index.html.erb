@@ -34,23 +34,9 @@ is_event_upcoming = ((latest_event_date + latest_event.duration*60*60) > Time.no
 
     <p>Front-end London is a free <strong>evening meetup</strong> run by <a href="http://madebymany.co.uk">Made by Many</a> that's dedicated to all aspects of front-end development.</p>
 
-    <p>This month we’re trying something new: less talks, more pub. So you won’t need a ticket, just show up and from 6:30pm onwards for interesting company and craft beers. We’ll be back to our usual scheduled programming on April 30.</p>
+    <p>This month we’re trying something new: less talks, more pub. So you won’t need a ticket, just show up from 6:30pm onwards for interesting company and craft beers.</p>
 
-    <% if is_event_upcoming %>
-
-      <% if latest_event.registration_url.present? %>
-        <%= link_to "Get tickets", latest_event.registration_url, class: "cta--primary", target: "_blank" %>
-      <% end %>
-
-      <% if release_date > Time.now %>
-        Tickets will be released on <%= release_date.strftime('%B %-d') %> at 10am and 4pm
-      <% end %>
-
-      <% if latest_event.tickets_released.empty? && latest_event.registration_url.empty? %>
-        <p><em>Tickets not yet released</em></p>
-      <% end %>
- 
-    <% end %>
+    <p>We’ll be back to our usual scheduled programming on April 30.</p>
 
     <form action="http://madebymany.us6.list-manage.com/subscribe/post?u=2069e586d651ff50b3844c372&amp;id=12bc29b23c" method="post" name="subscribe-form">
       <p>Subscribe to our mailing list for ticket reminders.</p>

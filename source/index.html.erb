@@ -22,7 +22,7 @@ is_event_upcoming = ((latest_event_date + latest_event.duration*60*60) > Time.no
         %>
       </span>
       <span class="next-event-date"><%= latest_event_date.strftime('%-d') %><span class="date-ordinal"><%= latest_event_date.day.ordinalize.gsub(/\d/, '') %></span> <%= latest_event_date.strftime('%B, %Y') %></span>
-      <span class="next-event-time">Doors 6:30pm <span class="next-event-bullet">&bullet;</span> Talks 7pm<span class="next-event-bullet">&bullet;</span> Islington</span>
+      <span class="next-event-time">Drinks from 6:30pm <span class="next-event-bullet">&bullet;</span> Exmouth Arms</span>
 
     </div>
   </section>
@@ -34,7 +34,7 @@ is_event_upcoming = ((latest_event_date + latest_event.duration*60*60) > Time.no
 
     <p>Front-end London is a free <strong>evening meetup</strong> hosted by <a href="http://madebymany.co.uk">Made by Many</a> that's dedicated to all aspects of front-end development.</p>
 
-    <p>We aim to cover a wide variety of topics around the technology, tools, processes, and experiences of front-end development, with thought-provoking talks from a variety of speakers.</p>
+    <p>This month we’re trying something new: less talks, more pub. So you won’t need a ticket, just show up and from 6:30pm onwards for interesting company and craft beers. We’ll be back to our usual scheduled programming on April 30.</p>
 
     <% if is_event_upcoming %>
 

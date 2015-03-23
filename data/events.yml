@@ -38,7 +38,7 @@ events:
   -
     date: "2015-03-26 19:00"
     registration_url: ""
-    tickets_released: "2015-03-17 10:00"
+    tickets_released: ""
     duration: 2.5
     writeups:
       -
@@ -46,13 +46,21 @@ events:
         twitter: ""
         writeup_url: ""
     speakers:
+      # -
+      #   name: "Adam Onishi"
+      #   pic: "2015/03/onishi-adam.jpg"
+      #   company: "Architect"
+      #   twitter: "onishiweb"
+      #   topic: "Taking the pain out of refactoring"
+      #   description: "Refactoring can be tough. In this talk, I'll cover some of the great sides to refactoring a front-end project, looking at recent work from a large project refactor I've been working on. I'll look at how you can set some good rules and goals for your refactoring. Take a look at tools to make the job easier."
+      #   slides_url: ""
       -
-        name: "Adam Onishi"
-        pic: "2015/03/onishi-adam.jpg"
-        company: "Architect"
-        twitter: "onishiweb"
-        topic: "Taking the pain out of refactoring"
-        description: "Refactoring can be tough. In this talk, I'll cover some of the great sides to refactoring a front-end project, looking at recent work from a large project refactor I've been working on. I'll look at how you can set some good rules and goals for your refactoring. Take a look at tools to make the job easier."
+        name: ""
+        pic: "2013/10/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
         slides_url: ""
       -
         name: ""

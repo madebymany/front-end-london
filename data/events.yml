@@ -36,9 +36,9 @@ events:
   #       slides_url: ""
 
   -
-    date: "2015-03-26 19:00"
-    registration_url: ""
-    tickets_released: "2015-03-17 10:00"
+    date: "2015-04-30 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-april-2015-tickets-16654709685"
+    tickets_released: "2015-04-21 10:00"
     duration: 2.5
     writeups:
       -
@@ -47,28 +47,28 @@ events:
         writeup_url: ""
     speakers:
       -
-        name: "Adam Onishi"
-        pic: "2015/03/onishi-adam.jpg"
-        company: "Architect"
-        twitter: "onishiweb"
-        topic: "Taking the pain out of refactoring"
-        description: "Refactoring can be tough. In this talk, I'll cover some of the great sides to refactoring a front-end project, looking at recent work from a large project refactor I've been working on. I'll look at how you can set some good rules and goals for your refactoring. Take a look at tools to make the job easier."
+        name: "Mairead Buchan"
+        pic: "2013/02/mairead.jpg"
+        company: "Head London"
+        twitter: "tiny_m"
+        topic: "Leap motion & VR for mobile"
+        description: "Experimenting with Three.js and Leap motion to create 3D VR interactions inside a mobile browser."
         slides_url: ""
       -
-        name: ""
-        pic: "2013/10/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Phil Nash"
+        pic: "2013/03/phil.jpg"
+        company: "Twilio"
+        twitter: "philnash"
+        topic: "The web is getting pushy"
+        description: "New in browsers for 2015, is the Service Worker. Born out of the struggle to make the Appcache work for offline capable sites it has also brought the advent of push notifications to the web. Through building up an example application live we will see how to implement the Service Worker to not only serve up an app when we're offline but enhance the online experience with push notifications."
         slides_url: ""
       -
-        name: ""
-        pic: "2013/10/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Ruth John"
+        pic: "2013/04/ruth.jpg"
+        company: "TheLab"
+        twitter: "rumyra"
+        topic: "A Journey Through Web API Space & Time"
+        description: "browser APIs seem to be cropping up daily, it’s hard to keep track of what’s what and which is which. Don’t panic, Ruth takes us on a tour of what’s past, what’s present and what the future holds, so you can level up and feel a lot calmer about what’s on the event horizon."
         slides_url: ""
 
   -

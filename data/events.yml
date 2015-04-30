@@ -49,7 +49,7 @@ events:
       -
         name: "Mairead Buchan"
         pic: "2013/02/mairead.jpg"
-        company: "Head London"
+        company: "Emdeebeebee"
         twitter: "tiny_m"
         topic: "Leap motion & VR for mobile"
         description: "Experimenting with Three.js and Leap motion to create 3D VR interactions inside a mobile browser."

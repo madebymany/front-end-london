@@ -36,6 +36,42 @@ events:
   #       slides_url: ""
 
   -
+    date: "2015-05-28 19:00"
+    registration_url: ""
+    tickets_released: "2015-05-19 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: ""
+        pic: "2015/10/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+      -
+        name: "Adam Onishi"
+        pic: "2013/08/adam.jpg"
+        company: "Architect"
+        twitter: "onishiweb"
+        topic: "Trophy winning teams"
+        description: "“Players don't win you trophies, teams win trophies.” A team works better when they work together, no matter whether the goal is winning the World Cup or creating amazing websites."
+        slides_url: ""
+      -
+        name: ""
+        pic: "2015/10/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+
+  -
     date: "2015-04-30 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-april-2015-tickets-16654709685"
     tickets_released: "2015-04-21 10:00"

@@ -49,10 +49,10 @@ events:
       -
         name: "Sally Jenkinson"
         pic: "2015/05/jenkinson-sally.jpg"
-        company: ""
+        company: "Records Sound the Same"
         twitter: "sjenkinson"
         topic: "Choosing the “right” CMS"
-        description: ""
+        description: "Digital projects involve a great deal of choices around products and technologies, with a content management system often being integral. Using this scenario, we’ll explore certain pitfalls around selecting technology for the wrong reasons and discuss important questions that should be considered before choices are made."
         slides_url: ""
       -
         name: "Paul Robert Lloyd"
@@ -64,7 +64,7 @@ events:
         slides_url: ""
       -
         name: "Adam Onishi"
-        pic: "2015/05/adam.jpg"
+        pic: "2015/05/onishi-adam.jpg"
         company: "Architect"
         twitter: "onishiweb"
         topic: "Trophy-winning teams"

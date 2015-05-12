@@ -47,28 +47,28 @@ events:
         writeup_url: ""
     speakers:
       -
-        name: ""
-        pic: "2015/10/"
+        name: "Sally Jenkinson"
+        pic: "2015/05/jenkinson-sally.jpg"
         company: ""
-        twitter: ""
-        topic: ""
+        twitter: "sjenkinson"
+        topic: "Choosing the “right” CMS"
         description: ""
+        slides_url: ""
+      -
+        name: "Paul Robert Lloyd"
+        pic: "2015/05/lloyd-paul-robert.png"
+        company: "Independent graphic designer and front-end web developer"
+        twitter: "paulrobertlloyd"
+        topic: "Responsive principles"
+        description: "Responsive web design has engendered a wider conversation about how we build products that accommodate an increasing breadth of connected devices. This talk will suggest a framework within which we can model this continuing discussion, and outline the principles needed for our work to better respond to a rapidly changing world."
         slides_url: ""
       -
         name: "Adam Onishi"
-        pic: "2013/08/adam.jpg"
+        pic: "2015/05/adam.jpg"
         company: "Architect"
         twitter: "onishiweb"
-        topic: "Trophy winning teams"
+        topic: "Trophy-winning teams"
         description: "“Players don't win you trophies, teams win trophies.” A team works better when they work together, no matter whether the goal is winning the World Cup or creating amazing websites."
-        slides_url: ""
-      -
-        name: ""
-        pic: "2015/10/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
         slides_url: ""
 
   -

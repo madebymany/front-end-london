@@ -38,6 +38,148 @@ events:
   #       slides_url: ""
   #       video_url: ""
   -
+    date: "2015-05-28 19:00"
+    registration_url: "//www.eventbrite.com/e/front-end-london-may-2015-tickets-16934254812"
+    tickets_released: "2015-05-19 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Sally Jenkinson"
+        pic: "2015/05/jenkinson-sally.jpg"
+        company: "Records Sound the Same"
+        twitter: "sjenkinson"
+        topic: "Choosing the “right” CMS"
+        description: "Digital projects involve a great deal of choices around products and technologies, with a content management system often being integral. Using this scenario, we’ll explore certain pitfalls around selecting technology for the wrong reasons and discuss important questions that should be considered before choices are made."
+        slides_url: ""
+      -
+        name: "Paul Robert Lloyd"
+        pic: "2015/05/lloyd-paul-robert.png"
+        company: "Independent graphic designer and front-end web developer"
+        twitter: "paulrobertlloyd"
+        topic: "Responsive principles"
+        description: "Responsive web design has engendered a wider conversation about how we build products that accommodate an increasing breadth of connected devices. This talk will suggest a framework within which we can model this continuing discussion, and outline the principles needed for our work to better respond to a rapidly changing world."
+        slides_url: ""
+      -
+        name: "Adam Onishi"
+        pic: "2015/05/onishi-adam.jpg"
+        company: "Architect"
+        twitter: "onishiweb"
+        topic: "Trophy-winning teams"
+        description: "“Players don’t win you trophies, teams win trophies.” A team works better when they work together, no matter whether the goal is winning the World Cup or creating amazing websites."
+        slides_url: ""
+  -
+    date: "2015-04-30 19:00"
+    registration_url: "//www.eventbrite.com/e/front-end-london-april-2015-tickets-16654709685"
+    tickets_released: "2015-04-21 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Mairead Buchan"
+        pic: "2013/02/mairead.jpg"
+        company: "Emdeebeebee"
+        twitter: "tiny_m"
+        topic: "Leap motion & VR for mobile"
+        description: "Experimenting with Three.js and Leap motion to create 3D VR interactions inside a mobile browser."
+        slides_url: ""
+      -
+        name: "Phil Nash"
+        pic: "2013/03/phil.jpg"
+        company: "Twilio"
+        twitter: "philnash"
+        topic: "The web is getting pushy"
+        description: "New in browsers for 2015, is the Service Worker. Born out of the struggle to make the Appcache work for offline capable sites it has also brought the advent of push notifications to the web. Through building up an example application live we will see how to implement the Service Worker to not only serve up an app when we’re offline but enhance the online experience with push notifications."
+        slides_url: ""
+      -
+        name: "Ruth John"
+        pic: "2013/04/ruth.jpg"
+        company: "TheLab"
+        twitter: "rumyra"
+        topic: "A Journey Through Web API Space & Time"
+        description: "browser APIs seem to be cropping up daily, it’s hard to keep track of what’s what and which is which. Don’t panic, Ruth takes us on a tour of what’s past, what’s present and what the future holds, so you can level up and feel a lot calmer about what’s on the event horizon."
+        slides_url: ""
+  -
+    date: "2015-02-26 19:00"
+    registration_url: "//www.eventbrite.com/e/front-end-london-february-2015-tickets-15740651713"
+    tickets_released: "2015-02-17 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Jack Franklin"
+        pic: "2015/02/jack.jpg"
+        company: "GoCardless"
+        twitter: "Jack_Franklin"
+        topic: "Using ES6 Modules today"
+        description: "The next big release of JavaScript, ES6, will be coming to browsers near you very soon, and as developers it’s important to stay ahead of the curve. Traditionally modules in JS have been difficult - we’ve fantastic, but complex, solutions like Browserify or RequireJS - but ES6 brings its own module system that is fantastic to work with."
+        slides_url: ""
+      -
+        name: "Ana Gasston"
+        pic: "2015/02/ana.jpg"
+        company: "Web Behaviour Specialists"
+        twitter: "anagasston"
+        topic: "Better findability with Schema"
+        description: "Most search engines reward well-built sites that use structured markup. Find out how Schema can help them understand the intent behind your content."
+        slides_url: ""
+      -
+        name: "Bodil Stokke"
+        pic: "2015/02/bodil.jpg"
+        company: "Future Ad Labs"
+        twitter: "bodil"
+        topic: "Reactive game development for the discerning hipster"
+        description: "We’ve been living in callback hell for almost two decades now, and no matter how many control flow libraries we submit to npm, things don’t seem to be getting any better. And that’s where functional programming comes in—turns out callbacks are just functions, and those academics in their ivory towers with their Haskell compilers actually encountered and solved these problems long ago. And now we can have their solutions in JS too, because of functional reactive programming."
+        slides_url: ""
+  -
+    date: "2015-01-29 19:00"
+    registration_url: "//www.eventbrite.com/e/front-end-london-january-2015-tickets-15356871817"
+    tickets_released: "2015-01-21 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Peter Gasston"
+        pic: "2014/04/peter-gasston.jpg"
+        company: "rehabstudio"
+        twitter: "@stopsatgreen"
+        topic: "OK Computer"
+        description: "People mostly communicate by talking, but with computers we are often impeded by keyboards.This talk looks at ways we can talk directly to our devices, and have them talk back to us"
+        slides_url: "//github.com/stopsatgreen/speech-felondon"
+        video_url: "//www.youtube.com/watch?v=Y9mh4SSz2es"
+      -
+        name: "Charlie Owen"
+        pic: "2015/01/charlie.jpg"
+        company: "Freelance"
+        twitter: "sonniesedge"
+        topic: "Visual Regression Testing"
+        description: "In large teams it’s all too easy to introduce subtle and not-so-subtle visual bugs into a project. I’ll show you how easy it is to set-up automated tests that will catch these visual regressions before they get into your codebase."
+        slides_url: ""
+      -
+        name: "Tom Alterman"
+        pic: "2015/01/tom-alterman.jpg"
+        company: "TrialReach"
+        twitter: "@tomalterman"
+        topic: "Hackers guide to testing with real users"
+        description: "We all know how valuable it is to get feedback from real users on the websites and apps we build. We can often waste days if not weeks of development time when we don’t know what our users really care about. Unfortunately we tend to not do it because it’s hard to do, takes time and can be really expensive. Isn’t it also someone else’s job? From my experience going from a big agency to small startup, I’ll show you how to do it quickly, cheaply and also explain why it will make you a better developer."
+        slides_url: "//tomalterman.com/pages/talks-fel.html"
+        video_url: "//www.youtube.com/watch?v=SBFx6J0mnFI"
+  -
     date: "2014-11-27 18:45"
     registration_url: "//www.eventbrite.com/e/front-end-london-november-2014-tickets-13776482831"
     tickets_released: "2014-11-18 10:00"
@@ -56,7 +198,7 @@ events:
         topic: "Making tradeoffs"
         description: "There are no absolutes in technology except this one."
         slides_url: ""
-        video_url: ""
+        video_url: "//www.youtube.com/watch?v=znBtzBAS9Bo"
       -
         name: "Tim Perry"
         pic: "2014/11/tim.png"
@@ -64,7 +206,7 @@ events:
         twitter: "pimterry"
         topic: "What the hell are web components?"
         description: "Web components are the next Next Big Thing for the front-end, offering a fundamental change to how we build the web. There’s lots of people talking about them at a high-level, but it’s hard to tell how this fits together in practice, or why it’s interesting. Let’s talk about that."
-        slides_url: ""
+        slides_url: "//pimterry.github.io/What-the-hell-are-web-components/"
         video_url: ""
       -
         name: "Phil Nash"
@@ -73,7 +215,7 @@ events:
         twitter: "philnash"
         topic: "WhatRTC? Everything you need to know to connect browsers to the world"
         description: "Traditionally browsers talk to servers, but what if they could speak to each other? WebRTC is a small set of APIs that make peer to peer communication possible between browsers. Video, audio and data can flow from browser to browser opening up a new set of possibilities for the web. We’ll take a look at what WebRTC gives you and, importantly, what it leaves out. We’ll take a look at implementing a simple chat application and speculate over more complicated use cases and examples."
-        slides_url: ""
+        slides_url: "//github.com/philnash/whatrtc"
         video_url: ""
   -
     date: "2014-08-28 19:00"
@@ -342,7 +484,7 @@ events:
         video_url: ""
       -
         name: "Tom Ashworth"
-        pic: "2014/01/tom-ashworth2.jpg"
+        pic: "2014/01/tom-ashworth.jpg"
         company: "Twitter"
         twitter: "phuunet"
         topic: "ServiceWorker and the offline Web"

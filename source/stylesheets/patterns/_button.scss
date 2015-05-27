@@ -1,6 +1,7 @@
 %button {
   @extend %text-box;
   display: block;
+  cursor: pointer;
   font-family: $font-secondary;
   font-size: 20px;
   text-decoration: none;

@@ -35,6 +35,42 @@ events:
   #       description: ""
   #       slides_url: ""
 
+  # -
+  #     date: "2015-06-25 19:00"
+  #     registration_url: "https://www.eventbrite.com/e/front-end-london-june-2015-tickets-17297307713"
+  #     tickets_released: "2015-06-15 10:00"
+  #     duration: 2.5
+  #     writeups:
+  #       -
+  #         author: ""
+  #         twitter: ""
+  #         writeup_url: ""
+  #     speakers:
+  #       -
+  #         name: "Lily Dart"
+  #         pic: "2015/10/"
+  #         company: ""
+  #         twitter: "lily_dart"
+  #         topic: "TBA"
+  #         description: ""
+  #         slides_url: ""
+  #       -
+  #         name: "Jani Eväkallio"
+  #         pic: "2015/10/"
+  #         company: "Futurice"
+  #         twitter: "jevakallio"
+  #         topic: "Fuck it, clear the decks! Managing the pace of change in the frontend scene"
+  #         description: "What concrete problems do frontend engineers face due to this phenomenon, why frontend is a hotbed for this type of problem, what can we do as an engineering community to alleviate it, what can we do as individual engineers to deal with it, and what can we do as humans to cope with it."
+  #         slides_url: ""
+  #       -
+  #         name: ""
+  #         pic: "2015/10/"
+  #         company: ""
+  #         twitter: ""
+  #         topic: ""
+  #         description: ""
+  #         slides_url: ""
+
   -
     date: "2015-05-28 19:00"
     registration_url: ""
@@ -53,7 +89,7 @@ events:
         twitter: "sjenkinson"
         topic: "Choosing the “right” CMS"
         description: "Digital projects involve a great deal of choices around products and technologies, with a content management system often being integral. Using this scenario, we’ll explore certain pitfalls around selecting technology for the wrong reasons and discuss important questions that should be considered before choices are made."
-        slides_url: ""
+        slides_url: "http://www.slideshare.net/sallyjenkinson/choosing-the-right-cms-and-other-things"
       -
         name: "Paul Robert Lloyd"
         pic: "2015/05/lloyd-paul-robert.png"
@@ -61,7 +97,7 @@ events:
         twitter: "paulrobertlloyd"
         topic: "Responsive principles"
         description: "Responsive web design has engendered a wider conversation about how we build products that accommodate an increasing breadth of connected devices. This talk will suggest a framework within which we can model this continuing discussion, and outline the principles needed for our work to better respond to a rapidly changing world."
-        slides_url: ""
+        slides_url: "https://speakerdeck.com/paulrobertlloyd/responsive-principles-front-end-london-may-2015"
       -
         name: "Adam Onishi"
         pic: "2015/05/onishi-adam.jpg"
@@ -69,7 +105,7 @@ events:
         twitter: "onishiweb"
         topic: "Trophy-winning teams"
         description: "“Players don't win you trophies, teams win trophies.” A team works better when they work together, no matter whether the goal is winning the World Cup or creating amazing websites."
-        slides_url: ""
+        slides_url: "https://speakerdeck.com/onishiweb/trophy-winning-teams"
 
   -
     date: "2015-04-30 19:00"

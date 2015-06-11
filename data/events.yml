@@ -56,14 +56,14 @@ events:
           slides_url: ""
         -
           name: "Jani Eväkallio"
-          pic: "2015/06/jane-evakallio.jpg"
+          pic: "2015/06/jani-evakallio.jpg"
           company: "Futurice"
           twitter: "jevakallio"
           topic: "Fuck it, clear the decks! Managing the pace of change in the frontend scene"
           description: "What concrete problems do frontend engineers face due to this phenomenon, why frontend is a hotbed for this type of problem, what can we do as an engineering community to alleviate it, what can we do as individual engineers to deal with it, and what can we do as humans to cope with it."
           slides_url: ""
         -
-          name: "Chaals"
+          name: "Chaals Nevile"
           pic: ""
           company: "Yandex"
           twitter: "chaals"

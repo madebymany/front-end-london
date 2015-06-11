@@ -7,7 +7,13 @@
     <div class="speaker column span-four">
       <a class="speaker-profile" href="https://twitter.com/<%= speaker[:twitter] %>">
         <div class="speaker-profile-img" data-icon="">
+
+          <% if speaker[:pic].present? %>
           <img src="images/speakers/<%= speaker[:pic] %>" alt="<%= speaker[:name] %>" width="140" height="140">
+          <% else %>
+          <img src="images/speakers/anonymous.png" alt="" width="140" height="140">
+          <% end %>
+          
         </div>
         <cite class="speaker__name"><%= speaker[:name] %></cite>
       </a>

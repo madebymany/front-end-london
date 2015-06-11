@@ -66,9 +66,9 @@ events:
           name: "Chaals"
           pic: ""
           company: "Yandex"
-          twitter: ""
-          topic: "(TBA)"
-          description: ""
+          twitter: "chaals"
+          topic: "Schema.org and accessibility"
+          description: "Schema.org metadata is a runaway success. While most public websites don’t explicitly include “semantic Web” data, around a third have adopted the form used by schema.org, a success rate only matched by Facebook’s opengraph vocabulary. What does schema.org do for accessibility, what could it do better, and how can you use it?"
           slides_url: ""
 
   -

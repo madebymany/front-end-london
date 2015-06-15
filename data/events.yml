@@ -47,14 +47,6 @@ events:
           writeup_url: ""
       speakers:
         -
-          name: "Lily Dart"
-          pic: ""
-          company: ""
-          twitter: "lily_dart"
-          topic: "(TBA)"
-          description: ""
-          slides_url: ""
-        -
           name: "Jani Eväkallio"
           pic: "2015/06/jani-evakallio.jpg"
           company: "Futurice"
@@ -69,6 +61,14 @@ events:
           twitter: "chaals"
           topic: "Schema.org and accessibility"
           description: "Schema.org metadata is a runaway success. While most public websites don’t explicitly include “semantic Web” data, around a third have adopted the form used by schema.org, a success rate only matched by Facebook’s opengraph vocabulary. What does schema.org do for accessibility, what could it do better, and how can you use it?"
+          slides_url: ""
+        -
+          name: "Lily Dart"
+          pic: "2015/06/lily-dart.jpg"
+          company: "Freelance UX and Service Design"
+          twitter: "lily_dart"
+          topic: "How to make design decisions stick"
+          description: "Design is no longer just the remit of designers. Everything from server infrastructure, to API design, to button interactions, to the colours in the branding can effect the user experience of the things we design and build. But when everyone on the project is making design decisions all the time, how can we ensure that they they’re the right decisions, and that when those decisions are made, everyone else is onboard? Lily will be talking about the qualities we need make design decisions successful, and what can happen when we struggle to motivate the people we work with to buy-in to the same approach."
           slides_url: ""
 
   -

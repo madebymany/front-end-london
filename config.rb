@@ -68,6 +68,8 @@ ignore 'previous_months/*'
 
 activate :directory_indexes
 
+activate :autoprefixer
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment

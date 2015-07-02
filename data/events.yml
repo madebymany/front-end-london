@@ -38,6 +38,41 @@ events:
   #       slides_url: ""
   #       video_url: ""
   -
+      date: "2015-06-25 19:00"
+      registration_url: "https://www.eventbrite.com/e/front-end-london-june-2015-tickets-17297307713"
+      tickets_released: "2015-06-16 10:00"
+      duration: 2.5
+      writeups:
+        -
+          author: ""
+          twitter: ""
+          writeup_url: ""
+      speakers:
+        -
+          name: "Jani Eväkallio"
+          pic: "2015/06/jani-evakallio.jpg"
+          company: "Futurice"
+          twitter: "jevakallio"
+          topic: "Fuck it, clear the decks! Managing the pace of change in the frontend scene"
+          description: "What concrete problems do frontend engineers face due to this phenomenon, why frontend is a hotbed for this type of problem, what can we do as an engineering community to alleviate it, what can we do as individual engineers to deal with it, and what can we do as humans to cope with it."
+          slides_url: "http://evakall.io/clear-the-decks/#/"
+        -
+          name: "Chaals Nevile"
+          pic: "2015/06/chaals-nevile.jpg"
+          company: "Yandex"
+          twitter: "chaals"
+          topic: "Schema.org and accessibility"
+          description: "Schema.org metadata is a runaway success. While most public websites don’t explicitly include “semantic Web” data, around a third have adopted the form used by schema.org, a success rate only matched by Facebook’s opengraph vocabulary. What does schema.org do for accessibility, what could it do better, and how can you use it?"
+          slides_url: ""
+        -
+          name: "Lily Dart"
+          pic: "2015/06/lily-dart.jpg"
+          company: "Freelance UX and Service Design"
+          twitter: "lily_dart"
+          topic: "How to make design decisions stick"
+          description: "Design is no longer just the remit of designers. Everything from server infrastructure, to API design, to button interactions, to the colours in the branding can effect the user experience of the things we design and build. But when everyone on the project is making design decisions all the time, how can we ensure that they they’re the right decisions, and that when those decisions are made, everyone else is onboard? Lily will be talking about the qualities we need make design decisions successful, and what can happen when we struggle to motivate the people we work with to buy-in to the same approach."
+          slides_url: "http://www.slideshare.net/LilyDart/making-design-decisions-stick"
+  -
     date: "2015-05-28 19:00"
     registration_url: "//www.eventbrite.com/e/front-end-london-may-2015-tickets-16934254812"
     tickets_released: "2015-05-19 10:00"
@@ -55,7 +90,7 @@ events:
         twitter: "sjenkinson"
         topic: "Choosing the “right” CMS"
         description: "Digital projects involve a great deal of choices around products and technologies, with a content management system often being integral. Using this scenario, we’ll explore certain pitfalls around selecting technology for the wrong reasons and discuss important questions that should be considered before choices are made."
-        slides_url: ""
+        slides_url: "http://www.slideshare.net/sallyjenkinson/choosing-the-right-cms-and-other-things"
       -
         name: "Paul Robert Lloyd"
         pic: "2015/05/lloyd-paul-robert.png"
@@ -63,7 +98,7 @@ events:
         twitter: "paulrobertlloyd"
         topic: "Responsive principles"
         description: "Responsive web design has engendered a wider conversation about how we build products that accommodate an increasing breadth of connected devices. This talk will suggest a framework within which we can model this continuing discussion, and outline the principles needed for our work to better respond to a rapidly changing world."
-        slides_url: ""
+        slides_url: "https://speakerdeck.com/paulrobertlloyd/responsive-principles-front-end-london-may-2015"
       -
         name: "Adam Onishi"
         pic: "2015/05/onishi-adam.jpg"
@@ -71,7 +106,7 @@ events:
         twitter: "onishiweb"
         topic: "Trophy-winning teams"
         description: "“Players don’t win you trophies, teams win trophies.” A team works better when they work together, no matter whether the goal is winning the World Cup or creating amazing websites."
-        slides_url: ""
+        slides_url: "https://speakerdeck.com/onishiweb/trophy-winning-teams"
   -
     date: "2015-04-30 19:00"
     registration_url: "//www.eventbrite.com/e/front-end-london-april-2015-tickets-16654709685"

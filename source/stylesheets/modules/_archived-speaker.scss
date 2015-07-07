@@ -37,7 +37,8 @@
 }
 
 .archived-speaker__link {
-  font-size: 16px;
+  font-family: $font-secondary;
+  font-size: 18px;
   line-height: 1.5;
   text-decoration: none;
   color: $color-box-tertiary-contrast;
@@ -77,7 +78,7 @@
       height: 12px;
       margin-right: 16px;
       background-color: #fff;
-      border: 2px solid $color-box-tertiary;
+      border: 2px solid $color-box-primary;
       border-top: none;
       border-left: none;
       box-shadow: 2px 2px 0 rgba(#fff, .4);
@@ -101,6 +102,6 @@
   }
 
   .archived-speaker__link {
-    font-size: 18px;
+    font-size: 20px;
   }
 }

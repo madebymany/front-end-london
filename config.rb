@@ -70,6 +70,8 @@ activate :directory_indexes
 
 activate :autoprefixer
 
+page '/epic/*', :layout => 'epic'
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment

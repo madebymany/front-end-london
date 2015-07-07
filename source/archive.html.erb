@@ -2,6 +2,8 @@
 title: Event archive – Front-end London
 ---
 
+<% events = data.events.events %>
+
 <main class="archive">
   <div class="archive__container">
     <h1 class="archive__heading">
@@ -9,8 +11,8 @@ title: Event archive – Front-end London
     </h1>
   </div>
 
-  <% previous_events.each_with_index do |event, i| %>
-    <% num = previous_events.length - i %>
+  <% previous_events(events).each_with_index do |event, i| %>
+    <% num = previous_events(events).length - i %>
 
     <article id="fel<%= num %>" class="archived-event">
       <header class="archived-event__header">

@@ -1,0 +1,77 @@
+events:
+  # -
+  #   date: "2013-10-31 19:00"
+  #   registration_url: ""
+  #   tickets_released: "2017-07-22 10:00"
+  #   duration: 2.5
+  #   writeups:
+  #     -
+  #       author: ""
+  #       twitter: ""
+  #       writeup_url: ""
+  #   speakers:
+  #     -
+  #       name: ""
+  #       pic: "2013/10/"
+  #       company: ""
+  #       twitter: ""
+  #       topic: ""
+  #       description: ""
+  #       slides_url: ""
+  #       video_url: ""
+  #     -
+  #       name: ""
+  #       pic: "2013/10/"
+  #       company: ""
+  #       twitter: ""
+  #       topic: ""
+  #       description: ""
+  #       slides_url: ""
+  #       video_url: ""
+  #     -
+  #       name: ""
+  #       pic: "2013/10/"
+  #       company: ""
+  #       twitter: ""
+  #       topic: ""
+  #       description: ""
+  #       slides_url: ""
+  #       video_url: ""
+  -
+      date: "2015-09-26 9:00"
+      registration_url: ""
+      tickets_released: "2015-08-14 10:00"
+      duration: 8
+      writeups:
+        -
+          author: ""
+          twitter: ""
+          writeup_url: ""
+      speakers:
+        -
+          name: ""
+          pic: "2013/10/"
+          company: ""
+          twitter: ""
+          topic: ""
+          description: ""
+          slides_url: ""
+          video_url: ""
+        -
+          name: ""
+          pic: "2013/10/"
+          company: ""
+          twitter: ""
+          topic: ""
+          description: ""
+          slides_url: ""
+          video_url: ""
+        -
+          name: ""
+          pic: "2013/10/"
+          company: ""
+          twitter: ""
+          topic: ""
+          description: ""
+          slides_url: ""
+          video_url: ""

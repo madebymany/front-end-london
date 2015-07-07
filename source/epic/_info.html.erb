@@ -1,20 +1,12 @@
-<% events = data.events.events %>
+<% events = data.epic.events %>
 
 <header id="info" class="info">
   <div class="info__container">
     <div class="info__content">
-      <h2 class="info__heading">
-        <% if event_upcoming?(events) %>
-          Next event
-        <% else %>
-          Last event
-        <% end %>
-      </h2>
-
       <time datetime="" class="info__date">
         <span class="info__date__day">
-          <%= latest_event_date(events).day.ordinalize %> of
-          <%= latest_event_date(events).strftime("%B") %>
+          <%= latest_event_date(events).day %>
+          <%= latest_event_date(events).strftime("%B %Y") %>
         </span>
         <span class="info__date__time">
           <%= latest_event_date(events).strftime("%H:%M") %> –
@@ -24,7 +16,7 @@
 
       <address class="info__location">
         <a href="#address" class="info__address-anchor">
-          Made by Many, London
+          Sadler’s Wells Theatre, London
         </a>
       </address>
 
@@ -38,8 +30,10 @@
             <span>
               <% if latest_event(events).tickets_released.present? %>
                 Tickets available
-                <%= tickets_released_date(events).day.ordinalize %> of
-                <%= tickets_released_date(events).strftime("%B") %>
+                <span class="nobr">
+                  <%= tickets_released_date(events).day %>
+                  <%= tickets_released_date(events).strftime("%B %Y") %>
+                </span>
               <% else %>
                 Tickets to be announced
               <% end %>

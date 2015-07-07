@@ -1,11 +1,15 @@
 <section id="lineup" class="lineup">
   <div class="lineup__container">
     <h2 class="lineup__heading">
-      Speakers
+      <% if event_upcoming?(data.events.events) %>
+        Speakers
+      <% else %>
+        Last time’s speakers
+      <% end %>
     </h2>
 
     <ul class="lineup__speakers">
-      <% latest_event.speakers.each do |speaker| %>
+      <% latest_event(data.events.events).speakers.each do |speaker| %>
         <li class="lineup__speaker">
           <div class="speaker">
             <figure class="speaker__photo">

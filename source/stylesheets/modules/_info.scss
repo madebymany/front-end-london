@@ -1,14 +1,10 @@
 .info {
-  @extend %background;
-  background-color: $color-box-primary;
   font-family: $font-secondary;
 }
 
 .info__container {
   @extend %container;
-  background-image: image-url('background-multiply-small.jpg');
-  background-position: center -200px;
-  background-size: 768px auto;
+  background-image: radial-gradient(ellipse 70% 600px at center center, rgb(25, 0, 60) 0%, $color-box-primary 100%);
 }
 
 .info__heading,
@@ -19,7 +15,7 @@
 
 .info__heading {
   @extend %heading;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: #fff;
 }
 
@@ -30,17 +26,17 @@
 }
 
 .info__date {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .info__date__day {
-  font-size: 32px;
-  font-weight: bold;
+  font-family: $font-primary;
+  font-size: 28px;
+  font-weight: 500;
   color: $color-highlight;
 }
 
 .info__date__time {
-  letter-spacing: .1em;
   color: #fff;
 }
 
@@ -69,7 +65,7 @@
 }
 
 .info__tickets--available {
-  border-color: transparent;
+  border: none;
   background-color: $color-box-secondary;
   font-size: 28px;
 
@@ -88,7 +84,7 @@
 
 @media (min-width: $breakpoint-a) {
   .info__date__day {
-    font-size: 38px;
+    font-size: 32px;
   }
 }
 
@@ -103,7 +99,7 @@
   }
 
   .info__date__day {
-    font-size: 42px;
+    font-size: 36px;
   }
 
   .info__heading,
@@ -131,7 +127,6 @@
 
 @media (min-width: $breakpoint-c) {
   .info__container {
-    background-image: image-url('background-multiply-large.jpg');
     background-position: center -400px;
   }
 

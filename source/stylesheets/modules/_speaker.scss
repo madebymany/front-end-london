@@ -7,9 +7,11 @@
 
 .speaker__name {
   margin: 0;
-  margin-bottom: .1em;
-  font-size: 18px;
+  margin-bottom: .5em;
+  text-transform: uppercase;
+  font-size: 16px;
   font-weight: normal;
+  letter-spacing: .2em;
   color: $color-highlight;
 }
 
@@ -21,16 +23,15 @@
 .speaker__topic {
   @extend %heading;
   margin-bottom: .4em;
-  font-weight: normal;
   color: #fff;
 }
 
 .speaker__description {
   @extend %body;
-  color: light-on-dark($color-box-primary);
+  color: $color-box-secondary-contrast;
 
   a {
-    color: $color-box-secondary;
+    color: #fff;
   }
 }
 
@@ -60,7 +61,7 @@
   }
 
   .speaker__name {
-    font-size: 22px;
+    font-size: 19px;
   }
 }
 

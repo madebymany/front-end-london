@@ -1,22 +1,18 @@
 module EventHelper
-  def events
-    data.events.events
+  def event_upcoming?(events)
+    latest_event_date_end(events) > Time.now
   end
 
-  def event_upcoming?
-    latest_event_date_end > Time.now
-  end
-
-  def latest_event
+  def latest_event(events)
     events.first
   end
 
-  def latest_event_date
-    event_date(latest_event)
+  def latest_event_date(events)
+    event_date(latest_event(events))
   end
 
-  def latest_event_date_end
-    event_date_end(latest_event)
+  def latest_event_date_end(events)
+    event_date_end(latest_event(events))
   end
 
   def event_date(event)
@@ -27,12 +23,12 @@ module EventHelper
     (event_date(event) + event.duration*60*60)
   end
 
-  def previous_events
+  def previous_events(events)
     events.select { |e| event_date_end(e) < Time.now }
   end
 
-  def tickets_released_date
-    Chronic.parse(latest_event.tickets_released)
+  def tickets_released_date(events)
+    Chronic.parse(latest_event(events).tickets_released)
   end
 
   def event_writeups(event)

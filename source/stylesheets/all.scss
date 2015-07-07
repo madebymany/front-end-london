@@ -1,29 +1,32 @@
 @font-face {
-  font-family: 'Sina Nova';
-  src: font-url('SinaNovaReg-webfont.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Cooper Hewitt';
+  src: font-url('CooperHewitt-medium-webfont.woff') format('woff');
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Sina Nova';
-  src: font-url('SinaNovaBold-webfont.woff') format('woff');
-  font-weight: bold;
+  font-family: 'Calibre';
+  src: font-url('Calibre-regular-webfont.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
 
-$color-box-primary: rgb(0, 60, 185);
+$color-box-primary: rgb(50, 0, 50);
 $color-box-secondary: rgb(185, 0, 70);
-$color-box-tertiary: rgb(0, 45, 45);
+$color-box-secondary-contrast: mix($color-box-secondary, #fff, 20%);
+$color-box-tertiary: rgb(255, 70, 0);
 $color-box-tertiary-contrast: desaturate(lighten($color-box-tertiary, 60%), 85%);
 $color-highlight: rgb(255, 160, 0);
 
-$font-primary: 'Sina Nova', Georgia, serif;
-$font-secondary: 'Puritan', Helvetica, sans-serif;
+$font-primary: 'Cooper Hewitt', Georgia, serif;
+$font-secondary: 'Calibre', Helvetica, sans-serif;
 
 $breakpoint-a: 380px;
 $breakpoint-b: 640px;
 $breakpoint-c: 1024px;
+
+$gradient-fel: radial-gradient(circle 1400px at 300px center, $color-box-secondary 0%, $color-box-tertiary 100%);
 
 @function light-on-dark($color) {
   @return desaturate(lighten($color, 50%), 20%);
@@ -61,6 +64,10 @@ img {
   border: none;
 }
 
+.nobr {
+  white-space: nowrap;
+}
+
 @import 'patterns/background';
 @import 'patterns/body';
 @import 'patterns/button';
@@ -72,12 +79,13 @@ img {
 @import 'modules/archive';
 @import 'modules/archived-event';
 @import 'modules/archived-speaker';
+@import 'modules/awaiting-speakers';
+@import 'modules/call-for-speakers';
 @import 'modules/conduct';
 @import 'modules/event';
 @import 'modules/footer';
 @import 'modules/header';
 @import 'modules/info';
-@import 'modules/intro';
 @import 'modules/lineup';
 @import 'modules/mailing-list';
 @import 'modules/speaker';

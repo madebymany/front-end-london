@@ -50,10 +50,6 @@
 require "lib/event_helper"
 helpers EventHelper
 
-compass_config do |config|
-  config.sass_options = {:debug_info => true}
-end
-
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
@@ -72,8 +68,15 @@ activate :autoprefixer
 
 page '/epic/*', :layout => 'epic'
 
+configure :development do
+  compass_config do |config|
+    config.sass_options = {:debug_info => true}
+  end
+end
+
 # Build-specific configuration
 configure :build do
+
   # For example, change the Compass output style for deployment
   activate :minify_css
 

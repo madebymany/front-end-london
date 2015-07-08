@@ -21,6 +21,11 @@
   @extend %heading--small;
 }
 
+.call-for-speakers__subheading2 {
+  @extend %heading;
+  @extend %heading--smaller;
+}
+
 .call-for-speakers__body {
   @extend %body;
   color: #444;

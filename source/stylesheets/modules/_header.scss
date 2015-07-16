@@ -5,6 +5,7 @@
 
 .header__container {
   @extend %container;
+  position: relative;
   background-image: image-url('background-small.jpg'), $gradient-fel;
   background-position: center bottom;
   background-blend-mode: multiply;
@@ -12,8 +13,18 @@
 }
 
 .header__logo {
-  display: block;
+  display: inline-block;
   width: 100px;
+}
+
+.header__call-for-speakers {
+  margin: 0;
+  margin-top: 12px;
+  color: white;
+
+  a {
+    @extend %button;
+  }
 }
 
 .header__intro {
@@ -43,10 +54,26 @@
   .header__intro {
     font-size: 36px;
   }
+
+  .header__call-for-speakers {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: $breakpoint-b) {
+  .header__call-for-speakers {
+    margin: 50px;
+  }
 }
 
 @media (min-width: $breakpoint-c) {
   .header__intro {
     font-size: 42px;
+  }
+
+  .header__call-for-speakers {
+    margin: 50px 70px;
   }
 }

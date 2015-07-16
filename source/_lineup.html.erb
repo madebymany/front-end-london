@@ -13,8 +13,10 @@
         <li class="lineup__speaker">
           <div class="speaker">
             <figure class="speaker__photo">
+              <% if speaker.pic.present? %>
               <%= image_tag "speakers/#{speaker.pic}", alt: speaker.name,
                     class: 'speaker__photo__img' %>
+              <% end %>
             </figure>
 
             <main class="speaker__info">

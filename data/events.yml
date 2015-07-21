@@ -164,7 +164,7 @@ events:
         twitter: "tiny_m"
         topic: "Leap motion & VR for mobile"
         description: "Experimenting with Three.js and Leap motion to create 3D VR interactions inside a mobile browser."
-        slides_url: ""
+        slides_url: "//www.emdeebeebee.com/fel"
       -
         name: "Phil Nash"
         pic: "2013/03/phil.jpg"
@@ -172,7 +172,7 @@ events:
         twitter: "philnash"
         topic: "The web is getting pushy"
         description: "New in browsers for 2015, is the Service Worker. Born out of the struggle to make the Appcache work for offline capable sites it has also brought the advent of push notifications to the web. Through building up an example application live we will see how to implement the Service Worker to not only serve up an app when we’re offline but enhance the online experience with push notifications."
-        slides_url: ""
+        slides_url: "//speakerdeck.com/philnash/the-web-is-getting-pushy-at-the-frontend-2015"
       -
         name: "Ruth John"
         pic: "2013/04/ruth.jpg"
@@ -180,7 +180,7 @@ events:
         twitter: "rumyra"
         topic: "A Journey Through Web API Space & Time"
         description: "browser APIs seem to be cropping up daily, it’s hard to keep track of what’s what and which is which. Don’t panic, Ruth takes us on a tour of what’s past, what’s present and what the future holds, so you can level up and feel a lot calmer about what’s on the event horizon."
-        slides_url: ""
+        slides_url: "//rumyras-talks.herokuapp.com/web-apis-space-time/#/"
   -
     date: "2015-02-26 19:00"
     registration_url: "//www.eventbrite.com/e/front-end-london-february-2015-tickets-15740651713"
@@ -199,7 +199,7 @@ events:
         twitter: "Jack_Franklin"
         topic: "Using ES6 Modules today"
         description: "The next big release of JavaScript, ES6, will be coming to browsers near you very soon, and as developers it’s important to stay ahead of the curve. Traditionally modules in JS have been difficult - we’ve fantastic, but complex, solutions like Browserify or RequireJS - but ES6 brings its own module system that is fantastic to work with."
-        slides_url: ""
+        slides_url: "https://github.com/jackfranklin/frontendlondonfeb2015-jspm-demo/tree/master/open-sauce"
       -
         name: "Ana Gasston"
         pic: "2015/02/ana.jpg"
@@ -207,7 +207,7 @@ events:
         twitter: "anagasston"
         topic: "Better findability with Schema"
         description: "Most search engines reward well-built sites that use structured markup. Find out how Schema can help them understand the intent behind your content."
-        slides_url: ""
+        slides_url: "https://www.dropbox.com/s/p92kzv41d36rof1/better-findability-with-schema.key?dl=0"
       -
         name: "Bodil Stokke"
         pic: "2015/02/bodil.jpg"
@@ -243,7 +243,7 @@ events:
         twitter: "sonniesedge"
         topic: "Visual Regression Testing"
         description: "In large teams it’s all too easy to introduce subtle and not-so-subtle visual bugs into a project. I’ll show you how easy it is to set-up automated tests that will catch these visual regressions before they get into your codebase."
-        slides_url: ""
+        slides_url: "http://www.slideshare.net/sonniesedge/visual-regression-testing"
       -
         name: "Tom Alterman"
         pic: "2015/01/tom-alterman.jpg"

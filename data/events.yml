@@ -50,21 +50,21 @@ events:
         writeup_url: ""
     speakers:
       -
+        name: "Matt Zeunert"
+        pic: "2015/07/matt-zeunert.jpg"
+        company: ""
+        twitter: "mattzeunert"
+        topic: "Using BEM to structure CSS"
+        description: "Writing well-structured CSS has become an important part of building maintainable websites. To promote code re-use, different style systems have emerged to encourage modular CSS. Block-Element-Modifier (BEM) is a naming convention for classes inside a module. This talk will explain how the naming convention works, how it’s different from nesting based systems and how you can use Sass to make writing BEM code easier."
+        slides_url: ""
+        video_url: ""
+      -
         name: "Mike MacCana"
         pic: "2015/07/mike-maccana.jpg"
         company: "CertSimple"
         twitter: "mikemaccana"
         topic: "Everything you need to take advantage of npm in your browser side code, and avoid the pitfalls!"
         description: "Why you'd want to use npm in the first place; building browser bundles with Gulp and npm build - and how they compare; how to identify the modules that contribute to bundle file size; pros, cons and workarounds for the ‘everything is a module’ coding style; ensuring consistent versioning during deploys; how to include templates in your browserify bundles. Based on experiences in a real world, production, profitable application."
-        slides_url: ""
-        video_url: ""
-      -
-        name: ""
-        pic: ""
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
         slides_url: ""
         video_url: ""
       -

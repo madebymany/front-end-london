@@ -12,10 +12,10 @@
       <% latest_event(data.events.events).speakers.each do |speaker| %>
         <li class="lineup__speaker">
           <div class="speaker">
-            <figure class="speaker__photo">
+            <figure class="speaker__photo<%= " is-patrick" if speaker.twitter == "patrickhamann" %>">
               <% if speaker.pic.present? %>
               <%= image_tag "speakers/#{speaker.pic}", alt: speaker.name,
-                    class: 'speaker__photo__img' %>
+                class: "speaker__photo__img" %>
               <% end %>
             </figure>
 

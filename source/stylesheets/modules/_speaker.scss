@@ -71,3 +71,12 @@
     margin-right: 40px;
   }
 }
+
+.speaker__photo.is-patrick:hover,
+.speaker__photo.is-patrick:focus {
+  background: url("/images/speakers/2015/08/patrick-hamann-rollover.jpg") center no-repeat;
+  background-size: cover;
+  & img {
+    opacity:0;
+  }
+}

@@ -39,6 +39,44 @@ events:
   #       video_url: ""
 
   -
+    date: "2015-08-27 18:30"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-august-2015-tickets-18185279661"
+    tickets_released: "2015-08-18 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Mariana Morris"
+        pic: "2015/08/mariana.jpg"
+        company: "Oxford Computer Consultants"
+        twitter: "MarianaMota"
+        topic: "UX is team work"
+        description: "To get the whole project team involved in the UX process is essential to achieve a high quality product: developers meeting users and attending usability testing, designers and developers sketching together, clients actively participating in the design process. This talk provides practical UX techniques and tools to integrate UX in an Agile environment and get everyone in the project team contributing to the user experience."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Sandro Paganotti"
+        pic: "2015/08/sandro.jpg"
+        company: "Facebook"
+        twitter: "sandropaganotti"
+        topic: ""
+        description: ""
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Patrick Hamann"
+        pic: "2015/08/patrick-hamann.jpg"
+        company: "FT Labs"
+        twitter: "patrickhamann"
+        topic: "Embracing the network"
+        description: "The network is intrinsically unreliable. More so, the network is out of your control as a developer. Therefore, we must design systems which embrace the unpredictability of the network and defend against it all costs. How can you prioritise the delivery of your core content? What best-practices can you use to optimise your assets? How can we design interfaces which adapt and respond to changing network conditions? And finally, how are new APIs such as ServiceWorker changing the way we think about the network?"
+        slides_url: ""
+        video_url: ""
+  -
     date: "2015-07-30 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-july-2015-tickets-17793273159"
     tickets_released: "2015-07-21 10:00"
@@ -56,7 +94,7 @@ events:
         twitter: "mattzeunert"
         topic: "Using BEM to structure CSS"
         description: "Writing well-structured CSS has become an important part of building maintainable websites. To promote code re-use, different style systems have emerged to encourage modular CSS. Block-Element-Modifier (BEM) is a naming convention for classes inside a module. This talk will explain how the naming convention works, how it’s different from nesting based systems and how you can use Sass to make writing BEM code easier."
-        slides_url: ""
+        slides_url: "http://www.mattzeunert.com/slides/bem-fel.pdf"
         video_url: ""
       -
         name: "Mike MacCana"
@@ -65,7 +103,7 @@ events:
         twitter: "mikemaccana"
         topic: "Everything you need to take advantage of npm in your browser side code, and avoid the pitfalls!"
         description: "Why you'd want to use npm in the first place; building browser bundles with Gulp and npm build - and how they compare; how to identify the modules that contribute to bundle file size; pros, cons and workarounds for the ‘everything is a module’ coding style; ensuring consistent versioning during deploys; how to include templates in your browserify bundles. Based on experiences in a real world, production, profitable application."
-        slides_url: ""
+        slides_url: "https://speakerdeck.com/mikemaccana/practical-browser-npm"
         video_url: ""
       -
         name: "Jonathan Fielding"
@@ -74,7 +112,7 @@ events:
         twitter: "JonthanFielding"
         topic: "Reimagining how we design responsively"
         description: "Responsive design is still relatively new – yet it’s already seen several iterations. In the first incarnation we added media queries, adapting our sites to work better on mobile devices. The second incarnation arrived with mobile first design: building for the least-capable, smallest devices and then progressive enhancing it. This talk will focus on how we can reimagine RWD with a focus on content and performance: evolving a new incarnation where we deliver a site as quickly as possible with content prioritised for what the user is trying to achieve."
-        slides_url: ""
+        slides_url: "https://www.jonathanfielding.com/talks/reimagining-responsive-design/"
         video_url: ""
   -
       date: "2015-06-25 19:00"

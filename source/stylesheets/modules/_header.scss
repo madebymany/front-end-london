@@ -3,13 +3,25 @@
   background-image: $gradient-fel;
 }
 
-.header__container {
+@mixin header__container($image) {
   @extend %container;
   position: relative;
-  background-image: image-url('background-small.jpg'), $gradient-fel;
+  background-image: image-url('#{$image}-small.jpg'), $gradient-fel;
   background-position: center bottom;
   background-blend-mode: multiply;
   background-size: cover;
+
+  @media (min-width: $breakpoint-b) {
+    background-image: image-url('#{$image}-large.jpg'), $gradient-fel;
+  }
+}
+
+.header__container {
+  @include header__container('background');
+}
+
+.header__container--epic {
+  @include header__container('background-epic');
 }
 
 .header__logo {
@@ -43,10 +55,6 @@
 }
 
 @media (min-width: $breakpoint-b) {
-  .header__container {
-    background-image: image-url('background-large.jpg'), $gradient-fel;
-  }
-
   .header__logo {
     width: 171px;
   }

@@ -63,8 +63,8 @@ events:
         pic: "2015/08/sandro.jpg"
         company: "Facebook"
         twitter: "sandropaganotti"
-        topic: ""
-        description: ""
+        topic: "Experimenting with ServiceWorker"
+        description: "The ServiceWorker is so much more than caching, it's a new application layer we can take advantage of to enhance the web experience in a lot of interesting and powerful ways. This talk explores some of the possibilities given by this new feature, such as compiling templates on a Service Worker or transcoding formats intercepting HTTP responses"
         slides_url: ""
         video_url: ""
       -

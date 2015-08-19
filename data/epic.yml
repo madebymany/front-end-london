@@ -39,7 +39,7 @@ events:
   #       video_url: ""
   -
       date: "2015-09-26 9:00"
-      registration_url: ""
+      registration_url: "https://ti.to/front-end-london/epicfel-2015"
       tickets_released: "2015-08-20 10:00"
       duration: 8
       writeups:

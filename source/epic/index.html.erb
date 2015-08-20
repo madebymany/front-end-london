@@ -24,15 +24,15 @@ title: EpicFEL – A meetup for front-end developers
     </h1>
 
     <div class="sponsor__logos">
-      <div class="sponsor__logo">
+      <% link_to "http://madebymany.com", class: "sponsor__logo" do %>
         <%= image_tag "logos/madebymany-tweaked_black.png", alt: "Made by Many Logo", class: "sponsor__img" %>
-      </div>
-      <div class="sponsor__logo">
+      <% end %>
+      <% link_to "http://zebrapeople.com/", class: "sponsor__logo" do %>
         <%= image_tag "logos/zebra_people.png", alt: "Zebra People Logo", class: "sponsor__img" %>
-      </div>
-      <div class="sponsor__logo">
+      <% end %>
+      <% link_to "http://futurice.com/", class: "sponsor__logo" do %>
         <%= image_tag "logos/futurice.png", alt: "Futurice Logo", class: "sponsor__img" %>
-      </div>
+      <% end %>
     </div>
 
   </div>

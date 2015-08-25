@@ -4,7 +4,7 @@ title: Front-end London – A meetup for front-end developers
 
 <main class="event">
   <%= partial 'info' %>
-  <%= partial 'lineup' %>
+  <%= partial 'lineup', locals: {data: data.events} %>
 
   <footer class="event__footer">
     <div class="event__container">

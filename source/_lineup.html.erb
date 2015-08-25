@@ -1,7 +1,7 @@
 <section id="lineup" class="lineup">
   <div class="lineup__container">
     <h2 class="lineup__heading">
-      <% if event_upcoming?(data.events.events) %>
+      <% if event_upcoming?(data.events) %>
         Speakers
       <% else %>
         Last time’s speakers
@@ -9,7 +9,7 @@
     </h2>
 
     <ul class="lineup__speakers">
-      <% latest_event(data.events.events).speakers.each do |speaker| %>
+      <% latest_event(data.events).speakers.each do |speaker| %>
         <li class="lineup__speaker">
           <div class="speaker">
             <figure class="speaker__photo<%= " is-patrick" if speaker.twitter == "patrickhamann" %>">
@@ -36,9 +36,7 @@
               </h2>
 
               <% if speaker.description.present? %>
-                <p class="speaker__description">
-                  <%= speaker.description %>
-                </p>
+                <%= simple_format(speaker.description, class: 'speaker__description') %>
               <% end %>
             </main>
           </div>

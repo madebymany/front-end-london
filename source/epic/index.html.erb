@@ -4,17 +4,24 @@ title: EpicFEL – A meetup for front-end developers
 
 <main class="event">
   <%= partial 'info' %>
+</main>
 
-  <section class="awaiting-speakers">
-    <div class="awaiting-speakers__container">
-      <p class="awaiting-speakers__message">
-        EpicFEL is a friendly, inclusive full-day conference built around the amazing front-end community in London. In its third year, the event is affordable (£25!), accessible, and will feature inspiring and insightful talks on a variety of topics.
-      </p>
-      <p class="awaiting-speakers__message">
-        See our <%= link_to 'code of conduct', '/conduct' %>.
-      </p>
-    </div>
-  </section>
+<section class="about">
+  <div class="about__container">
+    <h1 class="about__heading">
+      About the event
+    </h1>
+    <p class="about__body">
+      EpicFEL is a friendly, inclusive full-day conference built around the amazing front-end community in London. In its third year, the event is affordable, accessible, and will feature inspiring and insightful talks on a variety of topics.
+    </p>
+    <p class="about__body">
+      See our <%= link_to 'code of conduct', '/conduct' %>.
+    </p>
+  </div>
+</section>
+
+<main class="event">
+  <%= partial 'lineup', locals: {data: data.epic} %>
 </main>
 
 <section class="sponsor">

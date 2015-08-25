@@ -64,7 +64,9 @@ ignore 'previous_months/*'
 
 activate :directory_indexes
 
-activate :autoprefixer
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions']
+end
 
 page '/epic/*', :layout => 'epic'
 
@@ -79,7 +81,6 @@ configure :build do
 
   # For example, change the Compass output style for deployment
   activate :minify_css
-
   # Minify Javascript on build
   activate :minify_javascript
 

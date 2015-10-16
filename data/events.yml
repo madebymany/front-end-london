@@ -40,8 +40,8 @@ events:
 
   -
     date: "2015-10-29 19:00"
-    registration_url: ""
-    tickets_released: "2017-07-22 10:00"
+    registration_url: "http://www.eventbrite.com/e/front-end-london-october-2015-tickets-18990014645"
+    tickets_released: "2015-10-20 10:00"
     duration: 2.5
     writeups:
       -
@@ -50,8 +50,17 @@ events:
         writeup_url: ""
     speakers:
       -
-        name: ""
-        pic: "2013/10/"
+        name: "Katie Fenn"
+        pic: "2015/10/katie-fenn.jpg"
+        company: ""
+        twitter: "katie_fenn"
+        topic: "Chrome DevTools, inside out"
+        description: "Chrome DevTools: a suite of tools to debug and profile the performance of your site. They're bundled with every copy of Chrome, and you have every reason to learn what they're capable of."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Josh Emerson"
+        pic: "2015/10/josh-.jpg"
         company: ""
         twitter: ""
         topic: ""
@@ -59,17 +68,8 @@ events:
         slides_url: ""
         video_url: ""
       -
-        name: ""
-        pic: "2013/10/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
-        slides_url: ""
-        video_url: ""
-      -
-        name: ""
-        pic: "2013/10/"
+        name: "Katy Moe"
+        pic: "2015/10/katy-moe.jpg"
         company: ""
         twitter: ""
         topic: ""

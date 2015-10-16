@@ -69,7 +69,7 @@ events:
         video_url: ""
       -
         name: "Katy Moe"
-        pic: "2015/10/katy-moe.jpg"
+        pic: "2015/10/katy-moe.png"
         company: "Kahoot!"
         twitter: "katyemoe"
         topic: "The Web Crypto API"

@@ -298,9 +298,9 @@ events:
     duration: 2.5
     writeups:
       -
-        author: ""
-        twitter: ""
-        writeup_url: ""
+        author: "Michael Strutt"
+        twitter: "mstrutt_co_uk"
+        writeup_url: "http://mstrutt.co.uk/blog/2015/02/notes-from-front-end-london-january/"
     speakers:
       -
         name: "Peter Gasston"
@@ -318,7 +318,7 @@ events:
         twitter: "sonniesedge"
         topic: "Visual Regression Testing"
         description: "In large teams it’s all too easy to introduce subtle and not-so-subtle visual bugs into a project. I’ll show you how easy it is to set-up automated tests that will catch these visual regressions before they get into your codebase."
-        slides_url: "http://www.slideshare.net/sonniesedge/visual-regression-testing"
+        slides_url: "//www.slideshare.net/sonniesedge/visual-regression-testing"
       -
         name: "Tom Alterman"
         pic: "2015/01/tom-alterman.jpg"

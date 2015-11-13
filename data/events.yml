@@ -37,6 +37,44 @@ events:
   #       description: ""
   #       slides_url: ""
   #       video_url: ""
+  -
+    date: "2015-11-26 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-november-2015-tickets-19473117619"
+    tickets_released: "2015-11-17 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Richard Bray"
+        pic: "2015/11/richard-bray.jpg"
+        company: "Stratajet"
+        twitter: "Ceiga"
+        topic: "The benefit of using single classes in CSS"
+        description: "As CSS gets more complicated with pre and post processors, making minor tweaks to a stylesheet is becoming more of a daunting task. This talk will focus on using single property or helper classes to make simple edits to the style of a page without going through the rigmarole a front end dev might have to go through."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Belén Albeza"
+        pic: ""
+        company: "Mozilla"
+        twitter: "ladybenko"
+        topic: ""
+        description: ""
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Oliver Joseph Ash"
+        pic: "2015/11/oliver-j-ash.jpg"
+        company: "The Guardian"
+        twitter: "oliverjash"
+        topic: ""
+        description: ""
+        slides_url: ""
+        video_url: ""
 
   -
     date: "2015-10-29 19:00"

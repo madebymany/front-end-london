@@ -59,11 +59,11 @@ events:
         video_url: ""
       -
         name: "Belén Albeza"
-        pic: ""
+        pic: "2015/11/belen-albeza.jpg"
         company: "Mozilla"
         twitter: "ladybenko"
-        topic: "(TBA)"
-        description: ""
+        topic: "Simplifying front-end"
+        description: "It is easy to fall in the trap of over-engineering, or keeping up with new JS frameworks, or using a new fancy task runner because a tweet told you so. “More” is the current default nowadays. We need to push towards “Less”. In this talk we will see how “More” is slowing us down and making us stressed, and how to declutter our front-end development so we can have less, simple and easy-to-maintain code."
         slides_url: ""
         video_url: ""
       -
@@ -93,7 +93,7 @@ events:
         company: ""
         twitter: "katie_fenn"
         topic: "Chrome DevTools, inside out"
-        description: "Chrome DevTools: a suite of tools to debug and profile the performance of your site. They're bundled with every copy of Chrome, and you have every reason to learn what they're capable of."
+        description: "Chrome DevTools: a suite of tools to debug and profile the performance of your site. They're bundled with every copy of Chrome, and you have every reason to learn what they’re capable of."
         slides_url: ""
         video_url: ""
       -

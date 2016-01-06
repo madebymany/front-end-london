@@ -49,6 +49,15 @@ events:
         twitter: ""
         writeup_url: ""
     speakers:
+      -
+        name: "Callum Macrae"
+        pic: "2016/01/callummacrae.jpg"
+        company: "Lost My Name"
+        twitter: "callumacrae"
+        topic: "How to not use jQuery"
+        description: "jQuery is great for supporting older browsers and quickly shipping features without having to know too much JavaScript, but is often unnecessary. This talk will show you how you can use features of JavaScript introduced since jQuery was written—features introduced in ES5, ES2015 and ES2016. Do you really need jQuery in your next project?"
+        slides_url: ""
+        video_url: ""
   -
     date: "2015-11-26 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-november-2015-tickets-19473117619"

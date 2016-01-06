@@ -40,7 +40,7 @@ events:
 
   -
     date: "2016-01-28 19:00"
-    registration_url: ""
+    registration_url: "https://www.eventbrite.com/e/front-end-london-january-2016-tickets-20469736533"
     tickets_released: "2016-01-19 10:00"
     duration: 2.5
     writeups:

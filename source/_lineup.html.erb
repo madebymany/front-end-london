@@ -1,15 +1,15 @@
 <section id="lineup" class="lineup">
   <div class="lineup__container">
     <h2 class="lineup__heading">
-      <% if event_upcoming?(data.events) %>
+      <% if event_upcoming?(data.events) && latest_event(data.events).speakers %>
         Speakers
-      <% else %>
+      <% elsif latest_event(data.events).speakers %>
         Last time’s speakers
       <% end %>
     </h2>
 
     <ul class="lineup__speakers">
-      <% latest_event(data.events).speakers.each do |speaker| %>
+      <% latest_event(data.events).speakers.try(:each) do |speaker| %>
         <li class="lineup__speaker">
           <div class="speaker">
             <figure class="speaker__photo<%= " is-patrick" if speaker.twitter == "patrickhamann" %>">

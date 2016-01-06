@@ -37,6 +37,18 @@ events:
   #       description: ""
   #       slides_url: ""
   #       video_url: ""
+
+  -
+    date: "2016-01-28 19:00"
+    registration_url: ""
+    tickets_released: "2016-01-19 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
   -
     date: "2015-11-26 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-november-2015-tickets-19473117619"

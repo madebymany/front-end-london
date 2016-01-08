@@ -58,6 +58,15 @@ events:
         description: "jQuery is great for supporting older browsers and quickly shipping features without having to know too much JavaScript, but is often unnecessary. This talk will show you how you can use features of JavaScript introduced since jQuery was written—features introduced in ES5, ES2015 and ES2016. Do you really need jQuery in your next project?"
         slides_url: ""
         video_url: ""
+      -
+        name: "Calum Ryan"
+        pic: "2016/01/calumryan.jpg"
+        company: "We Create Digital"
+        twitter: "calum_ryan"
+        topic: "Taking part in the IndieWeb"
+        description: "IndieWeb (not to be confused with the platform ind.ie) is a small movement of people from all backgrounds and abilities looking to/already publishing to their own website; so that they truly own their own data. The talk will introduce principles of IndieWeb and how you can take part through IndieWebCamps and Homebrew Website Clubs."
+        slides_url: ""
+        video_url: ""
   -
     date: "2015-11-26 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-november-2015-tickets-19473117619"

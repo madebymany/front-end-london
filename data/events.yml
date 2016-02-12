@@ -39,6 +39,44 @@ events:
   #       video_url: ""
 
   -
+    date: "2016-02-25 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-february-2016-tickets-21203140163"
+    tickets_released: "2016-02-16 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Christopher Pearce"
+        pic: "2016/02/cUI1-6gc.jpg"
+        company: "Lystable"
+        twitter: "chrisui"
+        topic: "CSS Modules: Who, What, Where, When, Why?!"
+        description: "As front-end developers we have the tendency to form a love-hate relationship with our CSS. On one hand it can be satisfyingly trivial to piece together some really good looking UI but on the other it can become an unruly beast if not treated with extreme caution. CSS Modules has been born out of problems scaling CSS and provides us with a revolutionary shift in how we are forced to consider writing our styles"
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Jo Franchetti"
+        pic: "2016/02/jo.jpg"
+        company: "Ticketmaster"
+        twitter: "thisisjofrank"
+        topic: "Design Sprints - Making your design process agile"
+        description: "You know you need a great user experience, but you're on a deadline. Can you have good design at speed? Running a design sprint allows teams to utilise the best parts of agile, design thinking and 'gamestorming'. This talk will go over how to run a sprint successfully, with advice on pitfalls, breaking down departmental silos and how to adapt the process to fit your team."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Daniel Grant"
+        pic: "2016/02/bltOxIwB.jpg"
+        company: "Lost My Name"
+        twitter: "danieljohngrant"
+        topic: "The Art of Reduxion"
+        description: "Good software is predictable. And, to be able to predict what software is going to do you need to know what state it could end up in. Without understanding the what, how and why of state, programs spiral out of control, leaving the outcome of their execution down to chance. Redux promises to return control to the developer by modelling programs around their state. We'll explore how functional programming paradigms are challenging the habits of front-end developers; and unpack the benefits that come with using a system like Redux."
+        slides_url: ""
+        video_url: ""
+  -
     date: "2016-01-28 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-january-2016-tickets-20469736533"
     tickets_released: "2016-01-19 10:00"

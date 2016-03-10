@@ -131,7 +131,7 @@ events:
         twitter: "callumacrae"
         topic: "How to not use jQuery"
         description: "jQuery is great for supporting older browsers and quickly shipping features without having to know too much JavaScript, but is often unnecessary. This talk will show you how you can use features of JavaScript introduced since jQuery was written—features introduced in ES5, ES2015 and ES2016. Do you really need jQuery in your next project?"
-        slides_url: ""
+        slides_url: "http://macr.ae/talks/how-to-not-use-jquery.html"
         video_url: ""
       -
         name: "Bodil Stokke"
@@ -152,7 +152,7 @@ But generators aren’t just for making simple iterators over data structures. B
         twitter: "calum_ryan"
         topic: "Taking part in the IndieWeb"
         description: "IndieWeb (not to be confused with the platform ind.ie) is a small movement of people from all backgrounds and abilities looking to/already publishing to their own website; so that they truly own their own data. The talk will introduce principles of IndieWeb and how you can take part through IndieWebCamps and Homebrew Website Clubs."
-        slides_url: ""
+        slides_url: "https://calumryan.com/talks/fel-280116/#/"
         video_url: ""
   -
     date: "2015-11-26 19:00"
@@ -172,7 +172,7 @@ But generators aren’t just for making simple iterators over data structures. B
         twitter: "Ceiga"
         topic: "The benefit of using single classes in CSS"
         description: "As CSS gets more complicated with pre and post processors, making minor tweaks to a stylesheet is becoming more of a daunting task. This talk will focus on using single property or helper classes to make simple edits to the style of a page without going through the rigmarole a front end dev might have to go through."
-        slides_url: ""
+        slides_url: "https://speakerdeck.com/richardbray/using-single-property-classes-in-css-fel-nov-2015"
         video_url: ""
       -
         name: "Belén Albeza"
@@ -181,7 +181,7 @@ But generators aren’t just for making simple iterators over data structures. B
         twitter: "ladybenko"
         topic: "Simplifying front-end"
         description: "It is easy to fall in the trap of over-engineering, or keeping up with new JS frameworks, or using a new fancy task runner because a tweet told you so. “More” is the current default nowadays. We need to push towards “Less”. In this talk we will see how “More” is slowing us down and making us stressed, and how to declutter our front-end development so we can have less, simple and easy-to-maintain code."
-        slides_url: ""
+        slides_url: "http://belen-albeza.github.io/simplify-front-end-fel/"
         video_url: ""
       -
         name: "Oliver Joseph Ash"
@@ -190,7 +190,7 @@ But generators aren’t just for making simple iterators over data structures. B
         twitter: "oliverjash"
         topic: "Building an Offline Page for theguardian.com"
         description: "You’re on a train to work and you open up the Guardian app on your phone. A tunnel surrounds you, but the app still works in very much the same way as it usually would—despite your lack of internet connection, you still get the full experience, only the content shown will be stale. If you tried the same for the Guardian website, however, it wouldn’t load at all. Native apps have long had the tools to deal with these situations, in order to deliver rich user experiences whatever the user’s situation may be. With service workers, the web is catching up."
-        slides_url: ""
+        slides_url: "https://speakerdeck.com/oliverjash/building-an-offline-page-for-theguardian-dot-com"
         video_url: ""
 
   -
@@ -229,7 +229,7 @@ But generators aren’t just for making simple iterators over data structures. B
         twitter: "katyemoe"
         topic: "The Web Crypto API"
         description: "The Web Cryptography API gives us the keys to use cryptographic primitives, locked away from browsers and client-side JavaScript until now. What are these new tools? What can they do? And, perhaps more importantly, what shouldn’t we do with them?"
-        slides_url: ""
+        slides_url: "http://slides.com/katharinemoe/web-crypto/#/"
   -
     date: "2015-08-27 18:30"
     registration_url: "https://www.eventbrite.com/e/front-end-london-august-2015-tickets-18185279661"

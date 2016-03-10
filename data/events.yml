@@ -143,7 +143,7 @@ events:
 
 
 But generators aren’t just for making simple iterators over data structures. Because they’re bidirectional—they don’t only produce output, they can also take input—they’re actually coroutines, which means there’s no end to the sort of fun you can apply them to. We’re going to explore how we can use them to make asynchronous programming in JavaScript a lot more elegant—to chart a path out of callback hell. And then we’re going to take a look at what we’ve really discovered: one of the most fearsome mysteries of computer science, suddenly laid bare before us."
-        slides_url: ""
+        slides_url: "http://bodil.lol/generators/#0"
         video_url: ""
       -
         name: "Calum Ryan"

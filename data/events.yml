@@ -37,7 +37,44 @@ events:
   #       description: ""
   #       slides_url: ""
   #       video_url: ""
-
+  -
+    date: "2016-03-31 19:00"
+    registration_url: ""
+    tickets_released: "2016-03-22 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Steve Workman"
+        pic: "2016/03/workman-steve.jpg"
+        company: "Yell"
+        twitter: "steveworkman"
+        topic: "HTTPS is Hard"
+        description: "Making a site work on HTTPS should be easy, but it’s not. The older your website, the harder it is to make the transition—but why? Steve takes you through a 9 month journey, of how we moved Yell.com to HTTPS; overcoming a 20-year-old website and its many tiers to get that green padlock, and what actually happens when you make such a breaking change."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Fiona McLaren"
+        pic: "2016/03/mclaren-fiona.jpg"
+        company: "Made by Many"
+        twitter: "fionamclaren"
+        topic: "What the hell does a product manager do?"
+        description: ""
+        slides_url: ""
+        video_url: ""
+      -
+        name: ""
+        pic: "2013/10/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+        video_url: ""
   -
     date: "2016-02-25 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-february-2016-tickets-21203140163"
@@ -56,7 +93,7 @@ events:
         twitter: "chrisui"
         topic: "CSS Modules: Who, What, Where, When, Why?!"
         description: "As front-end developers we have the tendency to form a love-hate relationship with our CSS. On one hand it can be satisfyingly trivial to piece together some really good looking UI but on the other it can become an unruly beast if not treated with extreme caution. CSS Modules has been born out of problems scaling CSS and provides us with a revolutionary shift in how we are forced to consider writing our styles"
-        slides_url: ""
+        slides_url: "https://speakerdeck.com/chrisui/css-modules-who-what-where-when-and-why"
         video_url: ""
       -
         name: "Jo Franchetti"
@@ -65,7 +102,7 @@ events:
         twitter: "thisisjofrank"
         topic: "Design Sprints - Making your design process agile"
         description: "You know you need a great user experience, but you're on a deadline. Can you have good design at speed? Running a design sprint allows teams to utilise the best parts of agile, design thinking and 'gamestorming'. This talk will go over how to run a sprint successfully, with advice on pitfalls, breaking down departmental silos and how to adapt the process to fit your team."
-        slides_url: ""
+        slides_url: "https://docs.google.com/presentation/d/1VxNxUOoo3sGk_jKFApoeMAopUbQ4souWT_B9gF4eQVs/edit#slide=id.g35f391192_04"
         video_url: ""
       -
         name: "Daniel Grant"
@@ -74,7 +111,7 @@ events:
         twitter: "danieljohngrant"
         topic: "The Art of Reduxion"
         description: "Good software is predictable. And, to be able to predict what software is going to do you need to know what state it could end up in. Without understanding the what, how and why of state, programs spiral out of control, leaving the outcome of their execution down to chance. Redux promises to return control to the developer by modelling programs around their state. We'll explore how functional programming paradigms are challenging the habits of front-end developers; and unpack the benefits that come with using a system like Redux."
-        slides_url: ""
+        slides_url: "https://github.com/djgrant/redux-fel-talk"
         video_url: ""
   -
     date: "2016-01-28 19:00"

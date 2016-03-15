@@ -37,44 +37,44 @@ events:
   #       description: ""
   #       slides_url: ""
   #       video_url: ""
-  # -
-  #   date: "2016-03-31 19:00"
-  #   registration_url: ""
-  #   tickets_released: "2016-03-22 10:00"
-  #   duration: 2.5
-  #   writeups:
-  #     -
-  #       author: ""
-  #       twitter: ""
-  #       writeup_url: ""
-  #   speakers:
-  #     -
-  #       name: "Steve Workman"
-  #       pic: "2016/03/workman-steve.jpg"
-  #       company: "Yell"
-  #       twitter: "steveworkman"
-  #       topic: "HTTPS is Hard"
-  #       description: "Making a site work on HTTPS should be easy, but it’s not. The older your website, the harder it is to make the transition—but why? Steve takes you through a 9 month journey, of how we moved Yell.com to HTTPS; overcoming a 20-year-old website and its many tiers to get that green padlock, and what actually happens when you make such a breaking change."
-  #       slides_url: ""
-  #       video_url: ""
-  #     -
-  #       name: "Fiona McLaren"
-  #       pic: "2016/03/mclaren-fiona.jpg"
-  #       company: "Made by Many"
-  #       twitter: "fionamclaren"
-  #       topic: "What the hell does a product manager do?"
-  #       description: ""
-  #       slides_url: ""
-  #       video_url: ""
-  #     -
-  #       name: ""
-  #       pic: "2013/10/"
-  #       company: ""
-  #       twitter: ""
-  #       topic: ""
-  #       description: ""
-  #       slides_url: ""
-  #       video_url: ""
+  -
+    date: "2016-03-31 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-march-2016-tickets-23101583458"
+    tickets_released: "2016-03-22 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Steve Workman"
+        pic: "2016/03/workman-steve.jpg"
+        company: "Yell"
+        twitter: "steveworkman"
+        topic: "HTTPS is Hard"
+        description: "Making a site work on HTTPS should be easy, but it’s not. The older your website, the harder it is to make the transition—but why? Steve takes you through a 9 month journey, of how we moved Yell.com to HTTPS; overcoming a 20-year-old website and its many tiers to get that green padlock, and what actually happens when you make such a breaking change."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Fiona McLaren"
+        pic: "2016/03/mclaren-fiona.jpg"
+        company: "Made by Many"
+        twitter: "fionamclaren"
+        topic: "What the hell does a product manager do?"
+        description: ""
+        slides_url: ""
+        video_url: ""
+      -
+        name: ""
+        pic: "2013/10/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+        video_url: ""
   -
     date: "2016-02-25 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-february-2016-tickets-21203140163"

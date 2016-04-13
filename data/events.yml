@@ -56,7 +56,7 @@ events:
         topic: "What the hell does a product manager do?"
         description: "Everything you never wanted to know about product management, including the triangle of ambiguity and how you, as a developer, can benefit from being more product manager."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=8JPs4Meigms"
       -
         name: "Richard Bultitude"
         pic: "2016/03/bultitude-richard.jpg"
@@ -65,7 +65,7 @@ events:
         topic: "Adopting modular JavaScript"
         description: "Writing applications that are both maintainable and scalable is a challenge, but one we can more easily overcome with modularisation. The emergence of new module types and powerful tools has furnished JavaScript developers with the freedom and control they need to deliver easy-to-manage and larger scale web products. This talk explains what modular development is, why you should use it and how you can implement it as a solo dev or within your organisation."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=aAn9CQGZuz8"
       -
         name: "Steve Workman"
         pic: "2016/03/workman-steve.jpg"
@@ -74,7 +74,7 @@ events:
         topic: "HTTPS is hard"
         description: "Making a site work on HTTPS should be easy, but it’s not. The older your website, the harder it is to make the transition—but why? Steve takes you through a 9 month journey, of how we moved Yell.com to HTTPS; overcoming a 20-year-old website and its many tiers to get that green padlock, and what actually happens when you make such a breaking change."
         slides_url: "https://speakerdeck.com/steveworkman/https-is-hard"
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=9PpzVA3U-lw"
   -
     date: "2016-02-25 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-february-2016-tickets-21203140163"

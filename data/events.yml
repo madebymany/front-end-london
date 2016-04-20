@@ -38,6 +38,45 @@ events:
   #       slides_url: ""
   #       video_url: ""
   -
+    date: "2016-04-28 19:00"
+    registration_url: ""
+    tickets_released: "2016-04-22 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Michele Bertoli"
+        pic: "2016/04/bertoli-michele.jpg"
+        company: "YPlan"
+        twitter: "MicheleBertoli"
+        topic: "CSS in JS"
+        description: "In this talk we will go through the main problems with CSS at scale and we will see some interesting JavaScript-based solutions, from Inline Styles to CSS Modules.
+Are you ready to enter the magical world of CSS in JS?"
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Mark Jones"
+        pic: "2016/04/jones-mark.png"
+        company: "Kahoot"
+        twitter: "mark_jones"
+        topic: "Building functional islands"
+        description: "This talk will introduce the techniques and concepts you’ll need to begin building functional islands. I'll explain how to introduce functional programming into your code base, as well as why this might be beneficial, in terms we can all understand."
+        slides_url: ""
+        video_url: ""
+      -
+        name: ""
+        pic: "2016/04/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+        video_url: ""
+  -
     date: "2016-03-31 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-march-2016-tickets-23101583458"
     tickets_released: "2016-03-22 10:00"

@@ -57,7 +57,7 @@ events:
         description: "In this talk we will go through the main problems with CSS at scale and we will see some interesting JavaScript-based solutions, from Inline Styles to CSS Modules.
 Are you ready to enter the magical world of CSS in JS?"
         slides_url: "https://speakerdeck.com/michelebertoli/css-in-js"
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=t3kuAEMXSzg"
       -
         name: "Jo Pearce"
         pic: "2016/04/pearce-jo.jpg"
@@ -66,7 +66,7 @@ Are you ready to enter the magical world of CSS in JS?"
         topic: "Hacking your head: managing information overload"
         description: "There are limits on our ability to learn and process information. Overloading ourselves with information can impact productivity by causing psychological and physiological stress. In this talk I’ll relate some findings from the world of cognitive psychology that can help us understand how, as developers, we might be overloading ourselves."
         slides_url: "http://www.slideshare.net/JoPearce5/hacking-your-head-managing-information-overload-extended"
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=DgTJ9i8Cl-o"
       -
         name: "Mark Jones"
         pic: "2016/04/jones-mark.png"
@@ -75,7 +75,7 @@ Are you ready to enter the magical world of CSS in JS?"
         topic: "Building functional islands"
         description: "This talk will introduce the techniques and concepts you’ll need to begin building functional islands. I'll explain how to introduce functional programming into your code base, as well as why this might be beneficial, in terms we can all understand."
         slides_url: "https://speakerdeck.com/thisismarkup/building-functional-islands"
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=CDRDb1pHQ6Q"
   -
     date: "2016-03-31 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-march-2016-tickets-23101583458"

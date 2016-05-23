@@ -37,6 +37,45 @@ events:
   #       description: ""
   #       slides_url: ""
   #       video_url: ""
+
+  -
+    date: "2016-05-26 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-may-2016-tickets-25594784690#tickets"
+    tickets_released: "2016-05-24 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Sharon Anne Kean"
+        pic: "2016/05/sharon.jpg"
+        company: "Bloom &amp; Wild"
+        twitter: "SharonAnneKean"
+        topic: "Putting more D in PRODUCT"
+        description: "Developers often feel like they're the last to hear what's on the product roadmap, let alone having a chance to influence what gets built. Yet they're often full of great ideas and have a lot to add to product development discussions. Here's some tips on how to get a say in what gets built and ultimately have more impact on the product you work on."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Jack Franklin"
+        pic: "2015/02/jack.jpg"
+        company: "Pusher"
+        twitter: "Jack_Franklin"
+        topic: "Building universal JavaScript applications"
+        description: "The main criticism of single page applications has always been their reliance on JavaScript but recently we've seen a focus in running these client side applications on the server. In this talk I'll discuss why and how you can run your client side JavaScript application on the server."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Clare Evans"
+        pic: "2014/06/clare-evans.jpg"
+        company: "Kaldor"
+        twitter: ""
+        topic: "Step away from the code"
+        description: "The highs and lows of going from building a product alone in a small dark room, to letting other developers get their filthy mitts all over your pristine code, while you figure out what the hell it should do next."
+        slides_url: ""
+        video_url: ""
   -
     date: "2016-04-28 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-april-2016-tickets-24812043490"

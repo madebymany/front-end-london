@@ -40,7 +40,7 @@ events:
 
   -
     date: "2016-06-30 19:00"
-    registration_url: ""
+    registration_url: "https://www.eventbrite.com/e/front-end-london-june-2016-tickets-26075590794"
     tickets_released: "2016-06-21 10:00"
     duration: 2.5
     writeups:

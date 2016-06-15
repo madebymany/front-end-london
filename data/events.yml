@@ -39,6 +39,35 @@ events:
   #       video_url: ""
 
   -
+    date: "2016-06-30 19:00"
+    registration_url: ""
+    tickets_released: "2016-06-21 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Monika Koziol"
+        pic: "2016/06/monika.jpg"
+        company: "Red Badger"
+        twitter: "MonikaKoziol"
+        topic: "Designing in cross functional teams"
+        description: "Teamwork... love it or hate it,  no modern web application has been built by a single person. This talk will cover the benefits of designing component based UIs, lean methods, kanban and working in cross functional and co-located teams. All from a designer's perspective."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Patrick Hamann"
+        pic: "2015/08/patrick-hamann.jpg"
+        company: "Financial Times"
+        twitter: "patrickhamann"
+        topic: "HTTP/2 what, where, why, and when?"
+        description: "The onset of HTTP/2 is upon us. Now over 60% of your users browsers are be capable of interpreting requests delivered over the new protocol. But what does this really mean for us as frontend developers? How can we utilise H2’s features to deliver fast experiences? Have our best practices become anti-patterns? What is the tooling landscape like and will we need to change our existing systems?"
+        slides_url: ""
+        video_url: ""
+  -
     date: "2016-05-26 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-may-2016-tickets-25594784690#tickets"
     tickets_released: "2016-05-24 10:00"
@@ -65,7 +94,7 @@ events:
         twitter: "Jack_Franklin"
         topic: "Building universal JavaScript applications"
         description: "The main criticism of single page applications has always been their reliance on JavaScript but recently we've seen a focus in running these client side applications on the server. In this talk I'll discuss why and how you can run your client side JavaScript application on the server."
-        slides_url: ""
+        slides_url: "https://speakerdeck.com/jackfranklin/front-end-london-universal-react"
         video_url: ""
       -
         name: "Clare Evans"

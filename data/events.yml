@@ -60,7 +60,7 @@ events:
         video_url: ""
       -
         name: "Patrick Hamann"
-        pic: "2015/08/patrick-hamann.jpg"
+        pic: "2016/06/patrick.jpg"
         company: "Financial Times"
         twitter: "patrickhamann"
         topic: "HTTP/2 what, where, why, and when?"

@@ -48,34 +48,6 @@ events:
         author: ""
         twitter: ""
         writeup_url: ""
-    speakers:
-      -
-        name: ""
-        pic: "2016/08/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
-        slides_url: ""
-        video_url: ""
-      -
-        name: ""
-        pic: "2016/08/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
-        slides_url: ""
-        video_url: ""
-      -
-        name: ""
-        pic: "2016/08/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
-        slides_url: ""
-        video_url: ""
 
   # -
   #   date: "2016-06-30 19:00"

@@ -40,7 +40,7 @@ events:
 
   -
     date: "2016-08-25 19:00"
-    registration_url: ""
+    registration_url: "https://www.eventbrite.com/e/front-end-london-august-2016-tickets-27126643521"
     tickets_released: "2016-08-16 10:00"
     duration: 2.5
     writeups:
@@ -50,12 +50,12 @@ events:
         writeup_url: ""
     speakers:
       -
-        name: ""
-        pic: "2016/08/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Michael Riethmuller"
+        pic: "2016/08/riethmuller-michael.jpg"
+        company: "Australia"
+        twitter: "MikeRiethmuller"
+        topic: "A CSS eulogy"
+        description: "It’s time to say goodbye to again, only this time it's not to enemies (ie6 and 7), but old friends. I’m going to give a eulogy for some much loved design patterns and techniques we love but sadly don’t need anymore. Warning: This will be an emotional experience and you might cry."
         slides_url: ""
         video_url: ""
       -

@@ -59,24 +59,29 @@ events:
         slides_url: ""
         video_url: ""
       -
-        name: ""
-        pic: "2016/08/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Patrick Hamann"
+        pic: "2016/06/patrick.jpg"
+        company: "Financial Times"
+        twitter: "patrickhamann"
+        topic: "HTTP/2 What, where, why and when?!"
+        description: "The onset of HTTP/2 is upon us. Now over 75% of your users browsers support the low-latency transfer protocol, yet adoption has been slow. 
+
+
+What does this really mean for us as frontend developers? How can we utilise H2’s features to deliver fast experiences? Have our best practices become anti-patterns? What is the tooling landscape like and will we need to change our existing build systems? 
+
+
+Over the course of this talk Patrick will use new research and real-world examples from the Financial Times to put our minds at easy and – most importantly – get you excited about a future with HTTP/2."
         slides_url: ""
         video_url: ""
       -
-        name: ""
-        pic: "2016/08/"
-        company: ""
+        name: "Kristina Kiselyte"
+        pic: "2016/06/kiselyte-kristina.jpg"
+        company: "Rspberry Studio"
         twitter: ""
-        topic: ""
-        description: ""
+        topic: "Should designers learn to code?"
+        description: "The debate for whether designers should learn to code is not brand new anymore, however, it is a question that still keeps arising and baffling many. In today's so ever changing digital climate it is quite difficult to pin point what exactly one should do. So how can we go about finding a solution?"
         slides_url: ""
-        video_url: ""
-  # -
+        video_url: ""# -
   #   date: "2016-06-30 19:00"
   #   registration_url: "https://www.eventbrite.com/e/front-end-london-june-2016-tickets-26075590794"
   #   tickets_released: "2016-06-21 10:00"

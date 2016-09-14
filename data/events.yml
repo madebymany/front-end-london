@@ -37,7 +37,35 @@ events:
   #       description: ""
   #       slides_url: ""
   #       video_url: ""
-
+  -
+    date: "2016-09-29 19:00"
+    registration_url: ""
+    tickets_released: "2016-09-20 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Ian Feather"
+        pic: "2016/09/feather-ian.jpg"
+        company: "BuzzFeed"
+        twitter: "ianfeather"
+        topic: "Intro to Serverless Architecture"
+        description: "Learn the one weird trick that allows Ian to save money and watch better basketball games. "
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Richard Hallows"
+        pic: "blank.gif" # 2016/09/hallows-richard.jpg
+        company: ""
+        twitter: "jeddy3n"
+        topic: "PostCSS tooling"
+        description: "(TBA) "
+        slides_url: ""
+        video_url: ""
   -
     date: "2016-08-25 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-august-2016-tickets-27126643521"
@@ -72,7 +100,7 @@ What does this really mean for us as frontend developers? How can we utilise H2�
 
 Over the course of this talk Patrick will use new research and real-world examples from the Financial Times to put our minds at easy and – most importantly – get you excited about a future with HTTP/2."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=krmBaPUuhyM"
       -
         name: "Kristina Olivia"
         pic: "2016/06/kiselyte-kristina.jpg"
@@ -81,7 +109,8 @@ Over the course of this talk Patrick will use new research and real-world exampl
         topic: "Should designers learn to code?"
         description: "The debate for whether designers should learn to code is not brand new anymore, however, it is a question that still keeps arising and baffling many. In today's so ever changing digital climate it is quite difficult to pin point what exactly one should do. So how can we go about finding a solution?"
         slides_url: ""
-        video_url: ""# -
+        video_url: ""
+  # -
   #   date: "2016-06-30 19:00"
   #   registration_url: "https://www.eventbrite.com/e/front-end-london-june-2016-tickets-26075590794"
   #   tickets_released: "2016-06-21 10:00"

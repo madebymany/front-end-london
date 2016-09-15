@@ -59,11 +59,20 @@ events:
         video_url: ""
       -
         name: "Richard Hallows"
-        pic: "blank.gif" # 2016/09/hallows-richard.jpg
+        pic: "" # 2016/09/hallows-richard.jpg
         company: ""
         twitter: "jeddy3n"
         topic: "PostCSS tooling"
-        description: "(TBA) "
+        description: ""
+        slides_url: ""
+        video_url: ""
+      -
+        name: "You?"
+        pic: "" # 2016/09/hallows-richard.jpg
+        company: ""
+        twitter: "jeddy3n"
+        topic: "We're still looking for our third speaker"
+        description: "Contact us at fel@madebymany.co.uk to submit a proposal. We'd love to hear from you!"
         slides_url: ""
         video_url: ""
   -

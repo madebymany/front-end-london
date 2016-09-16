@@ -59,11 +59,11 @@ events:
         video_url: ""
       -
         name: "Richard Hallows"
-        pic: "" # 2016/09/hallows-richard.jpg
-        company: ""
+        pic: "2016/09/richard.jpg"
+        company: "Freelance"
         twitter: "jeddy3n"
         topic: "PostCSS tooling"
-        description: ""
+        description: "A rundown of PostCSS's diverse plugins. Helping you cherry pick the right ones for your next project. Followed by an introduction to stylelint, a modern CSS linter powered by PostCSS"
         slides_url: ""
         video_url: ""
       -

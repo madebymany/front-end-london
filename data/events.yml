@@ -64,6 +64,13 @@ events:
         twitter: "jeddy3n"
         topic: "An introduction to PostCSS tooling"
         description: "A rundown of PostCSS’s diverse plugins. Helping you cherrypick the right ones for your next project. Followed by an introduction to stylelint, a modern CSS linter powered by PostCSS."
+      -
+        name: "You?"
+        pic: "" # 2016/09/hallows-richard.jpg
+        company: ""
+        twitter: ""
+        topic: "We’re still looking for our third speaker"
+        description: "Contact us at fel@madebymany.co.uk to submit a proposal. We’d love to hear from you!"
         slides_url: ""
         video_url: ""
   -

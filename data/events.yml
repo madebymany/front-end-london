@@ -48,6 +48,14 @@ events:
         twitter: ""
         writeup_url: ""
     speakers:
+      
+      -
+        name: "Richard Hallows"
+        pic: "2016/09/hallows-richard.jpg"
+        company: "Freelancer"
+        twitter: "jeddy3n"
+        topic: "An introduction to PostCSS tooling"
+        description: "A rundown of PostCSS’s diverse plugins. Helping you cherrypick the right ones for your next project. Followed by an introduction to stylelint, a modern CSS linter powered by PostCSS."
       -
         name: "Ian Feather"
         pic: "2016/09/feather-ian.jpg"
@@ -58,19 +66,12 @@ events:
         slides_url: ""
         video_url: ""
       -
-        name: "Richard Hallows"
-        pic: "2016/09/hallows-richard.jpg"
-        company: "Freelancer"
-        twitter: "jeddy3n"
-        topic: "An introduction to PostCSS tooling"
-        description: "A rundown of PostCSS’s diverse plugins. Helping you cherrypick the right ones for your next project. Followed by an introduction to stylelint, a modern CSS linter powered by PostCSS."
-      -
-        name: "You?"
-        pic: "" # 2016/09/hallows-richard.jpg
-        company: ""
-        twitter: ""
-        topic: "We’re still looking for our third speaker"
-        description: "Contact us at fel@madebymany.co.uk to submit a proposal. We’d love to hear from you!"
+        name: "Alessandro Cinelli"
+        pic: "2016/09/cinelli-alessandro.jpg"
+        company: "Sainsbury’s"
+        twitter: "cirpo"
+        topic: "The Evolution of Asynchronous JavaScript"
+        description: "One of JavaScript’s strengths is how it handles asynchrony. Async is one of the most important and often misunderstood part of Javascript or any other language.  We will see how dealing with asynchrony in JavaScript evolved over the years. It all started with callbacks… and it landed on generators!"
         slides_url: ""
         video_url: ""
   -

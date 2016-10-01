@@ -93,7 +93,7 @@ events:
         topic: "A CSS eulogy"
         description: "It’s time to say goodbye to again, only this time it's not to enemies (ie6 and 7), but old friends. I’m going to give a eulogy for some much loved design patterns and techniques we love but sadly don’t need anymore. Warning: This will be an emotional experience and you might cry."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=Uzvt-EmHi6Q"
       -
         name: "Patrick Hamann"
         pic: "2016/06/patrick.jpg"
@@ -117,7 +117,7 @@ Over the course of this talk Patrick will use new research and real-world exampl
         topic: "Should designers learn to code?"
         description: "The debate for whether designers should learn to code is not brand new anymore, however, it is a question that still keeps arising and baffling many. In today's so ever changing digital climate it is quite difficult to pin point what exactly one should do. So how can we go about finding a solution?"
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=SzIE2Fu6TVU"
   # -
   #   date: "2016-06-30 19:00"
   #   registration_url: "https://www.eventbrite.com/e/front-end-london-june-2016-tickets-26075590794"

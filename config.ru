@@ -27,7 +27,11 @@ module Rack
 end
 
 use Rack::Deflater
-use Rack::TryStatic, :root => "build", :urls => %w[/], :try => ['.html', 'index.html', '/index.html']
+use Rack::TryStatic,
+  root: 'build',
+  urls: %w(/),
+  try: %w(.html index.html /index.html),
+  cache_control: 'public, max-age=31536000'
 
 # Run your own Rack app here or use this one to serve 404 messages:
 run lambda{ |env|

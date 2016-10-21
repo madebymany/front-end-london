@@ -73,7 +73,7 @@ In this talk, Ben will look at the current capabilities of Voice UIs, how the AP
         pic: "2016/10/josh-emerson.jpg"
         company: "Snyk"
         twitter: "joshje"
-        topic: "Writing Secure Node.js Code by Josh Emerson"
+        topic: "Writing Secure Node.js Code"
         description: "Some of the very things that make JavaScript awesome can also expose it to security risks. This talk will go through some sample security flaws unique to Node’s async nature and surrounding ecosystem (or especially relevant to it) and will show how these could occur in your own code or in npm dependencies.\n\n
 The talk will revolve around a sample vulnerable application, Goof, which I will exploit as an attacker would. For each issue, I'll explain why it happened, show its impact, and – most importantly – see how to avoid or fix it."
   -

@@ -37,26 +37,26 @@ events:
   #       description: ""
   #       slides_url: ""
   #       video_url: ""
--
-  date: "2016-11-24 19:00"
-  registration_url: "https://www.eventbrite.com/e/front-end-london-november-2016-tickets-29376433704"
-  tickets_released: "2016-11-15 10:00"
-  duration: 2.5
-  writeups:
-    -
-      author: ""
-      twitter: ""
-      writeup_url: ""
-  speakers:
-    -
-      name: "Monika Koziol"
-      pic: "2016/06/koziol-monika.jpg"
-      company: "Red Badger"
-      twitter: "MonikaKoziol"
-      topic: "Designing in cross functional teams"
-      description: "Teamwork... love it or hate it, no modern web application has been built by a single person. This talk will cover the benefits of designing component based UIs, lean methods, kanban and working in cross functional and co-located teams. All from a designer’s perspective."
-      slides_url: ""
-      video_url: ""
+  -
+    date: "2016-11-24 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-november-2016-tickets-29376433704"
+    tickets_released: "2016-11-15 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Monika Koziol"
+        pic: "2016/06/koziol-monika.jpg"
+        company: "Red Badger"
+        twitter: "MonikaKoziol"
+        topic: "Designing in cross functional teams"
+        description: "Teamwork... love it or hate it, no modern web application has been built by a single person. This talk will cover the benefits of designing component based UIs, lean methods, kanban and working in cross functional and co-located teams. All from a designer’s perspective."
+        slides_url: ""
+        video_url: ""
   -
     date: "2016-10-27 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-october-2016-tickets-28421273795"

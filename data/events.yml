@@ -195,44 +195,6 @@ Over the course of this talk Patrick will use new research and real-world exampl
         description: "The debate for whether designers should learn to code is not brand new anymore, however, it is a question that still keeps arising and baffling many. In today's so ever changing digital climate it is quite difficult to pin point what exactly one should do. So how can we go about finding a solution?"
         slides_url: ""
         video_url: "https://www.youtube.com/watch?v=SzIE2Fu6TVU"
-  # -
-  #   date: "2016-06-30 19:00"
-  #   registration_url: "https://www.eventbrite.com/e/front-end-london-june-2016-tickets-26075590794"
-  #   tickets_released: "2016-06-21 10:00"
-  #   duration: 2.5
-  #   writeups:
-  #     -
-  #       author: ""
-  #       twitter: ""
-  #       writeup_url: ""
-  #   speakers:
-  #     -
-  #       name: "Monika Koziol"
-  #       pic: "2016/06/koziol-monika.jpg"
-  #       company: "Red Badger"
-  #       twitter: "MonikaKoziol"
-  #       topic: "Designing in cross functional teams"
-  #       description: "Teamwork... love it or hate it, no modern web application has been built by a single person. This talk will cover the benefits of designing component based UIs, lean methods, kanban and working in cross functional and co-located teams. All from a designer’s perspective."
-  #       slides_url: ""
-  #       video_url: ""
-  #     -
-  #       name: "Patrick Hamann"
-  #       pic: "2016/06/patrick.jpg"
-  #       company: "Financial Times"
-  #       twitter: "patrickhamann"
-  #       topic: "HTTP/2 what, where, why, and when?"
-  #       description: "The onset of HTTP/2 is upon us. Now over 60% of your users browsers are be capable of interpreting requests delivered over the new protocol. But what does this really mean for us as frontend developers? How can we utilise H2’s features to deliver fast experiences? Have our best practices become anti-patterns? What is the tooling landscape like and will we need to change our existing systems?"
-  #       slides_url: ""
-  #       video_url: ""
-  #     -
-  #       name: "Kristina Kiselyte"
-  #       pic: "2016/06/kiselyte-kristina.jpg"
-  #       company: "Rspberry Studio"
-  #       twitter: ""
-  #       topic: "Should designers learn to code?"
-  #       description: "The debate for whether designers should learn to code is not brand new anymore, however, it is a question that still keeps arising and baffling many. In today's so ever changing digital climate it is quite difficult to pin point what exactly one should do. So how can we go about finding a solution?"
-  #       slides_url: ""
-  #       video_url: ""
   -
     date: "2016-05-26 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-may-2016-tickets-25594784690#tickets"

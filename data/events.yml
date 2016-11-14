@@ -57,24 +57,6 @@ events:
       description: "Teamwork... love it or hate it, no modern web application has been built by a single person. This talk will cover the benefits of designing component based UIs, lean methods, kanban and working in cross functional and co-located teams. All from a designer’s perspective."
       slides_url: ""
       video_url: ""
-    # -
-    #   name: ""
-    #   pic: "2016/10/"
-    #   company: ""
-    #   twitter: ""
-    #   topic: ""
-    #   description: ""
-    #   slides_url: ""
-    #   video_url: ""
-    # -
-    #   name: ""
-    #   pic: "2016/10/"
-    #   company: ""
-    #   twitter: ""
-    #   topic: ""
-    #   description: ""
-    #   slides_url: ""
-    #   video_url: ""
   -
     date: "2016-10-27 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-october-2016-tickets-28421273795"
@@ -86,7 +68,6 @@ events:
         twitter: ""
         writeup_url: ""
     speakers:
-      
       -
         name: "Melinda Seckington"
         pic: "2016/10/melinda.jpg"

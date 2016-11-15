@@ -50,11 +50,22 @@ events:
     speakers:
       -
         name: "Monika Koziol"
-        pic: "2016/06/koziol-monika.jpg"
+        pic: "2016/11/koziol-monika.jpg"
         company: "Red Badger"
         twitter: "MonikaKoziol"
         topic: "Designing in cross functional teams"
         description: "Teamwork... love it or hate it, no modern web application has been built by a single person. This talk will cover the benefits of designing component based UIs, lean methods, kanban and working in cross functional and co-located teams. All from a designer’s perspective."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Peter Gasston"
+        pic: "2016/11/gasston-peter.jpg"
+        company: "rehabstudio"
+        twitter: "stopsatgreen"
+        topic: "Surveying the landscape"
+        description: "As it approaches a degree of maturity as a telecomms channel, the web is going through some changes. Using extensive reference and research, this talk takes a big-picture view of some of the trends in publishing and information consumption on the web, looking at the demands of the millions of new users in emerging markets, and the way that technology is adapting to accommodate them.
+
+This talk will raise and try to answer questions such as: what is the role of the web in the new landscape? And what are the threats to, and opportunities for, the open web and web development?"
         slides_url: ""
         video_url: ""
   -
@@ -168,7 +179,7 @@ Over the course of this talk Patrick will use new research and real-world exampl
         video_url: "https://www.youtube.com/watch?v=krmBaPUuhyM"
       -
         name: "Kristina Olivia"
-        pic: "2016/06/kiselyte-kristina.jpg"
+        pic: "2016/08/kiselyte-kristina.jpg"
         company: "Rspberry Studio"
         twitter: ""
         topic: "Should designers learn to code?"
@@ -676,7 +687,7 @@ But generators aren’t just for making simple iterators over data structures. B
         name: "Peter Gasston"
         pic: "2014/04/peter-gasston.jpg"
         company: "rehabstudio"
-        twitter: "@stopsatgreen"
+        twitter: "stopsatgreen"
         topic: "OK Computer"
         description: "People mostly communicate by talking, but with computers we are often impeded by keyboards.This talk looks at ways we can talk directly to our devices, and have them talk back to us"
         slides_url: "//github.com/stopsatgreen/speech-felondon"

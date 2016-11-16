@@ -68,6 +68,17 @@ events:
 This talk will raise and try to answer questions such as: what is the role of the web in the new landscape? And what are the threats to, and opportunities for, the open web and web development?"
         slides_url: ""
         video_url: ""
+      -
+        name: "Phil Nash"
+        pic: "2013/03/phil.jpg"
+        company: "Twilio"
+        twitter: "philnash"
+        topic: "An empty database in every pocket"
+        description: "IndexedDB is not new. It is supported in almost every browser. Without it, the future of progressive web apps are in peril. But there is not a lot of love for it and that needs to change.
+
+We'll investigate why we should love IndexedDB and the kind of apps you can create when you have the power of a database in the browser. Then we'll dive into how to use IndexedDB with a look at both the terrifying API and the friendly libraries that will help us along the way. Together we'll discover a new love for IndexedDB."
+        slides_url: ""
+        video_url: ""
   -
     date: "2016-10-27 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-october-2016-tickets-28421273795"

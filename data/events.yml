@@ -1,6 +1,6 @@
 events:
   # -
-  #   date: "2016-10-31 19:00"
+  #   date: "2017-10-31 19:00"
   #   registration_url: ""
   #   tickets_released: "2017-07-22 10:00"
   #   duration: 2.5
@@ -12,7 +12,7 @@ events:
   #   speakers:
   #     -
   #       name: ""
-  #       pic: "2016/10/"
+  #       pic: "2017/0/"
   #       company: ""
   #       twitter: ""
   #       topic: ""
@@ -21,7 +21,7 @@ events:
   #       video_url: ""
   #     -
   #       name: ""
-  #       pic: "2016/10/"
+  #       pic: "2017/0/"
   #       company: ""
   #       twitter: ""
   #       topic: ""
@@ -30,13 +30,42 @@ events:
   #       video_url: ""
   #     -
   #       name: ""
-  #       pic: "2016/10/"
+  #       pic: "2017/0/"
   #       company: ""
   #       twitter: ""
   #       topic: ""
   #       description: ""
   #       slides_url: ""
   #       video_url: ""
+  -
+    date: "2017-03-30 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-march-2017-tickets-32528151577"
+    tickets_released: "2017-03-21 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Melinda Seckington"
+        pic: "2017/10/seckington-melinda.jpg"
+        company: "FutureLearn"
+        twitter: "mseckington"
+        topic: "Reflect and refactor"
+        description: "As developers, we’re constantly learning: whether it’s figuring out how to solve new problems and bugs, or focusing on new skills and knowledge to apply to our work. Often when we talk about reflecting and refactoring, it will be about the way we work in our teams or how we can make our code better — but why don’t we apply the same method to ourselves?"
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Shaun Dunne"
+        pic: "2017/10/dunne-shaun.jpg"
+        company: "Studio Zero"
+        twitter: "shaundunne"
+        topic: "The Open Metaverse"
+        description: "A look at WebVR."
+        slides_url: ""
+        video_url: ""
   -
     date: "2016-11-24 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-november-2016-tickets-29376433704"

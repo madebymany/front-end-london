@@ -50,7 +50,7 @@ events:
     speakers:
       -
         name: "Melinda Seckington"
-        pic: "2017/10/seckington-melinda.jpg"
+        pic: "2017/03/seckington-melinda.jpg"
         company: "FutureLearn"
         twitter: "mseckington"
         topic: "Reflect and refactor"
@@ -59,7 +59,7 @@ events:
         video_url: ""
       -
         name: "Shaun Dunne"
-        pic: "2017/10/dunne-shaun.jpg"
+        pic: "2017/03/dunne-shaun.jpg"
         company: "Studio Zero"
         twitter: "shaundunne"
         topic: "The Open Metaverse"

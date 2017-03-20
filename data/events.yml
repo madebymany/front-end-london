@@ -58,6 +58,15 @@ events:
         slides_url: ""
         video_url: ""
       -
+        name: "Oliver Williams"
+        pic: "2017/03/williams-oliver.jpg"
+        company: "Chamberlain Music"
+        twitter: "css_grid"
+        topic: "Sizing with content"
+        description: "From pixels to percentages, we’re already spoilt for choice when it comes to CSS sizing units. Intrinsic sizing offers us a new way of doing things - sizing from the content out. Learn about three little-known CSS keywords — min-content, max-content and fit-content and how they offer us a unique way to size our elements."
+        slides_url: ""
+        video_url: ""
+      -
         name: "Shaun Dunne"
         pic: "2017/03/dunne-shaun.jpg"
         company: "Studio Zero"

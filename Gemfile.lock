@@ -121,9 +121,3 @@ DEPENDENCIES
   chronic
   middleman (~> 3.3.7)
   middleman-autoprefixer
-
-RUBY VERSION
-   ruby 2.3.1p112
-
-BUNDLED WITH
-   1.14.6

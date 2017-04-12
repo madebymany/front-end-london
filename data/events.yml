@@ -1,6 +1,6 @@
 events:
   # -
-  #   date: "2016-10-31 19:00"
+  #   date: "2017-10-31 19:00"
   #   registration_url: ""
   #   tickets_released: "2017-07-22 10:00"
   #   duration: 2.5
@@ -12,7 +12,7 @@ events:
   #   speakers:
   #     -
   #       name: ""
-  #       pic: "2016/10/"
+  #       pic: "2017/0/"
   #       company: ""
   #       twitter: ""
   #       topic: ""
@@ -21,7 +21,7 @@ events:
   #       video_url: ""
   #     -
   #       name: ""
-  #       pic: "2016/10/"
+  #       pic: "2017/0/"
   #       company: ""
   #       twitter: ""
   #       topic: ""
@@ -30,7 +30,7 @@ events:
   #       video_url: ""
   #     -
   #       name: ""
-  #       pic: "2016/10/"
+  #       pic: "2017/0/"
   #       company: ""
   #       twitter: ""
   #       topic: ""
@@ -38,9 +38,9 @@ events:
   #       slides_url: ""
   #       video_url: ""
   -
-    date: "2016-10-31 19:00"
-    registration_url: ""
-    tickets_released: "2017-07-22 10:00"
+    date: "2017-04-27 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-april-2017-tickets-33663755198"
+    tickets_released: "2017-04-18 10:00"
     duration: 2.5
     writeups:
     -
@@ -49,32 +49,106 @@ events:
       writeup_url: ""
     speakers:
     -
-      name: ""
-      pic: "2016/10/"
-      company: ""
-      twitter: ""
-      topic: ""
-      description: ""
+      name: "Anna Doubková"
+      pic: "2017/04/anna.jpg"
+      company: "PizzaHut"
+      twitter: "lithinn"
+      topic: "Service Workers Practically"
+      description: "In this talk you'll learn what service workers are, and why and how to use them in your project. After a quick intro, we'll get into practical examples that you can take and implement in your codebase. I'll also touch on some ready-made libraries that will make your life with service workers easier."
       slides_url: ""
       video_url: ""
     -
-      name: ""
-      pic: "2016/10/"
+      name: "Jon Kelly"
+      pic: "2017/04/jon.jpg"
       company: ""
-      twitter: ""
-      topic: ""
-      description: ""
+      twitter: "jsnightowl"
+      topic: "Elm - the good, the bad & the alternatives"
+      description: "Elm has become well-known for creating highly-resilient web apps with elegant, readable, code. However, these advantages require us to learn a new programming language, although one that we are told suits all levels of web developers.
+        
+
+        By seeing some code and a demo of both a very simple Elm app, and a more complex one (that interfaces with JavaScript and D3), we see definite benefits, consider some functional programming concepts, and take an honest look at the pros and cons for developers. Finally, we look at Elm’s patterns implemented in an Angular2 JS app."
       slides_url: ""
       video_url: ""
-    -
-      name: ""
-      pic: "2016/10/"
-      company: ""
-      twitter: ""
-      topic: ""
-      description: ""
-      slides_url: ""
-      video_url: ""
+  -
+    date: "2017-03-30 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-march-2017-tickets-32528151577"
+    tickets_released: "2017-03-21 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Melinda Seckington"
+        pic: "2017/03/seckington-melinda.jpg"
+        company: "FutureLearn"
+        twitter: "mseckington"
+        topic: "Reflect and refactor"
+        description: "As developers, we’re constantly learning: whether it’s figuring out how to solve new problems and bugs, or focusing on new skills and knowledge to apply to our work. Often when we talk about reflecting and refactoring, it will be about the way we work in our teams or how we can make our code better — but why don’t we apply the same method to ourselves?"
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Oliver Williams"
+        pic: "2017/03/williams-oliver.jpg"
+        company: "Chamberlain Music"
+        twitter: "css_grid"
+        topic: "Sizing with content"
+        description: "From pixels to percentages, we’re already spoilt for choice when it comes to CSS sizing units. Intrinsic sizing offers us a new way of doing things - sizing from the content out. Learn about three little-known CSS keywords — min-content, max-content and fit-content and how they offer us a unique way to size our elements."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Shaun Dunne"
+        pic: "2017/03/dunne-shaun.jpg"
+        company: "Studio Zero"
+        twitter: "shaundunne"
+        topic: "The Open Metaverse"
+        description: "The Metaverse is far too big of an idea for an app store. On the web VR can be sharable via a URL, it can be discovered via a search engine, you can tweet it or embed it on your Wordpress blog and allow it to spread to millions of people. WebVR is both the biggest change for VR and the Web so let Shaun introduce you to what the current status is of the Standards, tools and the sort of things you can build."
+        slides_url: ""
+        video_url: ""
+  -
+    date: "2016-11-24 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-november-2016-tickets-29376433704"
+    tickets_released: "2016-11-15 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Monika Koziol"
+        pic: "2016/11/koziol-monika.jpg"
+        company: "Red Badger"
+        twitter: "MonikaKoziol"
+        topic: "Designing in cross functional teams"
+        description: "Teamwork... love it or hate it, no modern web application has been built by a single person. This talk will cover the benefits of designing component based UIs, lean methods, kanban and working in cross functional and co-located teams. All from a designer’s perspective."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Peter Gasston"
+        pic: "2016/11/gasston-peter.jpg"
+        company: "rehabstudio"
+        twitter: "stopsatgreen"
+        topic: "Surveying the landscape"
+        description: "As it approaches a degree of maturity as a telecomms channel, the web is going through some changes. Using extensive reference and research, this talk takes a big-picture view of some of the trends in publishing and information consumption on the web, looking at the demands of the millions of new users in emerging markets, and the way that technology is adapting to accommodate them.
+
+This talk will raise and try to answer questions such as: what is the role of the web in the new landscape? And what are the threats to, and opportunities for, the open web and web development?"
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Phil Nash"
+        pic: "2013/03/phil.jpg"
+        company: "Twilio"
+        twitter: "philnash"
+        topic: "An empty database in every pocket"
+        description: "IndexedDB is not new. It is supported in almost every browser. Without it, the future of progressive web apps are in peril. But there is not a lot of love for it and that needs to change.
+
+We'll investigate why we should love IndexedDB and the kind of apps you can create when you have the power of a database in the browser. Then we'll dive into how to use IndexedDB with a look at both the terrifying API and the friendly libraries that will help us along the way. Together we'll discover a new love for IndexedDB."
+        slides_url: ""
+        video_url: ""
   -
     date: "2016-10-27 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-october-2016-tickets-28421273795"
@@ -86,7 +160,6 @@ events:
         twitter: ""
         writeup_url: ""
     speakers:
-      
       -
         name: "Melinda Seckington"
         pic: "2016/10/melinda.jpg"
@@ -96,6 +169,7 @@ events:
         description: "Hiring good people can be hard. Keeping good people can be hard. It’s made easier though if you can set your company apart as a place that people want to work at. But how do you make the community aware that that’s the case?\n\n
 Developer evangelists typically evangelise products to developers, but what if the thing you’re trying to sell is the team itself? How can you get your entire team sharing with the community what you’ve built and how you work?\n\n
 This talk will examine why you should evangelise your team from an individual, team and community perspective, and give concrete examples of how to encourage your team to do so."
+        video_url: "https://pusher.com/sessions/meetup/front-end-london/employee-evangelism-make-your-team-badass"
       -
         name: "Ben Sauer"
         pic: "2016/10/ben.jpg"
@@ -105,18 +179,19 @@ This talk will examine why you should evangelise your team from an individual, t
         description: "Right now voice UIs like Siri are, well…. hit and miss. But all the big players are heavily investing in voice UI, let’s suppose it will be much smarter, soon. What does that mean for us designers? Will screen UI even be required? Should we be changing our workflow now?\n\n
 In this talk, Ben will look at the current capabilities of Voice UIs, how the APIs are connecting to apps, what’s next, and how this might change our design process and products."
         slides_url: ""
-        video_url: ""
+        video_url: "https://pusher.com/sessions/meetup/front-end-london/open-the-pod-bay-doors-designer"
       -
         name: "Josh Emerson"
         pic: "2016/10/josh-emerson.jpg"
         company: "Snyk"
         twitter: "joshje"
-        topic: "Writing Secure Node.js Code by Josh Emerson"
+        topic: "Writing Secure Node.js Code"
         description: "Some of the very things that make JavaScript awesome can also expose it to security risks. This talk will go through some sample security flaws unique to Node’s async nature and surrounding ecosystem (or especially relevant to it) and will show how these could occur in your own code or in npm dependencies.\n\n
 The talk will revolve around a sample vulnerable application, Goof, which I will exploit as an attacker would. For each issue, I'll explain why it happened, show its impact, and – most importantly – see how to avoid or fix it."
+        video_url: "https://pusher.com/sessions/meetup/front-end-london/open-the-pod-bay-doors-designer"
   -
     date: "2016-09-29 19:00"
-    registration_url: ""
+    registration_url: "https://pusher.com/sessions/meetup/front-end-london/writing-secure-nodejs-code"
     tickets_released: "2016-09-20 10:00"
     duration: 2.5
     writeups:
@@ -125,7 +200,6 @@ The talk will revolve around a sample vulnerable application, Goof, which I will
         twitter: ""
         writeup_url: ""
     speakers:
-      
       -
         name: "Richard Hallows"
         pic: "2016/09/hallows-richard.jpg"
@@ -133,6 +207,7 @@ The talk will revolve around a sample vulnerable application, Goof, which I will
         twitter: "jeddy3n"
         topic: "An introduction to PostCSS tooling"
         description: "A rundown of PostCSS’s diverse plugins. Helping you cherrypick the right ones for your next project. Followed by an introduction to stylelint, a modern CSS linter powered by PostCSS."
+        video_url: "https://pusher.com/sessions/meetup/front-end-london/an-introduction-to-postcss-tooling"
       -
         name: "Alessandro Cinelli (cirpo)"
         pic: "2016/09/cinelli-alessandro.jpg"
@@ -141,7 +216,7 @@ The talk will revolve around a sample vulnerable application, Goof, which I will
         topic: "The evolution of asynchronous JavaScript"
         description: "One of JavaScript’s strengths is how it handles asynchrony. Async is one of the most important and often misunderstood part of Javascript or any other language.  We will see how dealing with asynchrony in JavaScript evolved over the years. It all started with callbacks… and it landed on generators!"
         slides_url: ""
-        video_url: ""
+        video_url: "https://pusher.com/sessions/meetup/front-end-london/the-evolution-of-asynchronous-javascript"
       -
         name: "Ian Feather"
         pic: "2016/09/feather-ian.jpg"
@@ -150,7 +225,7 @@ The talk will revolve around a sample vulnerable application, Goof, which I will
         topic: "Intro to serverless architecture"
         description: "Learn the one weird trick that allows Ian to save money and watch better basketball games. "
         slides_url: ""
-        video_url: ""
+        video_url: "https://pusher.com/sessions/meetup/front-end-london/intro-to-serverless-architecture"
   -
     date: "2016-08-25 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-august-2016-tickets-27126643521"
@@ -188,51 +263,13 @@ Over the course of this talk Patrick will use new research and real-world exampl
         video_url: "https://www.youtube.com/watch?v=krmBaPUuhyM"
       -
         name: "Kristina Olivia"
-        pic: "2016/06/kiselyte-kristina.jpg"
+        pic: "2016/08/kiselyte-kristina.jpg"
         company: "Rspberry Studio"
         twitter: ""
         topic: "Should designers learn to code?"
         description: "The debate for whether designers should learn to code is not brand new anymore, however, it is a question that still keeps arising and baffling many. In today's so ever changing digital climate it is quite difficult to pin point what exactly one should do. So how can we go about finding a solution?"
         slides_url: ""
         video_url: "https://www.youtube.com/watch?v=SzIE2Fu6TVU"
-  # -
-  #   date: "2016-06-30 19:00"
-  #   registration_url: "https://www.eventbrite.com/e/front-end-london-june-2016-tickets-26075590794"
-  #   tickets_released: "2016-06-21 10:00"
-  #   duration: 2.5
-  #   writeups:
-  #     -
-  #       author: ""
-  #       twitter: ""
-  #       writeup_url: ""
-  #   speakers:
-  #     -
-  #       name: "Monika Koziol"
-  #       pic: "2016/06/koziol-monika.jpg"
-  #       company: "Red Badger"
-  #       twitter: "MonikaKoziol"
-  #       topic: "Designing in cross functional teams"
-  #       description: "Teamwork... love it or hate it, no modern web application has been built by a single person. This talk will cover the benefits of designing component based UIs, lean methods, kanban and working in cross functional and co-located teams. All from a designer’s perspective."
-  #       slides_url: ""
-  #       video_url: ""
-  #     -
-  #       name: "Patrick Hamann"
-  #       pic: "2016/06/patrick.jpg"
-  #       company: "Financial Times"
-  #       twitter: "patrickhamann"
-  #       topic: "HTTP/2 what, where, why, and when?"
-  #       description: "The onset of HTTP/2 is upon us. Now over 60% of your users browsers are be capable of interpreting requests delivered over the new protocol. But what does this really mean for us as frontend developers? How can we utilise H2’s features to deliver fast experiences? Have our best practices become anti-patterns? What is the tooling landscape like and will we need to change our existing systems?"
-  #       slides_url: ""
-  #       video_url: ""
-  #     -
-  #       name: "Kristina Kiselyte"
-  #       pic: "2016/06/kiselyte-kristina.jpg"
-  #       company: "Rspberry Studio"
-  #       twitter: ""
-  #       topic: "Should designers learn to code?"
-  #       description: "The debate for whether designers should learn to code is not brand new anymore, however, it is a question that still keeps arising and baffling many. In today's so ever changing digital climate it is quite difficult to pin point what exactly one should do. So how can we go about finding a solution?"
-  #       slides_url: ""
-  #       video_url: ""
   -
     date: "2016-05-26 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-may-2016-tickets-25594784690#tickets"
@@ -734,7 +771,7 @@ But generators aren’t just for making simple iterators over data structures. B
         name: "Peter Gasston"
         pic: "2014/04/peter-gasston.jpg"
         company: "rehabstudio"
-        twitter: "@stopsatgreen"
+        twitter: "stopsatgreen"
         topic: "OK Computer"
         description: "People mostly communicate by talking, but with computers we are often impeded by keyboards.This talk looks at ways we can talk directly to our devices, and have them talk back to us"
         slides_url: "//github.com/stopsatgreen/speech-felondon"

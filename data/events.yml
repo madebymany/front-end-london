@@ -69,6 +69,15 @@ events:
         By seeing some code and a demo of both a very simple Elm app, and a more complex one (that interfaces with JavaScript and D3), we see definite benefits, consider some functional programming concepts, and take an honest look at the pros and cons for developers. Finally, we look at Elm’s patterns implemented in an Angular2 JS app."
       slides_url: ""
       video_url: ""
+    -
+      name: "Andy Trevorah"
+      pic: "2017/04/andy.png"
+      company: "The Times"
+      twitter: "trevorah_"
+      topic: "The Weird World of Native Mobile"
+      description: "Native mobile apps can seem weird, especially if you come from a web background. I will go through a standard native architectural pattern and list off as many tips as I can that you wont learn in tutorials."
+      slides_url: ""
+      video_url: ""
   -
     date: "2017-03-30 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-march-2017-tickets-32528151577"

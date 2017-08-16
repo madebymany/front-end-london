@@ -37,6 +37,45 @@ events:
   #       description: ""
   #       slides_url: ""
   #       video_url: ""
+  
+  -
+    date: "2017-08-31 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-august-2017-tickets-36830691590"
+    tickets_released: "2017-08-22 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Cristiano Rastelli"
+        pic: "2017/08/rastelli-cristiano.jpg"
+        company: "Badoo"
+        twitter: "areaweb"
+        topic: "Let there be peace on CSS"
+        description: "In the last few months there’s been a growing friction between those who see CSS as an untouchable layer in the “separation of concerns” paradigm, and those who have simply ignored this golden rule and found different ways to style the UI (typically applying CSS styles via JavaScript). This debate have brought division in a community that used to be immune to this kind of “wars”. This talk is my attempt to bring peace between the two fronts."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Mike Barker"
+        pic: "2017/08/barker-mike.jpg"
+        company: "Tictrac"
+        twitter: "mrdbarker"
+        topic: "TypeScript — why even?"
+        description: "The dynamism and flexibility of Javascript is what makes the language so great, so why would you want to add static typing and more traditional concepts to an already rich language? This talk covers why, and how, you can do this using TypeScript."
+        slides_url: ""
+        video_url: ""
+      -
+        name: ""
+        pic: "2017/0/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+        video_url: ""
   -
     date: "2017-05-25 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-may-2017-tickets-34540525642"

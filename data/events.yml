@@ -65,7 +65,7 @@ events:
         twitter: "mrdbarker"
         topic: "TypeScript — why even?"
         description: "The dynamism and flexibility of Javascript is what makes the language so great, so why would you want to add static typing and more traditional concepts to an already rich language? This talk covers why, and how, you can do this using TypeScript."
-        slides_url: ""
+        slides_url: "https://docs.google.com/presentation/d/1CenLnlu0Sb24yjj0cFpGaychIB-Wg3_15K1BQqWqPQY/"
         video_url: ""
       -
         name: "Phil Nash"

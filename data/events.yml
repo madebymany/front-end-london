@@ -37,7 +37,44 @@ events:
   #       description: ""
   #       slides_url: ""
   #       video_url: ""
-  
+  -
+    date: "2017-09-28 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-september-2017-tickets-37938039698"
+    tickets_released: "2017-09-19 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Gareth Trufitt"
+        pic: "2017/09/trufitt-gareth.jpg"
+        company: "The Guardian"
+        twitter: "gtrufitt"
+        topic: "How we broke the Guardian website... and what we learned"
+        description: "Moving fast shouldn’t mean breaking things, but Facebook’s old mantra often reflects the realities of a rapidly evolving codebase and infrastructure. The Guardian’s development culture is designed to allow us to move quickly, deploy a dozen times a day and get statistically-significant A/B test results within hours. Sometimes, though, that leads to the odd slip up."
+        slides_url: ""
+        video_url: ""
+      # -
+      #   name: "Jo Franchetti"
+      #   pic: "2017/0/"
+      #   company: "Ticketmaster"
+      #   twitter: "thisisjofrank"
+      #   topic: "What I have learnt from teaching"
+      #   description: ""
+      #   slides_url: ""
+      #   video_url: ""
+      -
+        name: "Jonas Ohlsson Aden"
+        pic: "2014/07/jonas-ohlsson--large.jpg"
+        company: "Snips"
+        twitter: "pocketjoso"
+        topic: "Time for IntersectionObserver"
+        description: "Lazy loading content, tracking impression, animation triggers - for many years we have utilised scroll handlers to detect when to trigger such actions. Now modern browsers are supporting IntersectionObserver, a new API that comes with better performance, and results in cleaner code."
+        slides_url: ""
+        video_url: ""
   -
     date: "2017-08-31 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-august-2017-tickets-36830691590"

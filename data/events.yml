@@ -55,7 +55,7 @@ events:
         twitter: "gtrufitt"
         topic: "How we broke the Guardian website... and what we learned"
         description: "Moving fast shouldn’t mean breaking things, but Facebook’s old mantra often reflects the realities of a rapidly evolving codebase and infrastructure. The Guardian’s development culture is designed to allow us to move quickly, deploy a dozen times a day and get statistically-significant A/B test results within hours. Sometimes, though, that leads to the odd slip up."
-        slides_url: ""
+        slides_url: "http://trufitt.com/how-we-broke-the-guardian-and-what-we-learned.html"
         video_url: ""
       -
         name: "Jo Franchetti"
@@ -73,7 +73,7 @@ events:
         twitter: "pocketjoso"
         topic: "Time for IntersectionObserver"
         description: "Lazy loading content, tracking impression, animation triggers - for many years we have utilised scroll handlers to detect when to trigger such actions. Now modern browsers are supporting IntersectionObserver, a new API that comes with better performance, and results in cleaner code."
-        slides_url: ""
+        slides_url: "https://www.slideshare.net/JonasOhlsson/time-for-intersection-observer"
         video_url: ""
   -
     date: "2017-08-31 19:00"

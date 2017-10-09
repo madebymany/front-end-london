@@ -57,6 +57,15 @@ events:
         description: "It’s time to accept that system and network failures are inevitable and to start designing our systems to withstand them. In a year when S3 has gone down twice(!) this is becoming ever more obvious. Come and learn 19 ways BuzzFeed designs their frontend to be resilient to failure!"
         slides_url: ""
         video_url: ""
+      -
+        name: "Richard Westenra"
+        pic: "2017/10/westenra-richard.jpg"
+        company: "QuantumBlack"
+        twitter: "RichardWestenra"
+        topic: "The Good Life"
+        description: "What is best in life? How should we live, and behave towards other people? And what are our ethical duties and responsibilities as software engineers, in a world where software controls everything?"
+        slides_url: ""
+        video_url: ""
   -
     date: "2017-09-28 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-september-2017-tickets-37938039698"

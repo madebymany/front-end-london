@@ -38,6 +38,26 @@ events:
   #       slides_url: ""
   #       video_url: ""
   -
+    date: "2017-10-26 19:00"
+    registration_url: ""
+    tickets_released: "2017-10-17 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Ian Feather"
+        pic: "2016/09/feather-ian.jpg"
+        company: "BuzzFeed"
+        twitter: "ianfeather"
+        topic: "Frontend Resilience"
+        description: "It’s time to accept that system and network failures are inevitable and to start designing our systems to withstand them. In a year when S3 has gone down twice(!) this is becoming ever more obvious. Come and learn 19 ways BuzzFeed designs their frontend to be resilient to failure!"
+        slides_url: ""
+        video_url: ""
+  -
     date: "2017-09-28 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-september-2017-tickets-37938039698"
     tickets_released: "2017-09-19 10:00"

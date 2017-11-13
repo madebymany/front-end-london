@@ -47,6 +47,44 @@ events:
   #       slides_url: ""
   #       video_url: ""
   -
+    date: "2017-11-30 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-november-2017-tickets-39649865816"
+    tickets_released: "2017-11-21 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Tara Ojo"
+        pic: "2017/11/ojo-tara.jpg"
+        company: "FutureLearn"
+        twitter: "tara_ojo"
+        topic: "Junior.next()"
+        description: "Life as a “junior” developer can be intense, overwhelming, but rewarding. How can juniors move on to the next level? And, what can employers, mentors and communities do to support the the next generation of developers?"
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Sam Murray"
+        pic: "2017/11/murray-sam.jpg"
+        company: "Made by Many"
+        twitter: "samueljmurray"
+        topic: "Elixir for front-end developers"
+        description: ""
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Jessica Rose"
+        pic: "2017/11/rose-jessica.png"
+        company: "FutureLearn"
+        twitter: "jesslynnrose"
+        topic: "A More Human Industry"
+        description: "Working in technology and building for the web gives us many benefits and privileges. But the ways we work aren’t always human focused or healthy. This talk will look at ways to subvert that trend."
+        slides_url: ""
+        video_url: ""
+  -
     date: "2017-10-26 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-october-2017-tickets-38733337455"
     tickets_released: "2017-10-17 10:00"
@@ -179,7 +217,7 @@ events:
       topic: "A Road Trip to Product Success"
       description: "In this talk Sam shares how teams are structured at Made by Many. He’ll talk about the journey teams go through together—from the unknown to the Emerald City—and how you can ensure you’re better equipped to make critical product decisions"
       slides_url: ""
-      video_url: ""
+      video_url: "https://pusher.com/sessions/meetup/front-end-london/a-road-trip-to-product-success"
     -
       name: "Zahra Traboulsi"
       pic: "2017/05/zahra.jpg"
@@ -188,18 +226,16 @@ events:
       topic: "A Swift Detour from JavaScript"
       description: "JavaScript is eating the tech industry - including mobile development. So why has Swift only increased in popularity since its arrival in 2014? In this talk, we'll compare and contrast Swift with JavaScript: from syntax basics to paradigms to language features you never knew you missed and finally, considering Swift's place in a JS-dominated world."
       slides_url: ""
-      video_url: ""
+      video_url: "https://pusher.com/sessions/meetup/front-end-london/a-swift-detour-from-javascript"
     -
       name: "Patrick Kunka"
       pic: "2017/05/patrick.jpg"
       company: "Colony / KunkaLabs"
       twitter: "PatrickKunka"
       topic: "Building Consumable JavaScript APIs"
-      description: "JavaScript APIs are the interfaces with which we interact with our day-to-day front-end tools. What makes a good API and what can we learn from the APIs of today's popular libraries and frameworks?
-
-This talk will cover a variety of techniques we can use to create robust and predictable runtime code which is both easy to work with and easy to debug."
+      description: "JavaScript APIs are the interfaces with which we interact with our day-to-day front-end tools. What makes a good API and what can we learn from the APIs of today's popular libraries and frameworks? This talk will cover a variety of techniques we can use to create robust and predictable runtime code which is both easy to work with and easy to debug."
       slides_url: ""
-      video_url: ""
+      video_url: "https://pusher.com/sessions/meetup/front-end-london/building-consumable-javascript-apis"
   -
     date: "2017-04-27 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-april-2017-tickets-33663755198"
@@ -219,7 +255,7 @@ This talk will cover a variety of techniques we can use to create robust and pre
       topic: "Service Workers Practically"
       description: "In this talk you'll learn what service workers are, and why and how to use them in your project. After a quick intro, we'll get into practical examples that you can take and implement in your codebase. I'll also touch on some ready-made libraries that will make your life with service workers easier."
       slides_url: ""
-      video_url: ""
+      video_url: "https://pusher.com/sessions/meetup/front-end-london/service-workers-practically"
     -
       name: "Jon Kelly"
       pic: "2017/04/jon.jpg"
@@ -231,7 +267,7 @@ This talk will cover a variety of techniques we can use to create robust and pre
 
         By seeing some code and a demo of both a very simple Elm app, and a more complex one (that interfaces with JavaScript and D3), we see definite benefits, consider some functional programming concepts, and take an honest look at the pros and cons for developers. Finally, we look at Elm’s patterns implemented in an Angular2 JS app."
       slides_url: ""
-      video_url: ""
+      video_url: "https://pusher.com/sessions/meetup/front-end-london/elm-the-good-the-bad-and-the-alternatives"
     -
       name: "Andy Trevorah"
       pic: "2017/04/andy.png"
@@ -240,7 +276,7 @@ This talk will cover a variety of techniques we can use to create robust and pre
       topic: "The Weird World of Native Mobile"
       description: "Native mobile apps can seem weird, especially if you come from a web background. I will go through a standard native architectural pattern and list off as many tips as I can that you wont learn in tutorials."
       slides_url: ""
-      video_url: ""
+      video_url: "https://pusher.com/sessions/meetup/front-end-london/the-weird-world-of-native-mobile"
   -
     date: "2017-03-30 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-march-2017-tickets-32528151577"

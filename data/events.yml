@@ -71,8 +71,8 @@ events:
         pic: "2017/11/murray-sam.jpg"
         company: "Made by Many"
         twitter: "samueljmurray"
-        topic: "Elixir for front-end developers"
-        description: ""
+        topic: "Why we’ve adopted Elixir"
+        description: "Elixir is a new functional programming language designed for concurrency, fault tolerance and developer happiness. It’s become our go-to choice at Made by Many for building web applications. Come and hear about why we love it."
         slides_url: ""
         video_url: ""
       -

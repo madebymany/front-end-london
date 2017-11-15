@@ -179,7 +179,7 @@ events:
         topic: "Let there be peace on CSS"
         description: "In the last few months there’s been a growing friction between those who see CSS as an untouchable layer in the “separation of concerns” paradigm, and those who have simply ignored this golden rule and found different ways to style the UI (typically applying CSS styles via JavaScript). This debate have brought division in a community that used to be immune to this kind of “wars”. This talk is my attempt to bring peace between the two fronts."
         slides_url: "https://speakerdeck.com/didoo/let-there-be-peace-on-css"
-        video_url: ""
+        video_url: "https://pusher.com/sessions/meetup/front-end-london/let-there-be-peace-on-css"
       -
         name: "Mike Barker"
         pic: "2017/08/barker-mike.jpg"
@@ -188,7 +188,7 @@ events:
         topic: "TypeScript — why even?"
         description: "The dynamism and flexibility of Javascript is what makes the language so great, so why would you want to add static typing and more traditional concepts to an already rich language? This talk covers why, and how, you can do this using TypeScript."
         slides_url: "https://docs.google.com/presentation/d/1CenLnlu0Sb24yjj0cFpGaychIB-Wg3_15K1BQqWqPQY/"
-        video_url: ""
+        video_url: "https://pusher.com/sessions/meetup/front-end-london/typescript-why-even"
       -
         name: "Phil Nash"
         pic: "2013/03/phil.jpg"
@@ -197,7 +197,7 @@ events:
         topic: "Aggressive Web Apps"
         description: "Push notifications on the web can be a force for good, but is that how they are coming across? We'll take a look at how push notifications permissions are being implemented and how we can do it better."
         slides_url: "https://speakerdeck.com/philnash/aggressive-web-apps-at-front-end-london"
-        video_url: ""
+        video_url: "https://pusher.com/sessions/meetup/front-end-london/aggressive-web-apps"
   -
     date: "2017-05-25 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-may-2017-tickets-34540525642"

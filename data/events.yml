@@ -47,6 +47,35 @@ events:
   #       slides_url: ""
   #       video_url: ""
   -
+    date: "2018-01-25 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-january-2018-tickets-42104625067"
+    tickets_released: "2018-01-16 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Nicky Thompson"
+        pic: "2018/01/nicky.jpg"
+        company: "FutureLearn"
+        twitter: "knotnicky"
+        topic: "CSS Shapes - upgrade your page layouts"
+        description: "Grids are essential for lots of sites, but did you know that you can also use CSS Shapes to make more visually interesting layouts? We'll go through some properties that you can use to progressively enhance your layouts and shake up your grids."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Richard Bultitude"
+        pic: "2018/01/richard.jpg"
+        company: "Zone"
+        twitter: "rbultitudezone"
+        topic: "The Conditional Orchestra"
+        description: "The Conditional Orchestra is a web app that converts weather data into music — a personal project Richard has been developing for almost two years. In this talk he reveals the creative inspiration behind the idea and the technical challenges that kept him up at night. He'll explain how some of the most rewarding experiences on this journey were unplanned, for example, writing a JS module for generating musical scales and contributing to an open-source API wrapper"
+        slides_url: ""
+        video_url: ""
+  -
     date: "2017-11-30 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-november-2017-tickets-39649865816"
     tickets_released: "2017-11-21 10:00"

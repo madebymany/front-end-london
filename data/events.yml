@@ -1,6 +1,6 @@
 events:
   # -
-  #   date: "2017-10-31 19:00"
+  #   date: "2018-10-31 19:00"
   #   registration_url: ""
   #   tickets_released: "2017-07-22 10:00"
   #   duration: 2.5
@@ -46,6 +46,44 @@ events:
   #       description: "Getting started in the product design industry has a few hidden challenges. I will share some of the lessons learnt while starting out. I will also explain why TOPP is now the first tool in my toolkit. What’s in yours?"
   #       slides_url: ""
   #       video_url: ""
+  -
+    date: "2018-03-29 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-march-2018-tickets-43881575975"
+    tickets_released: "2018-03-20 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Jo Pearce"
+        pic: "2018/03/pearce-jo.jpg"
+        company: ""
+        twitter: "jdpearce"
+        topic: "Systems of snowflakes — Beauty, complexity and choice"
+        description: "What simple rules constrain each snowflake to a hexagonal symmetry that we find beautiful? Does this kind of beauty tend to emerge from systems with simple rules? If so, can we constrain the growth of software into forms that are pleasing? Can we define beautiful code? This is a talk about overcoming choice paralysis with software engineering practices. How we can reduce the number of choices we need to make and write complex but beautiful systems that are easier to develop and easier to maintain."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Cassie Evans"
+        pic: "2018/03/evans-cassie.jpg"
+        company: "Net Natives"
+        twitter: "cassiecodes"
+        topic: "Limitation breeds creativity"
+        description: "In web dev, sometimes the sheer volume of things to learn can be overwhelming. Pair this with anxiety and a tendency to procrastinate and you’ve got the perfect recipe for doing absolutely nothing. More choice doesn’t mean more creativity. When you work within constraints your mind has to look for unconventional ways around it. Come along to see me demo a few of my favourite unconventional solutions. (Some restrictions were even self inflicted.) Expect LOTS of CSS, and a bunch of (hopefully) clever hacks."
+        slides_url: ""
+        video_url: ""
+      # -
+      #   name: ""
+      #   pic: "2017/0/"
+      #   company: ""
+      #   twitter: ""
+      #   topic: ""
+      #   description: ""
+      #   slides_url: ""
+      #   video_url: ""
   -
     date: "2018-02-22 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-february-2018-tickets-43163707812"

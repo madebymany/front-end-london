@@ -81,7 +81,7 @@ events:
         company: "Funding Circle"
         twitter: "andyorandrew"
         topic: "Optimising the web with multithreading"
-        description: "We cannot deny the web is becoming incredibly powerful, and there is no doubt that a lot more can be achieved inside the browser as the standards continue to advance. But where can we do this processing to create the best user experiences? With JavaScripts single-threaded capabilities, this may become hard to optimise without running into the illustrious issues of "jank". So this is where the not so single-theading of browsers comes in with the implementation of web-workers..."
+        description: "We cannot deny the web is becoming incredibly powerful, and there is no doubt that a lot more can be achieved inside the browser as the standards continue to advance. But where can we do this processing to create the best user experiences? With Javascript's single-threaded capabilities, this may become hard to optimise without running into the illustrious issues of “jank”. So this is where the not so single-theading of browsers comes in with the implementation of web-workers..."
         slides_url: ""
         video_url: ""
   -

@@ -13,8 +13,12 @@
         <li class="lineup__speaker">
           <div class="speaker">
             <figure class="speaker__photo<%= " is-patrick" if speaker.twitter == "patrickhamann" %>">
-              <%= image_tag speaker_image(speaker.pic), alt: speaker.name,
-                class: "speaker__photo__img" %>
+              <% if speaker.pic.present? %>
+                <%= image_tag speaker_image(speaker.pic), alt: speaker.name,
+                  class: "speaker__photo__img" %>
+              <% else %>
+                <div class="speaker__photo__placeholder"></div>
+              <% end %>
             </figure>
 
             <main class="speaker__info">

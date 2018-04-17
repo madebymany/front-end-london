@@ -60,6 +60,10 @@
     max-width: 100%;
   }
 
+  .speaker__photo__placeholder {
+    width: 100px;
+  }
+
   .speaker__name {
     font-size: 19px;
   }
@@ -70,6 +74,15 @@
     max-width: 140px;
     margin-right: 40px;
   }
+
+  .speaker__photo__placeholder {
+    width: 140px;
+  }
+}
+
+.speaker__photo__placeholder {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding-top: 100%;
 }
 
 .speaker__photo.is-patrick:hover,

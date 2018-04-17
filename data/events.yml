@@ -47,6 +47,43 @@ events:
   #       slides_url: ""
   #       video_url: ""
   -
+    date: "2018-04-26 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-april-2018-tickets-45105477698"
+    tickets_released: "2018-04-17 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Nikos Tsouknidas"
+        pic: "" # 2018/04/tsouknidas-nikos.jpg
+        company: ""
+        twitter: ""
+        topic: "How the Web could look in 3D"
+        description: ""
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Delphine Claerhout"
+        pic: "" # 2018/04/claerhout-delphine.jpg
+        company: ""
+        twitter: ""
+        topic: "How it feels like to be a female developer in this ‘male dominated world’"
+        description: ""
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Jonathan Garner"
+        pic: "2018/04/garner-jonathan.jpg"
+        company: "Mind over Tech"
+        twitter: "jgarner_co_uk"
+        topic: "Death by convenience"
+        description: "Many digital products and design challenges seek to benefit people through making their lives easier. While this is an honourable aim it can often result in undesired and unimagined consequences — is this slowly leading us to a form of death by convenience?"
+        slides_url: ""
+  -
     date: "2018-03-29 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-march-2018-tickets-43881575975"
     tickets_released: "2018-03-20 10:00"

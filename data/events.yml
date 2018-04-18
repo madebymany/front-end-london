@@ -59,20 +59,20 @@ events:
     speakers:
       -
         name: "Nikos Tsouknidas"
-        pic: "" # 2018/04/tsouknidas-nikos.jpg
-        company: ""
-        twitter: ""
-        topic: "How the Web could look in 3D"
-        description: ""
+        pic: "2018/04/tsouknidas-nikos.jpg"
+        company: "BBC"
+        twitter: "tsoukn"
+        topic: "Mapping the archipelago of the Web in 3D"
+        description: "We have been experiencing the web using the desktop metaphor for years. We browse, we scroll, we bookmark pages. But what if this wasn’t the only way to interpret the vast amounts of information that is already out there. Maybe it’s time to explore in more dimensions."
         slides_url: ""
         video_url: ""
       -
         name: "Delphine Claerhout"
-        pic: "" # 2018/04/claerhout-delphine.jpg
-        company: ""
+        pic: "2018/04/claerhout-delphine.jpg"
+        company: "Mettle Studio"
         twitter: ""
-        topic: "How it feels like to be a female developer in this ‘male dominated world’"
-        description: ""
+        topic: "Being the odd fish out as a female developer"
+        description: "In this talk I will be discussing what it feels like to be a female developer, and what companies can do to help."
         slides_url: ""
         video_url: ""
       -

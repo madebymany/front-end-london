@@ -48,7 +48,7 @@ events:
   #       video_url: ""
   -
     date: "2018-05-31 19:00"
-    registration_url: ""
+    registration_url: "https://www.eventbrite.com/e/front-end-london-may-2018-tickets-46219362357"
     tickets_released: "2018-05-22 10:00"
     duration: 2.5
     writeups:

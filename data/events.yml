@@ -158,7 +158,8 @@ events:
         twitter: "jgarner_co_uk"
         topic: "Death by convenience"
         description: "Many digital products and design challenges seek to benefit people through making their lives easier. While this is an honourable aim it can often result in undesired and unimagined consequences — is this slowly leading us to a form of death by convenience?"
-        slides_url: "https://www.youtube.com/watch?v=Tk-UjfNsZgc&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=4"
+        slides_url: ""
+        video_url: "https://www.youtube.com/watch?v=Tk-UjfNsZgc&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=4"
   -
     date: "2018-03-29 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-march-2018-tickets-43881575975"

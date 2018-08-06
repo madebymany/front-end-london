@@ -56,6 +56,44 @@ events:
       #   slides_url: ""
       #   video_url: ""
   -
+    date: "2018-08-30 19:00"
+    registration_url: ""
+    tickets_released: "2017-08-21 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "TBA"
+        pic: "blank.png"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+        video_url: ""
+      # -
+      #   name: ""
+      #   pic: "2017/0/"
+      #   company: ""
+      #   twitter: ""
+      #   topic: ""
+      #   description: ""
+      #   slides_url: ""
+      #   video_url: ""
+      # -
+      #   name: ""
+      #   pic: "2017/0/"
+      #   company: ""
+      #   twitter: ""
+      #   topic: ""
+      #   description: ""
+      #   slides_url: ""
+      #   video_url: ""
+  -
     date: "2018-05-31 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-may-2018-tickets-46219362357"
     tickets_released: "2018-05-22 10:00"
@@ -74,7 +112,7 @@ events:
         topic: "Data Visualisation with Vue.js"
         description: "Vue.js is the latest big front-end framework. It’s blazingly fast, easy to learn, and a valuable tool to have in your arsenal. This talk will introduce Vue.js using a real life example: some basic SVG manipulation and data visualisation without using a library like d3 or Highcharts."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=7cTtiU05OVg&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=2"
       -
         name: "Beverley Newing"
         pic: "2018/05/newing-beverley.jpg"
@@ -83,7 +121,7 @@ events:
         topic: "How to run awesome tech internships"
         description: "Interested in internships, but still not sold on them? Keen to help diversify the tech industry, but not sure how? Not really sure how to go about one? As a seasoned (three-times) intern, Beverley has some thoughts and tips that they’d like to share with you, to help you go about internship success!"
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=gyFAbjtJ510&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=3"
   -
     date: "2018-04-26 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-april-2018-tickets-45105477698"
@@ -103,7 +141,7 @@ events:
         topic: "Mapping the archipelago of the Web in 3D"
         description: "We have been experiencing the web using the desktop metaphor for years. We browse, we scroll, we bookmark pages. But what if this wasn’t the only way to interpret the vast amounts of information that is already out there. Maybe it’s time to explore in more dimensions."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=tlJhUWe24z4&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=10"
       -
         name: "Delphine Claerhout"
         pic: "2018/04/claerhout-delphine.jpg"
@@ -112,7 +150,7 @@ events:
         topic: "Being the odd fish out as a female developer"
         description: "In this talk I will be discussing what it feels like to be a female developer, and what companies can do to help."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=ppy5JGZD5hg&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=5"
       -
         name: "Jonathan Garner"
         pic: "2018/04/garner-jonathan.jpg"
@@ -120,7 +158,7 @@ events:
         twitter: "jgarner_co_uk"
         topic: "Death by convenience"
         description: "Many digital products and design challenges seek to benefit people through making their lives easier. While this is an honourable aim it can often result in undesired and unimagined consequences — is this slowly leading us to a form of death by convenience?"
-        slides_url: ""
+        slides_url: "https://www.youtube.com/watch?v=Tk-UjfNsZgc&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=4"
   -
     date: "2018-03-29 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-march-2018-tickets-43881575975"
@@ -140,7 +178,7 @@ events:
         topic: "Systems of snowflakes — Beauty, complexity and choice"
         description: "What simple rules constrain each snowflake to a hexagonal symmetry that we find beautiful? Does this kind of beauty tend to emerge from systems with simple rules? If so, can we constrain the growth of software into forms that are pleasing? Can we define beautiful code? This is a talk about overcoming choice paralysis with software engineering practices. How we can reduce the number of choices we need to make and write complex but beautiful systems that are easier to develop and easier to maintain."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=RX7ZrWKbReg&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=6"
       -
         name: "Cassie Evans"
         pic: "2018/03/evans-cassie.jpg"
@@ -149,7 +187,7 @@ events:
         topic: "Limitation breeds creativity"
         description: "In web dev, sometimes the sheer volume of things to learn can be overwhelming. Pair this with anxiety and a tendency to procrastinate and you’ve got the perfect recipe for doing absolutely nothing. More choice doesn’t mean more creativity. When you work within constraints your mind has to look for unconventional ways around it. Come along to see me demo a few of my favourite unconventional solutions. (Some restrictions were even self inflicted.) Expect LOTS of CSS, and a bunch of (hopefully) clever hacks."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=RNK9EjYhQPs&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=7"
       -
         name: "Andrew Collins"
         pic: "2018/03/collins-andrew.jpg"
@@ -158,7 +196,7 @@ events:
         topic: "Optimising the web with multithreading"
         description: "We cannot deny the web is becoming incredibly powerful, and there is no doubt that a lot more can be achieved inside the browser as the standards continue to advance. But where can we do this processing to create the best user experiences? With Javascript's single-threaded capabilities, this may become hard to optimise without running into the illustrious issues of “jank”. So this is where the not so single-theading of browsers comes in with the implementation of web-workers..."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=9d-v5nvamns&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=8"
   -
     date: "2018-02-22 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-february-2018-tickets-43163707812"
@@ -187,7 +225,7 @@ Although developers might welcome this, content authors might not. Especially if
 
 This talk will look at how Netlify CMS (an increasingly popular open source project) is marrying powerful git workflows with static site generators, continuous integration tools, and a flexible admin interface to make building and maintaining a CMS powered site a joy for all."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=ZvnaZZRaE3Q&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=11"
       -
         name: "Thomas Parisot"
         pic: "2018/02/thomas-parisot.jpg"
@@ -205,7 +243,7 @@ It gives us a unique opportunity to approach the whole process of writing in ter
 
 In the end, a “book” becomes a “writing format” as we can reuse the same pattern to manage any kind of “content” — articles, publications, essays, documentation — that we can transform in physical books, e-books, interactive web pages etc."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=ac_QcHv-tyo&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=9"
   -
     date: "2018-01-25 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-january-2018-tickets-42104625067"

@@ -37,7 +37,7 @@
             <span>
               <% if latest_event(events).tickets_released.present? %>
                 Tickets available
-                <%= tickets_released_date(events).day.ordinalize %> of
+                <%= tickets_released_date(events).day %> of
                 <%= tickets_released_date(events).strftime("%B") %>
               <% else %>
                 Tickets to be announced

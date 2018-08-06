@@ -62,7 +62,11 @@ set :build_dir, 'build'
 
 ignore 'previous_months/*'
 
+# Use “pretty” URLs (without the `.html` suffix)
 activate :directory_indexes
+
+# Append hashes to compiled assets
+activate :asset_hash
 
 activate :autoprefixer do |config|
   config.browsers = ['last 2 versions']

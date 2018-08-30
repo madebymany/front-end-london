@@ -76,12 +76,12 @@ events:
         slides_url: ""
         video_url: ""
       -
-        name: "Oliver Williams"
-        pic: "blank.gif"
-        company: ""
+        name: "Ollie Williams"
+        pic: "2018/08/williams-ollie.jpg"
+        company: "Springer Nature"
         twitter: ""
-        topic: "10 new CSS features in 10 minutes"
-        description: ""
+        topic: "10 new CSS features in less than 10 minutes"
+        description: "I’ll quickly run through some bleeding-edge features of CSS."
         slides_url: ""
         video_url: ""
       -

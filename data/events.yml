@@ -56,6 +56,44 @@ events:
       #   slides_url: ""
       #   video_url: ""
   -
+    date: "2018-09-27 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-september-2018-tickets-50227224982"
+    tickets_released: "2017-09-20 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Sandra Meek"
+        pic: "2018/09/meek-sandra.jpg"
+        company: "FutureLearn"
+        twitter: ""
+        topic: "Stepping back to go forwards"
+        description: "In the melee of the everyday it can be hard to step back and assess whether the tools and processes you use are working in the best way possible. This talk will take you on the journey we’ve been on with our design system, where we stepped back, understood the problems and worked to make it work better for us."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "TBA"
+        pic: "blank.gif"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+        video_url: ""
+      -
+        name: "TBA"
+        pic: "blank.gif"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+        video_url: ""
+  -
     date: "2018-08-30 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-august-2018-tickets-48907969052"
     tickets_released: "2017-08-21 10:00"

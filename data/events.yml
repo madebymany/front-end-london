@@ -70,7 +70,7 @@ events:
         name: "Sandra Meek"
         pic: "2018/09/meek-sandra.jpg"
         company: "FutureLearn"
-        twitter: "benjaminbenben"
+        twitter: ""
         topic: "Stepping back to go forwards"
         description: "In the melee of the everyday it can be hard to step back and assess whether the tools and processes you use are working in the best way possible. This talk will take you on the journey we’ve been on with our design system, where we stepped back, understood the problems and worked to make it work better for us."
         slides_url: ""

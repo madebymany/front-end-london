@@ -90,7 +90,7 @@ events:
         company: "Badoo"
         twitter: "areaweb"
         topic: "Atomic Design, Design Systems and React. Cool, but..."
-        description: "The principles of Atomic Design have transformed (probably forever) the way we look at UI components and code modularization. Pattern Libraries and Design Systems – predominantly built in React – have become widespread across many companies. No doubts, these are cool tools and approaches, and we have all fallen in love with them. But... In this talk, I'll share not only the learnings but also all the "buts" that we have found in our exciting journey developing (in React, of course) a Design System for Badoo."
+        description: "The principles of Atomic Design have transformed (probably forever) the way we look at UI components and code modularization. Pattern Libraries and Design Systems – predominantly built in React – have become widespread across many companies. No doubts, these are cool tools and approaches, and we have all fallen in love with them. But... In this talk, I'll share not only the learnings but also all the “buts” that we have found in our exciting journey developing (in React, of course) a Design System for Badoo."
         slides_url: ""
         video_url: ""
   -

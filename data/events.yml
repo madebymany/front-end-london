@@ -1,8 +1,8 @@
 events:
   # -
-  #   date: "2018-10-31 19:00"
+  #   date: "2018-0-0 19:00"
   #   registration_url: ""
-  #   tickets_released: "2017-07-22 10:00"
+  #   tickets_released: "2018-0-0 10:00"
   #   duration: 2.5
   #   writeups:
   #     -
@@ -53,6 +53,15 @@ events:
       #   twitter: "zegbua"
       #   topic: "The Wakanda Blueprint: Seamless interface that optimize conversion"
       #   description: "Conversion Rate Optimization — incorporating analytics, digital media data and target audience profiling to create UIs that optimize conversion rates (and click through rates) for product development."
+      #   slides_url: ""
+      #   video_url: ""
+      # -
+      #   name: "Ollie Williams"
+      #   pic: "2018/08/williams-ollie.jpg"
+      #   company: "Springer Nature"
+      #   twitter: ""
+      #   topic: "10 new CSS features in less than 10 minutes"
+      #   description: "I’ll quickly run through some bleeding-edge features of CSS."
       #   slides_url: ""
       #   video_url: ""
   -
@@ -112,16 +121,7 @@ events:
         topic: "Web sites and fairy lights"
         description: "I'll talk about how we can use frontend web technologies to control things outside of the browser.  We'll cover fairy lights, microcontrollers, websockets, css, js, webgl, and how to mash all that kind of stuff together."
         slides_url: ""
-        video_url: ""
-      -
-        name: "Ollie Williams"
-        pic: "2018/08/williams-ollie.jpg"
-        company: "Springer Nature"
-        twitter: ""
-        topic: "10 new CSS features in less than 10 minutes"
-        description: "I’ll quickly run through some bleeding-edge features of CSS."
-        slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=aAYRClMSUzg"
       -
         name: "Peter Gasston"
         pic: "2018/08/gasston-peter.jpg"
@@ -130,7 +130,7 @@ events:
         topic: "People don’t change"
         description: "A brief history of modern human behaviour, a look at how the invention of writing brings us closer to our distant ancestors, how technology meets our desires, and history’s importance to futurism."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=F1k6hHMg1Sg"
   -
     date: "2018-05-31 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-may-2018-tickets-46219362357"
@@ -355,7 +355,7 @@ In the end, a “book” becomes a “writing format” as we can reuse the same
         pic: "2017/11/rose-jessica.png"
         company: "FutureLearn"
         twitter: "jesslynnrose"
-        topic: "A More Human Industry"
+        topic: "A more human industry"
         description: "Working in technology and building for the web gives us many benefits and privileges. But the ways we work aren’t always human focused or healthy. This talk will look at ways to subvert that trend."
         slides_url: ""
         video_url: ""
@@ -377,7 +377,7 @@ In the end, a “book” becomes a “writing format” as we can reuse the same
         twitter: "ianfeather"
         topic: "Frontend Resilience"
         description: "It’s time to accept that system and network failures are inevitable and to start designing our systems to withstand them. In a year when S3 has gone down twice(!) this is becoming ever more obvious. Come and learn 19 ways BuzzFeed designs their frontend to be resilient to failure!"
-        slides_url: ""
+        slides_url: "https://www.slideshare.net/ianfeather/frontend-resilience"
         video_url: ""
       -
         name: "Eli Schutze"
@@ -386,7 +386,7 @@ In the end, a “book” becomes a “writing format” as we can reuse the same
         twitter: "elibelly"
         topic: "Internationalisation is a Piece of Cake"
         description: "While about 51% of the world’s websites are in English, only about 25% of web users are English speakers. With half of the world’s population online, internationalisation is as relevant as ever! Let’s explore how the i18n sausage gets made on the web."
-        slides_url: ""
+        slides_url: "https://slides.com/elischutze/internationalisation-2#/"
         video_url: ""
       -
         name: "Richard Westenra"
@@ -395,7 +395,7 @@ In the end, a “book” becomes a “writing format” as we can reuse the same
         twitter: "RichardWestenra"
         topic: "The Good Life"
         description: "What is best in life? How should we live, and behave towards other people? And what are our ethical duties and responsibilities as software engineers, in a world where software controls everything?"
-        slides_url: ""
+        slides_url: "https://www.richardwestenra.com/good-life-talk/?showNotes#/"
         video_url: ""
   -
     date: "2017-09-28 19:00"

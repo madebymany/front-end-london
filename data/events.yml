@@ -122,7 +122,7 @@ events:
         topic: "Stepping back to go forwards"
         description: "In the melee of the everyday it can be hard to step back and assess whether the tools and processes you use are working in the best way possible. This talk will take you on the journey we’ve been on with our design system, where we stepped back, understood the problems and worked to make it work better for us."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=gEUVyQ4nKEs&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=3"
       -
         name: "Lili Kastilio"
         pic: "2018/09/kastilio-lili.jpg"
@@ -131,7 +131,7 @@ events:
         topic: "npm install disaster-waiting-to-happen"
         description: "With recent increase of data breaches, it is now more important than ever to really start paying attention to application security. As we introduce more and more open source dependencies into our code bases, performance is no longer the only concern. With every new dependency we are potentially bringing in new vulnerabilities that attackers are waiting to exploit. Even smart, well-intentioned and experienced developers can introduce vulnerable packages. How do you know that the open source package you just added in is not going to cause your customers data ending up for sale on the dark market?"
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=bz2F3UCIVxA&index=2&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9"
       -
         name: "Cristiano Rastelli"
         pic: "2018/09/rastelli-cristiano.jpg"
@@ -140,7 +140,7 @@ events:
         topic: "Atomic Design, Design Systems and React. Cool, but..."
         description: "The principles of Atomic Design have transformed (probably forever) the way we look at UI components and code modularization. Pattern Libraries and Design Systems – predominantly built in React – have become widespread across many companies. No doubts, these are cool tools and approaches, and we have all fallen in love with them. But... In this talk, I'll share not only the learnings but also all the “buts” that we have found in our exciting journey developing (in React, of course) a Design System for Badoo."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=oi3lY39wbfA&index=4&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9"
   -
     date: "2018-08-30 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-august-2018-tickets-48907969052"

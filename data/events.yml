@@ -64,6 +64,45 @@ events:
       #   description: "I’ll quickly run through some bleeding-edge features of CSS."
       #   slides_url: ""
       #   video_url: ""
+
+  -
+    date: "2018-10-25 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-october-2018-tickets-51398257572"
+    tickets_released: "2018-10-25 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Jo Pearce"
+        pic: "2018/03/pearce-jo.jpg"
+        company: ""
+        twitter: "jdpearce"
+        topic: "Interface Incantations"
+        description: "According to the witches of Terry Pratchett’s Discworld, most magic is simply headology. This talk will mix literary references and outline the headology of interface design, from basic charms and illusions that fool and entice us to the unforgivable curses that can shape our thinking and behaviour."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "James Hall"
+        pic: "2018/10/james-hall.jpg"
+        company: "HeX Productions"
+        twitter: "Horlix"
+        topic: "An Accessible Journey"
+        description: "How HeX Productions are becoming a certified accessible agency"
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Andrew Walker"
+        pic: "2018/10/andrew-walker.jpg"
+        company: "Made by Many"
+        twitter: "ninjabiscuit"
+        topic: "6 things learned in 6 years of Front-end London"
+        description: "I've been riunning Front-end London for nearly 6 years and as I come to the end of my time at Made by Many and as an organiser of this event, I'd like to talk about some of the things I've learned. Join me for my final FEL as I reflect on the talks, the lessons, the individuals and the community that Front-end London has been a part of for the last 6 years."
+        slides_url: ""
+        video_url: ""
   -
     date: "2018-09-27 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-september-2018-tickets-50227224982"

@@ -37,34 +37,45 @@ events:
   #       description: ""
   #       slides_url: ""
   #       video_url: ""
-  #     -
-  #       name: "Nadine Grant"
-  #       pic: "2017/10/grant-nadine.jpg"
-  #       company: ""
-  #       twitter: "afrocreative"
-  #       topic: "Are junior product designers born or made?"
-  #       description: "Getting started in the product design industry has a few hidden challenges. I will share some of the lessons learnt while starting out. I will also explain why TOPP is now the first tool in my toolkit. What’s in yours?"
-  #       slides_url: ""
-  #       video_url: ""
-      # -
-      #   name: "Ized Uanikhehi"
-      #   pic: "2018/05/uanikheni-ized.jpg"
-      #   company: "MAX.ng, DigiClan Africa"
-      #   twitter: "zegbua"
-      #   topic: "The Wakanda Blueprint: Seamless interface that optimize conversion"
-      #   description: "Conversion Rate Optimization — incorporating analytics, digital media data and target audience profiling to create UIs that optimize conversion rates (and click through rates) for product development."
-      #   slides_url: ""
-      #   video_url: ""
-      # -
-      #   name: "Ollie Williams"
-      #   pic: "2018/08/williams-ollie.jpg"
-      #   company: "Springer Nature"
-      #   twitter: ""
-      #   topic: "10 new CSS features in less than 10 minutes"
-      #   description: "I’ll quickly run through some bleeding-edge features of CSS."
-      #   slides_url: ""
-      #   video_url: ""
 
+  -
+    date: "2019-01-31 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-january-2019-tickets-55022418535"
+    tickets_released: "2019-01-22 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Katie Koschland"
+        pic: "2019/01/katie-koschland.jpg"
+        company: "Financial Times"
+        twitter: "KKoschland"
+        topic: "Ready, Steady, Crash! "
+        description: "This talk will cover the core concepts behind load testing. It will look at what it means to ‘load test’ your application, how to get started with writing your first script and provide you with a case study and an insight into the tools and techniques that we use at the FT to help identify performance issues."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Jonathan Fielding"
+        pic: "2019/01/jonathan-fielding.jpg"
+        company: "Snyk"
+        twitter: "jonthanfielding"
+        topic: "Home Automation with JavaScript"
+        description: "JavaScript is everywhere, we run it in the browser, we run it on our servers and it can even run on drones. With JavaScript being so ubiquitous lets take a look how we can extend its use to our homes, using it to make our lives easier and automate those every day tasks."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Sean M. Tracey"
+        pic: "2019/01/sean-tracey.jpg"
+        company: "IBM"
+        twitter: "seanmtracey"
+        topic: "Designing Web Components for flow-based IDEs (and fun!)"
+        description: "Web components are great at encapsulating commonly-used code and functionality in our web apps. Do you know what else is good at that? Node-RED - A flow-based IDE originally designed for the IoT, but now capable of so much more. In this talk, we'll look at the how and why of hooking up web components functionality to Node-RED nodes to create ✨magic✨"
+        slides_url: ""
+        video_url: ""
   -
     date: "2018-10-25 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-october-2018-tickets-51398257572"

@@ -50,7 +50,7 @@ events:
     speakers:
       -
         name: "Matt Woods"
-        pic: "2019/01/matt-woods.jpg"
+        pic: "2019/02/matt-woods.jpg"
         company: "University of the Arts London"
         twitter: "madebymatty"
         topic: "Unifying your team to work collaboratively"
@@ -59,7 +59,7 @@ events:
         video_url: ""
       -
         name: "Dan Donald"
-        pic: "2019/01/dan-donald.jpg"
+        pic: "2019/02/dan-donald.jpg"
         company: "Auto Trader"
         twitter: "hereinthehive"
         topic: "Adding the foundations after the house has been built: design systems at Auto Trader"

@@ -38,6 +38,44 @@ events:
   #       slides_url: ""
   #       video_url: ""
   -
+    date: "2019-03-28 19:00"
+    registration_url: ""
+    tickets_released: "2019-03-19 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Layla Porter"
+        pic: "2019/03/porter-layla.jpg"
+        company: "Twilio"
+        twitter: "LaylaCodesIt"
+        topic: "Quick wins with JavaScript templating"
+        description: "Layla is passionate about keeping code reusable and maintainable and JS templates enable her to do this. In this talk, Layla will cover the benefits of using JS templates, discuss the pros and cons of some common templating libraries, and show you how to quickly implement templates in your code base."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Dave Cooper"
+        pic: "2019/03/cooper-dave.jpg"
+        company: "OVO Energy"
+        twitter: ""
+        topic: "Mocking made easy"
+        description: "Injecting mocked data into web applications in 2019 still isn‘t as easy or intuitive as it should be... this talk dives into why that is and looks at a different way to do it!"
+        slides_url: ""
+        video_url: ""
+      -
+        name: ""
+        pic: "2017/0/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+        video_url: ""
+  -
     date: "2019-02-28 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-february-2019-tickets-56102385746"
     tickets_released: "2019-02-22 10:00"

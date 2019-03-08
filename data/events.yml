@@ -39,7 +39,7 @@ events:
   #       video_url: ""
   -
     date: "2019-03-28 19:00"
-    registration_url: ""
+    registration_url: "https://www.eventbrite.com/e/front-end-london-march-2019-tickets-57972677840"
     tickets_released: "2019-03-19 10:00"
     duration: 2.5
     writeups:
@@ -67,12 +67,12 @@ events:
         slides_url: ""
         video_url: ""
       -
-        name: ""
-        pic: "2017/0/"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Germain Souquet"
+        pic: "2019/03/souquet-germain.jpg"
+        company: "Grabyo"
+        twitter: "GermainSouquet"
+        topic: "Evolution of video on the web"
+        description: "It has been nearly a decade since the HTML5 video tag landed on browsers, and now, it’s ubiquitous on the web. We’ll go through a journey to see how the web platform has evolved as well as what the future will bring for video on the web."
         slides_url: ""
         video_url: ""
   -

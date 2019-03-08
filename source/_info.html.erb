@@ -28,7 +28,7 @@
         </a>
       </address>
       <% if event_upcoming?(events) %>
-        <% if latest_event(events).registration_url.present? %>
+        <% if tickets_available(events) %>
           <a href="<%= latest_event(events).registration_url %>" target="_blank" class="info__tickets info__tickets--available">
             Get tickets
           </a>
@@ -37,8 +37,7 @@
             <span>
               <% if latest_event(events).tickets_released.present? %>
                 Tickets available
-                <%= tickets_released_date(events).day %> of
-                <%= tickets_released_date(events).strftime("%B") %>
+                <%= tickets_released_date(events).day %>&nbsp;<%= tickets_released_date(events).strftime("%B") %>
               <% else %>
                 Tickets to be announced
               <% end %>

@@ -27,6 +27,10 @@ module EventHelper
     events.select { |e| event_date_end(e) < Time.now }
   end
 
+  def tickets_available(events)
+    latest_event(events).registration_url.present? && Chronic.parse(latest_event(events).tickets_released) < Time.now
+  end
+
   def tickets_released_date(events)
     Chronic.parse(latest_event(events).tickets_released)
   end

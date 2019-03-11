@@ -45,7 +45,8 @@ title: Event archive – Front-end London
               </h4>
 
               <% if speaker.video_url.present? ||
-                    speaker.slides_url.present? %>
+                    speaker.slides_url.present? || 
+                    speaker.longhand_url.present? %>
                 <ul class="archived-speaker__resources">
                   <% if speaker.video_url.present? %>
                     <li class="archived-speaker__resource">

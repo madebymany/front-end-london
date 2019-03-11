@@ -123,7 +123,7 @@ events:
         topic: "Ready, Steady, Crash! "
         description: "This talk will cover the core concepts behind load testing. It will look at what it means to ‘load test’ your application, how to get started with writing your first script and provide you with a case study and an insight into the tools and techniques that we use at the FT to help identify performance issues."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=HtJB0OIw9JM&t=59s"
       -
         name: "Jonathan Fielding"
         pic: "2019/01/jonathan-fielding.jpg"
@@ -132,7 +132,7 @@ events:
         topic: "Home Automation with JavaScript"
         description: "JavaScript is everywhere, we run it in the browser, we run it on our servers and it can even run on drones. With JavaScript being so ubiquitous lets take a look how we can extend its use to our homes, using it to make our lives easier and automate those every day tasks."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=Ea2mjrIGpAQ"
       -
         name: "Sean M. Tracey"
         pic: "2019/01/sean-tracey.jpg"
@@ -141,7 +141,7 @@ events:
         topic: "Designing Web Components for flow-based IDEs (and fun!)"
         description: "Web components are great at encapsulating commonly-used code and functionality in our web apps. Do you know what else is good at that? Node-RED - A flow-based IDE originally designed for the IoT, but now capable of so much more. In this talk, we'll look at the how and why of hooking up web components functionality to Node-RED nodes to create ✨magic✨"
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=BaULiDWpyuI"
   -
     date: "2018-10-25 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-october-2018-tickets-51398257572"
@@ -161,7 +161,7 @@ events:
         topic: "Interface Incantations"
         description: "According to the witches of Terry Pratchett’s Discworld, most magic is simply headology. This talk will mix literary references and outline the headology of interface design, from basic charms and illusions that fool and entice us to the unforgivable curses that can shape our thinking and behaviour."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=H341CbuC2_g"
       -
         name: "James Hall"
         pic: "2018/10/james-hall.jpg"
@@ -170,7 +170,7 @@ events:
         topic: "A little accessibility goes a long way"
         description: "HeX Productions are on a journey to being a fully accessible agency, working with local and national advocates along with accessibility charities HeX has revamped their workflow and processes. James will be showing why accessibility is important for everyone and how we can all do the tiniest of things to help make huge differences."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=WCoLVkgOCFs&t=357s"
       -
         name: "Andrew Walker"
         pic: "2018/10/andrew-walker.jpg"
@@ -179,7 +179,7 @@ events:
         topic: "6 things learned in 6 years of Front-end London"
         description: "I've been riunning Front-end London for nearly 6 years and as I come to the end of my time at Made by Many and as an organiser of this event, I'd like to talk about some of the things I've learned. Join me for my final FEL as I reflect on the talks, the lessons, the individuals and the community that Front-end London has been a part of for the last 6 years."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=-NbttvRLBJ8&t=44s"
   -
     date: "2018-09-27 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-september-2018-tickets-50227224982"

@@ -245,7 +245,7 @@ events:
         twitter: "stopsatgreen"
         topic: "People don’t change"
         description: "A brief history of modern human behaviour, a look at how the invention of writing brings us closer to our distant ancestors, how technology meets our desires, and history’s importance to futurism."
-        slides_url: ""
+        slides_url: "https://speakerdeck.com/stopsatgreen/people-dont-change"
         video_url: "https://www.youtube.com/watch?v=F1k6hHMg1Sg"
   -
     date: "2018-05-31 19:00"
@@ -731,8 +731,9 @@ In the end, a “book” becomes a “writing format” as we can reuse the same
         description: "As it approaches a degree of maturity as a telecomms channel, the web is going through some changes. Using extensive reference and research, this talk takes a big-picture view of some of the trends in publishing and information consumption on the web, looking at the demands of the millions of new users in emerging markets, and the way that technology is adapting to accommodate them.
 
 This talk will raise and try to answer questions such as: what is the role of the web in the new landscape? And what are the threats to, and opportunities for, the open web and web development?"
-        slides_url: ""
+        slides_url: "https://speakerdeck.com/stopsatgreen/surveying-the-landscape-november-2016"
         video_url: ""
+        longhand_url: "https://petergasston.co.uk/surveying-the-landscape/"
       -
         name: "Phil Nash"
         pic: "2013/03/phil.jpg"
@@ -1371,6 +1372,7 @@ But generators aren’t just for making simple iterators over data structures. B
         description: "People mostly communicate by talking, but with computers we are often impeded by keyboards.This talk looks at ways we can talk directly to our devices, and have them talk back to us"
         slides_url: "//github.com/stopsatgreen/speech-felondon"
         video_url: "//www.youtube.com/watch?v=Y9mh4SSz2es"
+        longhand_url: "https://medium.com/rehabstudio/ok-computer-how-to-work-with-automation-and-ai-on-the-web-f37678948f46"
       -
         name: "Charlie Owen"
         pic: "2015/01/charlie.jpg"

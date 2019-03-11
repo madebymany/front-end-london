@@ -461,7 +461,7 @@ In the end, a “book” becomes a “writing format” as we can reuse the same
         topic: "Why we’ve adopted Elixir"
         description: "Elixir is a new functional programming language designed for concurrency, fault tolerance and developer happiness. It’s become our go-to choice at Made by Many for building web applications. Come and hear about why we love it."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=zL2wcqS78UA"
       -
         name: "Jessica Rose"
         pic: "2017/11/rose-jessica.png"

@@ -94,7 +94,7 @@ events:
         topic: "Unifying your team to work collaboratively"
         description: "I’ll be talking about how we are going about building a design system and using Node, Webpack and the Figma API to help us bring our disconnected teams together."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=jR1LlrTbyo8"
       -
         name: "Dan Donald"
         pic: "2019/02/dan-donald.jpg"
@@ -103,7 +103,7 @@ events:
         topic: "Adding the foundations after the house has been built: design systems at Auto Trader"
         description: "Design systems are a big thing at the moment and for good reason. That’s great when you have a greenfield project but what about when you have multiple sites on multiple platforms and contend with legacy code? The realities we work with can give us many challenges but they’re not insurmountable. Dan will talk about his experience of the elements – many non-technical – that make design systems a success."
         slides_url: ""
-        video_url: ""
+        video_url: "https://www.youtube.com/watch?v=AruMKJsd1H8"
   -
     date: "2019-01-31 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-january-2019-tickets-55022418535"

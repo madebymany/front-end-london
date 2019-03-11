@@ -59,6 +59,12 @@ title: Event archive – Front-end London
                             class: 'archived-speaker__link archived-speaker__link--slides' %>
                     </li>
                   <% end %>
+                  <% if speaker.longhand_url.present? %>
+                    <li class="archived-speaker__resource">
+                      <%= link_to 'Read write-up', speaker.longhand_url,
+                            class: 'archived-speaker__link archived-speaker__link--slides' %>
+                    </li>
+                  <% end %>
                 </ul>
               <% end %>
             </div>

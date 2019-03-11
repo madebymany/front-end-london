@@ -371,12 +371,9 @@ events:
         topic: "Stealthy git - solving CMS woes with git, on the quiet"
         description: "Content management systems are rarely fun to use. Not for developers, not for authors. They hamper effective development and they invent confusing processes for content authors.
 
-
 What if we could build a CMS on top of git? What if instead of trying to invent new ways to solve things like version control, publishing approval, previews, and accountability, we used git which already has mechanisms to cope with these things and more?
 
-
 Although developers might welcome this, content authors might not. Especially if we asked them to learn git so that they could do their work. Let’s not tell them. Let’s do it all behind the scenes and give them the benefits without exposing them to the underlying technology.
-
 
 This talk will look at how Netlify CMS (an increasingly popular open source project) is marrying powerful git workflows with static site generators, continuous integration tools, and a flexible admin interface to make building and maintaining a CMS powered site a joy for all."
         slides_url: ""
@@ -389,9 +386,7 @@ This talk will look at how Netlify CMS (an increasingly popular open source proj
         topic: "Writing a book in 2018"
         description: "The usual way of writing a technical book is to open the Word or LibreOffice application, to write some content, to make a backup, to send it by email to the publisher and to deal with the feedbacks. And repeat.
 
-
 However in 2018 we can do differently by using open formats like Asciidoc, by using version control to propagate changes, by using collaborative platforms like GitHub or GitLab to collate feedbacks in any form as well as transforming text and code into readable and interactive artefacts.
-
 
 It gives us a unique opportunity to approach the whole process of writing in term of “content experience”, of “toolchain” and of “distribution”.
 
@@ -428,6 +423,7 @@ In the end, a “book” becomes a “writing format” as we can reuse the same
         description: "The Conditional Orchestra is a web app that converts weather data into music — a personal project Richard has been developing for almost two years. In this talk he reveals the creative inspiration behind the idea and the technical challenges that kept him up at night. He'll explain how some of the most rewarding experiences on this journey were unplanned, for example, writing a JS module for generating musical scales and contributing to an open-source API wrapper"
         slides_url: ""
         video_url: ""
+        longhand_url: "https://medium.com/@pointbmusic/making-the-conditional-orchestra-df3149b17d23"
       -
         name: "Ian Feather"
         pic: "2016/09/feather-ian.jpg"
@@ -435,7 +431,7 @@ In the end, a “book” becomes a “writing format” as we can reuse the same
         twitter: "ianfeather"
         topic: "Testing without assertions"
         description: "Analytics is a crucial feedback loop to BuzzFeed content creators but actually testing the system is working is a hard problem. End to end tests are notoriously flakey and analytics are invisible. So, we deleted all the assertions in our end to end tests. You'll never guess what happened next."
-        slides_url: ""
+        slides_url: "https://speakerdeck.com/ianfeather/testing-without-assertions"
         video_url: ""
   -
     date: "2017-11-30 19:00"

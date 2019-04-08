@@ -1,8 +1,8 @@
 events:
   # -
-  #   date: "2018-0-0 19:00"
+  #   date: "2019-0-0 19:00"
   #   registration_url: ""
-  #   tickets_released: "2018-0-0 10:00"
+  #   tickets_released: "2019-0-0 10:00"
   #   duration: 2.5
   #   writeups:
   #     -
@@ -12,7 +12,7 @@ events:
   #   speakers:
   #     -
   #       name: ""
-  #       pic: "2017/0/"
+  #       pic: "2019/0/"
   #       company: ""
   #       twitter: ""
   #       topic: ""
@@ -21,7 +21,7 @@ events:
   #       video_url: ""
   #     -
   #       name: ""
-  #       pic: "2017/0/"
+  #       pic: "2019/0/"
   #       company: ""
   #       twitter: ""
   #       topic: ""
@@ -30,7 +30,7 @@ events:
   #       video_url: ""
   #     -
   #       name: ""
-  #       pic: "2017/0/"
+  #       pic: "2019/0/"
   #       company: ""
   #       twitter: ""
   #       topic: ""
@@ -38,15 +38,53 @@ events:
   #       slides_url: ""
   #       video_url: ""
   -
-    date: "2019-03-28 19:00"
-    registration_url: "https://www.eventbrite.com/e/front-end-london-march-2019-tickets-57972677840"
-    tickets_released: "2019-03-19 10:00"
+    date: "2019-04-25 19:00"
+    registration_url: ""
+    tickets_released: "2019-04-16 10:00"
     duration: 2.5
     writeups:
       -
         author: ""
         twitter: ""
         writeup_url: ""
+    speakers:
+      -
+        name: "Luke Jackson"
+        pic: "2019/04/jackson-luke.jpg"
+        company: "Formidable London"
+        twitter: "lukejacksonn"
+        topic: "Don't build that app!"
+        description: "eact apps without a build step; no node_modules, no webpack, no babel, no worries. Scalable architecture for free using the platform."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Jo Franchetti"
+        pic: "2019/04/franchetti-jo.jpg"
+        company: "Trainline"
+        twitter: "thisisjofrank"
+        topic: "Tweet my wedding dress"
+        description: "Inspired by a love of rainbows and silly tech projects, I decided to make my own first wearable tech — a wedding dress full of lights that could be controlled by tweets from my friends and family! This talk will go over the tech I used (suitable for absolute beginners), the mistakes I made and the lessons I learnt. From using the Twitter API, writing my own API, coding for an Arduino and wiring the whole thing up to the worst bit — THE SEWING. I aim to share the message that it is ok to make mistakes, we all do! If you keep trying you can make something magical!"
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Calum Ryan"
+        pic: "2019/04/ryan-calum.jpg"
+        company: ""
+        twitter: "calum_ryan"
+        topic: "Usability testing"
+        description: "Testing usability of a digital product takes on a wide variety of test types and feedback processes that I hope to elaborate on in this article. Designers, developers, product owners and anyone with a vested interested should all partake in this process, from defining the tests to measuring the success and failures of different usability testing."
+        slides_url: ""
+        video_url: ""
+  -
+    date: "2019-03-28 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-march-2019-tickets-57972677840"
+    tickets_released: "2019-03-19 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: "Ilya Tulvio"
+        twitter: "ilyatulvio"
+        writeup_url: "https://www.madebymany.com/stories/js-templates-mocking-and-the-evolution-of-video-on-the-web-at-front-end-london"
     speakers:
       -
         name: "Layla Porter"
@@ -82,9 +120,9 @@ events:
     duration: 2
     writeups:
       -
-        author: ""
-        twitter: ""
-        writeup_url: ""
+        author: "Ilya Tulvio"
+        twitter: "ilyatulvio"
+        writeup_url: "https://www.madebymany.com/stories/design-system-double-header-at-front-end-london"
     speakers:
       -
         name: "Matt Woods"
@@ -111,9 +149,9 @@ events:
     duration: 2.5
     writeups:
       -
-        author: ""
-        twitter: ""
-        writeup_url: ""
+        author: "Julian March"
+        twitter: "JulianMarch"
+        writeup_url: "https://www.madebymany.com/stories/smart-homes-chatbots-and-load-testing-at-front-end-london"
     speakers:
       -
         name: "Katie Koschland"

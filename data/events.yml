@@ -54,7 +54,7 @@ events:
         company: "Formidable London"
         twitter: "lukejacksonn"
         topic: "Don't build that app!"
-        description: "eact apps without a build step; no node_modules, no webpack, no babel, no worries. Scalable architecture for free using the platform."
+        description: "React apps without a build step; no node_modules, no webpack, no babel, no worries. Scalable architecture for free using the platform."
         slides_url: ""
         video_url: ""
       -

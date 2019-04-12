@@ -1625,7 +1625,7 @@ But generators aren’t just for making simple iterators over data structures. B
       -
         author: "Michael Strutt"
         twitter: "mstrutt_co_uk"
-        writeup_url: "//mstrutt.co.uk/blog/2014/04/notes-from-front-end-london-april/"
+        writeup_url: "http://mstrutt.co.uk/blog/2014/04/notes-from-front-end-london-april/"
       -
         author: "Dominic Busby"
         twitter: "busbytweets"
@@ -1666,7 +1666,7 @@ But generators aren’t just for making simple iterators over data structures. B
       -
         author: "Michael Strutt"
         twitter: "mstrutt_co_uk"
-        writeup_url: "//mstrutt.co.uk/blog/2014/03/notes-from-front-end-london-march/"
+        writeup_url: "http://mstrutt.co.uk/blog/2014/03/notes-from-front-end-london-march/"
       -
         author: "Charlotte Spencer"
         twitter: "charlotteis"
@@ -1711,7 +1711,7 @@ But generators aren’t just for making simple iterators over data structures. B
       -
         author: "Michael Strutt"
         twitter: "mstrutt_co_uk"
-        writeup_url: "//mstrutt.co.uk/blog/2014/01/notes-from-front-end-london-january/"
+        writeup_url: "http://mstrutt.co.uk/blog/2014/01/notes-from-front-end-london-january/"
     speakers:
       -
         name: "Todd Motto"

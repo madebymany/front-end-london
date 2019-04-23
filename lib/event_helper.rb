@@ -28,7 +28,7 @@ module EventHelper
   end
 
   def tickets_available(events)
-    latest_event(events).registration_url.present? && Chronic.parse(latest_event(events).tickets_released) < Time.now
+    latest_event(events).registration_url.present? #&& Chronic.parse(latest_event(events).tickets_released) < Time.now
   end
 
   def tickets_released_date(events)

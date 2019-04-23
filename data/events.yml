@@ -39,7 +39,7 @@ events:
   #       video_url: ""
   -
     date: "2019-04-25 19:00"
-    registration_url: ""
+    registration_url: "https://www.eventbrite.com/e/front-end-london-april-2019-tickets-59954926800"
     tickets_released: "2019-04-16 10:00"
     duration: 2.5
     writeups:

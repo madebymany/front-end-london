@@ -38,6 +38,44 @@ events:
   #       slides_url: ""
   #       video_url: ""
   -
+    date: "2019-05-30 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-may-2019-tickets-61580999427"
+    tickets_released: "2019-05-21 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Joel Chippindale"
+        pic: "2019/05/chippindale-joel.jpg"
+        company: "Unmade"
+        twitter: "joelchippindale"
+        topic: "Simplify writing code with deliberate commits"
+        description: "This talk will introduce 5 habits to adopt around committing your code which will help you break down gnarly, complex problems into smaller simpler problems and make it easier for you to write good code."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Mike Laurie"
+        pic: "2019/05/laurie-mike.jpg"
+        company: "Lloyds Bank"
+        twitter: "mikelaurie"
+        topic: "Hand-offs from hell"
+        description: "Over the last twenty years, many service organisations have cut costs by separating out different types of work. This can reduce training costs but creates poor service for customers. I’m going to talk about how we reversed that by prototyping new ways of servicing customers in a large contact centre."
+        slides_url: ""
+        video_url: ""
+      # -
+      #   name: ""
+      #   pic: "2019/0/"
+      #   company: ""
+      #   twitter: ""
+      #   topic: ""
+      #   description: ""
+      #   slides_url: ""
+      #   video_url: ""
+  -
     date: "2019-04-25 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-april-2019-tickets-59954926800"
     tickets_released: "2019-04-16 10:00"

@@ -66,6 +66,15 @@ events:
         description: "Over the last twenty years, many service organisations have cut costs by separating out different types of work. This can reduce training costs but creates poor service for customers. I’m going to talk about how we reversed that by prototyping new ways of servicing customers in a large contact centre."
         slides_url: ""
         video_url: ""
+      -
+        name: "Alex Warren"
+        pic: "2019/05/warren-alex.jpg"
+        company: "Trainline"
+        twitter: "alexwarren"
+        topic: "Why Not Fix Your Technical Debt?"
+        description: "What is technical debt and why is it important? When should we fix it, and when is it not worth fixing? When it comes to a choice between \"fixing up old code\" or \"delivering new features\", it's often \"fixing up old code\" which loses - how can we fight back against that?"
+        slides_url: ""
+        video_url: ""
       # -
       #   name: ""
       #   pic: "2019/0/"

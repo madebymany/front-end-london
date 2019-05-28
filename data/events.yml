@@ -80,7 +80,7 @@ events:
         pic: "2019/05/warren-alex.jpg"
         company: "Trainline"
         twitter: "alexwarren"
-        topic: "Why Not Fix Your Technical Debt?"
+        topic: "Why not fix your technical debt?"
         description: "What is technical debt and why is it important? When should we fix it, and when is it not worth fixing? When it comes to a choice between \"fixing up old code\" or \"delivering new features\", it's often \"fixing up old code\" which loses - how can we fight back against that?"
         slides_url: ""
         video_url: ""

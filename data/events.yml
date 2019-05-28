@@ -37,6 +37,15 @@ events:
   #       description: ""
   #       slides_url: ""
   #       video_url: ""
+  #     -
+  #       name: "Mike Laurie"
+  #       pic: "2019/05/laurie-mike.jpg"
+  #       company: "Lloyds Bank"
+  #       twitter: "mikelaurie"
+  #       topic: "Hand-offs from hell"
+  #       description: "Over the last twenty years, many service organisations have cut costs by separating out different types of work. This can reduce training costs but creates poor service for customers. I’m going to talk about how we reversed that by prototyping new ways of servicing customers in a large contact centre."
+  #       slides_url: ""
+  #       video_url: ""
   -
     date: "2019-05-30 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-may-2019-tickets-61580999427"
@@ -58,12 +67,12 @@ events:
         slides_url: ""
         video_url: ""
       -
-        name: "Mike Laurie"
-        pic: "2019/05/laurie-mike.jpg"
+        name: "Laurence Grinyer"
+        pic: "2019/05/grinyer-laurence.jpg"
         company: "Lloyds Bank"
-        twitter: "mikelaurie"
-        topic: "Hand-offs from hell"
-        description: "Over the last twenty years, many service organisations have cut costs by separating out different types of work. This can reduce training costs but creates poor service for customers. I’m going to talk about how we reversed that by prototyping new ways of servicing customers in a large contact centre."
+        twitter: "laurencegrinyer"
+        topic: "Shapes of design"
+        description: "Designers have become increasingly balkanised in recent years. At Lloyds Bank there are 9 different ‘guilds’ of design. This makes delivery more complex with regular ‘hand offs’ and turf wars. I’ll explore how we’re challenging this at Lloyds, and how service design is bringing together design and delivery."
         slides_url: ""
         video_url: ""
       -

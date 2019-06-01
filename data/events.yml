@@ -47,6 +47,26 @@ events:
   #       slides_url: ""
   #       video_url: ""
   -
+    date: "2019-07-25 19:00"
+    registration_url: ""
+    tickets_released: "2019-07-16 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "TBA"
+        pic: "/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+        video_url: "" 
+  -
     date: "2019-05-30 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-may-2019-tickets-61580999427"
     tickets_released: "2019-05-21 10:00"

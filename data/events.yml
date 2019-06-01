@@ -59,7 +59,7 @@ events:
     speakers:
       -
         name: "TBA"
-        pic: "/"
+        pic: ""
         company: ""
         twitter: ""
         topic: ""
@@ -104,15 +104,6 @@ events:
         description: "What is technical debt and why is it important? When should we fix it, and when is it not worth fixing? When it comes to a choice between \"fixing up old code\" or \"delivering new features\", it's often \"fixing up old code\" which loses - how can we fight back against that?"
         slides_url: ""
         video_url: ""
-      # -
-      #   name: ""
-      #   pic: "2019/0/"
-      #   company: ""
-      #   twitter: ""
-      #   topic: ""
-      #   description: ""
-      #   slides_url: ""
-      #   video_url: ""
   -
     date: "2019-04-25 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-april-2019-tickets-59954926800"

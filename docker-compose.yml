@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: bundle exec middleman --bind-address 0.0.0.0
+    volumes:
+      - .:/site
+    ports:
+      - "4567:4567"

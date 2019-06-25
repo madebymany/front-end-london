@@ -72,8 +72,6 @@ activate :autoprefixer do |config|
   config.browsers = ['last 2 versions']
 end
 
-page '/epic/*', :layout => 'epic'
-
 configure :development do
   compass_config do |config|
     config.sass_options = {:debug_info => true}

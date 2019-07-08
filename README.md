@@ -6,6 +6,4 @@ This site is built with Middleman and deployed to Heroku.
 
 ## Running the site
 
-Run `middleman server` to start a server on `localhost:4567`.
-
-
+Run `docker-compose up` to start a server on `http://0.0.0.0:4567`.

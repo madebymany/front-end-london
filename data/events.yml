@@ -72,7 +72,7 @@ events:
         company: "GitLab"
         twitter: "samdbeckham"
         topic: "Making GitLab a PWA"
-        description: "How I’m starting to provide offline support for GitLab one step at a time, making it a PWA in the process."
+        description: "Turning a large scale website into a PWA doesn't have to be hard. In this talk, I will show you how I made GitLab into a PWA with less than 100 lines of code."
         slides_url: ""
         video_url: ""
   -

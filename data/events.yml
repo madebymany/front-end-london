@@ -38,6 +38,26 @@ events:
   #       slides_url: ""
   #       video_url: ""
   -
+    date: "2019-08-29 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-aug-2019-tickets-68963195775"
+    tickets_released: "2019-08-20 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Chris Dowling"
+        pic: "2019/08/dowling-chris.jpg"
+        company: "Unmade"
+        twitter: "gingerchris"
+        topic: "Saving the Planet Using SVG"
+        description: "SVGs are incredibly powerful, yet still relatively underused on the web. I’ll talk about how we use SVG at Unmade, share some tips to make working with them easier, and describe how they’re helping us make fashion less polluting."
+        slides_url: ""
+        video_url: ""
+  -
     date: "2019-07-25 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-july-2019-tickets-64799931339"
     tickets_released: "2019-07-16 10:00"

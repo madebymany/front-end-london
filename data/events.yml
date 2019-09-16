@@ -38,6 +38,44 @@ events:
   #       slides_url: ""
   #       video_url: ""
   -
+    date: "2019-09-26 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-sept-2019-tickets-72969067445"
+    tickets_released: "2019-09-19 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Stephen Cook"
+        pic: "2019/09/cook-stephen.png"
+        company: "Thread"
+        twitter: "StephenCookDev"
+        topic: "SVGs so good you dodge the Blue Shell"
+        description: "Icons on the web are everywhere, but sometimes it feels like just using normal img tags with PNGs is the easiest way. This talks looks at some common icon use-cases, and how using SVGs can make your life easier, and your website shinier."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Tara Ojo"
+        pic: "blank.png"
+        company: ""
+        twitter: ""
+        topic: "TBC"
+        description: ""
+        slides_url: ""
+        video_url: ""
+      -
+        name: ""
+        pic: "2019/0/"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+        video_url: ""
+  -
     date: "2019-08-29 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-aug-2019-tickets-68963195775"
     tickets_released: "2019-08-20 10:00"

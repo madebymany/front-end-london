@@ -37,6 +37,26 @@ events:
   #       description: ""
   #       slides_url: ""
   #       video_url: ""
+  
+      #   -
+      #   name: "Lydia Wozniak"
+      #   pic: "2019/07/wozniak-lydia.jpg"
+      #   company: "BBC Design + Engineering"
+      #   twitter: "LydiaMoo"
+      #   topic: "The women who helped build the internet"
+      #   description: "Throughout the 20th century women held a lot of technological responsibility but, often are not credited for their contributions. Lydia will share an alternative history of the internet by sharing the stories of women who helped create it."
+      #   slides_url: ""
+      #   video_url: ""
+      # -
+      #   name: "Sam Beckham"
+      #   pic: "2019/07/beckham-sam.jpg"
+      #   company: "GitLab"
+      #   twitter: "samdbeckham"
+      #   topic: "Making GitLab a PWA"
+      #   description: "Turning a large scale website into a PWA doesn't have to be hard. In this talk, I will show you how I made GitLab into a PWA with less than 100 lines of code."
+      #   slides_url: ""
+      #   video_url: ""
+  
   -
     date: "2019-09-26 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-sept-2019-tickets-72969067445"
@@ -113,64 +133,6 @@ events:
         description: "Over the last twenty years, many service organisations have cut costs by separating out different types of work. This can reduce training costs but creates poor service for customers. I’m going to talk about how we reversed that by prototyping new ways of servicing customers in a large contact centre."
         slides_url: ""
         video_url: ""
-  -
-    date: "2019-07-25 19:00"
-    registration_url: "https://www.eventbrite.com/e/front-end-london-july-2019-tickets-64799931339"
-    tickets_released: "2019-07-16 10:00"
-    duration: 2.5
-    writeups:
-      -
-        author: ""
-        twitter: ""
-        writeup_url: ""
-    speakers:
-      -
-        name: "Mike Laurie"
-        pic: "2019/07/laurie-mike.jpg"
-        company: "Lloyds Bank"
-        twitter: "mikelaurie"
-        topic: "Hand-offs from hell"
-        description: "Over the last twenty years, many service organisations have cut costs by separating out different types of work. This can reduce training costs but creates poor service for customers. I’m going to talk about how we reversed that by prototyping new ways of servicing customers in a large contact centre."
-        slides_url: ""
-        video_url: ""
-      -
-        name: "Lydia Wozniak"
-        pic: "2019/07/wozniak-lydia.jpg"
-        company: "BBC Design + Engineering"
-        twitter: "LydiaMoo"
-        topic: "The women who helped build the internet"
-        description: "Throughout the 20th century women held a lot of technological responsibility but, often are not credited for their contributions. Lydia will share an alternative history of the internet by sharing the stories of women who helped create it."
-        slides_url: ""
-        video_url: ""
-      -
-        name: "Sam Beckham"
-        pic: "2019/07/beckham-sam.jpg"
-        company: "GitLab"
-        twitter: "samdbeckham"
-        topic: "Making GitLab a PWA"
-        description: "Turning a large scale website into a PWA doesn't have to be hard. In this talk, I will show you how I made GitLab into a PWA with less than 100 lines of code."
-        slides_url: ""
-        video_url: ""
-  -
-    date: "2019-07-25 19:00"
-    registration_url: ""
-    tickets_released: "2019-07-16 10:00"
-    duration: 2.5
-    writeups:
-      -
-        author: ""
-        twitter: ""
-        writeup_url: ""
-    speakers:
-      -
-        name: "TBA"
-        pic: ""
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
-        slides_url: ""
-        video_url: "" 
   -
     date: "2019-05-30 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-may-2019-tickets-61580999427"

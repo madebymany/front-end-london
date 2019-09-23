@@ -87,12 +87,12 @@ events:
         slides_url: ""
         video_url: ""
       -
-        name: "TBA"
-        pic: "blank.png"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Ana Pasparan"
+        pic: "2019/09/pasparan-ana.jpeg"
+        company: "Gousto"
+        twitter: "ane31mary"
+        topic: "Supercharge your whiteboarding and pair programming"
+        description: "Is it hard to refine and assign tickets? Do you find it hard to do code reviews? How about when some team members are off on holiday? In this talk, Ana will share her learnings about how effective whiteboarding and pair programming can help you to solve these types of issues."
         slides_url: ""
         video_url: ""
   -

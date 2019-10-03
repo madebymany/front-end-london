@@ -7,7 +7,7 @@ export const FormInput = styled.input`
   width: 100%;
   padding: ${c.XS};
   font-size: ${c.XL2};
-  line-height: 1.65;
+  line-height: 1.74;
   background-color: ${c.WHITE};
   background-clip: padding-box;
   border: 1px solid ${c.GREY};

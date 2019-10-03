@@ -19,7 +19,9 @@ const Newsletter = () => (
     <FullWidth id="newsletter">
       <Container>
         <Heading>Want to keep in touch?</Heading>
-        <Copy>Sign up to our newsletter</Copy>
+        <Copy>
+          Sign up to our newsletter to keep up to date about the next event
+        </Copy>
         <NewsletterForm />
       </Container>
     </FullWidth>

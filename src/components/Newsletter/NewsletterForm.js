@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 import { Row, Column } from "../Grid"
 import { Button } from "../Button"
@@ -7,9 +7,31 @@ import { Text } from "../Text"
 import { ExternalCopyLink } from "../Links"
 import { FormInput, FormCheckBox } from "../Forms"
 
+import { medium } from "../../styles/media"
+import c from "../../styles/constants"
+
+const order = css`
+  order: 1;
+
+  ${medium`
+    order: 0;
+  `}
+`
+
 const ButtonColumn = styled(Column)`
-  text-align: right;
-  margin-left: 30px;
+  margin-bottom: ${c.XL2};
+
+  ${medium`
+    text-align: right;
+    margin-left: 30px;
+    margin-bottom: 0;
+  `}
+
+  ${order}
+`
+
+const CopyColumn = styled(Column)`
+  ${order}
 `
 
 const NewsletterForm = () => (
@@ -30,7 +52,7 @@ const NewsletterForm = () => (
           type="checkbox"
         />
       </Column>
-      <Column md={0.73}>
+      <CopyColumn md={0.73}>
         <Text>
           We don’t want any funny business, we want to be clear about the data
           we collect and how we use it. To find out the details click{" "}
@@ -38,7 +60,7 @@ const NewsletterForm = () => (
             here
           </ExternalCopyLink>
         </Text>
-      </Column>
+      </CopyColumn>
     </Row>
   </form>
 )

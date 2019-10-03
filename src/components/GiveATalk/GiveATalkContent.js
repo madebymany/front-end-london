@@ -3,10 +3,14 @@ import styled from "styled-components"
 
 import { Heading, Copy } from "../Text"
 import { MonoLink, ExternalMonoLink } from "../Links"
+
+import { large } from "../../styles/media"
 import c from "../../styles/constants"
 
 const Wrapper = styled.div`
-  padding: 8rem 0 14rem 0;
+  ${large`
+    padding: 8rem 0 14rem 0;
+  `}
 `
 
 const PaddedHeading = styled(Heading)`

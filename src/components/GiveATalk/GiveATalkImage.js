@@ -3,11 +3,17 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 
 import Blob from "../Blob"
+import { large } from "../../styles/media"
 import c from "../../styles/constants"
 
 const Wrapper = styled.div`
-  position: absolute;
   width: 100%;
+  transform: translateX(-30%);
+
+  ${large`
+    position: absolute;
+    transform: none;
+  `}
 `
 
 const GiveATalkImage = ({ image }) => (
@@ -17,7 +23,7 @@ const GiveATalkImage = ({ image }) => (
       contrast={0.4}
       fill={c.WHITE}
       transform="scale(1.6, 1.3)"
-      rotate
+      bleed
     >
       <Img fluid={image} alt="Frontend London Audience" />
     </Blob>

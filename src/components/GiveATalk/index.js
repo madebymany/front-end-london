@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 import { Row, Column } from "../Grid"
 import Container from "../Container"
+import { medium } from "../../styles/media"
 import c from "../../styles/constants"
 
 import GiveATalkContent from "./GiveATalkContent"
@@ -11,7 +12,15 @@ import GiveATalkImage from "./GiveATalkImage"
 
 const Wrapper = styled(Container)`
   position: relative;
-  padding: ${c.XL5} 0;
+  padding-top: ${c.XL5};
+  padding-bottom: ${c.XL5};
+`
+
+const TalkRow = styled(Row)`
+  flex-direction: column-reverse;
+  ${medium`
+    flex-direction: row;
+  `}
 `
 
 const GiveATalk = () => {
@@ -28,14 +37,14 @@ const GiveATalk = () => {
   `)
   return (
     <Wrapper>
-      <Row>
-        <Column md={0.43}>
+      <TalkRow>
+        <Column lg={0.43}>
           <GiveATalkContent />
         </Column>
-        <Column md={0.57}>
+        <Column lg={0.57}>
           <GiveATalkImage image={data.file.childImageSharp.fluid} />
         </Column>
-      </Row>
+      </TalkRow>
     </Wrapper>
   )
 }

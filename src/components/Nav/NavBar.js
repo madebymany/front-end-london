@@ -7,8 +7,6 @@ import Container from "../Container"
 import NavLinks from "./NavLinks"
 import NavLogo from "./NavLogo"
 
-const NavContainer = styled.div``
-
 const Wrapper = styled.header`
   width: 100%;
   height: 65px;
@@ -28,7 +26,7 @@ const Toggle = styled.button`
   justify-content: center;
   width: 34px;
   height: 34px;
-  color: ${c.WHITE};
+  color: currentColor;
   background: transparent;
   border: none;
   padding: 0;
@@ -39,34 +37,41 @@ const Toggle = styled.button`
   `)}
 `
 
-const NavBar = ({ tickets, homepage }) => (
-  <NavContainer homepage={homepage}>
+const NavBar = ({ tickets, homepage, toggleMenu, open, ...props }) => (
+  <div {...props}>
     <Container>
       <Wrapper homepage={homepage}>
         {!homepage && <NavLogo />}
         <NavLinks tickets={tickets} />
-        <Toggle type="button">
-          <svg
-            width="24"
-            height="16"
-            viewBox="0 0 24 16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g
-              stroke="currentColor"
-              strokeWidth="2"
-              fill="none"
-              fillRule="evenodd"
-            >
-              <path d="M0,1 L24,1"></path>
-              <path d="M0,8 L24,8"></path>
-              <path d="M0,15 L24,15"></path>
-            </g>
-          </svg>
+        <Toggle
+          type="button"
+          onClick={() => toggleMenu(open)}
+          aria-label={open ? "open menu" : "close menu"}
+          aria-expanded={open ? "false" : "true"}
+        >
+          {open ? (
+            <svg width="24" height="16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 1h24M0 8h24M0 15h24"
+                stroke="currentColor"
+                strokeWidth="2"
+                fill="none"
+                fillRule="evenodd"
+              />
+            </svg>
+          ) : (
+            <svg width="18" height="19" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.547.906l1.414 1.415-7.547 7.546.02.02-.016.014L18 17.485 16.586 18.9 9 11.312 1.414 18.9 0 17.485l7.581-7.584-.014-.014.018-.02L.039 2.321 1.453.906 9 8.453 16.547.906z"
+                fill="currentColor"
+                fillRule="evenodd"
+              />
+            </svg>
+          )}
         </Toggle>
       </Wrapper>
     </Container>
-  </NavContainer>
+  </div>
 )
 
 export default NavBar

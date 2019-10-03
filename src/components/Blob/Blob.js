@@ -28,10 +28,11 @@ class Blob extends React.Component {
     // and re-initialise the points
     if (size && size !== prevProps.size) {
       this.counter = 0
+      const initial = this.generateBlob()
       this.setState(
         {
-          initial: this.generateBlob(),
-          points: this.generateBlob(),
+          initial,
+          points: run ? this.generateBlob() : initial,
           reset: true,
         },
         () => {

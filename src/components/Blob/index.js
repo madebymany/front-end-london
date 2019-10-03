@@ -52,6 +52,7 @@ const BlobContainer = ({
   rotate,
   transform,
   children,
+  inverse,
   ...props
 }) => {
   const [id] = useState(uuid())
@@ -61,10 +62,10 @@ const BlobContainer = ({
   return (
     <Measure bounds onResize={debounce(({ bounds }) => setSize(bounds), 100)}>
       {({ measureRef }) => (
-        <Wrapper ref={measureRef}>
+        <Wrapper ref={measureRef} {...props}>
           {children}
           <ExpandedWrapper>
-            <svg ref={ref} width="100%" height="100%" {...props}>
+            <svg ref={ref} width="100%" height="100%">
               <defs>
                 <filter id={`goo-${id}`}>
                   <feGaussianBlur
@@ -86,9 +87,17 @@ const BlobContainer = ({
                   />
                 </filter>
                 <mask id={`window-${id}`}>
-                  <rect x="0" y="0" fill="#fff" width="100%" height="100%" />
-                  <Rotating fill="#000" run={rotate}>
-                    <g style={{ transform: `translateX(${offset}px)` }}>
+                  <rect
+                    x="0"
+                    y="0"
+                    fill={inverse ? "#000" : "#fff"}
+                    width="100%"
+                    height="100%"
+                  />
+                  <Rotating fill={inverse ? "#fff" : "#000"} run={rotate}>
+                    <animated.g
+                      style={{ transform: `translateX(${offset}px)` }}
+                    >
                       <Blob
                         seed={id}
                         complexity={complexity}
@@ -105,7 +114,7 @@ const BlobContainer = ({
                           />
                         )}
                       </Blob>
-                    </g>
+                    </animated.g>
                   </Rotating>
                 </mask>
               </defs>
@@ -130,11 +139,13 @@ BlobContainer.propTypes = {
   complexity: PropTypes.number.isRequired,
   contrast: PropTypes.number.isRequired,
   fill: PropTypes.string.isRequired,
+  inverse: PropTypes.bool,
   rotate: PropTypes.bool,
   transform: PropTypes.string,
 }
 
 BlobContainer.defaultProps = {
+  inverse: false,
   rotate: false,
   transform: "",
 }

@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "front-end-london",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Front-end London is a free monthly meetup about front-end development & design.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Gareth Cozens <gareth@madebymany.co.uk>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
     "date-fns": "^2.2.1",
@@ -22,11 +22,13 @@
     "polished": "^3.4.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
+    "react-device-detect": "^1.9.10",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "react-intersection-observer": "^8.24.2",
     "react-measure": "^2.3.0",
     "react-spring": "^8.0.27",
+    "scroll-lock": "^2.1.2",
     "styled-components": "^4.3.2",
     "uuid": "^3.3.3"
   },

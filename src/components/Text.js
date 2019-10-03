@@ -1,5 +1,6 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { transparentize } from "polished"
+import { medium } from "../styles/media"
 import c from "../styles/constants"
 
 export const Strap = styled.h3`
@@ -18,8 +19,13 @@ export const Heading = styled.h2`
 
 export const Copy = styled.p`
   font-weight: 400;
-  font-size: ${c.XL2};
-  line-height: 1.45;
+  font-size: ${c.LARGE};
+  line-height: 1.55;
+
+  ${medium(css`
+    font-size: ${c.XL2};
+    line-height: 1.45;
+  `)}
 `
 
 export const Text = styled.p`

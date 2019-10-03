@@ -20,12 +20,12 @@ const InnerWrapper = styled.div`
   margin-top: ${c.XL5};
 `
 
-const MobileMenu = ({ toggleMenu }) => (
+const MobileMenu = ({ tickets, toggleMenu }) => (
   <MenuWrapper>
     <NavBar homepage={false} open={false} toggleMenu={toggleMenu} />
     <InnerWrapper>
       <Container>
-        <Menu />
+        <Menu tickets={tickets} />
       </Container>
     </InnerWrapper>
     <MobileFooter />

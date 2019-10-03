@@ -38,7 +38,14 @@ const Nav = ({ tickets, homepage }) => {
       />
       {transitions.map(
         ({ item, key, props }) =>
-          item && <MobileMenu key={key} style={props} toggleMenu={setToggle} />
+          item && (
+            <MobileMenu
+              key={key}
+              style={props}
+              tickets={tickets}
+              toggleMenu={setToggle}
+            />
+          )
       )}
     </NavWrapper>
   )

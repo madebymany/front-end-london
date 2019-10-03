@@ -21,7 +21,7 @@ const Inner = styled.div`
   clip-path: url(#reveal);
 `
 
-const MobileMenu = ({ style, toggleMenu }) => {
+const MobileMenu = ({ style, tickets, toggleMenu }) => {
   const [open, setOpen] = useState(true)
   const toggleOpen = state => {
     setOpen(state)
@@ -43,7 +43,7 @@ const MobileMenu = ({ style, toggleMenu }) => {
         onRest={() => !open && !isEdge && toggleMenu(false)}
       >
         <Inner>
-          <Menu toggleMenu={toggleOpen} />
+          <Menu tickets={tickets} toggleMenu={toggleOpen} />
         </Inner>
       </BlobReveal>
     </MenuWrapper>

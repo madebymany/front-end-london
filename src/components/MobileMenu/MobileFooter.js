@@ -11,9 +11,10 @@ const MobileFooterWrapper = styled.div`
   padding-top: ${c.XL5};
 `
 
-const SmallHeading = styled(Heading)`
+const SmallHeading = styled.h4`
+  font-weight: 600;
   font-size: ${c.XL};
-  margin: 0 0 ${c.BASE} 0;
+  margin: 0;
 `
 
 const MobileFooter = () => (

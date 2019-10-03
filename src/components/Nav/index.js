@@ -1,7 +1,8 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import { useTransition, config } from "react-spring"
 import styled from "styled-components"
+import { disablePageScroll, enablePageScroll } from "scroll-lock"
 
 import NavBar from "./NavBar"
 import MobileMenu from "../MobileMenu"
@@ -19,6 +20,13 @@ const Nav = ({ tickets, homepage }) => {
     from: { left: "-100%" },
     enter: { left: "0%" },
     leave: { left: "-100%" },
+  })
+  useEffect(() => {
+    if (toggle) {
+      disablePageScroll()
+    } else {
+      enablePageScroll()
+    }
   })
   return (
     <NavWrapper>

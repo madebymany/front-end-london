@@ -25,6 +25,9 @@ const MobileMenu = ({ style, toggleMenu }) => {
   const [open, setOpen] = useState(true)
   const toggleOpen = state => {
     setOpen(state)
+    // Edge doesn't support svg clip-path on HTML Elements.
+    // So we don't want to delay the closing of the menu.
+    // Modernizr can't detect for it https://github.com/Modernizr/Modernizr/issues/213
     if (isEdge) {
       toggleMenu(state)
     }

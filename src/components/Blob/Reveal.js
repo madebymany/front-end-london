@@ -73,12 +73,10 @@ const BlobContainer = ({
                   {size.width >= 0 && (
                     <Spring
                       from={{
-                        width: 100,
-                        height: 100,
+                        scale: 100,
                       }}
                       to={{
-                        width: open ? size.width * 3 : 100,
-                        height: open ? scaleHeight * 3 : 100,
+                        scale: open ? scaleHeight * 3 : 100,
                       }}
                       config={{
                         ...config.default,
@@ -86,12 +84,12 @@ const BlobContainer = ({
                       }}
                       onRest={onRest}
                     >
-                      {({ width, height }) => (
+                      {({ scale }) => (
                         <Blob
                           seed={seed}
                           complexity={complexity}
                           contrast={contrast}
-                          size={height}
+                          size={scale}
                         >
                           {path => (
                             <Path
@@ -99,8 +97,8 @@ const BlobContainer = ({
                               filter={`url(#goo-${uid})`}
                               id={uid}
                               style={{
-                                transform: `translate(-${width /
-                                  3}px, -${height / 3}px)`,
+                                transform: `translate(-${scale /
+                                  3}px, -${scale / 3}px)`,
                               }}
                             />
                           )}

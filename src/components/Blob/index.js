@@ -28,6 +28,8 @@ const ExpandedWrapper = styled.div`
   height: 100%;
   top: 0;
   left: 0;
+
+  ${props => props.bleed && "transform: scale(1.01);"}
 `
 
 const Rotating = styled.g`
@@ -53,6 +55,7 @@ const BlobContainer = ({
   transform,
   children,
   inverse,
+  bleed,
   ...props
 }) => {
   const [id] = useState(uuid())
@@ -64,7 +67,7 @@ const BlobContainer = ({
       {({ measureRef }) => (
         <Wrapper ref={measureRef} {...props}>
           {children}
-          <ExpandedWrapper>
+          <ExpandedWrapper bleed={bleed}>
             <svg ref={ref} width="100%" height="100%">
               <defs>
                 <filter id={`goo-${id}`}>
@@ -141,12 +144,14 @@ BlobContainer.propTypes = {
   fill: PropTypes.string.isRequired,
   inverse: PropTypes.bool,
   rotate: PropTypes.bool,
+  bleed: PropTypes.bool,
   transform: PropTypes.string,
 }
 
 BlobContainer.defaultProps = {
   inverse: false,
   rotate: false,
+  bleed: false,
   transform: "",
 }
 

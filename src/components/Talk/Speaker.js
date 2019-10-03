@@ -1,36 +1,49 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import c from "../../styles/constants"
 
 import { Row, Column } from "../Grid"
 import { Strap, Heading, Copy } from "../Text"
 import { ExternalLink } from "../Links"
 import Blob from "../Blob"
 
+import { medium } from "../../styles/media"
+import c from "../../styles/constants"
+
 const Wrapper = styled(Row)`
-  padding: ${c.XL7} 0;
+  padding: ${c.XL2} 0;
   border-bottom: 1px solid ${c.GREY};
+
+  ${medium(css`
+    padding: ${c.XL7} 0;
+  `)}
 `
 
 const PaddedXColumn = styled(Column)`
-  padding: 0 ${c.BASE};
+  padding: ${c.XL} ${c.BASE};
+  transform: translateX(-25%);
+
+  ${medium(css`
+    padding: 0 ${c.BASE};
+    transform: translateX(0%);
+  `)}
 `
 
 const Speaker = ({ name, twitter, topic, description, pic }) => (
   <Wrapper>
-    <PaddedXColumn xs={1} md={0.3}>
+    <PaddedXColumn xs={0.8} md={0.3}>
       <Blob
         complexity={0.3}
         contrast={0.4}
         fill={c.WHITE}
         transform="scale(1.1, 1.4)"
+        bleed
       >
         <Img fluid={pic.childImageSharp.fluid} alt={name} />
       </Blob>
     </PaddedXColumn>
-    <Column xs={1} md={0.7}>
+    <Column md={0.7}>
       <Strap>
         {name}
         {twitter && (

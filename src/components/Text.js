@@ -12,9 +12,15 @@ export const Strap = styled.h3`
 
 export const Heading = styled.h2`
   font-weight: 600;
-  font-size: ${c.XL6};
-  line-height: 1;
-  margin: ${c.XL5} 0;
+  font-size: ${c.XL4};
+  line-height: 1.28;
+  margin: ${c.BASE} 0;
+
+  ${medium(css`
+    margin: ${c.XL5} 0;
+    font-size: ${c.XL6};
+    line-height: 1;
+  `)}
 `
 
 export const Copy = styled.p`

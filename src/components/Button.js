@@ -16,7 +16,7 @@ export const Button = styled.button`
   font-family: ${c.FONT_SECONDARY};
   font-weight: ${c.MEDIUM};
   font-size: ${c.LARGE};
-  line-height: 1;
+  line-height: 1.3;
   padding: ${c.XL} ${c.XL5};
   min-height: 64px;
   text-decoration: none;
@@ -27,6 +27,7 @@ export const Button = styled.button`
 
   ${medium(css`
     font-size: ${c.XL2};
+    line-height: 1;
     ${props => !props.block && "min-width: 218px"};
   `)}
 `

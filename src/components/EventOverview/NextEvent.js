@@ -1,15 +1,22 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styled from "styled-components"
-import { format, parse, isPast } from "date-fns"
-import c from "../../styles/constants"
+import styled, { css } from "styled-components"
+import { format } from "date-fns"
 import { Strap } from "../Text"
 import { Button } from "../Button"
-import { MonoArrowLink } from "../Links"
+import { medium } from "../../styles/media"
+import c from "../../styles/constants"
 
 const TimeHeading = styled.time`
+  display: block;
   font-weight: ${c.BOLD};
-  font-size: ${c.XL6};
+  font-size: ${c.XL4};
+  line-height: 1;
+  margin-bottom: ${c.BASE};
+
+  ${medium(css`
+    font-size: ${c.XL6};
+  `)}
 `
 
 const Address = styled.address`
@@ -18,6 +25,16 @@ const Address = styled.address`
   p {
     margin: 0;
   }
+`
+
+const TicketButton = styled(Button)`
+  display: block;
+  width: 100%;
+
+  ${medium`
+    display: inline-block;
+    width: auto;
+  `}
 `
 
 const NextEvent = ({ availability, date, registration_url }) => (
@@ -36,9 +53,9 @@ const NextEvent = ({ availability, date, registration_url }) => (
       <p>London N1 8JX</p>
     </Address>
     {registration_url && availability && (
-      <Button as="a" primary href={registration_url}>
+      <TicketButton as="a" primary href={registration_url}>
         Get tickets
-      </Button>
+      </TicketButton>
     )}
   </div>
 )

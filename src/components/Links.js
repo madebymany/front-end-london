@@ -1,18 +1,23 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { Link } from "gatsby"
+import { medium } from "../styles/media"
 import c from "../styles/constants"
 
 export const MonoLink = styled(Link)`
   display: inline-block;
   color: ${c.ORANGE};
   font-family: ${c.FONT_SECONDARY};
-  font-size: ${c.XL};
+  font-size: ${c.LARGE};
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
   }
+
+  ${medium(css`
+    font-size: ${c.XL};
+  `)}
 `
 
 export const ExternalMonoLink = props => (

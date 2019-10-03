@@ -24,9 +24,10 @@ const Wrapper = styled.div`
           display: flex;
           align-items: center;
           flex-direction: column-reverse;
-          margin-bottom: 110px;
+          margin-bottom: ${c.XL6};
 
           ${large`
+            margin-bottom: 110px;
             flex-direction: column;
           `}
         `}

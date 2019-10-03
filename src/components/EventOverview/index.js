@@ -18,10 +18,10 @@ const EventOverview = ({ talk }) => {
     <Wrapper>
       <Container>
         <Row justify="space-between">
-          <Column md={0.3}>
+          <Column lg={0.3}>
             <NextEvent {...talkSpreadable} />
           </Column>
-          <Column md={0.7}>
+          <Column lg={0.7}>
             <EventSummary {...talkSpreadable} />
           </Column>
         </Row>

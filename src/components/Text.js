@@ -7,7 +7,7 @@ export const Strap = styled.h3`
   font-weight: ${c.BOLD};
   font-size: ${c.SMALL};
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 ${c.XS} 0;
 `
 
 export const Heading = styled.h2`

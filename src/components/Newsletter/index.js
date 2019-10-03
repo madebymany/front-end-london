@@ -4,6 +4,8 @@ import styled from "styled-components"
 import Container from "../Container"
 import { Heading, Copy } from "../Text"
 import Wave from "../Wave"
+
+import { medium } from "../../styles/media"
 import c from "../../styles/constants"
 
 import NewsletterForm from "./NewsletterForm"
@@ -11,7 +13,11 @@ import NewsletterForm from "./NewsletterForm"
 const FullWidth = styled.div`
   position: relative;
   width: 100%;
-  padding: 4rem 0 10rem 0;
+  padding: 4rem 0 ${c.XL5} 0;
+
+  ${medium`
+    padding: 4rem 0 10rem 0;
+  `}
 `
 
 const Newsletter = () => (

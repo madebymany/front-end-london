@@ -4,6 +4,8 @@ import styled from "styled-components"
 import Container from "../Container"
 import { Row, Column } from "../Grid"
 import Menu from "../Menu"
+
+import { medium } from "../../styles/media"
 import c from "../../styles/constants"
 
 import Logo from "../../../static/images/logo.svg"
@@ -13,12 +15,21 @@ const Wrapper = styled.div`
   padding-bottom: ${c.XL7};
 `
 const LogoColumn = styled(Column)`
-  text-align: right;
+  padding-top: ${c.XL2};
+
+  ${medium`
+    padding-top: 0;
+    text-align: right;
+  `}
 `
 
 const FooterLogo = styled.img`
-  width: 290px;
+  width: 140px;
   max-width: 100%;
+
+  ${medium`
+    width: 290px;
+  `}
 `
 
 const Footer = ({ tickets }) => (

@@ -6,6 +6,8 @@ import Container from "../Container"
 import { FinePrint } from "../Text"
 import { CopyLink } from "../Links"
 import { Row, Column } from "../Grid"
+
+import { medium } from "../../styles/media"
 import c from "../../styles/constants"
 
 const Wrapper = styled.div`
@@ -14,7 +16,19 @@ const Wrapper = styled.div`
 
 const SocialMenu = styled.ul`
   display: flex;
-  justify-content: flex-end;
+  padding-bottom: ${c.XS};
+
+  ${medium`
+    justify-content: flex-end;
+  `}
+`
+
+const FooterRow = styled(Row)`
+  flex-direction: column-reverse;
+
+  ${medium`
+    flex-direction: row;
+  `}
 `
 
 const SocialItem = styled.li`
@@ -51,7 +65,7 @@ const FooterCopyright = () => {
   return (
     <Wrapper>
       <Container>
-        <Row>
+        <FooterRow>
           <Column md={0.5}>
             <FinePrint>
               © 2018 Made by Many Holdings Limited · Registered Company Number:
@@ -76,7 +90,7 @@ const FooterCopyright = () => {
                 ))}
             </SocialMenu>
           </Column>
-        </Row>
+        </FooterRow>
       </Container>
     </Wrapper>
   )

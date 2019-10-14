@@ -36,18 +36,7 @@ const Video = styled(animated.video)`
 `
 
 const HeroVideo = ({ open }) => {
-  const getSize = () => {
-    const clientWidth = window.innerWidth * 0.9
-    const clientHeight = window.innerHeight * 0.8
-
-    let computedWidth = clientWidth
-    if (computedWidth * videoRatio > clientHeight) {
-      computedWidth = clientHeight / videoRatio
-    }
-
-    return `${(computedWidth / clientWidth) * 100}%`
-  }
-  const [videoWidth, setVideoWidth] = useState(getSize())
+  const [videoWidth, setVideoWidth] = useState("100%")
   const videoStyle = useSpring({
     width: open ? videoWidth : "100%",
     delay: 1000,
@@ -55,7 +44,15 @@ const HeroVideo = ({ open }) => {
 
   useLayoutEffect(() => {
     function updateSize() {
-      setVideoWidth(getSize())
+      const clientWidth = window.innerWidth * 0.9
+      const clientHeight = window.innerHeight * 0.8
+
+      let computedWidth = clientWidth
+      if (computedWidth * videoRatio > clientHeight) {
+        computedWidth = clientHeight / videoRatio
+      }
+
+      setVideoWidth(`${(computedWidth / clientWidth) * 100}%`)
     }
     window.addEventListener("resize", updateSize)
     updateSize()

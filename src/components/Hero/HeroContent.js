@@ -7,7 +7,7 @@ import { Button } from "../Button"
 import { medium, large, xlarge } from "../../styles/media"
 import c from "../../styles/constants"
 
-import MadeByMany from "../../../static/images/madebymany-white.svg"
+import MadeByMany from "../../../assets/images/madebymany-white.svg"
 
 const Wrapper = styled.div`
   display: flex;
@@ -17,6 +17,14 @@ const Wrapper = styled.div`
   top: 0;
   left: 0;
   z-index: 1;
+  transition: opacity 0.5s;
+
+  ${props =>
+    props.open &&
+    `
+    opacity: 0;
+    visibility: hidden;
+  `}
 
   ${large`
     position: absolute;
@@ -91,8 +99,8 @@ const VideoButton = styled(Button)`
   `}
 `
 
-const HeroContent = ({ onPlay }) => (
-  <Wrapper>
+const HeroContent = ({ onPlay, open }) => (
+  <Wrapper open={open}>
     <Container>
       <HeroRow>
         <Column lg={0.55} xl={0.57}>
@@ -106,7 +114,7 @@ const HeroContent = ({ onPlay }) => (
             <a
               href="https://www.madebymany.com/"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <img src={MadeByMany} alt="Made by many" />
             </a>

@@ -2,14 +2,14 @@ import { createGlobalStyle } from "styled-components"
 
 import c from "./constants"
 
-import FabrigaWoff from "../../static/fonts/Fabriga.woff"
-import FabrigaWoff2 from "../../static/fonts/Fabriga.woff2"
-import FabrigaMediumWoff from "../../static/fonts/FabrigaMedium.woff"
-import FabrigaMediumWoff2 from "../../static/fonts/FabrigaMedium.woff2"
-import FabrigaBoldWoff from "../../static/fonts/Fabriga-Bold.woff"
-import FabrigaBoldWoff2 from "../../static/fonts/Fabriga-Bold.woff2"
-import FabrigaLightWoff from "../../static/fonts/FabrigaLight.woff"
-import FabrigaLightWoff2 from "../../static/fonts/FabrigaLight.woff2"
+import FabrigaWoff from "../../assets/fonts/Fabriga.woff"
+import FabrigaWoff2 from "../../assets/fonts/Fabriga.woff2"
+import FabrigaMediumWoff from "../../assets/fonts/FabrigaMedium.woff"
+import FabrigaMediumWoff2 from "../../assets/fonts/FabrigaMedium.woff2"
+import FabrigaBoldWoff from "../../assets/fonts/Fabriga-Bold.woff"
+import FabrigaBoldWoff2 from "../../assets/fonts/Fabriga-Bold.woff2"
+import FabrigaLightWoff from "../../assets/fonts/FabrigaLight.woff"
+import FabrigaLightWoff2 from "../../assets/fonts/FabrigaLight.woff2"
 
 export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500&display=swap');
@@ -58,6 +58,7 @@ export default createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     width: 100%;
     overflow-x: hidden;
+    transition: background-color 1s;
   }
 
   main {
@@ -130,5 +131,9 @@ export default createGlobalStyle`
   label {
     display: inline-block;
     margin-bottom: .5rem;
+  }
+
+  .tl-wrapper {
+    background-color: ${c.WHITE};
   }
 `

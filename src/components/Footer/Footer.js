@@ -8,7 +8,7 @@ import Menu from "../Menu"
 import { medium } from "../../styles/media"
 import c from "../../styles/constants"
 
-import Logo from "../../../static/images/logo.svg"
+import Logo from "../../../assets/images/logo.svg"
 
 const Wrapper = styled.div`
   border-bottom: 1px solid ${c.GREY};

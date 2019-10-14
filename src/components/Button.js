@@ -1,5 +1,6 @@
 import React from "react"
 import styled, { css } from "styled-components"
+import { darken, rgba } from "polished"
 import { Link } from "gatsby"
 
 import { medium } from "../styles/media"
@@ -24,6 +25,24 @@ export const Button = styled.button`
   user-select: none;
   border: none;
   cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:hover {
+    background-color: ${props =>
+      darken(0.05, props.primary ? c.ORANGE : c.BLACK)};
+  }
+
+  &:active {
+    background-color: ${props =>
+      darken(0.1, props.primary ? c.ORANGE : c.BLACK)};
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem
+      ${props => rgba(props.primary ? c.ORANGE : c.BLACK, 0.4)};
+  }
 
   ${medium(css`
     font-size: ${c.XL2};

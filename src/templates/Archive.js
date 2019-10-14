@@ -64,7 +64,7 @@ const Archive = ({
           talks={talks.edges}
           numPages={numPages}
           currentPage={currentPage}
-          pathPrefix="/archive"
+          pathPrefix="/archive/"
         />
       </FillWrapper>
     </Animated>

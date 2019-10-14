@@ -37,6 +37,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-preload-fonts`,
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,

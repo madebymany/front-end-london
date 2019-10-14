@@ -1,7 +1,29 @@
 import styled, { css } from "styled-components"
+import { darken } from "polished"
 import TransitionLink from "gatsby-plugin-transition-link"
 import { medium } from "../styles/media"
 import c from "../styles/constants"
+
+const underline = `
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: currentColor;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: width 0.2s ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    &:before {
+      width: 100%;
+    }
+  }
+`
 
 const withExternal = Component =>
   styled(Component).attrs(props => ({
@@ -17,15 +39,43 @@ export const AnimatedLink = styled(TransitionLink).attrs(() => ({
   exit: { length: 2 },
 }))``
 
-export const MonoLink = styled(AnimatedLink)`
+const BaseUnderlineLink = styled(AnimatedLink)`
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: currentColor;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: width 0.2s ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    &:before {
+      width: 100%;
+    }
+  }
+`
+
+export const MonoLink = styled(BaseUnderlineLink)`
+  position: relative;
   display: inline-block;
   color: ${c.ORANGE};
   font-family: ${c.FONT_SECONDARY};
   font-size: ${c.LARGE};
   text-decoration: none;
+  transition: color 0.15s ease-in-out;
 
-  &:hover {
-    text-decoration: underline;
+  &:hover,
+  &:focus {
+    color: ${darken(0.05, c.ORANGE)};
+  }
+
+  &:active {
+    color: ${darken(0.1, c.ORANGE)};
   }
 
   ${medium(css`
@@ -48,21 +98,24 @@ export const SimpleLink = styled(AnimatedLink)`
   color: ${c.BLACK};
   transition: 0.2s color;
 
+  &:focus,
   &:hover {
+    outline: 0;
     color: ${c.ORANGE};
+  }
+
+  &:focus {
+    text-decoration: underline;
   }
 `
 
 export const ExternalLink = withExternal(SimpleLink)
 
-export const CopyLink = styled(AnimatedLink)`
+export const CopyLink = styled(BaseUnderlineLink)`
+  position: relative;
   display: inline-block;
   color: ${c.ORANGE};
   text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 `
 
 export const ExternalCopyLink = withExternal(CopyLink)
@@ -76,24 +129,43 @@ export const MenuLink = styled(AnimatedLink)`
 export const ExternalMenuLink = withExternal(MenuLink)
 
 export const NavLink = styled(AnimatedLink)`
-  flex: 0 0 auto;
+  position: relative;
   display: inline-block;
+  flex: 0 0 auto;
   line-height: 50px;
   text-decoration: none;
   transition: color 0.2s;
   cursor: pointer;
   color: currentColor;
   font-size: ${c.XL2};
-
   transition: color 1s;
+
+  &:after {
+    position: absolute;
+    background-color: currentColor;
+    width: 0;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    transition: width 0.2s ease-in-out;
+  }
 
   &:hover,
   &:focus {
-    opacity: 0.8;
+    outline: 0;
+    &:after {
+      width: 100%;
+    }
   }
   &:active {
     opacity: 0.6;
   }
+
+  ${medium`
+    &:after {
+      content: '';
+    }
+  `}
 `
 
 export const ExternalNavLink = withExternal(NavLink)

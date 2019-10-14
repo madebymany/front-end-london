@@ -18,7 +18,7 @@ const PaddedHeading = styled(Heading)`
 `
 
 const LinkGroup = styled.div`
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
 `
 
@@ -31,12 +31,16 @@ const GiveATalkContent = () => (
       information contact us:
     </Copy>
     <LinkGroup>
-      <MonoLink as="a" href="mailto:fel@madebymany.co.uk">
-        fel@madebymany.co.uk
-      </MonoLink>
-      <ExternalMonoLink href="https://twitter.com/frontendlondon">
-        @frontendlondon
-      </ExternalMonoLink>
+      <div>
+        <MonoLink as="a" href="mailto:fel@madebymany.co.uk">
+          fel@madebymany.co.uk
+        </MonoLink>
+      </div>
+      <div>
+        <ExternalMonoLink href="https://twitter.com/frontendlondon">
+          @frontendlondon
+        </ExternalMonoLink>
+      </div>
     </LinkGroup>
   </Wrapper>
 )

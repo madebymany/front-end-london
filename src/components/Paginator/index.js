@@ -21,7 +21,7 @@ const LinkWrapper = styled.li`
 `
 
 const generatePathFactory = path => page => {
-  return page === 1 ? path : `${path}/${page}`
+  return page === 1 ? path : `${path}/${page}/`
 }
 
 const Paginator = ({ numPages, currentPage, pathPrefix }) => {

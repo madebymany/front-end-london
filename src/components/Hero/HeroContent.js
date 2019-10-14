@@ -1,5 +1,5 @@
 import React from "react"
-import styled, { css } from "styled-components"
+import styled, { css, keyframes } from "styled-components"
 
 import { Row, Column } from "../Grid"
 import Container from "../Container"
@@ -8,6 +8,34 @@ import { medium, large, xlarge } from "../../styles/media"
 import c from "../../styles/constants"
 
 import MadeByMany from "../../../assets/images/madebymany-white.svg"
+
+const tada = keyframes`
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+`
 
 const Wrapper = styled.div`
   display: flex;
@@ -82,6 +110,14 @@ const ByLine = styled.span`
 
   span {
     text-transform: uppercase;
+  }
+
+  a {
+    &:focus,
+    &:hover {
+      outline: 0;
+      animation: ${tada} 1.3s linear forwards;
+    }
   }
 
   img {

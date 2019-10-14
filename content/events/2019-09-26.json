@@ -18,7 +18,8 @@
       "description": "Icons on the web are everywhere, but sometimes it feels like just using normal img tags with PNGs is the easiest way. This talks looks at some common icon use-cases, and how using SVGs can make your life easier, and your website shinier.",
       "slides_url": "test",
       "video_url": "",
-      "youtube_id": ""
+      "youtube_id": "",
+      "poster": ""
     },
     {
       "name": "Tara Ojo",
@@ -29,7 +30,8 @@
       "description": "When we work with many engineers, spanning different teams and different projects, it’s hard to keep up with changes. Tara will share how FutureLearn utilises their culture of learning, to keep engineers up-to-date on topics from ECMAScript changes to wilder concepts like generative art.",
       "slides_url": "",
       "video_url": "",
-      "youtube_id": ""
+      "youtube_id": "",
+      "poster": ""
     },
     {
       "name": "Ana Pasparan",
@@ -40,7 +42,8 @@
       "description": "Is it hard to refine and assign tickets? Do you find it hard to do code reviews? How about when some team members are off on holiday? In this talk, Ana will share her learnings about how effective whiteboarding and pair programming can help you to solve these types of issues.",
       "slides_url": "",
       "video_url": "",
-      "youtube_id": ""
+      "youtube_id": "",
+      "poster": ""
     }
   ]
 }

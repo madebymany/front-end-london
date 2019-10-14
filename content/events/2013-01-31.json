@@ -11,7 +11,8 @@
       "topic": "Responsive Guardian",
       "description": "",
       "slides_url": "//speakerdeck.com/andyhume/responsive-guardian",
-      "youtube_id": ""
+      "youtube_id": "",
+      "poster": ""
     },
     {
       "name": "Anna Powell-Smith",
@@ -21,7 +22,8 @@
       "topic": "D3.JS: Data-driven Delight",
       "description": "",
       "slides_url": "//anna.ps/talks/fel/",
-      "youtube_id": ""
+      "youtube_id": "",
+      "poster": ""
     },
     {
       "name": "Charlie Perrins",
@@ -31,7 +33,8 @@
       "topic": "Accessibility & UI Development",
       "description": "",
       "slides_url": "//www.slideshare.net/CharliePerrins/accessibility-ui-development",
-      "youtube_id": ""
+      "youtube_id": "",
+      "poster": ""
     }
   ]
 }

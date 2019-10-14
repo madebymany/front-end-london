@@ -11,7 +11,8 @@
       "topic": "Building for tomorrow’s devices",
       "description": "",
       "slides_url": "//www.slideshare.net/alilm/designing-a-better-workflow",
-      "youtube_id": ""
+      "youtube_id": "",
+      "poster": ""
     },
     {
       "name": "Mairead Buchan",
@@ -21,7 +22,8 @@
       "topic": "Kinect in the browser",
       "description": "",
       "slides_url": "",
-      "youtube_id": ""
+      "youtube_id": "",
+      "poster": ""
     },
     {
       "name": "Jack Franklin",
@@ -31,7 +33,8 @@
       "topic": "Introduction to modular JS",
       "description": "",
       "slides_url": "//speakerdeck.com/jackfranklin/modular-javascript-fel-feb-2013",
-      "youtube_id": ""
+      "youtube_id": "",
+      "poster": ""
     }
   ]
 }

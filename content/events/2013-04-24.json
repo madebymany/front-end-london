@@ -11,7 +11,8 @@
       "topic": "Developing with Sencha Touch",
       "description": "",
       "slides_url": "",
-      "youtube_id": ""
+      "youtube_id": "",
+      "poster": ""
     },
     {
       "name": "Ruth John",
@@ -21,7 +22,8 @@
       "topic": "Building apps for FirefoxOS",
       "description": "This talk introduces what Firefox OS is and how to start building apps for it, using familiar front end technologies. We’ll also delve into an exciting world of cool APIs that are being currently being developed for devices — like the popular ‘vibration API’.",
       "slides_url": "//speakerdeck.com/rumyra/building-apps-for-firefoxos",
-      "youtube_id": ""
+      "youtube_id": "",
+      "poster": ""
     },
     {
       "name": "Patrick Hamann",
@@ -31,7 +33,8 @@
       "topic": "Why performance matters",
       "description": "Sadly, our websites are getting increasingly slower every year. In the mean time, users are accessing these sites from a magnitude of devices and their expectations for load time are getting higher. Patrick will demonstrate how to accurately measure your websites performance and discuss a few techniques for achieving faster and perceived load.",
       "slides_url": "//speakerdeck.com/patrickhamann/why-performance-matters-measuring-your-websites-performance",
-      "youtube_id": ""
+      "youtube_id": "",
+      "poster": ""
     }
   ]
 }

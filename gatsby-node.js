@@ -191,6 +191,7 @@ exports.onPostBuild = async ({ graphql }) => {
       today: new Date().getTime(),
     }
   )
+
   // Transform results
   const data = result.data.allEventsJson.edges.map(item => item.node)
 

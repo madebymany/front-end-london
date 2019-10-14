@@ -11,23 +11,23 @@ module.exports = {
       },
       {
         name: "Past talks",
-        link: "/archive",
+        link: "/archive/",
       },
     ],
     socialLinks: [
       {
         brand: "Youtube",
-        icon: "./assets/images/icons/youtube.svg",
+        icon: "/icons/youtube.svg",
         link: "https://youtube.com/channel/UC1PDeJmj9CvLl77PYezDvWQ",
       },
       {
         brand: "Twitter",
-        icon: "./assets/images/icons/twitter.svg",
+        icon: "/icons/twitter.svg",
         link: "https://twitter.com/frontendlondon",
       },
       {
         brand: "Instagram",
-        icon: "./assets/images/icons/instagram.svg",
+        icon: "/icons/instagram.svg",
         link: "https://instagram.com/frontendlondon",
       },
     ],

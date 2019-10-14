@@ -37,6 +37,26 @@ events:
   #       description: ""
   #       slides_url: ""
   #       video_url: ""
+  
+      #   -
+      #   name: "Lydia Wozniak"
+      #   pic: "2019/07/wozniak-lydia.jpg"
+      #   company: "BBC Design + Engineering"
+      #   twitter: "LydiaMoo"
+      #   topic: "The women who helped build the internet"
+      #   description: "Throughout the 20th century women held a lot of technological responsibility but, often are not credited for their contributions. Lydia will share an alternative history of the internet by sharing the stories of women who helped create it."
+      #   slides_url: ""
+      #   video_url: ""
+      # -
+      #   name: "Sam Beckham"
+      #   pic: "2019/07/beckham-sam.jpg"
+      #   company: "GitLab"
+      #   twitter: "samdbeckham"
+      #   topic: "Making GitLab a PWA"
+      #   description: "Turning a large scale website into a PWA doesn't have to be hard. In this talk, I will show you how I made GitLab into a PWA with less than 100 lines of code."
+      #   slides_url: ""
+      #   video_url: ""
+  
   -
     date: "2019-10-31 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-oct-2019-tickets-76800106185"
@@ -152,64 +172,6 @@ events:
         slides_url: ""
         video_url: ""
   -
-    date: "2019-07-25 19:00"
-    registration_url: "https://www.eventbrite.com/e/front-end-london-july-2019-tickets-64799931339"
-    tickets_released: "2019-07-16 10:00"
-    duration: 2.5
-    writeups:
-      -
-        author: ""
-        twitter: ""
-        writeup_url: ""
-    speakers:
-      -
-        name: "Mike Laurie"
-        pic: "2019/07/laurie-mike.jpg"
-        company: "Lloyds Bank"
-        twitter: "mikelaurie"
-        topic: "Hand-offs from hell"
-        description: "Over the last twenty years, many service organisations have cut costs by separating out different types of work. This can reduce training costs but creates poor service for customers. I’m going to talk about how we reversed that by prototyping new ways of servicing customers in a large contact centre."
-        slides_url: ""
-        video_url: ""
-      -
-        name: "Lydia Wozniak"
-        pic: "2019/07/wozniak-lydia.jpg"
-        company: "BBC Design + Engineering"
-        twitter: "LydiaMoo"
-        topic: "The women who helped build the internet"
-        description: "Throughout the 20th century women held a lot of technological responsibility but, often are not credited for their contributions. Lydia will share an alternative history of the internet by sharing the stories of women who helped create it."
-        slides_url: ""
-        video_url: ""
-      -
-        name: "Sam Beckham"
-        pic: "2019/07/beckham-sam.jpg"
-        company: "GitLab"
-        twitter: "samdbeckham"
-        topic: "Making GitLab a PWA"
-        description: "Turning a large scale website into a PWA doesn't have to be hard. In this talk, I will show you how I made GitLab into a PWA with less than 100 lines of code."
-        slides_url: ""
-        video_url: ""
-  -
-    date: "2019-07-25 19:00"
-    registration_url: ""
-    tickets_released: "2019-07-16 10:00"
-    duration: 2.5
-    writeups:
-      -
-        author: ""
-        twitter: ""
-        writeup_url: ""
-    speakers:
-      -
-        name: "TBA"
-        pic: ""
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
-        slides_url: ""
-        video_url: "" 
-  -
     date: "2019-05-30 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-may-2019-tickets-61580999427"
     tickets_released: "2019-05-21 10:00"
@@ -228,7 +190,7 @@ events:
         topic: "Simplify writing code with deliberate commits"
         description: "This talk will introduce 5 habits to adopt around committing your code which will help you break down gnarly, complex problems into smaller simpler problems and make it easier for you to write good code."
         slides_url: ""
-        video_url: ""
+        video_url: "https://youtu.be/mE8DZUfhdm4"
       -
         name: "Laurence Grinyer"
         pic: "2019/05/grinyer-laurence.jpg"
@@ -237,7 +199,7 @@ events:
         topic: "Shapes of design"
         description: "Designers have become increasingly balkanised in recent years. At Lloyds Bank there are 9 different ‘guilds’ of design. This makes delivery more complex with regular ‘hand offs’ and turf wars. I’ll explore how we’re challenging this at Lloyds, and how service design is bringing together design and delivery."
         slides_url: ""
-        video_url: ""
+        video_url: "https://youtu.be/1GCzoQTXLt8"
       -
         name: "Alex Warren"
         pic: "2019/05/warren-alex.jpg"
@@ -246,7 +208,7 @@ events:
         topic: "Why not fix your technical debt?"
         description: "What is technical debt and why is it important? When should we fix it, and when is it not worth fixing? When it comes to a choice between \"fixing up old code\" or \"delivering new features\", it's often \"fixing up old code\" which loses - how can we fight back against that?"
         slides_url: ""
-        video_url: ""
+        video_url: "https://youtu.be/TNcJqyNWTNY"
   -
     date: "2019-04-25 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-april-2019-tickets-59954926800"
@@ -266,7 +228,7 @@ events:
         topic: "Don't build that app!"
         description: "React apps without a build step; no node_modules, no webpack, no babel, no worries. Scalable architecture for free using the platform."
         slides_url: ""
-        video_url: ""
+        video_url: "https://youtu.be/pX52Ng2jM8g"
       -
         name: "Jo Franchetti"
         pic: "2019/04/franchetti-jo.jpg"
@@ -275,7 +237,7 @@ events:
         topic: "Tweet my wedding dress"
         description: "Inspired by a love of rainbows and silly tech projects, I decided to make my own first wearable tech — a wedding dress full of lights that could be controlled by tweets from my friends and family! This talk will go over the tech I used (suitable for absolute beginners), the mistakes I made and the lessons I learnt. From using the Twitter API, writing my own API, coding for an Arduino and wiring the whole thing up to the worst bit — THE SEWING. I aim to share the message that it is ok to make mistakes, we all do! If you keep trying you can make something magical!"
         slides_url: ""
-        video_url: ""
+        video_url: "https://youtu.be/fZjyx0YlMno"
       -
         name: "Calum Ryan"
         pic: "2019/04/ryan-calum.jpg"
@@ -284,7 +246,7 @@ events:
         topic: "Usability testing"
         description: "Testing usability of a digital product takes on a wide variety of test types and feedback processes that I will elaborate on in this talk. Designers, developers, product owners and anyone with a vested interested should all partake in this process, from defining the tests to measuring the success and failures of different usability testing."
         slides_url: ""
-        video_url: ""
+        video_url: "https://youtu.be/8Wpb86wKuYQ"
   -
     date: "2019-03-28 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-march-2019-tickets-57972677840"

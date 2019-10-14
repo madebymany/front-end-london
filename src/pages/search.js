@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 import { Router } from "@reach/router"
 
@@ -9,24 +9,15 @@ import Search from "../components/Search"
 /**
  * Client Only Route
  */
-const SearchPage = ({
-  data: { current },
-  location: { pathname, search, state },
-  ...props
-}) => {
-  useEffect(() => {
-    console.log("loadededed")
-  }, [])
-  return (
-    <Animated key="search" {...props} {...state}>
-      <Container>
-        <Router>
-          <Search path="/search/:query/" />
-        </Router>
-      </Container>
-    </Animated>
-  )
-}
+const SearchPage = ({ location: { state }, ...props }) => (
+  <Animated key="search" {...props} {...state}>
+    <Container>
+      <Router>
+        <Search path="/search/:query/" />
+      </Router>
+    </Container>
+  </Animated>
+)
 
 export const query = graphql`
   query SearchPage($today: Float) {

@@ -49,7 +49,12 @@ const Animated = ({
 
   return (
     <>
-      <Spring from={{ opacity: 1 }} to={{ opacity: 1 }} config={config.slow}>
+      <Spring
+        from={{ opacity: 0 }}
+        to={{ opacity: 1 }}
+        delay={700}
+        config={config.slow}
+      >
         {props => (
           <animated.div
             style={{

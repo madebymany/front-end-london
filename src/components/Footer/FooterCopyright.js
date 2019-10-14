@@ -52,6 +52,7 @@ const FooterCopyright = () => {
       site {
         siteMetadata {
           socialLinks {
+            brand
             icon
             link
           }
@@ -69,7 +70,7 @@ const FooterCopyright = () => {
     <Wrapper>
       <Container>
         <FooterRow>
-          <Column md={0.5}>
+          <Column md={0.8}>
             <FinePrint>
               © 2018 Made by Many Holdings Limited · Registered Company Number:
               7669932
@@ -80,7 +81,7 @@ const FooterCopyright = () => {
               </ExternalCopyLink>
             </FinePrint>
           </Column>
-          <Column md={0.5}>
+          <Column md={0.2}>
             <SocialMenu>
               {socialLinks &&
                 socialLinks.map(item => (

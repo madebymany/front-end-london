@@ -1,0 +1,37 @@
+{
+  "date": "2013-02-28 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-february-tickets-5358258696",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Alasdair Monk",
+      "pic": "../../assets/images/speakers/2013/02/al-monk.jpeg",
+      "company": "GoCardless",
+      "twitter": "almonk",
+      "topic": "Building for tomorrow’s devices",
+      "description": "",
+      "slides_url": "//www.slideshare.net/alilm/designing-a-better-workflow",
+      "youtube_id": ""
+    },
+    {
+      "name": "Mairead Buchan",
+      "pic": "../../assets/images/speakers/2013/02/mairead.jpg",
+      "company": "Head London",
+      "twitter": "tiny_m",
+      "topic": "Kinect in the browser",
+      "description": "",
+      "slides_url": "",
+      "youtube_id": ""
+    },
+    {
+      "name": "Jack Franklin",
+      "pic": "../../assets/images/speakers/2013/02/jack.jpeg",
+      "company": "Javascript Playground",
+      "twitter": "Jack_Franklin",
+      "topic": "Introduction to modular JS",
+      "description": "",
+      "slides_url": "//speakerdeck.com/jackfranklin/modular-javascript-fel-feb-2013",
+      "youtube_id": ""
+    }
+  ]
+}

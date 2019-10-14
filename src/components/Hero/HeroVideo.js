@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect } from "react"
+import React, { useState, useLayoutEffect } from "react"
 import styled from "styled-components"
 import { useSpring, animated } from "react-spring"
 import { cover } from "polished"

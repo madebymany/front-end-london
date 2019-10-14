@@ -11,33 +11,39 @@
   "speakers": [
     {
       "name": "Stephen Cook",
-      "pic": "../../static/images/speakers/2019/09/cook-stephen.png",
+      "pic": "../../assets/images/speakers/2019/09/cook-stephen.png",
       "company": "Thread",
       "twitter": "StephenCookDev",
       "topic": "SVGs so good you dodge the Blue Shell",
       "description": "Icons on the web are everywhere, but sometimes it feels like just using normal img tags with PNGs is the easiest way. This talks looks at some common icon use-cases, and how using SVGs can make your life easier, and your website shinier.",
       "slides_url": "",
-      "video_url": ""
+      "video_url": "",
+      "youtube_id": "TNcJqyNWTNY",
+      "poster": "../../assets/images/posters/TNcJqyNWTNY.jpg"
     },
     {
       "name": "Tara Ojo",
-      "pic": "../../static/images/speakers/2019/09/ojo-tara.jpg",
+      "pic": "../../assets/images/speakers/2019/09/ojo-tara.jpg",
       "company": "FutureLearn",
       "twitter": "tara_ojo",
       "topic": "Learning Together - Sharing knowledge across teams",
       "description": "When we work with many engineers, spanning different teams and different projects, it’s hard to keep up with changes. Tara will share how FutureLearn utilises their culture of learning, to keep engineers up-to-date on topics from ECMAScript changes to wilder concepts like generative art.",
-      "slides_url": "",
-      "video_url": ""
+      "slides_url": "test",
+      "video_url": "",
+      "youtube_id": "TNcJqyNWTNY",
+      "poster": "../../assets/images/posters/TNcJqyNWTNY.jpg"
     },
     {
       "name": "Ana Pasparan",
-      "pic": "../../static/images/speakers/2019/09/pasparan-ana.jpeg",
+      "pic": "../../assets/images/speakers/2019/09/pasparan-ana.jpeg",
       "company": "Gousto",
       "twitter": "ane31mary",
       "topic": "Supercharge your whiteboarding and pair programming",
       "description": "Is it hard to refine and assign tickets? Do you find it hard to do code reviews? How about when some team members are off on holiday? In this talk, Ana will share her learnings about how effective whiteboarding and pair programming can help you to solve these types of issues.",
       "slides_url": "",
-      "video_url": ""
+      "video_url": "",
+      "youtube_id": "TNcJqyNWTNY",
+      "poster": "../../assets/images/posters/TNcJqyNWTNY.jpg"
     }
   ]
 }

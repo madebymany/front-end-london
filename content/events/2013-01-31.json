@@ -2,41 +2,36 @@
   "date": "2013-01-31 19:00",
   "registration_url": "",
   "duration": 2.5,
-  "writeups": {
-    "author": "",
-    "twitter": "",
-    "writeup_url": ""
-  },
   "speakers": [
     {
       "name": "Andy Hume",
-      "pic": "../../static/images/speakers/2013/01/andy-hume.jpg",
+      "pic": "../../assets/images/speakers/2013/01/andy-hume.jpg",
       "company": "The Guardian",
       "twitter": "andyhume",
       "topic": "Responsive Guardian",
       "description": "",
       "slides_url": "//speakerdeck.com/andyhume/responsive-guardian",
-      "video_url": ""
+      "youtube_id": ""
     },
     {
       "name": "Anna Powell-Smith",
-      "pic": "../../static/images/speakers/2013/01/anna-powell-smith.png",
+      "pic": "../../assets/images/speakers/2013/01/anna-powell-smith.png",
       "company": "freelance",
       "twitter": "darkgreener",
       "topic": "D3.JS: Data-driven Delight",
       "description": "",
       "slides_url": "//anna.ps/talks/fel/",
-      "video_url": ""
+      "youtube_id": ""
     },
     {
       "name": "Charlie Perrins",
-      "pic": "../../static/images/speakers/2013/01/charlie-perrins.jpg",
+      "pic": "../../assets/images/speakers/2013/01/charlie-perrins.jpg",
       "company": "Dare",
       "twitter": "charlieperrins",
       "topic": "Accessibility & UI Development",
       "description": "",
       "slides_url": "//www.slideshare.net/CharliePerrins/accessibility-ui-development",
-      "video_url": ""
+      "youtube_id": ""
     }
   ]
 }

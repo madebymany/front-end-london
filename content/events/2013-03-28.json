@@ -1,0 +1,37 @@
+{
+  "date": "2013-03-28 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-march-tickets-5751910118",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Josh Emerson",
+      "pic": "../../assets/images/speakers/2013/03/josh.jpeg",
+      "company": "Clearleft",
+      "twitter": "joshje",
+      "topic": "Resolution independent designs",
+      "description": "Fonts look great on high dpi displays, but bitmap images, not so much. Josh Emerson will discuss a few techniques for achieving resolution independence on your site including asset fonts, where your sites icons are stored inside a web font, and SVG graphics for vectors that can be interactive.",
+      "slides_url": "//speakerdeck.com/joshje/asset-fonts",
+      "youtube_id": ""
+    },
+    {
+      "name": "Phil Nash",
+      "pic": "../../assets/images/speakers/2013/03/phil.jpg",
+      "company": "Mint Digital",
+      "twitter": "philnash",
+      "topic": "CSS laid out",
+      "description": "",
+      "slides_url": "//philnash.github.io/css-laid-out/",
+      "youtube_id": ""
+    },
+    {
+      "name": "Paul Lloyd",
+      "pic": "../../assets/images/speakers/2013/03/paul.png",
+      "company": "Clearleft",
+      "twitter": "paulrobertlloyd",
+      "topic": "The edge of the Web redux",
+      "description": "Graphic designers have long honed their craft to meet the specific constraints of television. As web designers begin to understand the true nature of our own medium, isn’t about time we did the same?",
+      "slides_url": "//speakerdeck.com/paulrobertlloyd/the-edge-of-the-web-redux",
+      "youtube_id": ""
+    }
+  ]
+}

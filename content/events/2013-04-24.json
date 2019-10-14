@@ -1,0 +1,37 @@
+{
+  "date": "2013-04-24 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-april-tickets-6102377375",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Ricky Clegg",
+      "pic": "../../assets/images/speakers/2013/04/ricky.png",
+      "company": "Burrows",
+      "twitter": "ricky_clegg",
+      "topic": "Developing with Sencha Touch",
+      "description": "",
+      "slides_url": "",
+      "youtube_id": ""
+    },
+    {
+      "name": "Ruth John",
+      "pic": "../../assets/images/speakers/2013/04/ruth.jpg",
+      "company": "TheLab",
+      "twitter": "Rumyra",
+      "topic": "Building apps for FirefoxOS",
+      "description": "This talk introduces what Firefox OS is and how to start building apps for it, using familiar front end technologies. We’ll also delve into an exciting world of cool APIs that are being currently being developed for devices — like the popular ‘vibration API’.",
+      "slides_url": "//speakerdeck.com/rumyra/building-apps-for-firefoxos",
+      "youtube_id": ""
+    },
+    {
+      "name": "Patrick Hamann",
+      "pic": "../../assets/images/speakers/2013/04/patrick.jpg",
+      "company": "The Guardian",
+      "twitter": "patrickhamann",
+      "topic": "Why performance matters",
+      "description": "Sadly, our websites are getting increasingly slower every year. In the mean time, users are accessing these sites from a magnitude of devices and their expectations for load time are getting higher. Patrick will demonstrate how to accurately measure your websites performance and discuss a few techniques for achieving faster and perceived load.",
+      "slides_url": "//speakerdeck.com/patrickhamann/why-performance-matters-measuring-your-websites-performance",
+      "youtube_id": ""
+    }
+  ]
+}

@@ -158,6 +158,7 @@ BlobContainer.propTypes = {
   children: PropTypes.node.isRequired,
   complexity: PropTypes.number.isRequired,
   contrast: PropTypes.number.isRequired,
+  deactivate: PropTypes.bool,
   fill: PropTypes.string.isRequired,
   inverse: PropTypes.bool,
   rotate: PropTypes.bool,
@@ -166,6 +167,7 @@ BlobContainer.propTypes = {
 }
 
 BlobContainer.defaultProps = {
+  deactivate: false,
   inverse: false,
   rotate: false,
   bleed: false,

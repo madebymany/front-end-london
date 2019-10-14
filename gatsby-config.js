@@ -6,7 +6,8 @@ module.exports = {
     menuLinks: [
       {
         name: "Return tickets",
-        link: "/return-tickets",
+        link:
+          "https://www.eventbrite.com/support/articles/en_US/How_To/how-to-cancel-your-free-registration",
       },
       {
         name: "Past talks",
@@ -16,21 +17,23 @@ module.exports = {
     socialLinks: [
       {
         brand: "Youtube",
-        icon: "/images/icons/youtube.svg",
+        icon: "./assets/images/icons/youtube.svg",
         link: "https://youtube.com/channel/UC1PDeJmj9CvLl77PYezDvWQ",
       },
       {
         brand: "Twitter",
-        icon: "/images/icons/twitter.svg",
+        icon: "./assets/images/icons/twitter.svg",
         link: "https://twitter.com/frontendlondon",
       },
       {
         brand: "Instagram",
-        icon: "/images/icons/instagram.svg",
+        icon: "./assets/images/icons/instagram.svg",
         link: "https://instagram.com/frontendlondon",
       },
     ],
     privacyPolicy: "https://www.iubenda.com/privacy-policy/92517840",
+    returnTickets:
+      "https://www.eventbrite.com/support/articles/en_US/How_To/how-to-cancel-your-free-registration",
   },
   plugins: [
     `gatsby-plugin-styled-components`,

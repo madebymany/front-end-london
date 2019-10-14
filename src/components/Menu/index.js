@@ -33,11 +33,15 @@ const Menu = ({ tickets }) => {
       <MenuLink to="/">Home</MenuLink>
       {tickets && <ExternalMenuLink to={tickets}>Get tickets</ExternalMenuLink>}
       {menu &&
-        menu.map(item => (
-          <MenuLink key={item.link} to={item.link}>
-            {item.name}
-          </MenuLink>
-        ))}
+        menu.map(item => {
+          const external = item.link.indexOf("http") === 0
+          const ComponentLink = external ? ExternalMenuLink : MenuLink
+          return (
+            <ComponentLink key={item.link} to={item.link}>
+              {item.name}
+            </ComponentLink>
+          )
+        })}
     </MenuWrapper>
   )
 }

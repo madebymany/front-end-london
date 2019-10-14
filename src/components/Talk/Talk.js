@@ -45,7 +45,7 @@ const Talk = ({ speakers }) => (
           <Speaker key={speaker.name} {...speaker} />
         ))}
       </Speakers>
-      <PastTalksLink to="/archive">Past talks</PastTalksLink>
+      <PastTalksLink to="/archive/">Past talks</PastTalksLink>
     </Wrapper>
   </Container>
 )

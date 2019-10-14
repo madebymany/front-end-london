@@ -26,4 +26,6 @@ export default {
   WHITE: "#fff",
   GREY: "#d8d8d8",
   LIGHT_GREY: "#fbfbfb",
+
+  HEADER: "87px",
 }

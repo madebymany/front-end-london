@@ -13,7 +13,7 @@ const Wrapper = styled(Row)`
 const TalkHeader = () => (
   <Wrapper justify="space-between" align="center">
     <Heading>Talks this month</Heading>
-    <MonoArrowLink to="/archive">Past talks</MonoArrowLink>
+    <MonoArrowLink to="/archive/">Past talks</MonoArrowLink>
   </Wrapper>
 )
 

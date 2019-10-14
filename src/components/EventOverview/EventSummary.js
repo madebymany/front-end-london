@@ -53,8 +53,8 @@ const EventSummary = ({ availability, tickets_released }) => (
       obligatory trip to the local pub — if that’s your kind of thing.
     </Copy>
     <LinkGroup>
-      <MonoArrowLink to="/code-of-conduct">Code of conduct</MonoArrowLink>
-      <MonoArrowLink to="/request-a-refund">Request a refund</MonoArrowLink>
+      <MonoArrowLink to="/code-of-conduct/">Code of conduct</MonoArrowLink>
+      <MonoArrowLink to="/request-a-refund/">Request a refund</MonoArrowLink>
     </LinkGroup>
   </EventSummaryWrapper>
 )

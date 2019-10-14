@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 import Container from "../Container"
 import { FinePrint } from "../Text"
-import { CopyLink } from "../Links"
+import { ExternalCopyLink } from "../Links"
 import { Row, Column } from "../Grid"
 
 import { medium } from "../../styles/media"
@@ -55,6 +55,7 @@ const FooterCopyright = () => {
             icon
             link
           }
+          privacyPolicy
         }
       }
     }
@@ -62,6 +63,8 @@ const FooterCopyright = () => {
 
   const socialLinks =
     data.site.siteMetadata && data.site.siteMetadata.socialLinks
+  const privacyPolicy =
+    data.site.siteMetadata && data.site.siteMetadata.privacyPolicy
   return (
     <Wrapper>
       <Container>
@@ -72,7 +75,9 @@ const FooterCopyright = () => {
               7669932
               <br />
               We are using cookies on this site. For more information read our{" "}
-              <CopyLink to="/privacy-policy">Privacy Policy</CopyLink>
+              <ExternalCopyLink to={privacyPolicy}>
+                Privacy Policy
+              </ExternalCopyLink>
             </FinePrint>
           </Column>
           <Column md={0.5}>

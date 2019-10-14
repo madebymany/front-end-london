@@ -1,10 +1,13 @@
 import React from "react"
 
-import Logo from "../../../static/images/logo.svg"
+import { AnimatedLink } from "../Links"
+import Logo from "../../../assets/images/logo.svg"
 
 const NavLogo = () => (
   <div>
-    <img src={Logo} alt="Frontend London" />
+    <AnimatedLink to="/">
+      <img src={Logo} alt="Frontend London" />
+    </AnimatedLink>
   </div>
 )
 

@@ -31,9 +31,7 @@ const Menu = ({ tickets }) => {
   return (
     <MenuWrapper>
       <MenuLink to="/">Home</MenuLink>
-      {tickets && (
-        <ExternalMenuLink href={tickets}>Get tickets</ExternalMenuLink>
-      )}
+      {tickets && <ExternalMenuLink to={tickets}>Get tickets</ExternalMenuLink>}
       {menu &&
         menu.map(item => (
           <MenuLink key={item.link} to={item.link}>

@@ -10,6 +10,7 @@ import c from "../../styles/constants"
 
 const Wrapper = styled.div`
   margin-top: ${c.XL7};
+  background-color: ${c.WHITE};
 `
 
 const EventOverview = ({ talk }) => {

@@ -1,10 +1,23 @@
-import React from "react"
 import styled, { css } from "styled-components"
-import { Link } from "gatsby"
+import TransitionLink from "gatsby-plugin-transition-link"
 import { medium } from "../styles/media"
 import c from "../styles/constants"
 
-export const MonoLink = styled(Link)`
+const withExternal = Component =>
+  styled(Component).attrs(props => ({
+    as: "a",
+    target: "_blank",
+    rel: "noopener norefferer",
+    href: props.to,
+    ...props,
+  }))``
+
+export const AnimatedLink = styled(TransitionLink).attrs(() => ({
+  entry: { length: 2, appearAfter: 0.5 },
+  exit: { length: 2 },
+}))``
+
+export const MonoLink = styled(AnimatedLink)`
   display: inline-block;
   color: ${c.ORANGE};
   font-family: ${c.FONT_SECONDARY};
@@ -20,9 +33,7 @@ export const MonoLink = styled(Link)`
   `)}
 `
 
-export const ExternalMonoLink = props => (
-  <MonoLink as="a" target="_blank" rel="noopener" {...props} />
-)
+export const ExternalMonoLink = withExternal(MonoLink)
 
 export const MonoArrowLink = styled(MonoLink)`
   &:after {
@@ -30,11 +41,9 @@ export const MonoArrowLink = styled(MonoLink)`
   }
 `
 
-export const ExternalMonoArrowLink = props => (
-  <MonoArrowLink as="a" target="_blank" rel="noopener" {...props} />
-)
+export const ExternalMonoArrowLink = withExternal(MonoArrowLink)
 
-export const SimpleLink = styled(Link)`
+export const SimpleLink = styled(AnimatedLink)`
   display: inline-block;
   color: ${c.BLACK};
   transition: 0.2s color;
@@ -44,11 +53,9 @@ export const SimpleLink = styled(Link)`
   }
 `
 
-export const ExternalLink = props => (
-  <SimpleLink as="a" target="_blank" rel="noopener" {...props} />
-)
+export const ExternalLink = withExternal(SimpleLink)
 
-export const CopyLink = styled(Link)`
+export const CopyLink = styled(AnimatedLink)`
   display: inline-block;
   color: ${c.ORANGE};
   text-decoration: none;
@@ -58,16 +65,35 @@ export const CopyLink = styled(Link)`
   }
 `
 
-export const ExternalCopyLink = props => (
-  <CopyLink as="a" target="_blank" rel="noopener" {...props} />
-)
+export const ExternalCopyLink = withExternal(CopyLink)
 
-export const MenuLink = styled(Link)`
+export const MenuLink = styled(AnimatedLink)`
   color: ${c.BLACK};
   font-size: ${c.XL4};
   line-height: 1.29;
 `
 
-export const ExternalMenuLink = props => (
-  <MenuLink as="a" target="_blank" rel="noopener" {...props} />
-)
+export const ExternalMenuLink = withExternal(MenuLink)
+
+export const NavLink = styled(AnimatedLink)`
+  flex: 0 0 auto;
+  display: inline-block;
+  line-height: 50px;
+  text-decoration: none;
+  transition: color 0.2s;
+  cursor: pointer;
+  color: currentColor;
+  font-size: ${c.XL2};
+
+  transition: color 1s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+`
+
+export const ExternalNavLink = withExternal(NavLink)

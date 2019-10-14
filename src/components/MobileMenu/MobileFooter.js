@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import Container from "../Container"
-import { Heading, Copy } from "../Text"
+import { Copy } from "../Text"
 import { ExternalCopyLink } from "../Links"
 import c from "../../styles/constants"
 

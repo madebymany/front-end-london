@@ -1,10 +1,9 @@
-import React from "react"
 import styled, { css } from "styled-components"
 
 import { medium, large, xlarge } from "../styles/media"
 import c from "../styles/constants"
 
-const Wrapper = styled.div`
+const Container = styled.div`
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -23,9 +22,5 @@ const Wrapper = styled.div`
     max-width: 1082px;
   `)}
 `
-
-const Container = ({ children, ...props }) => (
-  <Wrapper {...props}>{children}</Wrapper>
-)
 
 export default Container

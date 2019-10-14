@@ -1,14 +1,16 @@
-import React from "react"
+import React, { useState } from "react"
 import styled, { css } from "styled-components"
 
 import HeroVideo from "./HeroVideo"
 import HeroContent from "./HeroContent"
-import { medium, large } from "../../styles/media"
+import { large } from "../../styles/media"
 import c from "../../styles/constants"
 
 const Wrapper = styled.div`
   width: 100%;
-  transition: 0.3s all;
+  top: 0;
+  left: 0;
+  transition: 0.5s all 1s;
   background-color: ${c.ORANGE};
   ${props =>
     props.fixed
@@ -17,17 +19,16 @@ const Wrapper = styled.div`
           top: 10%;
           left: 5%;
           width: 90%;
-          max-height: 80%;
+          height: 80%;
+          z-index: 100;
         `
       : css`
           position: relative;
           display: flex;
           align-items: center;
           flex-direction: column-reverse;
-          margin-bottom: ${c.XL6};
 
           ${large`
-            margin-bottom: 110px;
             flex-direction: column;
           `}
         `}
@@ -37,30 +38,14 @@ const Wrapper = styled.div`
   `}
 `
 
-class Hero extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      open: false,
-    }
-
-    this.onPlay = this.onPlay.bind(this)
-  }
-
-  onPlay() {
-    this.setState({ open: true })
-  }
-
-  render() {
-    const { width, open } = this.state
-    return (
-      <Wrapper fixed={open}>
-        <HeroVideo open={open} />
-        <HeroContent onPlay={this.onPlay} />
-      </Wrapper>
-    )
-  }
+const Hero = () => {
+  const [open, setOpen] = useState(false)
+  return (
+    <Wrapper className="Hero" fixed={open}>
+      <HeroVideo open={open} />
+      <HeroContent open={open} onPlay={() => setOpen(true)} />
+    </Wrapper>
+  )
 }
 
 export default Hero

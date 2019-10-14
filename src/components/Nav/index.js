@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
-import { useTransition, config } from "react-spring"
+import { useTransition } from "react-spring"
 import styled from "styled-components"
 import { disablePageScroll, enablePageScroll } from "scroll-lock"
 
@@ -14,28 +14,29 @@ const NavWrapper = styled.div`
   z-index: 100;
 `
 
-const Nav = ({ tickets, homepage }) => {
-  const [toggle, setToggle] = useState(false)
-  const transitions = useTransition(toggle, null, {
+const Nav = ({ tickets, homepage, pathname }) => {
+  const [open, setOpen] = useState(false)
+  const transitions = useTransition(open, null, {
     from: { left: "-100%" },
     enter: { left: "0%" },
     leave: { left: "-100%" },
   })
+
+  // Whenever pathname changes close the nav
   useEffect(() => {
-    if (toggle) {
+    setOpen(false)
+  }, [pathname])
+
+  useEffect(() => {
+    if (open) {
       disablePageScroll()
     } else {
       enablePageScroll()
     }
-  })
+  }, [open])
   return (
     <NavWrapper>
-      <NavBar
-        tickets={tickets}
-        homepage={homepage}
-        toggleMenu={setToggle}
-        open
-      />
+      <NavBar tickets={tickets} homepage={homepage} toggleMenu={setOpen} open />
       {transitions.map(
         ({ item, key, props }) =>
           item && (
@@ -43,7 +44,7 @@ const Nav = ({ tickets, homepage }) => {
               key={key}
               style={props}
               tickets={tickets}
-              toggleMenu={setToggle}
+              toggleMenu={setOpen}
             />
           )
       )}

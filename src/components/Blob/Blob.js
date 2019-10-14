@@ -22,6 +22,18 @@ class Blob extends React.Component {
 
   counter = 0
 
+  componentDidMount() {
+    const { size, run } = this.props
+
+    if (size && run) {
+      const initial = this.generateBlob()
+      this.setState({
+        initial,
+        points: run ? this.generateBlob() : initial,
+      })
+    }
+  }
+
   componentDidUpdate(prevProps) {
     const { size, run } = this.props
     // When the size changes we want to reset the Spring

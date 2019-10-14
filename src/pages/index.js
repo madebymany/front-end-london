@@ -1,15 +1,24 @@
 import React from "react"
+import styled from "styled-components"
 import { graphql } from "gatsby"
 import { parse, isPast } from "date-fns"
 
-import HomePage from "../layouts/HomePage"
+import Animated from "../layouts/Animated"
+import Hero from "../components/Hero"
+
 import SEO from "../components/seo"
 import EventOverview from "../components/EventOverview"
 import Talk from "../components/Talk"
 import GiveATalk from "../components/GiveATalk"
 import Newsletter from "../components/Newsletter"
 
-const IndexPage = ({ data }) => {
+import c from "../styles/constants"
+
+const Wrapper = styled.div`
+  background-color: ${c.WHITE};
+`
+
+const IndexPage = ({ data, ...rest }) => {
   let talk = data.talk.edges.length && { ...data.talk.edges[0].node }
   if (talk) {
     talk.date = talk.date && parse(talk.date, "yyyy-MM-dd HH:mm", new Date())
@@ -18,15 +27,17 @@ const IndexPage = ({ data }) => {
       parse(talk.tickets_released, "yyyy-MM-dd HH:mm", new Date())
     talk.availability = isPast(talk.tickets_released)
   }
-  const hasTickets = talk && talk.registration_url && talk.availability
   return (
-    <HomePage tickets={hasTickets && talk.registration_url}>
+    <Animated {...rest} fill={c.WHITE}>
       <SEO title="Home" />
-      <EventOverview talk={talk} />
-      <Talk talk={talk} />
-      <GiveATalk />
-      <Newsletter />
-    </HomePage>
+      <Hero />
+      <Wrapper>
+        <EventOverview talk={talk} />
+        <Talk talk={talk} />
+        <GiveATalk />
+        <Newsletter />
+      </Wrapper>
+    </Animated>
   )
 }
 
@@ -45,6 +56,22 @@ export const query = graphql`
           speakers {
             ...Speaker
           }
+        }
+      }
+    }
+    current: allEventsJson(
+      sort: { fields: fields___timestamp, order: DESC }
+      limit: 1
+      filter: {
+        fields: {
+          timestamp: { gte: $today }
+          ticket_timestamp: { lte: $today }
+        }
+      }
+    ) {
+      edges {
+        node {
+          registration_url
         }
       }
     }

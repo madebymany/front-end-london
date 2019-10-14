@@ -1,15 +1,16 @@
 import React from "react"
 import styled, { css } from "styled-components"
 
-import { medium, large } from "../../styles/media"
-import c from "../../styles/constants"
+import { large } from "../../styles/media"
 import Container from "../Container"
 import NavLinks from "./NavLinks"
 import NavLogo from "./NavLogo"
 
+import c from "../../styles/constants"
+
 const Wrapper = styled.header`
   width: 100%;
-  height: 65px;
+  height: ${c.HEADER};
   display: flex;
   flex-direction: ${props => (!props.homepage ? "row" : "row-reverse")};
   justify-content: space-between;

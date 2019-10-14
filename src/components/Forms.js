@@ -11,6 +11,13 @@ export const FormInput = styled.input`
   background-color: ${c.WHITE};
   background-clip: padding-box;
   border: 1px solid ${c.GREY};
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    box-shadow: 0 0 0 40px ${c.WHITE} inset !important;
+  }
 `
 
 const FormCheckLabel = styled.label`

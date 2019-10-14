@@ -30,6 +30,7 @@ module.exports = {
         link: "https://instagram.com/frontendlondon",
       },
     ],
+    privacyPolicy: "https://www.iubenda.com/privacy-policy/92517840",
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -45,7 +46,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/static/images`,
+        path: `${__dirname}/assets/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -60,6 +61,16 @@ module.exports = {
         theme_color: `#ed4022`,
         display: `minimal-ui`,
         // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/search/*`] },
+    },
+    {
+      resolve: "gatsby-plugin-transition-link",
+      options: {
+        layout: require.resolve(`./src/layouts/General.js`),
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

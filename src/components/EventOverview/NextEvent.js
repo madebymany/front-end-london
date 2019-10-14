@@ -60,4 +60,15 @@ const NextEvent = ({ availability, date, registration_url }) => (
   </div>
 )
 
+NextEvent.propTypes = {
+  availability: PropTypes.bool.isRequired,
+  date: PropTypes.oneOfType([PropTypes.bool, PropTypes.instanceOf(Date)]),
+  registration_url: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+}
+
+NextEvent.defaultProps = {
+  date: false,
+  registration_url: false,
+}
+
 export default NextEvent

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useLayoutEffect } from "react"
 import PropTypes from "prop-types"
 import Measure from "react-measure"
 import { useSpring, animated } from "react-spring"
@@ -62,10 +62,8 @@ const BlobContainer = ({
   const [id] = useState(uuid())
   const [size, setSize] = useState({ width: 0, height: 0 })
   const [ref, inView] = useInView({ threshold: 0 })
-  const [animate, setAnimate] = useState(true)
-  // useEffect(() => {
-  //   setAnimate(deactivate)
-  // }, [deactivate, setAnimate])
+  const [animate, setAnimate] = useState(false)
+
   const opacity = useSpring({
     opacity: deactivate ? 0 : 1,
     visibility: deactivate ? "hidden" : "visible",
@@ -76,6 +74,12 @@ const BlobContainer = ({
       }
     },
   })
+
+  // SVG only seems to render if we delay the initial mount
+  useLayoutEffect(() => {
+    setAnimate(true)
+  }, [])
+
   const offset = (size.width - size.height) / 2
   return (
     <Measure bounds onResize={debounce(({ bounds }) => setSize(bounds), 100)}>
@@ -84,7 +88,12 @@ const BlobContainer = ({
           {children}
           <ExpandedWrapper bleed={bleed} style={opacity}>
             {animate && (
-              <svg ref={ref} width="100%" height="100%">
+              <svg
+                ref={ref}
+                width={size.width}
+                height={size.height}
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <defs>
                   <filter id={`goo-${id}`}>
                     <feGaussianBlur

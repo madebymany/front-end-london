@@ -38,6 +38,44 @@ events:
   #       slides_url: ""
   #       video_url: ""
   -
+    date: "2019-10-31 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-oct-2019-tickets-76800106185"
+    tickets_released: "2019-10-22 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Lydia Wozniak"
+        pic: "2019/10/wozniak-lydia.jpg"
+        company: "BBC Design + Engineering"
+        twitter: "LydiaMoo"
+        topic: "The Women Who Helped Build the Internet"
+        description: "Throughout the 20th century women held a lot of technological responsibility but, often are not credited for their contributions. Lydia will share an alternative history of the internet by sharing the stories of women who helped create it."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Nicky Thompson"
+        pic: "2019/10/thompson-nicky.jpg"
+        company: "FutureLearn"
+        twitter: "knotnicky"
+        topic: "Lightning talk: Making engineering management easier using software engineering practices"
+        description: "As an engineering manager, your responsibility is not to build features, but to build systems to support the people building the features. This talk will give some tips on using familiar tools and techniques from your time as a software engineer to help make management easier and more systematic."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "TBC"
+        pic: "blank.png"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+        video_url: ""
+  -
     date: "2019-09-26 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-sept-2019-tickets-72969067445"
     tickets_released: "2019-09-18 10:00"

@@ -69,12 +69,12 @@ events:
         writeup_url: ""
     speakers:
       -
-        name: "Lydia Wozniak"
-        pic: "2019/10/wozniak-lydia.jpg"
-        company: "BBC Design + Engineering"
-        twitter: "LydiaMoo"
-        topic: "The Women Who Helped Build the Internet"
-        description: "Throughout the 20th century women held a lot of technological responsibility but, often are not credited for their contributions. Lydia will share an alternative history of the internet by sharing the stories of women who helped create it."
+        name: "Saf Hayat"
+        pic: "2019/10/hayat-saf.jpg"
+        company: "AND Digital"
+        twitter: ""
+        topic: "How Learning Works: The Science of Learning"
+        description: "How we think about learning often doesn't align with the research into how the brain works. Come to this talk to explore how the science of learning can unlock your ability to grow your skills and career."
         slides_url: ""
         video_url: ""
       -
@@ -87,12 +87,12 @@ events:
         slides_url: ""
         video_url: ""
       -
-        name: "TBC"
-        pic: "blank.png"
-        company: ""
-        twitter: ""
-        topic: ""
-        description: ""
+        name: "Lydia Wozniak"
+        pic: "2019/10/wozniak-lydia.jpg"
+        company: "BBC Design + Engineering"
+        twitter: "LydiaMoo"
+        topic: "The Women Who Helped Build the Internet"
+        description: "Throughout the 20th century women held a lot of technological responsibility but, often are not credited for their contributions. Lydia will share an alternative history of the internet by sharing the stories of women who helped create it."
         slides_url: ""
         video_url: ""
   -

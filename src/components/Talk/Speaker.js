@@ -30,16 +30,16 @@ const PaddedXColumn = styled(Column)`
   `)}
 `
 
+const SpeakerHeading = styled(Heading)`
+  ${medium`
+    margin: 0.6rem 0 1.4rem 0;
+  `}
+`
+
 const Speaker = ({ name, twitter, topic, description, pic }) => (
   <Wrapper>
     <PaddedXColumn xs={0.8} md={0.3}>
-      <Blob
-        complexity={0.3}
-        contrast={0.4}
-        fill={c.WHITE}
-        transform="scale(1.1, 1.4)"
-        bleed
-      >
+      <Blob fill={c.WHITE} transform="scale(1.3)">
         <Img fluid={pic.childImageSharp.fluid} alt={name} />
       </Blob>
     </PaddedXColumn>
@@ -49,13 +49,13 @@ const Speaker = ({ name, twitter, topic, description, pic }) => (
         {twitter && (
           <>
             &nbsp;&nbsp;·&nbsp;&nbsp;
-            <ExternalLink href={`https://twitter.com/${twitter}`}>
+            <ExternalLink to={`https://twitter.com/${twitter}`}>
               @{twitter}
             </ExternalLink>
           </>
         )}
       </Strap>
-      <Heading>{topic}</Heading>
+      <SpeakerHeading>{topic}</SpeakerHeading>
       <Copy>{description}</Copy>
     </Column>
   </Wrapper>
@@ -71,7 +71,7 @@ export const fragment = graphql`
     description
     pic {
       childImageSharp {
-        fluid(maxWidth: 330, maxHeight: 380) {
+        fluid(maxWidth: 330, maxHeight: 330) {
           ...GatsbyImageSharpFluid
         }
       }

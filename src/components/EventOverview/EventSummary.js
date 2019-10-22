@@ -50,7 +50,7 @@ const EventSummary = ({ availability, tickets_released }) => {
         <Notification>
           Tickets will be released on {format(tickets_released, "EEEE, MMMM d")}
           , in two batches: 10am & 4pm. Tickets will be available on{" "}
-          <ExternalCopyLink href="https://www.eventbrite.com/o/made-by-many-3064262734">
+          <ExternalCopyLink to="https://www.eventbrite.com/o/made-by-many-3064262734">
             eventbrite
           </ExternalCopyLink>
         </Notification>

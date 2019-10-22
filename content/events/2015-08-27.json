@@ -1,0 +1,38 @@
+{
+  "date": "2015-08-27 18:30",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-august-2015-tickets-18185279661",
+  "tickets_released": "2015-08-18 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Mariana Morris",
+      "pic": "../../assets/images/speakers/2015/08/mariana.jpg",
+      "company": "Oxford Computer Consultants",
+      "twitter": "MarianaMota",
+      "topic": "UX is team work",
+      "description": "To get the whole project team involved in the UX process is essential to achieve a high quality product: developers meeting users and attending usability testing, designers and developers sketching together, clients actively participating in the design process. This talk provides practical UX techniques and tools to integrate UX in an Agile environment and get everyone in the project team contributing to the user experience.",
+      "slides_url": "//www.slideshare.net/MarianaMota5/ux-is-team-work-frontend-london-august-2015",
+      "video_url": ""
+    },
+    {
+      "name": "Sandro Paganotti",
+      "pic": "../../assets/images/speakers/2015/08/sandro.jpg",
+      "company": "Facebook",
+      "twitter": "sandropaganotti",
+      "topic": "Experimenting with ServiceWorker",
+      "description": "The ServiceWorker is so much more than caching, it's a new application layer we can take advantage of to enhance the web experience in a lot of interesting and powerful ways. This talk explores some of the possibilities given by this new feature, such as compiling templates on a Service Worker or transcoding formats intercepting HTTP responses",
+      "slides_url": "//docs.google.com/presentation/d/1W60AJ6BNj6_uD6E91dJQQ4kSJFdVZ-aJRguKodd0YYY/edit#slide=id.g3700923ba_2_22",
+      "video_url": ""
+    },
+    {
+      "name": "Patrick Hamann",
+      "pic": "../../assets/images/speakers/2015/08/patrick-hamann.jpg",
+      "company": "FT Labs",
+      "twitter": "patrickhamann",
+      "topic": "Embracing the network",
+      "description": "The network is intrinsically unreliable. More so, the network is out of your control as a developer. Therefore, we must design systems which embrace the unpredictability of the network and defend against it all costs. How can you prioritise the delivery of your core content? What best-practices can you use to optimise your assets? How can we design interfaces which adapt and respond to changing network conditions? And finally, how are new APIs such as ServiceWorker changing the way we think about the network?",
+      "slides_url": "//speakerdeck.com/patrickhamann/embracing-the-network-coldfront-september-2015",
+      "video_url": ""
+    }
+  ]
+}

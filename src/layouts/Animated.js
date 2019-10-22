@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
-import { Spring } from "react-spring/renderprops"
-import { animated, config } from "react-spring"
+import { Spring, animated, config } from "react-spring"
 import { TransitionPortal } from "gatsby-plugin-transition-link"
 
 import c from "../styles/constants"
@@ -13,6 +12,7 @@ const TransitionWrapper = styled(animated.div)`
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 1500;
 `
 /**
  * The preventTransition prop is a temporary fix until it's possible
@@ -28,12 +28,12 @@ const Animated = ({
   const [start, setStart] = useState(true)
   const [done, setDone] = useState(false)
 
-  useEffect(() => {
-    if (start) {
-      document.body.style.backgroundColor =
-        fill === c.ORANGE ? c.WHITE : c.ORANGE
-    }
-  }, [start, fill])
+  // useEffect(() => {
+  //   if (start) {
+  //     document.body.style.backgroundColor =
+  //       fill === c.ORANGE ? c.WHITE : c.ORANGE
+  //   }
+  // }, [start, fill])
 
   useEffect(() => {
     if (transitionStatus === "entering") {
@@ -73,7 +73,6 @@ const Animated = ({
           <Spring
             from={{ transform: "translateX(100%)" }}
             to={{ transform: "translateX(-100%)" }}
-            // reset={transitionStatus === "entering"}
             config={{
               ...config.slow,
               duration: preventTransition ? 0 : 1000,
@@ -82,7 +81,7 @@ const Animated = ({
           >
             {props => (
               <TransitionWrapper
-                fill={preventTransition ? "transparent" : fill}
+                fill={preventTransition ? "transparent" : c.ORANGE}
                 style={props}
               />
             )}

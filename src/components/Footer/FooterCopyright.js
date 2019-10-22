@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
+import { darken } from "polished"
 
 import Container from "../Container"
 import { FinePrint } from "../Text"
@@ -38,11 +39,22 @@ const SocialItem = styled.li`
 
   a {
     line-height: 0;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: ${c.ORANGE};
+    }
+
+    &:focus {
+      outline: 0;
+      color: ${darken(0.05, c.ORANGE)};
+    }
   }
 
-  img {
+  svg {
     width: auto;
     height: 25px;
+    fill: currentColor;
   }
 `
 
@@ -84,16 +96,19 @@ const FooterCopyright = () => {
           <Column md={0.2}>
             <SocialMenu>
               {socialLinks &&
-                socialLinks.map(item => (
-                  <SocialItem key={item.icon}>
-                    <a href={item.link}>
-                      <img
-                        src={item.icon}
-                        alt={`Frontend London @ ${item.brand}`}
-                      />
-                    </a>
-                  </SocialItem>
-                ))}
+                socialLinks.map(item => {
+                  const Icon = require(`../../../assets/icons/${item.icon}`)
+                  return (
+                    <SocialItem key={item.icon}>
+                      <a
+                        href={item.link}
+                        aria-label={`Frontend London @ ${item.brand}`}
+                      >
+                        <Icon />
+                      </a>
+                    </SocialItem>
+                  )
+                })}
             </SocialMenu>
           </Column>
         </FooterRow>

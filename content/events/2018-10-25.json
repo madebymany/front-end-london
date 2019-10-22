@@ -1,0 +1,41 @@
+{
+  "date": "2018-10-25 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-october-2018-tickets-51398257572",
+  "tickets_released": "2018-10-25 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Jo Pearce",
+      "pic": "../../assets/images/speakers/2018/10/jo-pearce.jpg",
+      "company": "",
+      "twitter": "jdpearce",
+      "topic": "Interface Incantations",
+      "description": "According to the witches of Terry Pratchett’s Discworld, most magic is simply headology. This talk will mix literary references and outline the headology of interface design, from basic charms and illusions that fool and entice us to the unforgivable curses that can shape our thinking and behaviour.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=H341CbuC2_g",
+      "poster": "../../assets/images/posters/H341CbuC2_g.jpg"
+    },
+    {
+      "name": "James Hall",
+      "pic": "../../assets/images/speakers/2018/10/james-hall.jpg",
+      "company": "HeX Productions",
+      "twitter": "Horlix",
+      "topic": "A little accessibility goes a long way",
+      "description": "HeX Productions are on a journey to being a fully accessible agency, working with local and national advocates along with accessibility charities HeX has revamped their workflow and processes. James will be showing why accessibility is important for everyone and how we can all do the tiniest of things to help make huge differences.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=WCoLVkgOCFs&t=357s",
+      "poster": "../../assets/images/posters/WCoLVkgOCFs.jpg"
+    },
+    {
+      "name": "Andrew Walker",
+      "pic": "../../assets/images/speakers/2018/10/andrew-walker.jpg",
+      "company": "Made by Many",
+      "twitter": "ninjabiscuit",
+      "topic": "6 things learned in 6 years of Front-end London",
+      "description": "I've been riunning Front-end London for nearly 6 years and as I come to the end of my time at Made by Many and as an organiser of this event, I'd like to talk about some of the things I've learned. Join me for my final FEL as I reflect on the talks, the lessons, the individuals and the community that Front-end London has been a part of for the last 6 years.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=-NbttvRLBJ8&t=44s",
+      "poster": "../../assets/images/posters/-NbttvRLBJ8.jpg"
+    }
+  ]
+}

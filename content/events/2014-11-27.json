@@ -1,0 +1,39 @@
+{
+  "date": "2014-11-27 18:45",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-november-2014-tickets-13776482831",
+  "tickets_released": "2014-11-18 10:00",
+  "duration": 2.75,
+  "speakers": [
+    {
+      "name": "James Higgs",
+      "pic": "../../assets/images/speakers/2014/11/james.jpeg",
+      "company": "Made by Many",
+      "twitter": "higgis",
+      "topic": "Making tradeoffs",
+      "description": "There are no absolutes in technology except this one.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=znBtzBAS9Bo",
+      "poster": "../../assets/images/posters/znBtzBAS9Bo.jpg"
+    },
+    {
+      "name": "Tim Perry",
+      "pic": "../../assets/images/speakers/2014/11/tim.png",
+      "company": "Softwire",
+      "twitter": "pimterry",
+      "topic": "What the hell are web components?",
+      "description": "Web components are the next Next Big Thing for the front-end, offering a fundamental change to how we build the web. There’s lots of people talking about them at a high-level, but it’s hard to tell how this fits together in practice, or why it’s interesting. Let’s talk about that.",
+      "slides_url": "//pimterry.github.io/What-the-hell-are-web-components/",
+      "video_url": ""
+    },
+    {
+      "name": "Phil Nash",
+      "pic": "../../assets/images/speakers/2013/03/phil.jpg",
+      "company": "Twilio",
+      "twitter": "philnash",
+      "topic": "WhatRTC? Everything you need to know to connect browsers to the world",
+      "description": "Traditionally browsers talk to servers, but what if they could speak to each other? WebRTC is a small set of APIs that make peer to peer communication possible between browsers. Video, audio and data can flow from browser to browser opening up a new set of possibilities for the web. We’ll take a look at what WebRTC gives you and, importantly, what it leaves out. We’ll take a look at implementing a simple chat application and speculate over more complicated use cases and examples.",
+      "slides_url": "//github.com/philnash/whatrtc",
+      "video_url": ""
+    }
+  ]
+}

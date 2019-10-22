@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled, { css } from "styled-components"
 import { format } from "date-fns"
-import { Strap } from "../Text"
+import { Strap, Copy } from "../Text"
 import { Button } from "../Button"
 import { medium } from "../../styles/media"
 import c from "../../styles/constants"
@@ -19,9 +19,10 @@ const TimeHeading = styled.time`
   `)}
 `
 
-const Address = styled.address`
+const Address = styled(Copy)`
   font-style: normal;
   margin-bottom: ${c.XL5};
+
   p {
     margin: 0;
   }
@@ -42,18 +43,24 @@ const NextEvent = ({ availability, date, registration_url }) => (
     <Strap>Next Event</Strap>
     {date ? (
       <TimeHeading dateTime={format(date, "yyyy-MM-dd HH:mm")}>
-        {format(date, "do MMM '‘'yy")}
+        {format(date, "dd MMM '‘'yy")}
       </TimeHeading>
     ) : (
       <TimeHeading as="span">TBC</TimeHeading>
     )}
-    <Address>
+    <Address as="address">
       <p>Made by Many office</p>
       <p>38 Graham Street</p>
       <p>London N1 8JX</p>
     </Address>
     {registration_url && availability && (
-      <TicketButton as="a" primary href={registration_url}>
+      <TicketButton
+        as="a"
+        primary
+        href={registration_url}
+        target="_blank"
+        rel="noopener"
+      >
         Get tickets
       </TicketButton>
     )}

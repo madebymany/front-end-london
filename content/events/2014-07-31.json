@@ -1,0 +1,38 @@
+{
+  "date": "2014-07-31 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-july-2014-tickets-12286161239",
+  "tickets_released": "2017-07-22 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Jonas Ohlsson",
+      "pic": "../../assets/images/speakers/2014/07/jonas-ohlsson--large.jpg",
+      "company": "Independent",
+      "twitter": "pocketjoso",
+      "topic": "Automating Faster Page Rendering",
+      "description": "You might have heard of critical path CSS and its impact on performance, but how can we take care of this problem today? Doing it manually is time consuming, error prone, and a nightmare to maintain. In this talk I will show you how to automate the process, using a tool that I built for this purpose.",
+      "slides_url": "//www.slideshare.net/JonasOhlsson/automating-improved-performance",
+      "video_url": ""
+    },
+    {
+      "name": "Paul Hamilton",
+      "pic": "../../assets/images/speakers/2014/07/paul_hamilton.jpg",
+      "company": "Made by Many",
+      "twitter": "p_p_hamilton",
+      "topic": "The realities of designing for business & people",
+      "description": "At Made by Many we want to get ideas in the hands of customers to validate them as quickly as possible. To do this, we use tools and techniques that open up the creative process to the whole project team. But when the designer is no longer the king of all things creative, whats their role? This talk explores how not be your own worst enemy and help move a team towards making the ‘right’ product.",
+      "slides_url": "//www.paulhamil.tn/blog/learning-to-unlearn",
+      "video_url": ""
+    },
+    {
+      "name": "Peter O’Shaughnessy",
+      "pic": "../../assets/images/speakers/2014/07/poshaughnessy.jpg",
+      "company": "Future Technologies, Pearson",
+      "twitter": "poshaughnessy",
+      "topic": "Interfaces of the Future… and How to Hack Around With Them Now",
+      "description": "Virtual Reality, Smartwatches, Google Glass… Might one of these be the “next big thing” after Mobile? And what will these new kind of devices mean for Web developers? Starting with Oculus Rift and Google Cardboard, let’s get prepared by hacking around with some good old JavaScript…",
+      "slides_url": "//poshaughnessy.github.io/fel-interfaces-of-the-future/#/",
+      "video_url": ""
+    }
+  ]
+}

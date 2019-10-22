@@ -1,0 +1,41 @@
+{
+  "date": "2017-04-27 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-april-2017-tickets-33663755198",
+  "tickets_released": "2017-04-18 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Anna Doubková",
+      "pic": "../../assets/images/speakers/2017/04/anna.jpg",
+      "company": "PizzaHut",
+      "twitter": "lithinn",
+      "topic": "Service Workers Practically",
+      "description": "In this talk you'll learn what service workers are, and why and how to use them in your project. After a quick intro, we'll get into practical examples that you can take and implement in your codebase. I'll also touch on some ready-made libraries that will make your life with service workers easier.",
+      "slides_url": "",
+      "video_url": "//pusher.com/sessions/meetup/front-end-london/service-workers-practically",
+      "poster": "../../assets/images/posters/c755a46401212fbb012b30b5f30b01a95479dd1a.jpg"
+    },
+    {
+      "name": "Jon Kelly",
+      "pic": "../../assets/images/speakers/2017/04/jon.jpg",
+      "company": "",
+      "twitter": "jsnightowl",
+      "topic": "Elm - the good, the bad & the alternatives",
+      "description": "Elm has become well-known for creating highly-resilient web apps with elegant, readable, code. However, these advantages require us to learn a new programming language, although one that we are told suits all levels of web developers.\n\nBy seeing some code and a demo of both a very simple Elm app, and a more complex one (that interfaces with JavaScript and D3), we see definite benefits, consider some functional programming concepts, and take an honest look at the pros and cons for developers. Finally, we look at Elm’s patterns implemented in an Angular2 JS app.",
+      "slides_url": "",
+      "video_url": "//pusher.com/sessions/meetup/front-end-london/elm-the-good-the-bad-and-the-alternatives",
+      "poster": "../../assets/images/posters/affabd2c93c06b24b8463446dd2255519ce70f13.jpg"
+    },
+    {
+      "name": "Andy Trevorah",
+      "pic": "../../assets/images/speakers/2017/04/andy.png",
+      "company": "The Times",
+      "twitter": "trevorah_",
+      "topic": "The Weird World of Native Mobile",
+      "description": "Native mobile apps can seem weird, especially if you come from a web background. I will go through a standard native architectural pattern and list off as many tips as I can that you wont learn in tutorials.",
+      "slides_url": "",
+      "video_url": "//pusher.com/sessions/meetup/front-end-london/the-weird-world-of-native-mobile",
+      "poster": "../../assets/images/posters/cd7985b154312cf2c78d55f3603d88dd843ffec0.jpg"
+    }
+  ]
+}

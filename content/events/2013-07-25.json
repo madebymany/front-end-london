@@ -1,0 +1,37 @@
+{
+  "date": "2013-07-25 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-july-tickets-7330039345",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Frances Berriman",
+      "pic": "../../assets/images/speakers/2013/07/frances.jpg",
+      "company": "GDS",
+      "twitter": "phae",
+      "topic": "Restating the Goverment’s mission on digital services",
+      "description": "Building amazing digital services is a dream we all have, but many of us are working for companies that aren’t quite with the programme yet. So how on Earth would we manage to do it in one of the oldest, red-tapped, institutions in the UK?  I’ll show you how we managed to restate the mission for the government’s digital services using our Design Principles.",
+      "slides_url": "",
+      "video_url": ""
+    },
+    {
+      "name": "Shaun Dunne",
+      "pic": "../../assets/images/speakers/2013/07/shaun.jpg",
+      "company": "SapientNitro",
+      "twitter": "shaundunne",
+      "topic": "Grunt your way to glory",
+      "description": "A solid introduction to using Grunt if you’ve never used it before and maybe some additional goodies for those who are already using it. Whatever your experience with build scripts and task automation, you will leave with the urge to bin those Ant scripts and get up and running with Grunt.",
+      "slides_url": "",
+      "video_url": ""
+    },
+    {
+      "name": "Edd Sowden",
+      "pic": "../../assets/images/speakers/2013/07/edd.jpg",
+      "company": "GDS",
+      "twitter": "edds",
+      "topic": "Using SASS on GOV.UK",
+      "description": "Responsive design might be easy enough for a small blog but how does it scale to a large government website? At GOV.UK we have managed to create a responsive site powered by over 18,000 lines of Sass. Learn how we scale our CSS approach to work across numerous teams while giving a coherent experience.",
+      "slides_url": "//speakerdeck.com/edds/using-sass-on-gov-dot-uk",
+      "video_url": ""
+    }
+  ]
+}

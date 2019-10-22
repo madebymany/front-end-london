@@ -1,0 +1,37 @@
+{
+  "date": "2013-05-30 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-may-tickets-6617020687",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Ian Feather",
+      "pic": "../../assets/images/speakers/2013/05/ian.jpg",
+      "company": "Lonely Planet",
+      "twitter": "ianfeather",
+      "topic": "Web fonts vs Web performance",
+      "description": "Web fonts have brought us beautiful online type but they’ve also brought us interminable blank screens while we wait for them to load. Ian Feather will highlight a few different alternatives for moving web fonts off the critical path, dealing with FOUT, and take a look at the performance benefits of each approach.",
+      "slides_url": "//www.slideshare.net/ianfeather/fel-presentation",
+      "video_url": ""
+    },
+    {
+      "name": "Siavash Ghorbani",
+      "pic": "../../assets/images/speakers/2013/05/siavash.jpg",
+      "company": "Tictail",
+      "twitter": "siavashg",
+      "topic": "JavaScript at Tictail",
+      "description": "The development of JavaScript at Tictail, from zero to Tictail and how Tictail became a front end application that runs in your browser.",
+      "slides_url": "",
+      "video_url": ""
+    },
+    {
+      "name": "Jake Archibald",
+      "pic": "../../assets/images/speakers/2013/05/jake.jpg",
+      "company": "Google",
+      "twitter": "jaffathecake",
+      "topic": "Rendering without the lumpy bits",
+      "description": "We’ll look at a series of real-world rendering issues and how to combat them, understanding why particular hacks work, and how sometimes working against the browser can trick it into performing better. Covering basic html layout and animation, GPU interaction and high-dpi (retina) considerations across browsers and devices.",
+      "slides_url": "//speakerdeck.com/jaffathecake/rendering-without-lumps",
+      "video_url": ""
+    }
+  ]
+}

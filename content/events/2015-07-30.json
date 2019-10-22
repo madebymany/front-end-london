@@ -1,0 +1,38 @@
+{
+  "date": "2015-07-30 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-july-2015-tickets-17793273159",
+  "tickets_released": "2015-07-21 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Matt Zeunert",
+      "pic": "../../assets/images/speakers/2015/07/matt-zeunert.jpg",
+      "company": "",
+      "twitter": "mattzeunert",
+      "topic": "Using BEM to structure CSS",
+      "description": "Writing well-structured CSS has become an important part of building maintainable websites. To promote code re-use, different style systems have emerged to encourage modular CSS. Block-Element-Modifier (BEM) is a naming convention for classes inside a module. This talk will explain how the naming convention works, how it’s different from nesting based systems and how you can use Sass to make writing BEM code easier.",
+      "slides_url": "//www.mattzeunert.com/slides/bem-fel.pdf",
+      "video_url": ""
+    },
+    {
+      "name": "Mike MacCana",
+      "pic": "../../assets/images/speakers/2015/07/mike-maccana.jpg",
+      "company": "CertSimple",
+      "twitter": "mikemaccana",
+      "topic": "Everything you need to take advantage of npm in your browser side code, and avoid the pitfalls!",
+      "description": "Why you'd want to use npm in the first place; building browser bundles with Gulp and npm build - and how they compare; how to identify the modules that contribute to bundle file size; pros, cons and workarounds for the ‘everything is a module’ coding style; ensuring consistent versioning during deploys; how to include templates in your browserify bundles. Based on experiences in a real world, production, profitable application.",
+      "slides_url": "//speakerdeck.com/mikemaccana/practical-browser-npm",
+      "video_url": ""
+    },
+    {
+      "name": "Jonathan Fielding",
+      "pic": "../../assets/images/speakers/2015/07/jonathan-fielding.jpg",
+      "company": "Beamly",
+      "twitter": "JonthanFielding",
+      "topic": "Reimagining how we design responsively",
+      "description": "Responsive design is still relatively new – yet it’s already seen several iterations. In the first incarnation we added media queries, adapting our sites to work better on mobile devices. The second incarnation arrived with mobile first design: building for the least-capable, smallest devices and then progressive enhancing it. This talk will focus on how we can reimagine RWD with a focus on content and performance: evolving a new incarnation where we deliver a site as quickly as possible with content prioritised for what the user is trying to achieve.",
+      "slides_url": "//www.jonathanfielding.com/talks/reimagining-responsive-design/",
+      "video_url": ""
+    }
+  ]
+}

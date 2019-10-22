@@ -1,0 +1,37 @@
+{
+  "date": "2013-10-31 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-october-tickets-8762483825",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "James Cryer",
+      "pic": "../../assets/images/speakers/2013/10/james-cryer.jpg",
+      "company": "Huddle",
+      "twitter": "jamescryer",
+      "topic": "UI testing with PhantomCSS",
+      "description": "In the age of SPA’s and responsive layouts, the design of UI is more important than ever and yet woefully under supported by today’s development workflows and testing strategies.  We need to take a step back and reconsider what ‘unit’ testing really means and how automated visual regression testing tools like PhantomCSS can help us maintain and change the most fragile code in our websites, our CSS.",
+      "slides_url": "//speakerdeck.com/jamescryer/phantomcss-complete-ui-testing",
+      "video_url": ""
+    },
+    {
+      "name": "Tom Hamshere",
+      "pic": "../../assets/images/speakers/2013/10/tom-hamshere.jpg",
+      "company": "Twitter",
+      "twitter": "tbrd",
+      "topic": "Flight, Twitter’s component-based JavaScript framework",
+      "description": "A brief dive in to Flight, Twitter’s component-based JavaScript framework, covering why Flight was created and how you can use it to create simple, scalable and performant web applications.",
+      "slides_url": "//docs.google.com/presentation/d/1owPNN0Vz44UUQJ3VU62PPE3aiNjiLUdzex9gVwx-ogo/pub?start=false&loop=false&delayms=3000#slide=id.p",
+      "video_url": ""
+    },
+    {
+      "name": "Ramon Lapenta",
+      "pic": "../../assets/images/speakers/2013/10/ramon-lapenta.jpg",
+      "company": "Cyber-Duck",
+      "twitter": "ramono",
+      "topic": "Myths about CSS preprocessors",
+      "description": "This talk will break some of the myths regarding pre-processors and explain how they can help you be more efficient coding CSS, by showing examples and practical information about them, available tools, and some useful techniques to get you started and get the most out of them and put you in the right track.",
+      "slides_url": "//www.slideshare.net/ramono1/myths-about-css-pre-processors",
+      "video_url": ""
+    }
+  ]
+}

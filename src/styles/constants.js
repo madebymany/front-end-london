@@ -12,6 +12,7 @@ export default {
   XL6: "3rem", // 45 -> 48
   XL7: "4rem", // 62 -> 64
   XL8: "5rem", // 80
+  XL9: "7rem", // 112
 
   LIGHT: 300,
   REGULAR: 400,
@@ -22,9 +23,10 @@ export default {
   FONT_SECONDARY: "'Roboto Mono', monospace",
 
   BLACK: "#2f2f2f",
-  ORANGE: "#ed4022",
+  BLACK2: "#4E4E4E",
+  ORANGE: "#FA3000",
   WHITE: "#fff",
-  GREY: "#d8d8d8",
+  GREY: "#E1E4E8",
   LIGHT_GREY: "#fbfbfb",
 
   HEADER: "87px",

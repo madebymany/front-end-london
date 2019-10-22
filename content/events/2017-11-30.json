@@ -1,0 +1,39 @@
+{
+  "date": "2017-11-30 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-november-2017-tickets-39649865816",
+  "tickets_released": "2017-11-21 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Tara Ojo",
+      "pic": "../../assets/images/speakers/2017/11/ojo-tara.jpg",
+      "company": "FutureLearn",
+      "twitter": "tara_ojo",
+      "topic": "Junior.next()",
+      "description": "Life as a “junior” developer can be intense, overwhelming, but rewarding. How can juniors move on to the next level? And, what can employers, mentors and communities do to support the the next generation of developers?",
+      "slides_url": "",
+      "video_url": ""
+    },
+    {
+      "name": "Sam Murray",
+      "pic": "../../assets/images/speakers/2017/11/murray-sam.jpg",
+      "company": "Made by Many",
+      "twitter": "samueljmurray",
+      "topic": "Why we’ve adopted Elixir",
+      "description": "Elixir is a new functional programming language designed for concurrency, fault tolerance and developer happiness. It’s become our go-to choice at Made by Many for building web applications. Come and hear about why we love it.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=zL2wcqS78UA",
+      "poster": "../../assets/images/posters/zL2wcqS78UA.jpg"
+    },
+    {
+      "name": "Jessica Rose",
+      "pic": "../../assets/images/speakers/2017/11/rose-jessica.png",
+      "company": "FutureLearn",
+      "twitter": "jesslynnrose",
+      "topic": "A more human industry",
+      "description": "Working in technology and building for the web gives us many benefits and privileges. But the ways we work aren’t always human focused or healthy. This talk will look at ways to subvert that trend.",
+      "slides_url": "",
+      "video_url": ""
+    }
+  ]
+}

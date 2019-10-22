@@ -11,7 +11,7 @@ import c from "../../styles/constants"
 
 const Wrapper = styled.div`
   position: relative;
-  margin-top: ${c.XL7};
+  margin-top: 140px;
 `
 
 const HeaderWrapper = styled.div`

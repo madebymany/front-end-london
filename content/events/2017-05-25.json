@@ -1,0 +1,41 @@
+{
+  "date": "2017-05-25 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-may-2017-tickets-34540525642",
+  "tickets_released": "2017-05-16 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Sam Small",
+      "pic": "../../assets/images/speakers/2017/05/sam.jpg",
+      "company": "Made by Many",
+      "twitter": "iamsamsmall",
+      "topic": "A Road Trip to Product Success",
+      "description": "In this talk Sam shares how teams are structured at Made by Many. He’ll talk about the journey teams go through together—from the unknown to the Emerald City—and how you can ensure you’re better equipped to make critical product decisions",
+      "slides_url": "",
+      "video_url": "//pusher.com/sessions/meetup/front-end-london/a-road-trip-to-product-success",
+      "poster": "../../assets/images/posters/ef58b1ebf6e0f51bd398ef783958e28ed4080743.jpg"
+    },
+    {
+      "name": "Zahra Traboulsi",
+      "pic": "../../assets/images/speakers/2017/05/zahra.jpg",
+      "company": "Bloomberg",
+      "twitter": "zahrataiba",
+      "topic": "A Swift Detour from JavaScript",
+      "description": "JavaScript is eating the tech industry - including mobile development. So why has Swift only increased in popularity since its arrival in 2014? In this talk, we'll compare and contrast Swift with JavaScript: from syntax basics to paradigms to language features you never knew you missed and finally, considering Swift's place in a JS-dominated world.",
+      "slides_url": "",
+      "video_url": "//pusher.com/sessions/meetup/front-end-london/a-swift-detour-from-javascript",
+      "poster": "../../assets/images/posters/c7361862aa2731c2f503bbe1751e94474a98b018.jpg"
+    },
+    {
+      "name": "Patrick Kunka",
+      "pic": "../../assets/images/speakers/2017/05/patrick.jpg",
+      "company": "Colony / KunkaLabs",
+      "twitter": "PatrickKunka",
+      "topic": "Building Consumable JavaScript APIs",
+      "description": "JavaScript APIs are the interfaces with which we interact with our day-to-day front-end tools. What makes a good API and what can we learn from the APIs of today's popular libraries and frameworks? This talk will cover a variety of techniques we can use to create robust and predictable runtime code which is both easy to work with and easy to debug.",
+      "slides_url": "",
+      "video_url": "//pusher.com/sessions/meetup/front-end-london/building-consumable-javascript-apis",
+      "poster": "../../assets/images/posters/a03f40413142ef3e4cf129c4f01474710f84924a.jpg"
+    }
+  ]
+}

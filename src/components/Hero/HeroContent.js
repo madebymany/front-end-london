@@ -42,16 +42,21 @@ const Wrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+  max-height: 100vh;
   top: 0;
   left: 0;
   z-index: 1;
-  transition: opacity 0.5s;
+  visibility: visible;
+  transition: opacity 0.5s 1s, visibility 0.5s, max-height 0.5s;
 
   ${props =>
-    props.open &&
+    props.theme.open &&
     `
+    max-height: 0;
+    transition: opacity 0.5s, visibility 0.5s, max-height 0.5s 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
     opacity: 0;
     visibility: hidden;
+
   `}
 
   ${large`
@@ -136,7 +141,7 @@ const VideoButton = styled(Button)`
 `
 
 const HeroContent = ({ onPlay, open }) => (
-  <Wrapper open={open}>
+  <Wrapper theme={{ open }}>
     <Container>
       <HeroRow>
         <Column lg={0.55} xl={0.57}>

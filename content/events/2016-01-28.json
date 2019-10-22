@@ -1,0 +1,38 @@
+{
+  "date": "2016-01-28 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-january-2016-tickets-20469736533",
+  "tickets_released": "2016-01-19 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Callum Macrae",
+      "pic": "../../assets/images/speakers/2016/01/callummacrae.jpg",
+      "company": "Lost My Name",
+      "twitter": "callumacrae",
+      "topic": "How to not use jQuery",
+      "description": "jQuery is great for supporting older browsers and quickly shipping features without having to know too much JavaScript, but is often unnecessary. This talk will show you how you can use features of JavaScript introduced since jQuery was written—features introduced in ES5, ES2015 and ES2016. Do you really need jQuery in your next project?",
+      "slides_url": "//macr.ae/talks/how-to-not-use-jquery.html",
+      "video_url": ""
+    },
+    {
+      "name": "Bodil Stokke",
+      "pic": "../../assets/images/speakers/2016/01/bodil.jpg",
+      "company": "Future Ad Labs",
+      "twitter": "bodil",
+      "topic": "The Miracle of Generators",
+      "description": "The ECMAScript 2015 specification introduced iterators, which generalise iteration over common data structures, as well as providing an interface for allowing you to iterate over any custom data structures using common language constructs. ES2015 also introduced generator functions, which make writing arbitrary iterators a lot easier and less boilerplatey.\n\nBut generators aren’t just for making simple iterators over data structures. Because they’re bidirectional—they don’t only produce output, they can also take input—they’re actually coroutines, which means there’s no end to the sort of fun you can apply them to. We’re going to explore how we can use them to make asynchronous programming in JavaScript a lot more elegant—to chart a path out of callback hell. And then we’re going to take a look at what we’ve really discovered: one of the most fearsome mysteries of computer science, suddenly laid bare before us.",
+      "slides_url": "//bodil.lol/generators/#0",
+      "video_url": ""
+    },
+    {
+      "name": "Calum Ryan",
+      "pic": "../../assets/images/speakers/2016/01/calumryan.jpg",
+      "company": "We Create Digital",
+      "twitter": "calum_ryan",
+      "topic": "Taking part in the IndieWeb",
+      "description": "IndieWeb (not to be confused with the platform ind.ie) is a small movement of people from all backgrounds and abilities looking to/already publishing to their own website; so that they truly own their own data. The talk will introduce principles of IndieWeb and how you can take part through IndieWebCamps and Homebrew Website Clubs.",
+      "slides_url": "//calumryan.com/talks/fel-280116/#/",
+      "video_url": ""
+    }
+  ]
+}

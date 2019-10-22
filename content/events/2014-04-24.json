@@ -1,0 +1,37 @@
+{
+  "date": "2014-04-24 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-april-2014-tickets-11279091065",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Arran Ross-Paterson",
+      "pic": "../../assets/images/speakers/2014/04/arran-ross-paterson.jpg",
+      "company": "Event Handler",
+      "twitter": "arranrp",
+      "topic": "The world keeps spinning round and round",
+      "description": "The importance of educating yourself.",
+      "slides_url": "//slides.com/arranrp/fel",
+      "video_url": "//www.youtube.com/watch?v=3zNBGyqX1V0"
+    },
+    {
+      "name": "Kaelig Deloumeau-Prigent",
+      "pic": "../../assets/images/speakers/2014/04/kaelig.jpg",
+      "company": "The Guardian",
+      "twitter": "kaelig",
+      "topic": "Bridging the gap between developers and designers with Sass",
+      "description": "There is often a vocabulary gap between designers an developers, who should aim towards a ubiquitous way of conversing about colours, typography, viewport sizes, or the responsive grid system of a digital product… To bridge this gap at the Guardian, we use a CSS pre-processor as a communication enabler through the abstractions it allows us to put in place.",
+      "slides_url": "//www.slideshare.net/kaelig/bridging-the-gap-between-designers-and-developers-a-theguardian",
+      "video_url": "//www.youtube.com/watch?v=DAfW1RSWYDA"
+    },
+    {
+      "name": "Peter Gasston",
+      "pic": "../../assets/images/speakers/2014/04/peter-gasston.jpg",
+      "company": "rehabstudio",
+      "twitter": "stopsatgreen",
+      "topic": "Over promised and under delivered",
+      "description": "The mobile web arrived suddenly and grew exponentially. It’s created potential markets in new territories all over the world. So why is it so damned annoying to use? This talk will try to find out where we’re going wrong, using copious examples of bad practice and bitter experience.",
+      "slides_url": "//speakerdeck.com/stopsatgreen/over-promised-and-under-delivered",
+      "video_url": "//www.youtube.com/watch?v=2Qd4mPHk7_w"
+    }
+  ]
+}

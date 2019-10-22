@@ -12,6 +12,7 @@ import GiveATalkImage from "./GiveATalkImage"
 
 const Wrapper = styled(Container)`
   position: relative;
+  margin-top: 5px;
   padding-top: ${c.XL5};
   padding-bottom: ${c.XL5};
 `

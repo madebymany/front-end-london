@@ -1,0 +1,41 @@
+{
+  "date": "2018-03-29 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-march-2018-tickets-43881575975",
+  "tickets_released": "2018-03-20 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Jo Pearce",
+      "pic": "../../assets/images/speakers/2018/03/pearce-jo.jpg",
+      "company": "",
+      "twitter": "jdpearce",
+      "topic": "Systems of snowflakes — Beauty, complexity and choice",
+      "description": "What simple rules constrain each snowflake to a hexagonal symmetry that we find beautiful? Does this kind of beauty tend to emerge from systems with simple rules? If so, can we constrain the growth of software into forms that are pleasing? Can we define beautiful code? This is a talk about overcoming choice paralysis with software engineering practices. How we can reduce the number of choices we need to make and write complex but beautiful systems that are easier to develop and easier to maintain.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=RX7ZrWKbReg&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=6",
+      "poster": "../../assets/images/posters/RX7ZrWKbReg.jpg"
+    },
+    {
+      "name": "Cassie Evans",
+      "pic": "../../assets/images/speakers/2018/03/evans-cassie.jpg",
+      "company": "Net Natives",
+      "twitter": "cassiecodes",
+      "topic": "Limitation breeds creativity",
+      "description": "In web dev, sometimes the sheer volume of things to learn can be overwhelming. Pair this with anxiety and a tendency to procrastinate and you’ve got the perfect recipe for doing absolutely nothing. More choice doesn’t mean more creativity. When you work within constraints your mind has to look for unconventional ways around it. Come along to see me demo a few of my favourite unconventional solutions. (Some restrictions were even self inflicted.) Expect LOTS of CSS, and a bunch of (hopefully) clever hacks.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=RNK9EjYhQPs&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=7",
+      "poster": "../../assets/images/posters/RNK9EjYhQPs.jpg"
+    },
+    {
+      "name": "Andrew Collins",
+      "pic": "../../assets/images/speakers/2018/03/collins-andrew.jpg",
+      "company": "Funding Circle",
+      "twitter": "andyorandrew",
+      "topic": "Optimising the web with multithreading",
+      "description": "We cannot deny the web is becoming incredibly powerful, and there is no doubt that a lot more can be achieved inside the browser as the standards continue to advance. But where can we do this processing to create the best user experiences? With Javascript's single-threaded capabilities, this may become hard to optimise without running into the illustrious issues of “jank”. So this is where the not so single-theading of browsers comes in with the implementation of web-workers...",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=9d-v5nvamns&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=8",
+      "poster": "../../assets/images/posters/9d-v5nvamns.jpg"
+    }
+  ]
+}

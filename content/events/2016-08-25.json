@@ -1,0 +1,41 @@
+{
+  "date": "2016-08-25 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-august-2016-tickets-27126643521",
+  "tickets_released": "2016-08-16 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Michael Riethmuller",
+      "pic": "../../assets/images/speakers/2016/08/riethmuller-michael.jpg",
+      "company": "Australia",
+      "twitter": "MikeRiethmuller",
+      "topic": "A CSS eulogy",
+      "description": "It’s time to say goodbye to again, only this time it's not to enemies (ie6 and 7), but old friends. I’m going to give a eulogy for some much loved design patterns and techniques we love but sadly don’t need anymore. Warning: This will be an emotional experience and you might cry.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=Uzvt-EmHi6Q",
+      "poster": "../../assets/images/posters/Uzvt-EmHi6Q.jpg"
+    },
+    {
+      "name": "Patrick Hamann",
+      "pic": "../../assets/images/speakers/2016/06/patrick.jpg",
+      "company": "Financial Times",
+      "twitter": "patrickhamann",
+      "topic": "2 What, where, why and when?!",
+      "description": "The onset of 2 is upon us. Now over 75% of your users browsers support the low-latency transfer protocol, yet adoption has been slow.\n\nWhat does this really mean for us as frontend developers? How can we utilise H2’s features to deliver fast experiences? Have our best practices become anti-patterns? What is the tooling landscape like and will we need to change our existing build systems?\n\nOver the course of this talk Patrick will use new research and real-world examples from the Financial Times to put our minds at easy and – most importantly – get you excited about a future with 2.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=krmBaPUuhyM",
+      "poster": "../../assets/images/posters/krmBaPUuhyM.jpg"
+    },
+    {
+      "name": "Kristina Olivia",
+      "pic": "../../assets/images/speakers/2016/08/kiselyte-kristina.jpg",
+      "company": "Rspberry Studio",
+      "twitter": "",
+      "topic": "Should designers learn to code?",
+      "description": "The debate for whether designers should learn to code is not brand new anymore, however, it is a question that still keeps arising and baffling many. In today's so ever changing digital climate it is quite difficult to pin point what exactly one should do. So how can we go about finding a solution?",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=SzIE2Fu6TVU",
+      "poster": "../../assets/images/posters/SzIE2Fu6TVU.jpg"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2018-05-31 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-may-2018-tickets-46219362357",
+  "tickets_released": "2018-05-22 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Callum Macrae",
+      "pic": "../../assets/images/speakers/2018/05/macrae-callum.jpg",
+      "company": "SamKnows",
+      "twitter": "callumacrae",
+      "topic": "Data Visualisation with Vue.js",
+      "description": "Vue.js is the latest big front-end framework. It’s blazingly fast, easy to learn, and a valuable tool to have in your arsenal. This talk will introduce Vue.js using a real life example: some basic SVG manipulation and data visualisation without using a library like d3 or Highcharts.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=7cTtiU05OVg&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=2",
+      "poster": "../../assets/images/posters/7cTtiU05OVg.jpg"
+    },
+    {
+      "name": "Beverley Newing",
+      "pic": "../../assets/images/speakers/2018/05/newing-beverley.jpg",
+      "company": "Oxford Computer Consultants",
+      "twitter": "WebDevBev",
+      "topic": "How to run awesome tech internships",
+      "description": "Interested in internships, but still not sold on them? Keen to help diversify the tech industry, but not sure how? Not really sure how to go about one? As a seasoned (three-times) intern, Beverley has some thoughts and tips that they’d like to share with you, to help you go about internship success!",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=gyFAbjtJ510&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=3",
+      "poster": "../../assets/images/posters/gyFAbjtJ510.jpg"
+    }
+  ]
+}

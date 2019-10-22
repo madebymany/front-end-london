@@ -11,8 +11,7 @@
       "topic": "Resolution independent designs",
       "description": "Fonts look great on high dpi displays, but bitmap images, not so much. Josh Emerson will discuss a few techniques for achieving resolution independence on your site including asset fonts, where your sites icons are stored inside a web font, and SVG graphics for vectors that can be interactive.",
       "slides_url": "//speakerdeck.com/joshje/asset-fonts",
-      "youtube_id": "",
-      "poster": ""
+      "video_url": ""
     },
     {
       "name": "Phil Nash",
@@ -22,8 +21,7 @@
       "topic": "CSS laid out",
       "description": "",
       "slides_url": "//philnash.github.io/css-laid-out/",
-      "youtube_id": "",
-      "poster": ""
+      "video_url": ""
     },
     {
       "name": "Paul Lloyd",
@@ -33,8 +31,7 @@
       "topic": "The edge of the Web redux",
       "description": "Graphic designers have long honed their craft to meet the specific constraints of television. As web designers begin to understand the true nature of our own medium, isn’t about time we did the same?",
       "slides_url": "//speakerdeck.com/paulrobertlloyd/the-edge-of-the-web-redux",
-      "youtube_id": "",
-      "poster": ""
+      "video_url": ""
     }
   ]
 }

@@ -1,0 +1,41 @@
+{
+  "date": "2018-04-26 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-april-2018-tickets-45105477698",
+  "tickets_released": "2018-04-17 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Nikos Tsouknidas",
+      "pic": "../../assets/images/speakers/2018/04/tsouknidas-nikos.jpg",
+      "company": "BBC",
+      "twitter": "tsoukn",
+      "topic": "Mapping the archipelago of the Web in 3D",
+      "description": "We have been experiencing the web using the desktop metaphor for years. We browse, we scroll, we bookmark pages. But what if this wasn’t the only way to interpret the vast amounts of information that is already out there. Maybe it’s time to explore in more dimensions.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=tlJhUWe24z4&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=10",
+      "poster": "../../assets/images/posters/tlJhUWe24z4.jpg"
+    },
+    {
+      "name": "Delphine Claerhout",
+      "pic": "../../assets/images/speakers/2018/04/claerhout-delphine.jpg",
+      "company": "Mettle Studio",
+      "twitter": "",
+      "topic": "Being the odd fish out as a female developer",
+      "description": "In this talk I will be discussing what it feels like to be a female developer, and what companies can do to help.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=ppy5JGZD5hg&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=5",
+      "poster": "../../assets/images/posters/ppy5JGZD5hg.jpg"
+    },
+    {
+      "name": "Jonathan Garner",
+      "pic": "../../assets/images/speakers/2018/04/garner-jonathan.jpg",
+      "company": "Mind over Tech",
+      "twitter": "jgarner_co_uk",
+      "topic": "Death by convenience",
+      "description": "Many digital products and design challenges seek to benefit people through making their lives easier. While this is an honourable aim it can often result in undesired and unimagined consequences — is this slowly leading us to a form of death by convenience?",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=Tk-UjfNsZgc&t=0s&list=PLOSHQ_hfikSqtPf8kWSO1fQZ0VO86cpN9&index=4",
+      "poster": "../../assets/images/posters/Tk-UjfNsZgc.jpg"
+    }
+  ]
+}

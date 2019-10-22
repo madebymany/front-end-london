@@ -1,0 +1,39 @@
+{
+  "date": "2016-10-27 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-october-2016-tickets-28421273795",
+  "tickets_released": "2016-10-18 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Melinda Seckington",
+      "pic": "../../assets/images/speakers/2016/10/melinda.jpg",
+      "company": "Future Learn",
+      "twitter": "mseckington",
+      "topic": "Employee Evangelism: Make your team badass",
+      "description": "Hiring good people can be hard. Keeping good people can be hard. It’s made easier though if you can set your company apart as a place that people want to work at. But how do you make the community aware that that’s the case?\n\n Developer evangelists typically evangelise products to developers, but what if the thing you’re trying to sell is the team itself? How can you get your entire team sharing with the community what you’ve built and how you work?\n\n This talk will examine why you should evangelise your team from an individual, team and community perspective, and give concrete examples of how to encourage your team to do so.",
+      "video_url": "//pusher.com/sessions/meetup/front-end-london/employee-evangelism-make-your-team-badass",
+      "poster": "../../assets/images/posters/44cf0a14a5573e1cb4f5c3139a1719c76cc0d381.jpg"
+    },
+    {
+      "name": "Ben Sauer",
+      "pic": "../../assets/images/speakers/2016/10/ben.jpg",
+      "company": "Clearleft",
+      "twitter": "bensauer",
+      "topic": "Open the pod bay doors, designer",
+      "description": "Right now voice UIs like Siri are, well…. hit and miss. But all the big players are heavily investing in voice UI, let’s suppose it will be much smarter, soon. What does that mean for us designers? Will screen UI even be required? Should we be changing our workflow now?\n\n In this talk, Ben will look at the current capabilities of Voice UIs, how the APIs are connecting to apps, what’s next, and how this might change our design process and products.",
+      "slides_url": "",
+      "video_url": "//pusher.com/sessions/meetup/front-end-london/open-the-pod-bay-doors-designer",
+      "poster": "../../assets/images/posters/aeb4a510d59dc0da5d33a1e903ef94c34842ae2c.jpg"
+    },
+    {
+      "name": "Josh Emerson",
+      "pic": "../../assets/images/speakers/2016/10/josh-emerson.jpg",
+      "company": "Snyk",
+      "twitter": "joshje",
+      "topic": "Writing Secure Node.js Code",
+      "description": "Some of the very things that make JavaScript awesome can also expose it to security risks. This talk will go through some sample security flaws unique to Node’s async nature and surrounding ecosystem (or especially relevant to it) and will show how these could occur in your own code or in npm dependencies.\n\n The talk will revolve around a sample vulnerable application, Goof, which I will exploit as an attacker would. For each issue, I'll explain why it happened, show its impact, and – most importantly – see how to avoid or fix it.",
+      "video_url": "//pusher.com/sessions/meetup/front-end-london/writing-secure-nodejs-code",
+      "poster": "../../assets/images/posters/81a7f3680ff460ba1e4828cbae806130108c2eaf.jpg"
+    }
+  ]
+}

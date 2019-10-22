@@ -9,7 +9,7 @@ import EventSummary from "./EventSummary"
 import c from "../../styles/constants"
 
 const Wrapper = styled.div`
-  margin-top: ${c.XL7};
+  margin-top: ${c.XL9};
   background-color: ${c.WHITE};
 `
 

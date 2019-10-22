@@ -1,0 +1,41 @@
+{
+  "date": "2017-08-31 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-august-2017-tickets-36830691590",
+  "tickets_released": "2017-08-22 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Cristiano Rastelli",
+      "pic": "../../assets/images/speakers/2017/08/rastelli-cristiano.jpg",
+      "company": "Badoo",
+      "twitter": "areaweb",
+      "topic": "Let there be peace on CSS",
+      "description": "In the last few months there’s been a growing friction between those who see CSS as an untouchable layer in the “separation of concerns” paradigm, and those who have simply ignored this golden rule and found different ways to style the UI (typically applying CSS styles via JavaScript). This debate have brought division in a community that used to be immune to this kind of “wars”. This talk is my attempt to bring peace between the two fronts.",
+      "slides_url": "//speakerdeck.com/didoo/let-there-be-peace-on-css",
+      "video_url": "//pusher.com/sessions/meetup/front-end-london/let-there-be-peace-on-css",
+      "poster": "../../assets/images/posters/a4a7560ec9335edcbbafa9a9aa5f4ef021baa4f1.jpg"
+    },
+    {
+      "name": "Mike Barker",
+      "pic": "../../assets/images/speakers/2017/08/barker-mike.jpg",
+      "company": "Tictrac",
+      "twitter": "mrdbarker",
+      "topic": "TypeScript — why even?",
+      "description": "The dynamism and flexibility of Javascript is what makes the language so great, so why would you want to add static typing and more traditional concepts to an already rich language? This talk covers why, and how, you can do this using TypeScript.",
+      "slides_url": "//docs.google.com/presentation/d/1CenLnlu0Sb24yjj0cFpGaychIB-Wg3_15K1BQqWqPQY/",
+      "video_url": "//pusher.com/sessions/meetup/front-end-london/typescript-why-even",
+      "poster": "../../assets/images/posters/5830185c76245f46de147a7aea68dcf60baa6a83.jpg"
+    },
+    {
+      "name": "Phil Nash",
+      "pic": "../../assets/images/speakers/2013/03/phil.jpg",
+      "company": "Twilio",
+      "twitter": "philnash",
+      "topic": "Aggressive Web Apps",
+      "description": "Push notifications on the web can be a force for good, but is that how they are coming across? We'll take a look at how push notifications permissions are being implemented and how we can do it better.",
+      "slides_url": "//speakerdeck.com/philnash/aggressive-web-apps-at-front-end-london",
+      "video_url": "//pusher.com/sessions/meetup/front-end-london/aggressive-web-apps",
+      "poster": "../../assets/images/posters/0f25b73f8ed215731061aedd637631809e05de7c.jpg"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2018-08-30 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-august-2018-tickets-48907969052",
+  "tickets_released": "2017-08-21 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Ben Foxall",
+      "pic": "../../assets/images/speakers/2018/08/foxall-ben.jpg",
+      "company": "Oxbotica",
+      "twitter": "benjaminbenben",
+      "topic": "Web sites and fairy lights",
+      "description": "I'll talk about how we can use frontend web technologies to control things outside of the browser.  We'll cover fairy lights, microcontrollers, websockets, css, js, webgl, and how to mash all that kind of stuff together.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=aAYRClMSUzg",
+      "poster": "../../assets/images/posters/aAYRClMSUzg.jpg"
+    },
+    {
+      "name": "Peter Gasston",
+      "pic": "../../assets/images/speakers/2018/08/gasston-peter.jpg",
+      "company": "rehabstudio",
+      "twitter": "stopsatgreen",
+      "topic": "People don’t change",
+      "description": "A brief history of modern human behaviour, a look at how the invention of writing brings us closer to our distant ancestors, how technology meets our desires, and history’s importance to futurism.",
+      "slides_url": "//speakerdeck.com/stopsatgreen/people-dont-change",
+      "video_url": "//www.youtube.com/watch?v=F1k6hHMg1Sg",
+      "poster": "../../assets/images/posters/F1k6hHMg1Sg.jpg"
+    }
+  ]
+}

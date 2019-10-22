@@ -1,0 +1,37 @@
+{
+  "date": "2014-01-30 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-january-2014-tickets-10218879945",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Todd Motto",
+      "pic": "../../assets/images/speakers/2014/01/todd-motto.jpg",
+      "company": "Appsbroker",
+      "twitter": "toddmotto",
+      "topic": "Building the modern Web with AngularJS",
+      "description": "Todd will be kickstarting your next app by guiding you through some of the most crucial parts of the AngularJS framework. Taking a holistic and high level view, the session will prime you on all the basics and how you can leverage the framework to rapidly develop new applications the modern way, touching on MVC and data-binding methodologies.",
+      "slides_url": "//speakerdeck.com/toddmotto/building-the-modern-web-with-angularjs",
+      "video_url": ""
+    },
+    {
+      "name": "Steve Workman",
+      "pic": "../../assets/images/speakers/2014/01/steve-workman2.jpg",
+      "company": "Yell.com",
+      "twitter": "steveworkman",
+      "topic": "Are you browsing comfortably?",
+      "description": "Responsive Web Design has, so far, been about designing and building for the smaller device, but how about bigger devices like TVs? Is the Internet on TV really a thing? Will the next generation consoles push it over the line and into our hearts? How can we make it all work from our sofa and is it even possible?",
+      "slides_url": "//speakerdeck.com/steveworkman/are-you-browsing-comfortably",
+      "video_url": ""
+    },
+    {
+      "name": "Tom Ashworth",
+      "pic": "../../assets/images/speakers/2014/01/tom-ashworth.jpg",
+      "company": "Twitter",
+      "twitter": "phuunet",
+      "topic": "ServiceWorker and the offline Web",
+      "description": "Native platforms hold something over the web: we do not have a meaningful way to ensure that, no matter what the connection of the user is like, we can always deliver code and content. ServiceWorker aims to fix this, allowing developers to take control of navigations and resource fetching before they go to the network. We’ll go through the state of things today, look at the ServiceWorker proposal and try out the polyfill that you can use today.",
+      "slides_url": "//speakerdeck.com/phuu/frontendlondon-serviceworker-and-the-offline-web",
+      "video_url": ""
+    }
+  ]
+}

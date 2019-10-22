@@ -1,0 +1,35 @@
+{
+  "date": "2015-06-25 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-june-2015-tickets-17297307713",
+  "tickets_released": "2015-06-16 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Jani Eväkallio",
+      "pic": "../../assets/images/speakers/2015/06/jani-evakallio.jpg",
+      "company": "Futurice",
+      "twitter": "jevakallio",
+      "topic": "Fuck it, clear the decks! Managing the pace of change in the frontend scene",
+      "description": "What concrete problems do frontend engineers face due to this phenomenon, why frontend is a hotbed for this type of problem, what can we do as an engineering community to alleviate it, what can we do as individual engineers to deal with it, and what can we do as humans to cope with it.",
+      "slides_url": "//evakall.io/clear-the-decks/#/"
+    },
+    {
+      "name": "Chaals Nevile",
+      "pic": "../../assets/images/speakers/2015/06/chaals-nevile.jpg",
+      "company": "Yandex",
+      "twitter": "chaals",
+      "topic": "Schema.org and accessibility",
+      "description": "Schema.org metadata is a runaway success. While most public websites don’t explicitly include “semantic Web” data, around a third have adopted the form used by schema.org, a success rate only matched by Facebook’s opengraph vocabulary. What does schema.org do for accessibility, what could it do better, and how can you use it?",
+      "slides_url": ""
+    },
+    {
+      "name": "Lily Dart",
+      "pic": "../../assets/images/speakers/2015/06/lily-dart.jpg",
+      "company": "Freelance UX and Service Design",
+      "twitter": "lily_dart",
+      "topic": "How to make design decisions stick",
+      "description": "Design is no longer just the remit of designers. Everything from server infrastructure, to API design, to button interactions, to the colours in the branding can effect the user experience of the things we design and build. But when everyone on the project is making design decisions all the time, how can we ensure that they they’re the right decisions, and that when those decisions are made, everyone else is onboard? Lily will be talking about the qualities we need make design decisions successful, and what can happen when we struggle to motivate the people we work with to buy-in to the same approach.",
+      "slides_url": "//www.slideshare.net/LilyDart/making-design-decisions-stick"
+    }
+  ]
+}

@@ -6,18 +6,25 @@ import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 
 import c from "../styles/constants"
+import { large } from "../styles/media"
 
 const Main = styled.main`
   transition: padding 0.5s;
   background: ${c.WHITE};
 
   & > div > div > div > *:first-child:not(.Hero) {
-    padding-top: ${c.HEADER};
+    padding-top: 100px;
+
+    ${large`
+      padding-top: 160px;
+    `}
   }
 `
 
 const General = ({ data: { current }, location: { pathname }, children }) => {
-  const tickets = current.edges.length && current.edges[0].node.registration_url
+  const tickets = current.edges.length
+    ? current.edges[0].node.registration_url
+    : ""
   const isHomepage = pathname === "/"
   return (
     <>

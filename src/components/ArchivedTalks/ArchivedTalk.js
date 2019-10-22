@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import styled, { css } from "styled-components"
 import { animated } from "react-spring"
+import Img from "gatsby-image"
 
 import { Row, Column } from "../Grid"
 import { Strap, Heading, Copy } from "../Text"
@@ -11,7 +12,7 @@ import ResourceLinks from "./ResourceLinks"
 import { medium } from "../../styles/media"
 import c from "../../styles/constants"
 
-import Options from "../../../assets/images/icons/options.svg"
+import Options from "../../../assets/icons/options.svg"
 
 const TalkWrapper = styled(animated.div)`
   background-color: ${c.WHITE};
@@ -35,6 +36,10 @@ const Preview = styled.a`
     margin: 0;
   `}
 
+  .gatsby-image-wrapper {
+    width: 100%;
+  }
+
   &:before,
   &:after {
     display: flex;
@@ -43,6 +48,7 @@ const Preview = styled.a`
     left: 0;
     width: 40px;
     height: 40px;
+    z-index: 1;
 
     ${medium`
       content: "";
@@ -58,10 +64,6 @@ const Preview = styled.a`
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-`
-
-const PreviewImg = styled.img`
-  width: 100%;
 `
 
 const TalkHeading = styled(Heading)`
@@ -135,21 +137,22 @@ const ArchivedTalk = ({
   topic,
   twitter,
   description,
-  youtube_id,
-  video_url,
   poster,
+  video_url,
   slides_url,
   timestamp,
-  ...props
 }) => {
   const [showLinks, setLinks] = useState(false)
   return (
-    <TalkWrapper {...props}>
+    <TalkWrapper>
       <Row>
         {poster && (
           <Column md={0.27}>
-            <Preview href={video_url}>
-              <PreviewImg src={poster} alt={`${topic} by ${name}`} />
+            <Preview href={video_url} target="_blank" rel="noopener norefferer">
+              <Img
+                fluid={poster.childImageSharp.fluid}
+                alt={`${topic} by ${name}`}
+              />
             </Preview>
           </Column>
         )}
@@ -174,7 +177,7 @@ const ArchivedTalk = ({
                   onClick={() => setLinks(true)}
                   ariaLabel="Open resource links"
                 >
-                  <img src={Options} alt="Options" />
+                  <Options />
                 </OptionsButton>
                 <ResourceLinks open={showLinks} setOpen={setLinks}>
                   {video_url && (

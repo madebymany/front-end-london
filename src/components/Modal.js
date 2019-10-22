@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useLayoutEffect } from "react"
 import ReactDOM from "react-dom"
 import styled from "styled-components"
 import { rgba, cover } from "polished"
-import { Spring } from "react-spring/renderprops"
-import { animated } from "react-spring"
+import { Spring, animated } from "react-spring"
 import FocusTrap from "react-focus-trap"
 import { useMediaQuery } from "react-responsive"
 import { disablePageScroll, enablePageScroll } from "scroll-lock"
@@ -19,28 +18,20 @@ const ModalWrapper = styled.div`
   top: 0;
   left: 0;
   background-color: ${rgba(c.BLACK, 0)};
-  visibility: hidden;
-  opacity: 0;
-  transition: background-color 0.2s, opacity 0.2s;
+  transition: background-color 0.5s, opacity 0.2s;
+  z-index: ${props => props.theme.zIndex};
 
   ${props =>
-    props.open &&
+    props.theme.open &&
     `
     background-color: ${rgba(c.BLACK, 0.55)};
     `}
-  ${props =>
-    props.animating &&
-    `
-    opacity: 1;
-    visibility: visible;
-    z-index: 100;
-  `}
 
   .focus-trap-wrapper {
     display: flex;
     flex-direction: column;
     z-index: 1;
-    ${props => props.align && `justify-content: ${props.align};`}
+    ${props => props.theme.align && `justify-content: ${props.theme.align};`}
     width: 100%;
     height: 100%;
 
@@ -51,6 +42,16 @@ const ModalWrapper = styled.div`
     .focus-trap {
       outline: 0;
       z-index: 1;
+
+      ${props =>
+        props.theme.fullscreen &&
+        `
+        height: 100%;
+
+        > div {
+          height: 100%;
+        }
+      `}
     }
   }
 `
@@ -59,10 +60,12 @@ const directions = {
   down: {
     from: { transform: "translateY(-100%)" },
     to: { transform: "translateY(0%)" },
+    // config: { duration: 200 },
   },
   up: {
     from: { transform: "translateY(100%)" },
     to: { transform: "translateY(0%)" },
+    // config: { duration: 200 },
   },
 }
 
@@ -71,70 +74,79 @@ export const Modal = ({
   setOpen,
   onClose,
   direction,
+  fullscreen,
+  zIndex = 1000,
   align,
   children,
 }) => {
-  // Allow the Modal to animate in and out based on `open`
-  const [isAnimating, setAnimating] = useState(open)
-
+  const [active, setActive] = useState(open)
   // Enable/Disable scroll when opened
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (open) {
-      setAnimating(true)
       disablePageScroll()
     } else {
       enablePageScroll()
     }
   }, [open])
-
   return ReactDOM.createPortal(
-    <ModalWrapper open={open} animating={isAnimating} align={align}>
-      {isAnimating && (
-        <FocusTrap
-          onExit={() => {
-            setOpen(false)
+    <ModalWrapper theme={{ open: active, align, fullscreen, zIndex }}>
+      <FocusTrap
+        onExit={() => {
+          setOpen(false)
+        }}
+      >
+        <Spring
+          from={{ x: 0 }}
+          to={{ x: 1 }}
+          {...directions[direction]}
+          reverse={!open}
+          reset={!open}
+          onRest={() => {
+            if (!open) {
+              setActive(false)
+              if (onClose) {
+                onClose()
+              }
+            }
           }}
         >
-          <Spring
-            {...directions[direction]}
-            reverse={!open}
-            reset={!open}
-            onRest={() => {
-              if (!open) {
-                setAnimating(false)
-                if (onClose) {
-                  onClose(false)
-                }
-              }
-            }}
-          >
-            {props => <animated.div style={props}>{children}</animated.div>}
-          </Spring>
-        </FocusTrap>
-      )}
+          {props => <animated.div style={props}>{children}</animated.div>}
+        </Spring>
+      </FocusTrap>
     </ModalWrapper>,
     document.body
   )
 }
 
 // A mobile only modal that will output the children normally (in page flow) when on larger devices
-export const MobileModal = ({ open, setOpen, children, ...props }) => {
-  const isMedium = useMediaQuery({ query: `(min-width: 768px)` })
+export const MobileModal = ({
+  open,
+  setOpen,
+  minWidth = 768,
+  children,
+  ...props
+}) => {
+  const isDevice = useMediaQuery({ query: `(min-width: ${minWidth}px)` })
   const [active, setActive] = useState(open)
-  // Close the Modal view if opened on larger devices with mobileONly
+  // Close the Modal view if opened on larger devices
   useEffect(() => {
-    if (open) {
+    if (open && !isDevice) {
       setActive(true)
     }
 
-    if (open && isMedium) {
+    if (active && isDevice) {
       setOpen(false)
     }
-  }, [isMedium, open, setOpen])
+  }, [isDevice, open, setOpen, active])
   return (
     <>
       {active ? (
-        <Modal open={open} setOpen={setOpen} onClose={setActive} {...props}>
+        <Modal
+          open={open}
+          setOpen={setOpen}
+          onClose={() => setActive(false)}
+          {...props}
+        >
           {children}
         </Modal>
       ) : (

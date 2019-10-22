@@ -1,0 +1,38 @@
+{
+  "date": "2019-04-25 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-april-2019-tickets-59954926800",
+  "tickets_released": "2019-04-16 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Luke Jackson",
+      "pic": "../../assets/images/speakers/2019/04/jackson-luke.jpg",
+      "company": "Formidable London",
+      "twitter": "lukejacksonn",
+      "topic": "Don't build that app!",
+      "description": "React apps without a build step; no node_modules, no webpack, no babel, no worries. Scalable architecture for free using the platform.",
+      "slides_url": "",
+      "video_url": ""
+    },
+    {
+      "name": "Jo Franchetti",
+      "pic": "../../assets/images/speakers/2019/04/franchetti-jo.jpg",
+      "company": "Trainline",
+      "twitter": "thisisjofrank",
+      "topic": "Tweet my wedding dress",
+      "description": "Inspired by a love of rainbows and silly tech projects, I decided to make my own first wearable tech — a wedding dress full of lights that could be controlled by tweets from my friends and family! This talk will go over the tech I used (suitable for absolute beginners), the mistakes I made and the lessons I learnt. From using the Twitter API, writing my own API, coding for an Arduino and wiring the whole thing up to the worst bit — THE SEWING. I aim to share the message that it is ok to make mistakes, we all do! If you keep trying you can make something magical!",
+      "slides_url": "",
+      "video_url": ""
+    },
+    {
+      "name": "Calum Ryan",
+      "pic": "../../assets/images/speakers/2019/04/ryan-calum.jpg",
+      "company": "",
+      "twitter": "calum_ryan",
+      "topic": "Usability testing",
+      "description": "Testing usability of a digital product takes on a wide variety of test types and feedback processes that I will elaborate on in this talk. Designers, developers, product owners and anyone with a vested interested should all partake in this process, from defining the tests to measuring the success and failures of different usability testing.",
+      "slides_url": "",
+      "video_url": ""
+    }
+  ]
+}

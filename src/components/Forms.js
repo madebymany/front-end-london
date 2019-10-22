@@ -1,5 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+import { rgba } from "polished"
+
 import c from "../styles/constants"
 
 export const FormInput = styled.input`
@@ -11,12 +13,11 @@ export const FormInput = styled.input`
   background-color: ${c.WHITE};
   background-clip: padding-box;
   border: 1px solid ${c.GREY};
+  transition: box-shadow 0.15s ease-in-out;
 
-  &:-webkit-autofill,
-  &:-webkit-autofill:hover,
-  &:-webkit-autofill:focus,
-  &:-webkit-autofill:active {
-    box-shadow: 0 0 0 40px ${c.WHITE} inset !important;
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem ${rgba(c.ORANGE, 0.2)};
   }
 `
 
@@ -43,6 +44,7 @@ const FormCheckButton = styled.span`
   padding: 5px;
   align-items: center;
   justify-content: center;
+  transition: box-shadow 0.15s ease-in-out;
 
   &:after {
     content: "";
@@ -55,6 +57,10 @@ const FormCheckButton = styled.span`
     transition: transform 0.1s;
     border-width: 0 2px 2px 0;
     transform: scale(0) rotate(0);
+  }
+
+  input:focus + & {
+    box-shadow: 0 0 0 0.2rem ${rgba(c.ORANGE, 0.2)};
   }
 
   input:checked ~ &:after {

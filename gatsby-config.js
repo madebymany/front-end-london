@@ -7,7 +7,7 @@ module.exports = {
       {
         name: "Return tickets",
         link:
-          "https://www.eventbrite.com/support/articles/en_US/How_To/how-to-cancel-your-free-registration",
+          "//www.eventbrite.com/support/articles/en_US/How_To/how-to-cancel-your-free-registration",
       },
       {
         name: "Past talks",
@@ -17,17 +17,17 @@ module.exports = {
     socialLinks: [
       {
         brand: "Youtube",
-        icon: "/icons/youtube.svg",
+        icon: "youtube.svg",
         link: "https://youtube.com/channel/UC1PDeJmj9CvLl77PYezDvWQ",
       },
       {
         brand: "Twitter",
-        icon: "/icons/twitter.svg",
+        icon: "twitter.svg",
         link: "https://twitter.com/frontendlondon",
       },
       {
         brand: "Instagram",
-        icon: "/icons/instagram.svg",
+        icon: "instagram.svg",
         link: "https://instagram.com/frontendlondon",
       },
     ],
@@ -68,8 +68,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-create-client-paths`,
-      options: { prefixes: [`/search/*`] },
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /icons/,
+        },
+      },
     },
     {
       resolve: "gatsby-plugin-transition-link",

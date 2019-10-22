@@ -1,9 +1,23 @@
-version: '2'
+version: "3.7"
+
 services:
-  web:
-    build: .
-    command: bundle exec middleman --bind-address 0.0.0.0
+  gatsby:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: gatsby
     volumes:
-      - .:/site
+      - .:/app
+
+  develop:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: gatsby develop -H 0.0.0.0
     ports:
-      - "4567:4567"
+      - "8000:8000"
+    volumes:
+      - /app/node_modules
+      - .:/app
+    environment:
+      - NODE_ENV=development

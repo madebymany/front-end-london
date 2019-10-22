@@ -1,0 +1,38 @@
+{
+  "date": "2019-08-29 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-aug-2019-tickets-68963195775",
+  "tickets_released": "2019-08-20 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Chris Dowling",
+      "pic": "../../assets/images/speakers/2019/08/dowling-chris.jpg",
+      "company": "Unmade",
+      "twitter": "gingerchris",
+      "topic": "Saving the Planet Using SVG",
+      "description": "SVGs are incredibly powerful, yet still relatively underused on the web. I’ll talk about how we use SVG at Unmade, share some tips to make working with them easier, and describe how they’re helping us make fashion less polluting.",
+      "slides_url": "",
+      "video_url": ""
+    },
+    {
+      "name": "Leo Siddall-Butchers",
+      "pic": "../../assets/images/speakers/2019/08/siddall-butchers-leo.jpg",
+      "company": "Theodo",
+      "twitter": "",
+      "topic": "Blueprint and Formik: combining the right form-ula",
+      "description": "UI frameworks and form libraries, cornerstones of the modern internet. Whilst finding the right ones is hard, making them work together can be even more difficult. I’ll discuss how I linked Formik and Blueprint together to help make killer products.",
+      "slides_url": "",
+      "video_url": ""
+    },
+    {
+      "name": "Mike Laurie",
+      "pic": "../../assets/images/speakers/2019/07/laurie-mike.jpg",
+      "company": "Lloyds Bank",
+      "twitter": "mikelaurie",
+      "topic": "Hand-offs from hell",
+      "description": "Over the last twenty years, many service organisations have cut costs by separating out different types of work. This can reduce training costs but creates poor service for customers. I’m going to talk about how we reversed that by prototyping new ways of servicing customers in a large contact centre.",
+      "slides_url": "",
+      "video_url": ""
+    }
+  ]
+}

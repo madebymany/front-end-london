@@ -74,7 +74,7 @@ const SearchResults = ({ results }) => {
                     style={{
                       zIndex: index,
                       transform: y
-                        ? y.interpolate(y => `translate3d(0,${y}px,0)`)
+                        ? y.to(y => `translate3d(0,${y}px,0)`)
                         : "translate3d(0,0px,0)",
                       ...rest,
                     }}

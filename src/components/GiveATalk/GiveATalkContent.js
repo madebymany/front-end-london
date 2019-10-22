@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import { Heading, Copy } from "../Text"
-import { MonoLink, ExternalMonoLink } from "../Links"
+import { ExternalMonoLink } from "../Links"
 
 import { large } from "../../styles/media"
 import c from "../../styles/constants"
@@ -32,12 +32,12 @@ const GiveATalkContent = () => (
     </Copy>
     <LinkGroup>
       <div>
-        <MonoLink as="a" href="mailto:fel@madebymany.co.uk">
+        <ExternalMonoLink to="mailto:fel@madebymany.co.uk">
           fel@madebymany.co.uk
-        </MonoLink>
+        </ExternalMonoLink>
       </div>
       <div>
-        <ExternalMonoLink href="https://twitter.com/frontendlondon">
+        <ExternalMonoLink to="https://twitter.com/frontendlondon">
           @frontendlondon
         </ExternalMonoLink>
       </div>

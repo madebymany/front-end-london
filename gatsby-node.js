@@ -44,47 +44,6 @@ exports.onCreatePage = ({ page, actions }) => {
   })
 }
 
-exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage } = actions
-  const result = await graphql(
-    `
-      query ArchiveListCount($today: Float!) {
-        allEventsJson(
-          sort: { fields: fields___timestamp, order: DESC }
-          filter: { fields: { timestamp: { lt: $today } } }
-          limit: 1000
-        ) {
-          totalCount
-        }
-      }
-    `,
-    {
-      today: new Date().getTime(),
-    }
-  )
-  if (result.errors) {
-    reporter.panicOnBuild(`Error while running Archive GraphQL query.`)
-    return
-  }
-
-  const posts = result.data.allEventsJson.totalCount
-  const postsPerPage = 2
-  const numPages = Math.ceil(posts / postsPerPage)
-  Array.from({ length: numPages }).forEach((_, i) => {
-    createPage({
-      path: i === 0 ? `/archive` : `/archive/${i + 1}`,
-      component: path.resolve("./src/templates/Archive.js"),
-      context: {
-        limit: postsPerPage,
-        skip: i * postsPerPage,
-        numPages,
-        currentPage: i + 1,
-        today: new Date().getTime(),
-      },
-    })
-  })
-}
-
 exports.onPreBootstrap = async () => {
   const getPosters = id => [
     `https://img.youtube.com/vi/${id}/maxresdefault.jpg`,
@@ -123,7 +82,21 @@ exports.onPreBootstrap = async () => {
 
   eventData.forEach((event, eventIndex) => {
     event.speakers.forEach(async (speaker, speakerIndex) => {
-      const id = speaker.youtube_id
+      if (!speaker.video_url || speaker.poster) {
+        return
+      }
+      const videoUrl = speaker.video_url
+      // Check if it's a youtube url
+      const variant = ["//www.youtube.com/watch?v=", "//youtu.be/"].find(
+        match => videoUrl.indexOf(match) !== -1
+      )
+
+      if (!variant) {
+        console.log(`${event.date} - ${speaker.name} - missing thumbnail`)
+        return
+      }
+
+      const id = videoUrl.replace(variant, "").split("&")[0]
       if (id && !existsSync(path.join(imagePath, `${id}.jpg`))) {
         const posters = getPosters(id)
         let found = false
@@ -153,51 +126,4 @@ exports.onPreBootstrap = async () => {
   })
 
   console.log(`Added ${foundPosters.length} new Youtube poster/s.`)
-}
-
-exports.onPostBuild = async ({ graphql }) => {
-  const publicPath = path.resolve("./public")
-
-  const result = await graphql(
-    `
-      query ArchiveSearch($today: Float!) {
-        allEventsJson(
-          sort: { fields: fields___timestamp, order: DESC }
-          filter: { fields: { timestamp: { lt: $today } } }
-          limit: 1000
-        ) {
-          edges {
-            node {
-              date(formatString: "MMM, YYYY")
-              fields {
-                timestamp
-              }
-              speakers {
-                name
-                twitter
-                topic
-                description
-                slides_url
-                video_url
-                youtube_id
-                poster
-              }
-            }
-          }
-        }
-      }
-    `,
-    {
-      today: new Date().getTime(),
-    }
-  )
-
-  // Transform results
-  const data = result.data.allEventsJson.edges.map(item => item.node)
-
-  writeFileSync(
-    path.join(publicPath, "search.json"),
-    JSON.stringify(data),
-    "utf8"
-  )
 }

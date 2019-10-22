@@ -1,0 +1,38 @@
+{
+  "date": "2019-05-30 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-may-2019-tickets-61580999427",
+  "tickets_released": "2019-05-21 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Joel Chippindale",
+      "pic": "../../assets/images/speakers/2019/05/chippindale-joel.jpg",
+      "company": "Unmade",
+      "twitter": "joelchippindale",
+      "topic": "Simplify writing code with deliberate commits",
+      "description": "This talk will introduce 5 habits to adopt around committing your code which will help you break down gnarly, complex problems into smaller simpler problems and make it easier for you to write good code.",
+      "slides_url": "",
+      "video_url": ""
+    },
+    {
+      "name": "Laurence Grinyer",
+      "pic": "../../assets/images/speakers/2019/05/grinyer-laurence.jpg",
+      "company": "Lloyds Bank",
+      "twitter": "laurencegrinyer",
+      "topic": "Shapes of design",
+      "description": "Designers have become increasingly balkanised in recent years. At Lloyds Bank there are 9 different ‘guilds’ of design. This makes delivery more complex with regular ‘hand offs’ and turf wars. I’ll explore how we’re challenging this at Lloyds, and how service design is bringing together design and delivery.",
+      "slides_url": "",
+      "video_url": ""
+    },
+    {
+      "name": "Alex Warren",
+      "pic": "../../assets/images/speakers/2019/05/warren-alex.jpg",
+      "company": "Trainline",
+      "twitter": "alexwarren",
+      "topic": "Why not fix your technical debt?",
+      "description": "What is technical debt and why is it important? When should we fix it, and when is it not worth fixing? When it comes to a choice between \"fixing up old code\" or \"delivering new features\", it's often \"fixing up old code\" which loses - how can we fight back against that?",
+      "slides_url": "",
+      "video_url": ""
+    }
+  ]
+}

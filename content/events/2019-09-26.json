@@ -1,13 +1,8 @@
 {
   "date": "2019-09-26 19:00",
-  "registration_url": "https://www.eventbrite.com/e/front-end-london-sept-2019-tickets-72969067445",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-sept-2019-tickets-72969067445",
   "tickets_released": "2019-09-18 10:00",
   "duration": 2.5,
-  "writeups": {
-    "author": "",
-    "twitter": "",
-    "writeup_url": ""
-  },
   "speakers": [
     {
       "name": "Stephen Cook",
@@ -16,10 +11,8 @@
       "twitter": "StephenCookDev",
       "topic": "SVGs so good you dodge the Blue Shell",
       "description": "Icons on the web are everywhere, but sometimes it feels like just using normal img tags with PNGs is the easiest way. This talks looks at some common icon use-cases, and how using SVGs can make your life easier, and your website shinier.",
-      "slides_url": "test",
-      "video_url": "",
-      "youtube_id": "",
-      "poster": ""
+      "slides_url": "",
+      "video_url": ""
     },
     {
       "name": "Tara Ojo",
@@ -29,9 +22,7 @@
       "topic": "Learning Together - Sharing knowledge across teams",
       "description": "When we work with many engineers, spanning different teams and different projects, it’s hard to keep up with changes. Tara will share how FutureLearn utilises their culture of learning, to keep engineers up-to-date on topics from ECMAScript changes to wilder concepts like generative art.",
       "slides_url": "",
-      "video_url": "",
-      "youtube_id": "",
-      "poster": ""
+      "video_url": ""
     },
     {
       "name": "Ana Pasparan",
@@ -41,9 +32,7 @@
       "topic": "Supercharge your whiteboarding and pair programming",
       "description": "Is it hard to refine and assign tickets? Do you find it hard to do code reviews? How about when some team members are off on holiday? In this talk, Ana will share her learnings about how effective whiteboarding and pair programming can help you to solve these types of issues.",
       "slides_url": "",
-      "video_url": "",
-      "youtube_id": "",
-      "poster": ""
+      "video_url": ""
     }
   ]
 }

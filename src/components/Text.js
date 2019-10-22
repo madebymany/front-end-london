@@ -24,6 +24,7 @@ export const Heading = styled.h2`
 `
 
 export const Copy = styled.p`
+  color: ${c.BLACK2};
   font-weight: 400;
   font-size: ${c.LARGE};
   line-height: 1.55;

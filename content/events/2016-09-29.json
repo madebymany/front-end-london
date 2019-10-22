@@ -1,0 +1,40 @@
+{
+  "date": "2016-09-29 19:00",
+  "registration_url": "//pusher.com/sessions/meetup/front-end-london/writing-secure-nodejs-code",
+  "tickets_released": "2016-09-20 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Richard Hallows",
+      "pic": "../../assets/images/speakers/2016/09/hallows-richard.jpg",
+      "company": "Freelancer",
+      "twitter": "jeddy3n",
+      "topic": "An introduction to PostCSS tooling",
+      "description": "A rundown of PostCSS’s diverse plugins. Helping you cherrypick the right ones for your next project. Followed by an introduction to stylelint, a modern CSS linter powered by PostCSS.",
+      "video_url": "//pusher.com/sessions/meetup/front-end-london/an-introduction-to-postcss-tooling",
+      "poster": "../../assets/images/posters/3f8c9d16363fdcb009f69f95bf06cff56ce1a6f0.jpg"
+    },
+    {
+      "name": "Alessandro Cinelli (cirpo)",
+      "pic": "../../assets/images/speakers/2016/09/cinelli-alessandro.jpg",
+      "company": "Sainsbury’s",
+      "twitter": "cirpo",
+      "topic": "The evolution of asynchronous JavaScript",
+      "description": "One of JavaScript’s strengths is how it handles asynchrony. Async is one of the most important and often misunderstood part of Javascript or any other language.  We will see how dealing with asynchrony in JavaScript evolved over the years. It all started with callbacks… and it landed on generators!",
+      "slides_url": "",
+      "video_url": "//pusher.com/sessions/meetup/front-end-london/the-evolution-of-asynchronous-javascript",
+      "poster": "../../assets/images/posters/dcbb469bcb97a26d359d4042cd3a0cce451d0e82.jpg"
+    },
+    {
+      "name": "Ian Feather",
+      "pic": "../../assets/images/speakers/2016/09/feather-ian.jpg",
+      "company": "BuzzFeed",
+      "twitter": "ianfeather",
+      "topic": "Intro to serverless architecture",
+      "description": "Learn the one weird trick that allows Ian to save money and watch better basketball games. ",
+      "slides_url": "",
+      "video_url": "//pusher.com/sessions/meetup/front-end-london/intro-to-serverless-architecture",
+      "poster": "../../assets/images/posters/94f6d41a42bdd8be703891e81a65b6d029faf8b2.jpg"
+    }
+  ]
+}

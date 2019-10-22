@@ -1,0 +1,37 @@
+{
+  "date": "2014-03-27 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-march-2014-tickets-10941100125",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Adam Rogers",
+      "pic": "../../assets/images/speakers/2014/03/adam-rogers.jpg",
+      "company": "Mint Digital",
+      "twitter": "rodreegez",
+      "topic": "How to Win Designers and Influence Developers",
+      "description": "This talk explores ways to hack your team for a more efficient, productive and ultimately happier existence. That’s the good news. The bad news is hacking your team starts with hacking yourself. In 1936, Dale Carnegie published a book called ‘How to Win Friends and Influence People’. What can this and other books teach us about working as part of a modern software team today?",
+      "slides_url": "//speakerdeck.com/rodreegez/how-to-win-designers-and-influence-developers",
+      "video_url": ""
+    },
+    {
+      "name": "Daniel Grant",
+      "pic": "../../assets/images/speakers/2014/03/daniel-grant.png",
+      "company": "freelance",
+      "twitter": "danieljohngrant",
+      "topic": "Exploring CSS3’s 3D space",
+      "description": "backface-visibility, preserve-3d, translateZ… Since the launch of CSS3, these properties have gradually been creeping into our stylesheets, more often that not, as quick fixes for rendering bugs. But what do these properties actually do? We’ll take a journey through space itself to discover their potential and uncover the mysteries of CSS’s 3D spec.",
+      "slides_url": "//codepen.io/collection/gKutL/",
+      "video_url": ""
+    },
+    {
+      "name": "Tim Ruffles",
+      "pic": "../../assets/images/speakers/2014/03/tim-ruffles.png",
+      "company": "SidekickJS",
+      "twitter": "timruffles",
+      "topic": "Can code quality be measured?",
+      "description": "We talk about code-quality a lot, but it’s often just prejudice. Does code quality mean anything beyond “my kind of code”? Is it useful? Can it be measured?",
+      "slides_url": "//timruffles.github.io/javascript-code-quality/#/",
+      "video_url": ""
+    }
+  ]
+}

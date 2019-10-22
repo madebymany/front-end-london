@@ -1,0 +1,40 @@
+{
+  "date": "2014-05-29 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-may-2014-tickets-11635553253",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Ben MacGowan",
+      "pic": "../../assets/images/speakers/2014/05/ben-macgowan.jpg",
+      "company": "Creative Jar",
+      "twitter": "benmacgowan",
+      "topic": "The Era of Gratuitous Animations",
+      "description": "With technologies constantly evolving, it is becoming easier to bring our interfaces alive with animations. But that doesn’t necessarily mean we should always make that piece of text fly in like it’s Superman. In this talk, we will explore the things we should be considering when making these decisions, looking at interfaces that got it right and others, not so much.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=_FtN4OzTNCI",
+      "poster": "../../assets/images/posters/_FtN4OzTNCI.jpg"
+    },
+    {
+      "name": "Mark Jones",
+      "pic": "../../assets/images/speakers/2014/05/mark-jones.jpg",
+      "company": "Kaldor Group",
+      "twitter": "mark_jones",
+      "topic": "Be Famous?",
+      "description": "An introduction to the <a href=\"//famo.us/\">Famo.us</a> JavaScript platform. The talk will cover the fundamentals of Famo.us using live examples whilst questioning whether this is the framework that will finally bring native performance to web applications.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=S9U9HUb2UWA",
+      "poster": "../../assets/images/posters/S9U9HUb2UWA.jpg"
+    },
+    {
+      "name": "Anna Dahlström",
+      "pic": "../../assets/images/speakers/2014/05/anna-dahlstrom.jpg",
+      "company": "byflock",
+      "twitter": "annadahlstrom",
+      "topic": "10 Things That Excite Me About the Future",
+      "description": "When you look back at the technological advances that have taken place over the last few years, it’s quite mind blowing. But what lies ahead is even more exciting. In this talk Anna is going to share what excites her the most about the future. From the small to the big things in design, technology and how we work.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=jryFxpDgi_M",
+      "poster": "../../assets/images/posters/jryFxpDgi_M.jpg"
+    }
+  ]
+}

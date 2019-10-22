@@ -1,0 +1,37 @@
+{
+  "date": "2013-06-27 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-june-tickets-7031640827",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Ben Scott",
+      "pic": "../../assets/images/speakers/2013/06/ben.jpg",
+      "company": "BBC",
+      "twitter": "BPScott",
+      "topic": "Typography for developers",
+      "description": "It has been said that the web is 90% typography, but what makes good typography? Ben Scott shows how to get started creating readable text and how CSS preprocessors can be used to take some of the thinking away.",
+      "slides_url": "//www.reload.me.uk/talk-typography-for-developers/#/",
+      "video_url": ""
+    },
+    {
+      "name": "Clare Evans & Mark Jones",
+      "pic": "../../assets/images/speakers/2013/06/clare.jpg",
+      "company": "Kaldor",
+      "twitter": "clare_lisbeth",
+      "topic": "Modern Front-end Development workflows",
+      "description": "How we’re using tools such as Yeoman, Karma and Sass at Kaldor Group to increase productivity and improve our workflow.",
+      "slides_url": "//www.slideshare.net/clare_lisbeth/frontend-london-one-day-2014",
+      "video_url": ""
+    },
+    {
+      "name": "Josh Emerson",
+      "pic": "../../assets/images/speakers/2013/06/josh.jpeg",
+      "company": "Clearleft",
+      "twitter": "joshje",
+      "topic": "An introduction to Code Club",
+      "description": "How did you discover that you wanted to be a front end developer? For most of you it was in your spare time that you developed a passion for coding. Why don’t schools offer a chance for kids to learn how to code? Josh has been running an after school coding club, or [Code Club](//codeclub.org.uk/) at a primary school in Brighton. He’ll talk about how Code Club came to be, why it’s awesome and show some of the amazing things his kids have created.",
+      "slides_url": "",
+      "video_url": ""
+    }
+  ]
+}

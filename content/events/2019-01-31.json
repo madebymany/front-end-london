@@ -1,0 +1,41 @@
+{
+  "date": "2019-01-31 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-january-2019-tickets-55022418535",
+  "tickets_released": "2019-01-22 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Katie Koschland",
+      "pic": "../../assets/images/speakers/2019/01/katie-koschland.jpg",
+      "company": "Financial Times",
+      "twitter": "KKoschland",
+      "topic": "Ready, Steady, Crash! ",
+      "description": "This talk will cover the core concepts behind load testing. It will look at what it means to ‘load test’ your application, how to get started with writing your first script and provide you with a case study and an insight into the tools and techniques that we use at the FT to help identify performance issues.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=HtJB0OIw9JM&t=59s",
+      "poster": "../../assets/images/posters/HtJB0OIw9JM.jpg"
+    },
+    {
+      "name": "Jonathan Fielding",
+      "pic": "../../assets/images/speakers/2019/01/jonathan-fielding.jpg",
+      "company": "Snyk",
+      "twitter": "jonthanfielding",
+      "topic": "Home Automation with JavaScript",
+      "description": "JavaScript is everywhere, we run it in the browser, we run it on our servers and it can even run on drones. With JavaScript being so ubiquitous lets take a look how we can extend its use to our homes, using it to make our lives easier and automate those every day tasks.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=Ea2mjrIGpAQ",
+      "poster": "../../assets/images/posters/Ea2mjrIGpAQ.jpg"
+    },
+    {
+      "name": "Sean M. Tracey",
+      "pic": "../../assets/images/speakers/2019/01/sean-tracey.jpg",
+      "company": "IBM",
+      "twitter": "seanmtracey",
+      "topic": "Designing Web Components for flow-based IDEs (and fun!)",
+      "description": "Web components are great at encapsulating commonly-used code and functionality in our web apps. Do you know what else is good at that? Node-RED - A flow-based IDE originally designed for the IoT, but now capable of so much more. In this talk, we'll look at the how and why of hooking up web components functionality to Node-RED nodes to create ✨magic✨",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=BaULiDWpyuI",
+      "poster": "../../assets/images/posters/BaULiDWpyuI.jpg"
+    }
+  ]
+}

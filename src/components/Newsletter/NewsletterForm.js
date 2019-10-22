@@ -68,7 +68,7 @@ const NewsletterForm = () => {
           <Text>
             We don’t want any funny business, we want to be clear about the data
             we collect and how we use it. To find out the details click{" "}
-            <ExternalCopyLink href={data.site.siteMetadata.privacyPolicy}>
+            <ExternalCopyLink to={data.site.siteMetadata.privacyPolicy}>
               here
             </ExternalCopyLink>
           </Text>

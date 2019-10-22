@@ -3,7 +3,6 @@ import styled, { css } from "styled-components"
 
 import { NavLink, ExternalNavLink } from "../Links"
 import { large } from "../../styles/media"
-import c from "../../styles/constants"
 
 const Wrapper = styled.nav`
   display: none;
@@ -18,10 +17,19 @@ const Wrapper = styled.nav`
   }
 `
 
-const NavLinks = ({ tickets }) => (
+const NavLinks = ({ homepage, tickets }) => (
   <Wrapper>
-    {tickets && <ExternalNavLink to={tickets}>Get tickets</ExternalNavLink>}
-    <NavLink to="/archive/" partiallyActive activeStyle={{ color: c.ORANGE }}>
+    {tickets && (
+      <ExternalNavLink theme={{ inverse: homepage }} to={tickets}>
+        Get tickets
+      </ExternalNavLink>
+    )}
+    <NavLink
+      theme={{ inverse: homepage }}
+      to="/archive/"
+      partiallyActive
+      activeClassName="active"
+    >
       Past talks
     </NavLink>
   </Wrapper>

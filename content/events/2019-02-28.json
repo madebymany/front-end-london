@@ -1,0 +1,30 @@
+{
+  "date": "2019-02-28 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-february-2019-tickets-56102385746",
+  "tickets_released": "2019-02-22 10:00",
+  "duration": 2,
+  "speakers": [
+    {
+      "name": "Matt Woods",
+      "pic": "../../assets/images/speakers/2019/02/matt-woods.jpg",
+      "company": "University of the Arts London",
+      "twitter": "madebymatty",
+      "topic": "Unifying your team to work collaboratively",
+      "description": "I’ll be talking about how we are going about building a design system and using Node, Webpack and the Figma API to help us bring our disconnected teams together.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=jR1LlrTbyo8",
+      "poster": "../../assets/images/posters/jR1LlrTbyo8.jpg"
+    },
+    {
+      "name": "Dan Donald",
+      "pic": "../../assets/images/speakers/2019/02/dan-donald.jpg",
+      "company": "Auto Trader",
+      "twitter": "hereinthehive",
+      "topic": "Adding the foundations after the house has been built: design systems at Auto Trader",
+      "description": "Design systems are a big thing at the moment and for good reason. That’s great when you have a greenfield project but what about when you have multiple sites on multiple platforms and contend with legacy code? The realities we work with can give us many challenges but they’re not insurmountable. Dan will talk about his experience of the elements – many non-technical – that make design systems a success.",
+      "slides_url": "",
+      "video_url": "//www.youtube.com/watch?v=AruMKJsd1H8",
+      "poster": "../../assets/images/posters/AruMKJsd1H8.jpg"
+    }
+  ]
+}

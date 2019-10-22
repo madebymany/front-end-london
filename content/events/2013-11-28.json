@@ -1,0 +1,37 @@
+{
+  "date": "2013-11-28 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-november-tickets-9382728995",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Alex Roche",
+      "pic": "../../assets/images/speakers/2013/11/alex-roche.jpeg",
+      "company": "WeLikePie",
+      "twitter": "alexHacked",
+      "topic": "An intro to two frameworks for Arduino",
+      "description": "An introduction to Johnny Five and Breakout frameworks to write code to run on an Arduino. Not only that, but we can use them to connect to the web too. The practical side effect of this is that we can query web APIs for information and create an internet of things in our own home.",
+      "slides_url": "//www.slideshare.net/AlexanderRoche/how-to-electrocute-yourself-using-the-internet",
+      "video_url": ""
+    },
+    {
+      "name": "Sébastien Cevey",
+      "pic": "../../assets/images/speakers/2013/11/seb.jpg",
+      "company": "The Guardian",
+      "twitter": "theefer",
+      "topic": "The Symbiotic Web",
+      "description": "For some, the Web is the largest graph of information ever created. For others, it’s an ubiquitous environment to run applications. Can it be both? By going back to key concepts such as URIs and HTML affordances, we will see how progressive enhancement and emerging semantics are all facets of the same drive to make our data available to humans and machines alike, whether you make static pages or SPAs.",
+      "slides_url": "//bytes.inso.cc/talks/symbiotic-web/",
+      "video_url": ""
+    },
+    {
+      "name": "Ian Feather",
+      "pic": "../../assets/images/speakers/2013/11/ian-feather.jpeg",
+      "company": "Lonely Planet",
+      "twitter": "ianfeather",
+      "topic": "Fundamentals of Front End Ops",
+      "description": "Working on large sites with many engineers requires some new skills outside of the trinity of HTML, CSS and JS. Unfortunately, the catch 22 is that often the only way to learn these skills is to actually work on a large site. We’ll cover the fundamentals of Front End Operations and break down this barrier using the knowledge I’ve learnt over the past two years in a DevOps environment.",
+      "slides_url": "//www.ianfeather.co.uk/presentations/front-end-ops/",
+      "video_url": ""
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "date": "2019-03-28 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-march-2019-tickets-57972677840",
+  "tickets_released": "2019-03-19 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Layla Porter",
+      "pic": "../../assets/images/speakers/2019/03/porter-layla.jpg",
+      "company": "Twilio",
+      "twitter": "LaylaCodesIt",
+      "topic": "Quick wins with JavaScript templating",
+      "description": "Layla is passionate about keeping code reusable and maintainable and JS templates enable her to do this. In this talk, Layla will cover the benefits of using JS templates, discuss the pros and cons of some common templating libraries, and show you how to quickly implement templates in your code base.",
+      "slides_url": "",
+      "video_url": "//youtu.be/c2e0iWhy5Ng",
+      "poster": "../../assets/images/posters/c2e0iWhy5Ng.jpg"
+    },
+    {
+      "name": "Germain Souquet",
+      "pic": "../../assets/images/speakers/2019/03/souquet-germain.jpg",
+      "company": "Grabyo",
+      "twitter": "GermainSouquet",
+      "topic": "Evolution of video on the web",
+      "description": "It has been nearly a decade since the HTML5 video tag landed on browsers, and now, it’s ubiquitous on the web. We’ll go through a journey to see how the web platform has evolved as well as what the future will bring for video on the web.",
+      "slides_url": "",
+      "video_url": "//youtu.be/QunT-L_TENk",
+      "poster": "../../assets/images/posters/QunT-L_TENk.jpg"
+    },
+    {
+      "name": "Dave Cooper",
+      "pic": "../../assets/images/speakers/2019/03/cooper-dave.jpg",
+      "company": "OVO Energy",
+      "twitter": "",
+      "topic": "Mocking made easy",
+      "description": "Injecting mocked data into web applications in 2019 still isn‘t as easy or intuitive as it should be... this talk dives into why that is and looks at a different way to do it!",
+      "slides_url": "",
+      "video_url": "//youtu.be/X5H9iRafwPo",
+      "poster": "../../assets/images/posters/X5H9iRafwPo.jpg"
+    }
+  ]
+}

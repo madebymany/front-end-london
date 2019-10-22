@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   width: 100%;
   top: 0;
   left: 0;
-  transition: 0.5s all 1s;
+  transition: 0.5s all;
   background-color: ${c.ORANGE};
   ${props =>
     props.fixed
@@ -41,8 +41,8 @@ const Wrapper = styled.div`
 const Hero = () => {
   const [open, setOpen] = useState(false)
   return (
-    <Wrapper className="Hero" fixed={open}>
-      <HeroVideo open={open} />
+    <Wrapper className="Hero">
+      <HeroVideo open={open} setOpen={setOpen} />
       <HeroContent open={open} onPlay={() => setOpen(true)} />
     </Wrapper>
   )

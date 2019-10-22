@@ -1,0 +1,37 @@
+{
+  "date": "2015-10-29 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-october-2015-tickets-18990014645",
+  "tickets_released": "2015-10-20 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Katie Fenn",
+      "pic": "../../assets/images/speakers/2015/10/katie-fenn.jpg",
+      "company": "",
+      "twitter": "katie_fenn",
+      "topic": "Chrome DevTools, inside out",
+      "description": "Chrome DevTools: a suite of tools to debug and profile the performance of your site. They're bundled with every copy of Chrome, and you have every reason to learn what they’re capable of.",
+      "slides_url": "",
+      "video_url": ""
+    },
+    {
+      "name": "Josh Emerson",
+      "pic": "../../assets/images/speakers/2015/10/josh-emerson.jpg",
+      "company": "Mendeley",
+      "twitter": "joshje",
+      "topic": "Researching the future",
+      "description": "Science and technology have always supported one anther. But science tends to move a bit slower than technology, and for good reason. Josh has been working on tools to help science move faster, and will explore what the future holds for scientific research and discoveries.",
+      "slides_url": "",
+      "video_url": ""
+    },
+    {
+      "name": "Katy Moe",
+      "pic": "../../assets/images/speakers/2015/10/katy-moe.png",
+      "company": "Kahoot!",
+      "twitter": "katyemoe",
+      "topic": "The Web Crypto API",
+      "description": "The Web Cryptography API gives us the keys to use cryptographic primitives, locked away from browsers and client-side JavaScript until now. What are these new tools? What can they do? And, perhaps more importantly, what shouldn’t we do with them?",
+      "slides_url": "//slides.com/katharinemoe/web-crypto/#/"
+    }
+  ]
+}

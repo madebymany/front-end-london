@@ -1,0 +1,41 @@
+{
+  "date": "2016-04-28 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-april-2016-tickets-24812043490",
+  "tickets_released": "2016-04-22 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Michele Bertoli",
+      "pic": "../../assets/images/speakers/2016/04/bertoli-michele.jpg",
+      "company": "YPlan",
+      "twitter": "MicheleBertoli",
+      "topic": "CSS in JS",
+      "description": "In this talk we will go through the main problems with CSS at scale and we will see some interesting JavaScript-based solutions, from Inline Styles to CSS Modules. Are you ready to enter the magical world of CSS in JS?",
+      "slides_url": "//speakerdeck.com/michelebertoli/css-in-js",
+      "video_url": "//www.youtube.com/watch?v=t3kuAEMXSzg",
+      "poster": "../../assets/images/posters/t3kuAEMXSzg.jpg"
+    },
+    {
+      "name": "Jo Pearce",
+      "pic": "../../assets/images/speakers/2016/04/pearce-jo.jpg",
+      "company": "",
+      "twitter": "jdpearce",
+      "topic": "Hacking your head: managing information overload",
+      "description": "There are limits on our ability to learn and process information. Overloading ourselves with information can impact productivity by causing psychological and physiological stress. In this talk I’ll relate some findings from the world of cognitive psychology that can help us understand how, as developers, we might be overloading ourselves.",
+      "slides_url": "//www.slideshare.net/JoPearce5/hacking-your-head-managing-information-overload-extended",
+      "video_url": "//www.youtube.com/watch?v=DgTJ9i8Cl-o",
+      "poster": "../../assets/images/posters/DgTJ9i8Cl-o.jpg"
+    },
+    {
+      "name": "Mark Jones",
+      "pic": "../../assets/images/speakers/2016/04/jones-mark.png",
+      "company": "Kahoot",
+      "twitter": "mark_jones",
+      "topic": "Building functional islands",
+      "description": "This talk will introduce the techniques and concepts you’ll need to begin building functional islands. I'll explain how to introduce functional programming into your code base, as well as why this might be beneficial, in terms we can all understand.",
+      "slides_url": "//speakerdeck.com/thisismarkup/building-functional-islands",
+      "video_url": "//www.youtube.com/watch?v=CDRDb1pHQ6Q",
+      "poster": "../../assets/images/posters/CDRDb1pHQ6Q.jpg"
+    }
+  ]
+}

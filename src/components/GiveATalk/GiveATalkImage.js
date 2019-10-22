@@ -18,13 +18,7 @@ const Wrapper = styled.div`
 
 const GiveATalkImage = ({ image }) => (
   <Wrapper>
-    <Blob
-      complexity={0.3}
-      contrast={0.4}
-      fill={c.WHITE}
-      transform="scale(1.6, 1.3)"
-      bleed
-    >
+    <Blob fill={c.WHITE} transform="scale(1.2, 1.4)">
       <Img fluid={image} alt="Frontend London Audience" />
     </Blob>
   </Wrapper>

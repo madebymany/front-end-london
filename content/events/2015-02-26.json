@@ -1,0 +1,35 @@
+{
+  "date": "2015-02-26 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-february-2015-tickets-15740651713",
+  "tickets_released": "2015-02-17 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Jack Franklin",
+      "pic": "../../assets/images/speakers/2015/02/jack.jpg",
+      "company": "GoCardless",
+      "twitter": "Jack_Franklin",
+      "topic": "Using ES6 Modules today",
+      "description": "The next big release of JavaScript, ES6, will be coming to browsers near you very soon, and as developers it’s important to stay ahead of the curve. Traditionally modules in JS have been difficult - we’ve fantastic, but complex, solutions like Browserify or RequireJS - but ES6 brings its own module system that is fantastic to work with.",
+      "slides_url": "//github.com/jackfranklin/frontendlondonfeb2015-jspm-demo/tree/master/open-sauce"
+    },
+    {
+      "name": "Ana Gasston",
+      "pic": "../../assets/images/speakers/2015/02/ana.jpg",
+      "company": "Web Behaviour Specialists",
+      "twitter": "anagasston",
+      "topic": "Better findability with Schema",
+      "description": "Most search engines reward well-built sites that use structured markup. Find out how Schema can help them understand the intent behind your content.",
+      "slides_url": "//www.dropbox.com/s/p92kzv41d36rof1/better-findability-with-schema.key?dl=0"
+    },
+    {
+      "name": "Bodil Stokke",
+      "pic": "../../assets/images/speakers/2015/02/bodil.jpg",
+      "company": "Future Ad Labs",
+      "twitter": "bodil",
+      "topic": "Reactive game development for the discerning hipster",
+      "description": "We’ve been living in callback hell for almost two decades now, and no matter how many control flow libraries we submit to npm, things don’t seem to be getting any better. And that’s where functional programming comes in—turns out callbacks are just functions, and those academics in their ivory towers with their Haskell compilers actually encountered and solved these problems long ago. And now we can have their solutions in JS too, because of functional reactive programming.",
+      "slides_url": ""
+    }
+  ]
+}

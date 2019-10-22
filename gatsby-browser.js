@@ -15,4 +15,8 @@ const onPreRouteUpdate = () => {
   enablePageScroll()
 }
 
-export { wrapRootElement, onPreRouteUpdate }
+const shouldUpdateScroll = ({ prevRouterProps, routerProps }) => {
+  return prevRouterProps.location.pathname !== routerProps.location.pathname
+}
+
+export { wrapRootElement, onPreRouteUpdate, shouldUpdateScroll }

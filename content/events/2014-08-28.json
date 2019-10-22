@@ -1,0 +1,41 @@
+{
+  "date": "2014-08-28 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-august-2014-tickets-12687732349",
+  "tickets_released": "2014-08-19 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Léonie Watson",
+      "pic": "../../assets/images/speakers/2014/08/leonie.jpg",
+      "company": "The Paciello Group",
+      "twitter": "LeonieWatson",
+      "topic": "A quick &amp; dirty introduction to ARIA",
+      "description": "An introduction to Accessible Rich Internet Applications (ARIA) 1.0. ARIA can be used to enhance the accessibility of content created with markup languages like HTML and SVG. With code examples and screen reader demonstrations, find out where ARIA fits into the web technology stack and how it helps improve cross-device accessibility.",
+      "slides_url": "//www.slideshare.net/LeonieWatson/a-quickanddirtyintroductiontoaria-201408",
+      "video_url": "//www.youtube.com/watch?v=sieYd90Jn4g",
+      "poster": "../../assets/images/posters/sieYd90Jn4g.jpg"
+    },
+    {
+      "name": "Ben Scott",
+      "pic": "../../assets/images/speakers/2014/08/ben-scott.jpg",
+      "company": "BBC",
+      "twitter": "BPScott",
+      "topic": "Branding at the BBC",
+      "description": "Branding is all about the look and feel of your website, but how does that work when you have to deal with not one brand but one hundred? This talk shall show how the BBC’s programmes team handles branding its multitude of shows and some of the lessons they’ve learnt along the way.",
+      "slides_url": "//www.reload.me.uk/talk-branding-at-the-bbc/#/",
+      "video_url": "//www.youtube.com/watch?v=4Lfp7RVAjRM",
+      "poster": "../../assets/images/posters/4Lfp7RVAjRM.jpg"
+    },
+    {
+      "name": "Sébastien Cevey &amp; Oliver Joseph Ash",
+      "pic": "../../assets/images/speakers/2014/08/sebastien-and-oliver.jpg",
+      "company": "The Guardian",
+      "twitter": "",
+      "topic": "Building a CMS for the responsive web",
+      "description": "In light of responsive web design, people often focus heavily on how content should be rendered, but how it is produced is usually overlooked. This talk will review how the challenges of responsive web design can bleed into issues of content production, and how the Guardian solves these issues with Composer – our web-based, digital content-management system.",
+      "slides_url": "//speakerdeck.com/oliverjash/building-a-cms-for-the-responsive-web",
+      "video_url": "//www.youtube.com/watch?v=31EpyxcmBeU",
+      "poster": "../../assets/images/posters/31EpyxcmBeU.jpg"
+    }
+  ]
+}

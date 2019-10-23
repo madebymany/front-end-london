@@ -17,12 +17,11 @@ const ExpandedWrapper = styled(animated.div)`
   height: 100%;
   top: 0;
   left: 0;
-  transform: scale(1.004);
+  transform: scale(1.01);
 `
 
 const PathGroup = styled.g`
-  transform-origin: 50% 50%;
-  transform-box: fill-box;
+  transform-origin: center;
 `
 
 /**

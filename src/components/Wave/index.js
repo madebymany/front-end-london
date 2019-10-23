@@ -18,8 +18,7 @@ const Wrapper = styled.div`
 `
 
 const WaveGroup = styled.g`
-  transform-origin: 50% 50%;
-  transform-box: fill-box;
+  transform-origin: center;
   animation: ${offset} 15s ease-in-out infinite alternate;
 `
 

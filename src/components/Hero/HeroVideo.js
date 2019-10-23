@@ -62,8 +62,7 @@ const SvgMask = styled.svg`
 `
 
 const BlobWrapper = styled(animated.g)`
-  transform-origin: 50% 50%;
-  transform-box: fill-box;
+  transform-origin: center;
   transition: transform 2s;
 
   ${props =>
@@ -217,7 +216,7 @@ const HeroVideo = ({ open, setOpen }) => {
         width="100%"
         height="100%"
         viewBox="0 0 1420 800"
-        preserveAspectRatio="xMidYMid meet"
+        preserveAspectRatio="none"
       >
         <defs>
           <mask id="hero-mask">

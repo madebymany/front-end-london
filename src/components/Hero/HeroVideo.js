@@ -61,24 +61,14 @@ const SvgMask = styled.svg`
   ${props => props.theme.open && "visibility: hidden"}
 `
 
-const rotateAnimation = props => keyframes`
-  from {
-  transform: rotate(0deg);
-  }
-  to  {
-    transform: rotate(360deg);
-  }
-`
-
 const BlobWrapper = styled(animated.g)`
   transform-origin: 50% 50%;
   transform-box: fill-box;
-  animation: ${rotateAnimation} 90s linear infinite;
   transition: transform 2s;
+
   ${props =>
     props.theme.open &&
     `
-    animation-play-state: paused;
     transform: scale(1.2);
   `}
 `
@@ -110,7 +100,9 @@ let config = { duration: 10000 }
 // robin
 const endPath =
   "M1618.5278,-1434.30156 C1865.44176,-1335.4192 1892.99608,-988.519319 2021.46326,-755.584598 C2127.52662,-563.272136 2252.81037,-384.199608 2314.00697,-173.269373 C2374.24109,34.343461 2377.47984,249.037582 2375.64819,465.207343 C2373.69218,696.053469 2376.36031,927.49537 2302.82579,1146.32002 C2222.30397,1385.93754 2100.01154,1610.65201 1928.37412,1796.20935 C1741.23636,1998.52411 1538.11281,2274.63648 1262.57443,2270.93651 C965.374345,2266.94567 790.684322,1923.07229 531.556151,1777.45269 C346.684286,1673.56214 153.600098,1597.67157 -48.6904488,1534.05843 C-336.205799,1443.64515 -762.449007,1580.33411 -917.438047,1321.7959 C-1070.98918,1065.65627 -691.350424,764.157982 -689.266289,465.509778 C-687.474434,208.743935 -994.594096,-23.6594784 -906.365954,-264.791234 C-816.907399,-509.285771 -439.510732,-501.885625 -264.716358,-694.805613 C-90.6542676,-886.917381 -135.805399,-1261.11863 97.9209456,-1373.21945 C329.148445,-1484.12176 588.397941,-1216.58203 844.629395,-1226.87473 C1114.43,-1237.7125 1367.8561,-1534.6888 1618.5278,-1434.30156 Z"
-let vimeo
+
+let player
+
 const HeroVideo = ({ open, setOpen }) => {
   const videoRef = useRef(null)
   const [ref, inView] = useInView({ threshold: 0 })
@@ -135,7 +127,7 @@ const HeroVideo = ({ open, setOpen }) => {
   }, [isXLarge, isLarge])
 
   useEffect(() => {
-    vimeo = new Player(videoRef.current)
+    player = new Player(videoRef.current)
   }, [videoRef])
 
   useEffect(() => {
@@ -149,7 +141,8 @@ const HeroVideo = ({ open, setOpen }) => {
   useEffect(() => {
     if (!open && isActive) {
       setActive(false)
-      vimeo.pause()
+      player.pause()
+      player.setCurrentTime(0)
       config = {}
     }
   }, [open, isActive, setActive])
@@ -186,7 +179,7 @@ const HeroVideo = ({ open, setOpen }) => {
           delay: 500,
           onRest: () => {
             setActive(true)
-            vimeo.play()
+            player.play()
           },
         })
       }
@@ -224,7 +217,7 @@ const HeroVideo = ({ open, setOpen }) => {
         width="100%"
         height="100%"
         viewBox="0 0 1420 800"
-        preserveAspectRatio="none"
+        preserveAspectRatio="xMidYMid meet"
       >
         <defs>
           <mask id="hero-mask">

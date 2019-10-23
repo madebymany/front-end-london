@@ -14,6 +14,11 @@ export const FormInput = styled.input`
   background-clip: padding-box;
   border: 1px solid ${c.GREY};
   transition: box-shadow 0.15s ease-in-out;
+  ${props =>
+    props.type === "search" &&
+    `
+    appearance: textfield;
+  `}
 
   &:focus {
     outline: 0;

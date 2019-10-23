@@ -12,14 +12,15 @@ const offset = props => keyframes`
   }
 `
 
+const Wrapper = styled.div`
+  position: relative;
+  overflow: hidden;
+`
+
 const WaveGroup = styled.g`
   transform-origin: 50% 50%;
   transform-box: fill-box;
   animation: ${offset} 15s ease-in-out infinite alternate;
-`
-
-const Wrapper = styled.div`
-  position: relative;
 `
 
 const ExpandedWrapper = styled.div`

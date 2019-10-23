@@ -22,6 +22,7 @@ const ExpandedWrapper = styled(animated.div)`
 
 const PathGroup = styled.g`
   transform-origin: 50% 50%;
+  transform-box: fill-box;
 `
 
 /**
@@ -109,7 +110,7 @@ const Blob = ({ transform, fill, children }) => {
             <defs>
               <mask id={`blob-${uuid}`}>
                 <rect x="0" y="0" fill="#fff" width="100%" height="100%" />
-                <PathGroup transform={transform}>
+                <PathGroup style={{ transform }}>
                   <animated.path d={blob.d} fill="#000" />
                 </PathGroup>
               </mask>

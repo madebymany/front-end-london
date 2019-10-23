@@ -95,6 +95,8 @@ const PaddedColumn = styled(Column)`
   }
 
   ${medium(css`
+    padding-top: 0;
+    padding-bottom: 0;
     padding-left: ${c.XL6};
   `)}
 `

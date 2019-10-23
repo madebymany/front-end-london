@@ -8,7 +8,6 @@ import ArchivedTalk from "../ArchivedTalks/ArchivedTalk"
 
 const ResultsWrapper = styled.div`
   position: relative;
-  overflow-y: hidden;
   transition: height 1s;
 `
 

@@ -65,7 +65,7 @@ export const query = graphql`
             video_url
             poster {
               childImageSharp {
-                fluid(maxWidth: 600) {
+                fluid(maxWidth: 1200) {
                   ...GatsbyImageSharpFluid
                 }
               }

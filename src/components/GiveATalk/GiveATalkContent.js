@@ -26,9 +26,9 @@ const GiveATalkContent = () => (
   <Wrapper>
     <PaddedHeading>Want to give a talk at FEL?</PaddedHeading>
     <Copy>
-      We would like to hear from first-time and seasoned speakers alike. Get in
-      touch if you’d like to propose a talk or recommend a speaker. For more
-      information contact us:
+      We love hearing from first-time and seasoned speakers alike. Get in touch
+      if you’d like to bounce an idea for a talk of us, propose a topic, or
+      recommend a speaker:
     </Copy>
     <LinkGroup>
       <div>

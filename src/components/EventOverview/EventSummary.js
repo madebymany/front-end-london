@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled, { css } from "styled-components"
 import { format } from "date-fns"
 
-import { Strap, Copy, Notification } from "../Text"
+import { Strap, Copy, Notification, FinePrint } from "../Text"
 import {
   ExternalMonoArrowLink,
   MonoArrowLink,
@@ -57,16 +57,22 @@ const EventSummary = ({ availability, tickets_released }) => {
       )}
       <Strap>Event Details</Strap>
       <Copy>
-        We aim to provide a variety of interesting talks on peoples’ experiences
-        in front-end development. Previously we’ve had talks on process,
-        tooling, performance and technology, to name a few. Expect more of the
-        same and lots more.
+        On the last Thursday of every month, we bring people together for a
+        range of exciting (and free!) talks on topics relating to digital
+        product development. We welcome everyone, no matter what stage you're at
+        in your career. The FEL community is inclusive and thrives on being
+        inspired, we invite you to come and share your knowledge and meet new
+        people.
       </Copy>
       <Copy>
-        To kick off the evening there’s pizza (with veggie/vegan options) and
-        refreshments (wine/beer/soft drinks/etc). All finished up with an
-        obligatory trip to the local pub — if that’s your kind of thing.
+        Whether you come for the pizza and drinks* or decide to sign up as a
+        speaker, you are all invited to finish up the evening with a trip to our
+        local pub!
       </Copy>
+      <FinePrint>
+        *Veggie/vegan food options and non-alcoholic drink options are always
+        catered for.
+      </FinePrint>
       <LinkGroup>
         <MonoArrowLink to="/conduct/">Code of conduct</MonoArrowLink>
         {data.site.siteMetadata && data.site.siteMetadata.returnTickets && (

@@ -26,7 +26,8 @@ const Newsletter = () => (
       <Container>
         <Heading>Want to keep in touch?</Heading>
         <Copy>
-          Sign up to our newsletter to keep up to date about the next event
+          Sign up to our newsletter to be one of the first to hear about our
+          next event
         </Copy>
         <NewsletterForm />
       </Container>

@@ -5,7 +5,7 @@ import React, {
   useRef,
   useCallback,
 } from "react"
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 import { useSpring, animated } from "react-spring"
 import { cover } from "polished"
 import Player from "@vimeo/player"

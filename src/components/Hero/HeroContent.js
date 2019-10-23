@@ -147,8 +147,8 @@ const HeroContent = ({ onPlay, open }) => (
         <Column lg={0.55} xl={0.57}>
           <Heading>FEL</Heading>
           <Copy>
-            Front-end London is a free monthly meetup about front-end
-            development &amp; design
+            Front-end London is a meetup focused on design, technology &amp;
+            product development
           </Copy>
           <ByLine>
             <span>Presented by</span>

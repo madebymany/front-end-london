@@ -1,6 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled, { css } from "styled-components"
+import jsonp from "jsonp"
+
+import HoneyPot from "./HoneyPot"
 
 import { Row, Column } from "../Grid"
 import { Button } from "../Button"
@@ -35,6 +38,21 @@ const CopyColumn = styled(Column)`
   ${order}
 `
 
+const HiddenLabel = styled.label`
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+`
+
+const StatusMessage = styled(Text)`
+  color: ${props => (props.theme.status === "error" ? c.ERROR : c.SUCCESS)};
+`
+
 const NewsletterForm = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -46,11 +64,76 @@ const NewsletterForm = () => {
     }
   `)
 
+  const [consent, setConsent] = useState(false)
+  const [status, setStatus] = useState(false)
+  const [message, setMessage] = useState("")
+
   return (
-    <form action="https://madebymany.us6.list-manage.com/subscribe?u=2069e586d651ff50b3844c372&id=12bc29b23c">
+    <form
+      onSubmit={event => {
+        event.preventDefault()
+        if (!consent) {
+          setStatus("error")
+          setMessage("Please consent to receive emails from Made by Many.")
+          return
+        }
+        const form = event.target
+
+        // Check Honeypot
+        const checks = ["b_name", "b_email", "b_comment"]
+          .map(key => form[key].value)
+          .filter(value => value !== "")
+
+        if (checks.length) {
+          setStatus("error")
+          setMessage("Invalid submission :(")
+          return
+        }
+
+        setStatus(false)
+        setMessage("")
+
+        const data = {
+          u: "2069e586d651ff50b3844c372",
+          id: "12bc29b23c",
+          EMAIL: form.email.value,
+          "gdpr[1877]": form.gdpr.checked ? form.gdpr.value : "",
+        }
+
+        const params = new URLSearchParams()
+        Object.keys(data).forEach(key => params.set(key, data[key]))
+
+        jsonp(
+          `https://madebymany.us6.list-manage.com/subscribe/post-json?${params.toString()}`,
+          {
+            param: "c",
+          },
+          (err, data) => {
+            if (err) {
+              setStatus("error")
+              setMessage(err)
+              return
+            }
+
+            setStatus(data.result !== "success" ? "error" : "success")
+
+            setMessage(data.msg.replace("0 - ", ""))
+          }
+        )
+      }}
+    >
+      <HoneyPot />
       <Row>
         <Column md={0.73}>
-          <FormInput id="email" type="email" placeholder="Email Address" />
+          <HiddenLabel htmlFor="email">Email Address</HiddenLabel>
+          <FormInput
+            id="email"
+            type="email"
+            name="EMAIL"
+            placeholder="Email Address"
+            autoCapitalize="off"
+            autoCorrect="off"
+          />
         </Column>
         <ButtonColumn md={0.22}>
           <Button type="submit" primary block>
@@ -59,9 +142,15 @@ const NewsletterForm = () => {
         </ButtonColumn>
         <Column md={1}>
           <FormCheckBox
-            id="consent"
+            id="gdpr"
             label="I consent to receiving email newsletters from Made by Many"
             type="checkbox"
+            checked={consent}
+            name="gdpr"
+            value="Y"
+            onChange={event => {
+              setConsent(event.target.checked)
+            }}
           />
         </Column>
         <CopyColumn md={0.73}>
@@ -73,6 +162,7 @@ const NewsletterForm = () => {
             </ExternalCopyLink>
           </Text>
         </CopyColumn>
+        {message && <StatusMessage theme={{ status }}>{message}</StatusMessage>}
       </Row>
     </form>
   )

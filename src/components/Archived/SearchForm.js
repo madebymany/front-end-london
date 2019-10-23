@@ -15,6 +15,14 @@ const Form = styled.form`
   }
 `
 
+const SearchInput = styled(FormInput)`
+  @media (max-width: 639px) {
+    font-size: ${c.SMALL};
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+`
+
 const IconWrapper = styled.div`
   position: absolute;
   top: 20px;
@@ -36,7 +44,7 @@ const SearchForm = ({
     <IconWrapper>
       <SearchIcon />
     </IconWrapper>
-    <FormInput
+    <SearchInput
       ref={inputRef}
       type="search"
       name="s"

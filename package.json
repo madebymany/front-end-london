@@ -28,6 +28,7 @@
     "gatsby-transformer-sharp": "^2.2.14",
     "glob": "^7.1.4",
     "js-search": "^1.4.3",
+    "jsonp": "^0.2.1",
     "lodash.debounce": "^4.0.8",
     "polished": "^3.4.1",
     "polymorph-js": "^1.0.2",

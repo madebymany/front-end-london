@@ -29,5 +29,8 @@ export default {
   GREY: "#E1E4E8",
   LIGHT_GREY: "#fbfbfb",
 
+  ERROR: "#D2222D",
+  SUCCESS: "#238823",
+
   HEADER: "87px",
 }

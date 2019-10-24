@@ -25,6 +25,7 @@
     "gatsby-transformer-json": "^2.2.9",
     "gatsby-transformer-sharp": "^2.2.14",
     "glob": "^7.1.4",
+    "intersection-observer": "^0.7.0",
     "js-search": "^1.4.3",
     "jsonp": "^0.2.1",
     "lodash.debounce": "^4.0.8",

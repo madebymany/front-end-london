@@ -2,6 +2,14 @@ import React from "react"
 import { enablePageScroll } from "scroll-lock"
 import GlobalStyle from "./src/styles/globalStyle"
 
+const loadPolyfills = async () => {
+  if (typeof window.IntersectionObserver === "undefined") {
+    await import("intersection-observer")
+  }
+}
+
+loadPolyfills()
+
 const wrapRootElement = ({ element }) => {
   return (
     <>

@@ -71,7 +71,7 @@ export const fragment = graphql`
     description
     pic {
       childImageSharp {
-        fluid(maxWidth: 330, maxHeight: 330) {
+        fluid(maxWidth: 600, maxHeight: 600) {
           ...GatsbyImageSharpFluid
         }
       }

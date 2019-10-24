@@ -7,12 +7,24 @@ import c from "../../styles/constants"
 import Menu from "../Menu"
 import MobileFooter from "./MobileFooter"
 
+const FullHeightContainer = styled(Container)`
+  height: 100%;
+`
+
 const MenuWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
   z-index: 100;
+
+  @media (orientation: landscape) {
+    flex-direction: row;
+
+    & > div {
+      width: 50%;
+    }
+  }
 `
 
 const InnerWrapper = styled.div`
@@ -21,14 +33,14 @@ const InnerWrapper = styled.div`
 `
 
 const MobileMenu = ({ tickets }) => (
-  <MenuWrapper>
-    <InnerWrapper>
-      <Container>
+  <FullHeightContainer>
+    <MenuWrapper>
+      <InnerWrapper>
         <Menu tickets={tickets} />
-      </Container>
-    </InnerWrapper>
-    <MobileFooter />
-  </MenuWrapper>
+      </InnerWrapper>
+      <MobileFooter />
+    </MenuWrapper>
+  </FullHeightContainer>
 )
 
 export default MobileMenu

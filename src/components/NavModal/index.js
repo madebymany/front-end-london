@@ -18,6 +18,13 @@ const OuterWrapper = styled(animated.div)`
   height: 100%;
   padding-top: ${c.XL8};
   z-index: 1;
+
+  @media (max-height: 400px) {
+    padding-top: ${c.XL7};
+    nav > div {
+      margin-bottom: 0;
+    }
+  }
 `
 
 const MorphSvg = styled(animated.svg)`

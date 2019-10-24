@@ -83,11 +83,10 @@ export const Modal = ({
   const [active, setActive] = useState(open)
   // Enable/Disable scroll when opened
   useLayoutEffect(() => {
-    console.log(ref.current)
     if (open) {
-      disablePageScroll(ref.current)
+      disablePageScroll()
     } else {
-      enablePageScroll(ref.current)
+      enablePageScroll()
     }
   }, [open])
   return ReactDOM.createPortal(

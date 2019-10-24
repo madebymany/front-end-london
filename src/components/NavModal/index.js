@@ -1,7 +1,8 @@
-import React, { useRef } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import styled from "styled-components"
 import { useSpring, useTransition, useChain, animated } from "react-spring"
 import { interpolate } from "polymorph-js"
+import debounce from "lodash.debounce"
 
 import { Modal } from "../Modal"
 import MobileMenu from "./MobileMenu"
@@ -9,6 +10,7 @@ import c from "../../styles/constants"
 
 const MenuWrapper = styled(animated.div)`
   height: 100%;
+  overflow: auto;
 `
 
 const OuterWrapper = styled(animated.div)`
@@ -40,6 +42,17 @@ const interpolator = interpolate([startPath, endPath], {
 })
 
 const MobileModal = ({ tickets, open }) => {
+  const [size, setSize] = useState("100%")
+
+  useEffect(() => {
+    const getSize = debounce(() => {
+      setSize(window.innerHeight)
+    }, 300)
+    getSize()
+    window.addEventListener("resize", getSize)
+    return () => window.removeEventListener("resize", getSize)
+  }, [])
+
   const fadeRef = useRef()
   const fade = useSpring({
     to: {
@@ -78,7 +91,7 @@ const MobileModal = ({ tickets, open }) => {
         ({ item, key, props: { x, d, state } }) =>
           item && (
             <Modal key={key} open={open} zIndex={10} fullscreen>
-              <MenuWrapper>
+              <MenuWrapper style={{ height: size }}>
                 <MorphSvg
                   xmlns="http://www.w3.org/2000/svg"
                   width="100%"

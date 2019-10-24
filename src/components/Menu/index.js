@@ -15,7 +15,7 @@ const MenuWrapper = styled.nav`
   }
 `
 
-const Menu = ({ tickets }) => {
+const Menu = ({ tickets, immediate }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -59,6 +59,7 @@ const Menu = ({ tickets }) => {
       transform: `translateX(0%)`,
     },
     trail: 200,
+    immediate,
   })
   return (
     <MenuWrapper>

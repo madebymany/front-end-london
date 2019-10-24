@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import styled, { css } from "styled-components"
+import styled, { css, keyframes } from "styled-components"
 import { animated } from "react-spring"
 import Img from "gatsby-image"
 
@@ -14,9 +14,15 @@ import c from "../../styles/constants"
 
 import Options from "../../../assets/icons/options.svg"
 
+const fadeIn = keyframes`
+  from { opacity: 0; }
+  to   { opacity: 1; }
+`
+
 const TalkWrapper = styled(animated.div)`
   background-color: ${c.WHITE};
   padding: 0;
+  animation: ${fadeIn} 1s;
 
   ${medium(css`
     border-top: 1px solid ${c.GREY};

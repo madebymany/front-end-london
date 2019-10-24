@@ -20,7 +20,7 @@
       "twitter": "danieljohngrant",
       "topic": "Exploring CSS3’s 3D space",
       "description": "backface-visibility, preserve-3d, translateZ… Since the launch of CSS3, these properties have gradually been creeping into our stylesheets, more often that not, as quick fixes for rendering bugs. But what do these properties actually do? We’ll take a journey through space itself to discover their potential and uncover the mysteries of CSS’s 3D spec.",
-      "slides_url": "//codepen.io/collection/gKutL/",
+      "slides_url": "//codepen.io/collection/gKutL",
       "video_url": ""
     },
     {

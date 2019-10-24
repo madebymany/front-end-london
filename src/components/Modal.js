@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect } from "react"
+import React, { useRef, useState, useEffect, useLayoutEffect } from "react"
 import ReactDOM from "react-dom"
 import styled from "styled-components"
 import { rgba, cover } from "polished"
@@ -79,13 +79,15 @@ export const Modal = ({
   align,
   children,
 }) => {
+  const ref = useRef(null)
   const [active, setActive] = useState(open)
   // Enable/Disable scroll when opened
   useLayoutEffect(() => {
+    console.log(ref.current)
     if (open) {
-      disablePageScroll()
+      disablePageScroll(ref.current)
     } else {
-      enablePageScroll()
+      enablePageScroll(ref.current)
     }
   }, [open])
   return ReactDOM.createPortal(
@@ -110,7 +112,11 @@ export const Modal = ({
             }
           }}
         >
-          {props => <animated.div style={props}>{children}</animated.div>}
+          {props => (
+            <animated.div ref={ref} style={props}>
+              {children}
+            </animated.div>
+          )}
         </Spring>
       </FocusTrap>
     </ModalWrapper>,

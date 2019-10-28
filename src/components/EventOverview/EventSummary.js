@@ -20,7 +20,7 @@ const LinkGroup = styled.div`
   ${medium(css`
     flex-direction: row;
 
-    a + a {
+    div + div {
       margin-left: 74px;
     }
   `)}
@@ -74,11 +74,15 @@ const EventSummary = ({ availability, tickets_released }) => {
         catered for.
       </FinePrint>
       <LinkGroup>
-        <MonoArrowLink to="/conduct/">Code of conduct</MonoArrowLink>
+        <div>
+          <MonoArrowLink to="/conduct/">Code of conduct</MonoArrowLink>
+        </div>
         {data.site.siteMetadata && data.site.siteMetadata.returnTickets && (
-          <ExternalMonoArrowLink to="https://www.eventbrite.com/support/articles/en_US/How_To/how-to-cancel-your-free-registration">
-            Return tickets
-          </ExternalMonoArrowLink>
+          <div>
+            <ExternalMonoArrowLink to="https://www.eventbrite.com/support/articles/en_US/How_To/how-to-cancel-your-free-registration">
+              Give a talk at FEL
+            </ExternalMonoArrowLink>
+          </div>
         )}
       </LinkGroup>
     </EventSummaryWrapper>

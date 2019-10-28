@@ -1,21 +1,24 @@
 import React from "react"
-import { useSpring, animated } from "react-spring"
-import { AnimatedLink } from "../Links"
+import { Link } from "gatsby"
+import styled from "styled-components"
 import Logo from "../../../assets/images/logo.svg"
 
-const NavLogo = () => {
-  const opacity = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-    delay: 700,
-  })
-  return (
-    <animated.div style={opacity}>
-      <AnimatedLink to="/">
-        <img src={Logo} alt="Frontend London" />
-      </AnimatedLink>
-    </animated.div>
-  )
-}
+const LogoWrapper = styled.div`
+  opacity: ${props => (props.theme.visible ? 1 : 0)};
+  transition: opacity 0.3s ease-in-out;
+
+  .hero--open & {
+    opacity: 1;
+    transition: opacity 0.3s 1s ease-in-out;
+  }
+`
+
+const NavLogo = ({ open, homepage }) => (
+  <LogoWrapper theme={{ visible: !homepage || open }}>
+    <Link to="/">
+      <img src={Logo} alt="Frontend London" />
+    </Link>
+  </LogoWrapper>
+)
 
 export default NavLogo

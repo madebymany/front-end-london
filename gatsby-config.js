@@ -5,9 +5,8 @@ module.exports = {
     author: `@madebymany`,
     menuLinks: [
       {
-        name: "Return tickets",
-        link:
-          "//www.eventbrite.com/support/articles/en_US/How_To/how-to-cancel-your-free-registration",
+        name: "Give a talk",
+        link: "/#give-a-talk",
       },
       {
         name: "Past talks",
@@ -73,12 +72,6 @@ module.exports = {
         rule: {
           include: /icons/,
         },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-transition-link",
-      options: {
-        layout: require.resolve(`./src/layouts/General.js`),
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

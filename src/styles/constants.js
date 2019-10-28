@@ -22,6 +22,7 @@ export default {
   FONT_PRIMARY: "Fabriga, Helvetica, Arial, sans-serif",
   FONT_SECONDARY: "'Roboto Mono', monospace",
 
+  JET_BLACK: "#000000",
   BLACK: "#2f2f2f",
   BLACK2: "#4E4E4E",
   ORANGE: "#FA3000",
@@ -33,4 +34,5 @@ export default {
   SUCCESS: "#238823",
 
   HEADER: "87px",
+  TRANSITION_DURATION: 1400,
 }

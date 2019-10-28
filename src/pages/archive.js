@@ -4,7 +4,6 @@ import styled from "styled-components"
 
 import Container from "../components/Container"
 
-import Animated from "../layouts/Animated"
 import Archived from "../components/Archived"
 
 const FillWrapper = styled.div`
@@ -32,7 +31,7 @@ const Archive = ({
       return accum
     }, [])
   return (
-    <Animated {...props}>
+    <>
       <FillWrapper>
         <Container>
           <Archived
@@ -42,7 +41,7 @@ const Archive = ({
           />
         </Container>
       </FillWrapper>
-    </Animated>
+    </>
   )
 }
 

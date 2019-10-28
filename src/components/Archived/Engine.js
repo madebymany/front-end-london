@@ -13,8 +13,18 @@ class Engine extends React.Component {
     query: this.props.defaultQuery || "",
   }
 
-  componentDidMount() {
+  constructor(props) {
+    super(props)
+
     this.onLoadMore(false)
+  }
+
+  componentDidMount() {
+    this.delay = 0
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timer)
   }
 
   onLoadMore = (shouldNavigate = true) => {
@@ -24,7 +34,7 @@ class Engine extends React.Component {
     const done = current * chunk >= talks.length - 1
     const active = talks.slice(0, current * chunk)
 
-    setTimeout(() => {
+    this.timer = setTimeout(() => {
       this.setState({
         index: current,
         active,
@@ -38,7 +48,9 @@ class Engine extends React.Component {
           state: { lazyLoadIndex: index },
         })
       }
-    }, 1000)
+    }, this.delay)
+
+    this.delay = 1000
   }
 
   onQuery = query => {

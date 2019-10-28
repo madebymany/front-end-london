@@ -135,6 +135,7 @@ const SearchHeader = ({
       <MobileModal
         open={open}
         setOpen={setOpen}
+        onEnter={() => searchRef.current.focus()}
         align="flex-start"
         direction="down"
         mobileOnly

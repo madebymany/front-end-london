@@ -73,17 +73,14 @@ const MobileModal = ({ tickets, open }) => {
     from: {
       d: 0,
       x: 0,
-      state: "open",
     },
     enter: {
       d: 1,
       x: -120,
-      state: "open",
     },
     leave: {
       d: 0,
       x: 0,
-      state: "closed",
     },
     config: {
       duration: 600,

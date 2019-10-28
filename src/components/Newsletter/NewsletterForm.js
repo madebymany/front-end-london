@@ -114,10 +114,13 @@ const NewsletterForm = () => {
               setMessage(err)
               return
             }
-
             setStatus(data.result !== "success" ? "error" : "success")
+            const cleanMessage = data.msg
+              .replace("0 - ", "")
+              .replace(/<a href.*?\/a>/g, "")
+              .trim()
 
-            setMessage(data.msg.replace("0 - ", ""))
+            setMessage(cleanMessage)
           }
         )
       }}

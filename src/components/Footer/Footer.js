@@ -28,7 +28,7 @@ const FooterLogo = styled.img`
   max-width: 100%;
 
   ${medium`
-    width: 290px;
+    width: 250px;
   `}
 `
 

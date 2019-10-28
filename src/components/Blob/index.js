@@ -1,10 +1,10 @@
-import React, { useState, useLayoutEffect } from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { useSpring, animated } from "react-spring"
 import { useInView } from "react-intersection-observer"
 import uuid4 from "uuid/v4"
-
+import DelayMount from "../DelayMount"
 import c from "../../styles/constants"
 
 const Wrapper = styled.div`
@@ -69,36 +69,34 @@ const Blob = ({ transform, fill, children }) => {
   let blobs = getRandomBlobs()
   const [ref, inView] = useInView({ threshold: 0 })
   const [uuid] = useState(uuid4())
-  const [animate, setAnimate] = useState(false)
   const blob = useSpring({
     cancel: !inView,
     from: {
-      d: blobs[0],
+      d: blobs.pop(),
     },
     to: async next => {
+      let delay = 0
       while (true) {
         await next({
           d: blobs.pop(),
           config: { duration: 10000 },
+          delay,
         })
 
         if (!blobs.length) {
           blobs = getRandomBlobs()
         }
+
+        delay = (Math.random() * 8 + 5) * 1000
       }
     },
   })
-
-  // SVG only seems to render if we delay the initial mount
-  useLayoutEffect(() => {
-    setAnimate(true)
-  }, [])
 
   return (
     <Wrapper ref={ref}>
       {children}
       <ExpandedWrapper>
-        {animate && (
+        <DelayMount>
           <svg
             width="100%"
             height="100%"
@@ -123,7 +121,7 @@ const Blob = ({ transform, fill, children }) => {
               mask={`url(#blob-${uuid})`}
             />
           </svg>
-        )}
+        </DelayMount>
       </ExpandedWrapper>
     </Wrapper>
   )

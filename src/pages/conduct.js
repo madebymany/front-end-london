@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 
-import Animated from "../layouts/Animated"
 import SEO from "../components/seo"
 
 import Newsletter from "../components/Newsletter"
@@ -12,7 +11,6 @@ import { Heading, Copy } from "../components/Text"
 import { ExternalCopyLink } from "../components/Links"
 
 import { medium } from "../styles/media"
-import c from "../styles/constants"
 
 const Tight = styled.div`
   width: 100%;
@@ -37,7 +35,7 @@ const Section = styled.section`
 
 const ConductPage = ({ data, ...rest }) => {
   return (
-    <Animated {...rest} fill={c.WHITE}>
+    <>
       <SEO title="Code of Conduct" />
       <Container>
         <Tight>
@@ -179,10 +177,7 @@ const ConductPage = ({ data, ...rest }) => {
                   It is necessary to the topic of discussion and no alternative
                   exists.
                 </li>
-                <li>
-                  It is necessary to the topic of discussion and no alternative
-                  exists.
-                </li>
+                <li>It is presented in a respectful manner.</li>
                 <li>
                   Attendees are warned in advance and respectfully given ample
                   warning and opportunity to leave beforehand.
@@ -228,7 +223,7 @@ const ConductPage = ({ data, ...rest }) => {
         </Tight>
       </Container>
       <Newsletter />
-    </Animated>
+    </>
   )
 }
 

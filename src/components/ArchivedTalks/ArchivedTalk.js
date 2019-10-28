@@ -73,11 +73,11 @@ const Preview = styled.a`
 `
 
 const TalkHeading = styled(Heading)`
-  margin: 0;
+  margin: 0 0 0.75rem 0;
   line-height: 1.1;
 
   ${medium(css`
-    margin: 0 0 ${c.XL} 0;
+    margin: 0.6rem 0 1.4rem 0;
   `)}
 `
 
@@ -104,11 +104,19 @@ const PaddedColumn = styled(Column)`
     padding-top: 0;
     padding-bottom: 0;
     padding-left: ${c.XL6};
+
+    ${Copy} {
+      padding-top: 0;
+    }
   `)}
 `
 
 const ContentWrapper = styled.div`
   position: relative;
+
+  ${medium`
+    margin-top: -9px;
+  `}
 
   ${Strap} {
     margin-right: ${c.XL5};

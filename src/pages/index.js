@@ -3,7 +3,6 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import { parse, isPast } from "date-fns"
 
-import Animated from "../layouts/Animated"
 import Hero from "../components/Hero"
 
 import SEO from "../components/seo"
@@ -28,7 +27,7 @@ const IndexPage = ({ data, ...rest }) => {
     talk.availability = isPast(talk.tickets_released)
   }
   return (
-    <Animated {...rest} fill={c.WHITE}>
+    <>
       <SEO title="Home" />
       <Hero />
       <Wrapper>
@@ -37,7 +36,7 @@ const IndexPage = ({ data, ...rest }) => {
         <GiveATalk />
         <Newsletter />
       </Wrapper>
-    </Animated>
+    </>
   )
 }
 

@@ -73,6 +73,7 @@ export const Modal = ({
   open,
   setOpen,
   onClose,
+  onEnter,
   direction,
   fullscreen,
   zIndex = 1000,
@@ -107,6 +108,10 @@ export const Modal = ({
               setActive(false)
               if (onClose) {
                 onClose()
+              }
+            } else {
+              if (onEnter) {
+                onEnter()
               }
             }
           }}

@@ -18,7 +18,7 @@ const MenuWrapper = styled.div`
   height: 100%;
   z-index: 100;
 
-  @media (orientation: landscape) {
+  @media (orientation: landscape) and (max-height: 485px) {
     flex-direction: row;
 
     & > div {
@@ -36,7 +36,7 @@ const MobileMenu = ({ tickets }) => (
   <FullHeightContainer>
     <MenuWrapper>
       <InnerWrapper>
-        <Menu tickets={tickets} />
+        <Menu tickets={tickets} state={{ skipTransition: true }} />
       </InnerWrapper>
       <MobileFooter />
     </MenuWrapper>

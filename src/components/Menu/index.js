@@ -15,7 +15,7 @@ const MenuWrapper = styled.nav`
   }
 `
 
-const Menu = ({ tickets, immediate }) => {
+const Menu = ({ tickets, immediate, state = {} }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -66,9 +66,13 @@ const Menu = ({ tickets, immediate }) => {
       {linkMenu.map(({ item, key, props }) => {
         const external = item.link.indexOf("//") === 0
         const ComponentLink = external ? ExternalMenuLink : MenuLink
+        const linkProps = {
+          ...(!external && { state }),
+          to: item.link,
+        }
         return (
           <animated.div key={key} style={props}>
-            <ComponentLink to={item.link}>{item.name}</ComponentLink>
+            <ComponentLink {...linkProps}>{item.name}</ComponentLink>
           </animated.div>
         )
       })}

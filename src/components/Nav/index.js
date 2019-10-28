@@ -5,31 +5,20 @@ import styled from "styled-components"
 import NavBar from "./NavBar"
 import NavModal from "../NavModal"
 
-import c from "../../styles/constants"
-
 const NavWrapper = styled.div`
   position: absolute;
   width: 100%;
   top: 0;
   z-index: 1000;
-  opacity: 1;
-  background-color: ${props => (props.theme.open ? c.WHITE : "transparent")};
-  transition: opacity 0.3s, visibility 0.3s,
-    background-color 0.3s ${props => props.theme.open && "0.7s"};
-
-  .hero--open & {
-    opacity: 0;
-    visibility: hidden;
-  }
 `
 
-const Nav = ({ tickets, homepage, pathname }) => {
+const Nav = ({ tickets, homepage, location }) => {
   const [open, setOpen] = useState(false)
 
   // Whenever pathname changes close the nav
   useEffect(() => {
     setOpen(false)
-  }, [pathname])
+  }, [location])
 
   return (
     <NavWrapper theme={{ open }}>

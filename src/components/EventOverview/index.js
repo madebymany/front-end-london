@@ -1,16 +1,22 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 import Container from "../Container"
 import { Row, Column } from "../Grid"
 
 import NextEvent from "./NextEvent"
 import EventSummary from "./EventSummary"
+
+import { medium } from "../../styles/media"
 import c from "../../styles/constants"
 
 const Wrapper = styled.div`
-  margin-top: ${c.XL9};
+  margin-top: ${c.XL6};
   background-color: ${c.WHITE};
+
+  ${medium(css`
+    margin-top: ${c.XL9};
+  `)}
 `
 
 const EventOverview = ({ talk }) => {

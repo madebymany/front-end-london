@@ -5,13 +5,18 @@ import React, {
   useRef,
   useCallback,
 } from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 import { useSpring, animated } from "react-spring"
+import Img from "gatsby-image"
 import { cover } from "polished"
 import Player from "@vimeo/player"
 import { useInView } from "react-intersection-observer"
 import { useMediaQuery } from "react-responsive"
 
+import DelayMount from "../DelayMount"
+
+import { large } from "../../styles/media"
 import c from "../../styles/constants"
 
 const videoRatio = 0.5625 // 1920 x 1080
@@ -27,25 +32,47 @@ const VideoContainer = styled.div`
   height: 0px;
   position: relative;
 
-  iframe,
-  object,
-  embed {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: ${c.BLACK};
+    width: 200vw;
+    height: 100%;
+    transform: translateX(-50%);
+  }
+
+  & > *:not(button) {
     width: 100%;
     height: 100%;
+    background-color: ${c.BLACK};
     ${cover()}
   }
 `
 
 const WidthConstraint = styled.div`
+  position: relative;
   width: 100%;
   margin: 0 auto;
+
+  ${large`
+    margin-top: 95px;
+  `}
 
   @media (min-width: 1460px) {
     width: 85%;
   }
 `
 
+const LoopVideo = styled.iframe`
+  ${large`
+    margin-left: 20%;
+  `}
+`
+
 const CloseButton = styled.button`
+  background-color: ${c.BLACK};
   position: absolute;
   display: flex;
   justify-content: center;
@@ -54,6 +81,18 @@ const CloseButton = styled.button`
   padding: ${c.BASE};
   top: 0;
   right: 0;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: ${c.ORANGE};
+  }
+
+  &:focus {
+    outline: 0;
+  }
 `
 
 const SvgMask = styled.svg`
@@ -72,7 +111,6 @@ const BlobWrapper = styled(animated.g)`
   `}
 `
 
-const Transformer = styled.g``
 /**
  * Blob Guide
  * https://blobs.dev/
@@ -96,6 +134,7 @@ const blobPaths = [
 
 let blobs = [...blobPaths.slice(1)]
 let config = { duration: 10000 }
+
 // robin
 const endPath =
   "M1618.5278,-1434.30156 C1865.44176,-1335.4192 1892.99608,-988.519319 2021.46326,-755.584598 C2127.52662,-563.272136 2252.81037,-384.199608 2314.00697,-173.269373 C2374.24109,34.343461 2377.47984,249.037582 2375.64819,465.207343 C2373.69218,696.053469 2376.36031,927.49537 2302.82579,1146.32002 C2222.30397,1385.93754 2100.01154,1610.65201 1928.37412,1796.20935 C1741.23636,1998.52411 1538.11281,2274.63648 1262.57443,2270.93651 C965.374345,2266.94567 790.684322,1923.07229 531.556151,1777.45269 C346.684286,1673.56214 153.600098,1597.67157 -48.6904488,1534.05843 C-336.205799,1443.64515 -762.449007,1580.33411 -917.438047,1321.7959 C-1070.98918,1065.65627 -691.350424,764.157982 -689.266289,465.509778 C-687.474434,208.743935 -994.594096,-23.6594784 -906.365954,-264.791234 C-816.907399,-509.285771 -439.510732,-501.885625 -264.716358,-694.805613 C-90.6542676,-886.917381 -135.805399,-1261.11863 97.9209456,-1373.21945 C329.148445,-1484.12176 588.397941,-1216.58203 844.629395,-1226.87473 C1114.43,-1237.7125 1367.8561,-1534.6888 1618.5278,-1434.30156 Z"
@@ -103,10 +142,23 @@ const endPath =
 let player
 
 const HeroVideo = ({ open, setOpen }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "fel-intro.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   const videoRef = useRef(null)
   const [ref, inView] = useInView({ threshold: 0 })
   const [isActive, setActive] = useState(false)
   const [transform, setTransform] = useState("")
+  const [scroll, setScroll] = useState(true)
+
   // Setting the transform in css doesnt provide the correct output
   // Feels like a bug
   const isXLarge = useMediaQuery({ query: `(min-width: 1460px)` })
@@ -115,9 +167,9 @@ const HeroVideo = ({ open, setOpen }) => {
   const calculateTransform = useCallback(() => {
     let updateTransform
     if (isXLarge) {
-      updateTransform = "translate(284 0) scale(0.7 0.9)"
+      updateTransform = "translate(284 40) scale(0.8 0.8)"
     } else if (isLarge) {
-      updateTransform = "translate(142 0) scale(1 0.9)"
+      updateTransform = "translate(142 40) scale(1 0.8)"
     } else {
       updateTransform = "translate(-800, -100) scale(1.2)"
     }
@@ -126,8 +178,24 @@ const HeroVideo = ({ open, setOpen }) => {
   }, [isXLarge, isLarge])
 
   useEffect(() => {
-    player = new Player(videoRef.current)
-  }, [videoRef])
+    let timer
+    if (scroll) {
+      timer = setTimeout(() => {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behaviour: "smooth",
+        })
+      }, 500)
+    }
+    return () => clearTimeout(timer)
+  }, [scroll])
+
+  useEffect(() => {
+    if (open && videoRef) {
+      player = new Player(videoRef.current)
+    }
+  }, [videoRef, open])
 
   useEffect(() => {
     calculateTransform()
@@ -140,11 +208,12 @@ const HeroVideo = ({ open, setOpen }) => {
   useEffect(() => {
     if (!open && isActive) {
       setActive(false)
+      setScroll(false)
       player.pause()
       player.setCurrentTime(0)
       config = {}
     }
-  }, [open, isActive, setActive])
+  }, [open, isActive, setActive, setScroll])
 
   const resetConfig = () => {
     config = { duration: 10000 }
@@ -156,15 +225,17 @@ const HeroVideo = ({ open, setOpen }) => {
       d: blobPaths[0],
     },
     to: async next => {
+      let delay = false
       while (!open && !isActive) {
         await next({
           d: blobs.pop(),
           onRest: resetConfig,
           config,
         })
-
-        await next({ delay: 4000 })
-
+        if (delay) {
+          await next({ delay: 4000 })
+        }
+        delay = true
         if (!blobs.length) {
           blobs = blobPaths
             .map(a => [Math.random(), a])
@@ -179,6 +250,7 @@ const HeroVideo = ({ open, setOpen }) => {
           onRest: () => {
             setActive(true)
             player.play()
+            setScroll(true)
           },
         })
       }
@@ -189,26 +261,49 @@ const HeroVideo = ({ open, setOpen }) => {
     <VideoWrapper ref={ref}>
       <WidthConstraint>
         <VideoContainer>
-          <iframe
-            ref={videoRef}
-            title="FEL Intro 2019"
-            aria-hidden="true"
-            src="https://player.vimeo.com/video/367773374"
-            frameBorder="0"
-            allow="autoplay; fullscreen"
-            allowFullScreen
-          ></iframe>
+          {open ? (
+            <iframe
+              ref={videoRef}
+              title="FEL Intro 2019"
+              aria-hidden="true"
+              src="https://player.vimeo.com/video/367773374"
+              frameBorder="0"
+              allow="autoplay; fullscreen"
+              allowFullScreen
+            ></iframe>
+          ) : (
+            <DelayMount>
+              {isLarge ? (
+                <LoopVideo
+                  tabIndex="-1"
+                  title="FEL Intro 2019"
+                  aria-hidden="true"
+                  src="https://player.vimeo.com/video/368524882?background=1"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen"
+                ></LoopVideo>
+              ) : (
+                <div style={{ marginLeft: "-20%" }}>
+                  <Img
+                    fluid={data.file.childImageSharp.fluid}
+                    alt="FEL Background"
+                    aria-hidden="true"
+                  />
+                </div>
+              )}
+            </DelayMount>
+          )}
+          {isActive && (
+            <CloseButton onClick={() => setOpen(false)}>
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.317 12.145l-7.434 7.434 2.828 2.828 7.438-7.437 7.437 7.437 2.828-2.828-7.6-7.602 7.561-7.563-2.828-2.828-7.566 7.566-7.567-7.566-2.828 2.828.707.707 7.024 7.024z"
+                  fill="currentColor"
+                />
+              </svg>
+            </CloseButton>
+          )}
         </VideoContainer>
-        {isActive && (
-          <CloseButton onClick={() => setOpen(false)}>
-            <svg width="18" height="19" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16.547.906l1.414 1.415-7.547 7.546.02.02-.016.014L18 17.485 16.586 18.9 9 11.312 1.414 18.9 0 17.485l7.581-7.584-.014-.014.018-.02L.039 2.321 1.453.906 9 8.453 16.547.906z"
-                fill="currentColor"
-              />
-            </svg>
-          </CloseButton>
-        )}
       </WidthConstraint>
       <SvgMask
         theme={{ open: isActive }}
@@ -221,11 +316,11 @@ const HeroVideo = ({ open, setOpen }) => {
         <defs>
           <mask id="hero-mask">
             <rect x="0" y="0" fill="#fff" width="100%" height="100%" />
-            <Transformer transform={transform}>
+            <g transform={transform}>
               <BlobWrapper theme={{ open }}>
                 <animated.path d={blob.d} fill="#000" />
               </BlobWrapper>
-            </Transformer>
+            </g>
           </mask>
         </defs>
         <rect

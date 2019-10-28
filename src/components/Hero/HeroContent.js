@@ -90,6 +90,14 @@ const Heading = styled.h1`
     margin: 0 0 ${c.SMALL} -${c.XL2};
     font-size: 282px;
   `)}
+
+  ${large`
+    font-size: 250px;
+  `}
+
+  ${xlarge`
+    font-size: 282px;
+  `}
 `
 
 const Copy = styled.p`
@@ -98,11 +106,18 @@ const Copy = styled.p`
   font-size: ${c.XL2};
 
   ${medium`
-    max-width: 50%;
+    max-width: 60%;
+    font-size: 30px;
   `}
 
   ${large`
+    line-height: 1.2;
     font-size: 39px;
+    max-width: 90%;
+  `}
+
+  ${xlarge`
+    line-height: 1.5;
     max-width: 100%;
   `}
 `
@@ -147,7 +162,7 @@ const HeroContent = ({ onPlay, open }) => (
         <Column lg={0.55} xl={0.57}>
           <Heading>FEL</Heading>
           <Copy>
-            Front-end London is a meetup focused on design, technology &amp;
+            Front-end London is a meetup focused on technology, design &amp;
             product development
           </Copy>
           <ByLine>

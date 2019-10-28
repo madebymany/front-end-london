@@ -37,7 +37,7 @@ const GiveATalk = () => {
     }
   `)
   return (
-    <Wrapper>
+    <Wrapper id="give-a-talk">
       <TalkRow>
         <Column lg={0.43}>
           <GiveATalkContent />

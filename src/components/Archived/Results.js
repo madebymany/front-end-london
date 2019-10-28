@@ -6,6 +6,7 @@ import ArchivedTalk from "../ArchivedTalks/ArchivedTalk"
 
 const ResultsWrapper = styled.div`
   position: relative;
+  min-height: 500px;
   transition: height 1s;
 `
 
@@ -15,7 +16,6 @@ const Results = ({ items, onLoadMore, done }) => {
   // Setup a waypoint indicator
   const [ref, inView] = useInView({ threshold: 0 })
   // When the waypoint is inview attempt to load more results
-  console.log(inView)
   useEffect(() => {
     if (inView && !loading) {
       onLoadMore()
@@ -27,9 +27,10 @@ const Results = ({ items, onLoadMore, done }) => {
   // checking for the waypoint
   useEffect(() => {
     setLoading(true)
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setLoading(false)
     }, 1000)
+    return () => clearTimeout(timer)
   }, [items, setLoading])
 
   return (
@@ -39,7 +40,7 @@ const Results = ({ items, onLoadMore, done }) => {
           <ArchivedTalk key={`static-${item.topic}`} {...item} />
         ))}
       </ResultsWrapper>
-      {!done && !loading && <div ref={ref} />}
+      {!done && !loading && <div style={{ height: 1 }} ref={ref} />}
     </div>
   )
 }

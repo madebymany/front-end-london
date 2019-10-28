@@ -13,15 +13,21 @@ const Wrapper = styled.header`
   width: 100%;
   height: ${c.HEADER};
   display: flex;
-  flex-direction: ${props =>
-    !props.homepage || props.open ? "row" : "row-reverse"};
+  flex-direction: row;
   justify-content: space-between;
   font-weight: bold;
   padding-top: 8px;
-  color: ${props => (props.homepage && !props.open ? c.WHITE : c.BLACK)};
+  color: ${props =>
+    props.theme.homepage && !props.theme.open ? c.WHITE : c.BLACK};
+  transition: color 0.2s ease-in-out;
+
   ${large(css`
     padding-top: ${c.XL2};
   `)};
+
+  .hero--open & {
+    color: ${c.BLACK};
+  }
 `
 
 const Toggle = styled.button`
@@ -55,8 +61,8 @@ const NavBar = ({ tickets, homepage, toggleMenu, open, ...props }) => {
   return (
     <div {...props}>
       <Container>
-        <Wrapper homepage={homepage} open={open}>
-          {(!homepage || open) && <NavLogo />}
+        <Wrapper theme={{ homepage, open }}>
+          <NavLogo homepage={homepage} open={open} />
           <NavLinks homepage={homepage} tickets={tickets} />
           <Toggle
             type="button"

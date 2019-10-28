@@ -1,6 +1,6 @@
+import { Link } from "gatsby"
 import styled, { css } from "styled-components"
 import { darken } from "polished"
-import TransitionLink from "gatsby-plugin-transition-link"
 import { medium } from "../styles/media"
 import c from "../styles/constants"
 
@@ -13,12 +13,7 @@ const withExternal = Component =>
     ...props,
   }))``
 
-export const AnimatedLink = styled(TransitionLink).attrs(() => ({
-  entry: { length: 2, appearAfter: 0.5 },
-  exit: { length: 2 },
-}))``
-
-const BaseUnderlineLink = styled(AnimatedLink)`
+const BaseUnderlineLink = styled(Link)`
   &:before {
     content: "";
     position: absolute;
@@ -72,7 +67,7 @@ export const MonoArrowLink = styled(MonoLink)`
 
 export const ExternalMonoArrowLink = withExternal(MonoArrowLink)
 
-export const SimpleLink = styled(AnimatedLink)`
+export const SimpleLink = styled(Link)`
   display: inline-block;
   color: ${c.BLACK};
   transition: 0.2s color;
@@ -90,7 +85,7 @@ export const SimpleLink = styled(AnimatedLink)`
 
 export const ExternalLink = withExternal(SimpleLink)
 
-export const CopyLink = styled(AnimatedLink)`
+export const CopyLink = styled(Link)`
   position: relative;
   display: inline-block;
   color: ${c.ORANGE};
@@ -119,7 +114,7 @@ export const CopyLink = styled(AnimatedLink)`
 
 export const ExternalCopyLink = withExternal(CopyLink)
 
-export const MenuLink = styled(AnimatedLink).attrs(() => ({
+export const MenuLink = styled(Link).attrs(() => ({
   activeStyle: { color: c.ORANGE },
 }))`
   position: relative;
@@ -156,7 +151,7 @@ export const MenuLink = styled(AnimatedLink).attrs(() => ({
 
 export const ExternalMenuLink = withExternal(MenuLink)
 
-export const NavLink = styled(AnimatedLink)`
+export const NavLink = styled(Link)`
   position: relative;
   display: inline-block;
   flex: 0 0 auto;
@@ -164,7 +159,7 @@ export const NavLink = styled(AnimatedLink)`
   text-decoration: none;
   transition: color 0.2s;
   cursor: pointer;
-  color: ${props => (props.theme.inverse ? c.WHITE : c.BLACK)};
+  color: inherit;
   font-size: ${c.XL2};
   transition: color 1s;
 
@@ -179,11 +174,9 @@ export const NavLink = styled(AnimatedLink)`
   }
 
   &:hover,
-  &:focus {
-    color: ${props => (props.theme.inverse ? c.WHITE : c.ORANGE)};
-  }
-
+  &:focus,
   &.active {
+    outline: 0;
     color: ${props => (props.theme.inverse ? c.WHITE : c.ORANGE)};
 
     &:after {

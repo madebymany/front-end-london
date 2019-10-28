@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 
 import HeroVideo from "./HeroVideo"
 import HeroContent from "./HeroContent"
@@ -10,30 +10,26 @@ const Wrapper = styled.div`
   width: 100%;
   top: 0;
   left: 0;
-  transition: 0.5s all;
-  background-color: ${c.ORANGE};
-  ${props =>
-    props.fixed
-      ? css`
-          position: fixed;
-          top: 10%;
-          left: 5%;
-          width: 90%;
-          height: 80%;
-          z-index: 100;
-        `
-      : css`
-          position: relative;
-          display: flex;
-          align-items: center;
-          flex-direction: column-reverse;
+  margin-top: 0;
 
-          ${large`
-            flex-direction: column;
-          `}
-        `}
+  background-color: ${c.ORANGE};
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  transition: margin 0.5s 0.5s ease-in-out;
+
+  @media (max-width: 1023px) {
+    ${props =>
+      props.theme.open &&
+      `
+      margin-top: 85px;
+      transition: margin 0.5s ease-in-out;
+    `}
+  }
 
   ${large`
+    flex-direction: column;
     background-color: transparent;
   `}
 `
@@ -41,7 +37,7 @@ const Wrapper = styled.div`
 const Hero = () => {
   const [open, setOpen] = useState(false)
   return (
-    <Wrapper className="Hero">
+    <Wrapper className="Hero" theme={{ open }}>
       <HeroVideo open={open} setOpen={setOpen} />
       <HeroContent open={open} onPlay={() => setOpen(true)} />
     </Wrapper>

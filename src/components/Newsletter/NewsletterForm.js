@@ -50,6 +50,7 @@ const HiddenLabel = styled.label`
 `
 
 const StatusMessage = styled(Text)`
+  width: 100%;
   color: ${props => (props.theme.status === "error" ? c.ERROR : c.SUCCESS)};
 `
 

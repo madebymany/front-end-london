@@ -49,15 +49,21 @@ const ScrollTopButton = styled.button`
   `}
 `
 let pageChildren = {}
-let timer
+let timer = null
 
 const shouldUpdateScroll = location => {
+  // We are already scrolling
+  if (timer !== null) {
+    return
+  }
+
   // If there is a location hash smooth scroll to element
   if (location && location.hash) {
     timer = setTimeout(() => {
       const item = document.querySelector(location.hash).offsetTop
       window.scrollTo({ top: item, left: 0, behavior: "smooth" })
-    }, 500)
+      timer = null
+    }, 1000)
 
     return
   }
@@ -66,6 +72,7 @@ const shouldUpdateScroll = location => {
   if (window.__fel_scroll) {
     timer = setTimeout(() => {
       window.scrollTo(...window.__fel_scroll)
+      timer = null
     }, 100)
   }
 }
@@ -101,7 +108,9 @@ const General = ({ data: { current }, location, children }) => {
     // If the state contains skipTransition, automatically set the page
     if (skipTransition) {
       setPage(location.pathname)
-      shouldUpdateScroll(location)
+      if (!timer) {
+        shouldUpdateScroll(location)
+      }
     }
     // Otherwise only set the transition if the pathname changes
     else if (location.pathname !== page) {

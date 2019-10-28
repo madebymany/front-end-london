@@ -7,20 +7,13 @@ import Results from "./Results"
 class Engine extends React.Component {
   state = {
     index: this.props.index,
-    active: [],
+    active: this.props.talks.slice(
+      0,
+      (this.props.index + 1) * this.props.chunk
+    ),
     search: [],
     done: false,
     query: this.props.defaultQuery || "",
-  }
-
-  constructor(props) {
-    super(props)
-
-    this.onLoadMore(false)
-  }
-
-  componentDidMount() {
-    this.delay = 0
   }
 
   componentWillUnmount() {
@@ -33,7 +26,6 @@ class Engine extends React.Component {
     const current = index + 1
     const done = current * chunk >= talks.length - 1
     const active = talks.slice(0, current * chunk)
-
     this.timer = setTimeout(() => {
       this.setState({
         index: current,
@@ -48,9 +40,7 @@ class Engine extends React.Component {
           state: { lazyLoadIndex: index },
         })
       }
-    }, this.delay)
-
-    this.delay = 1000
+    }, 500)
   }
 
   onQuery = query => {

@@ -31,8 +31,6 @@ module.exports = {
       },
     ],
     privacyPolicy: "https://www.iubenda.com/privacy-policy/92517840",
-    returnTickets:
-      "https://www.eventbrite.com/support/articles/en_US/How_To/how-to-cancel-your-free-registration",
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -57,13 +55,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Front-end London`,
+        short_name: `FEL`,
+        description: `Front-end London is a monthly developer meetup in London hosted by Made by Many.`,
         start_url: `/`,
-        background_color: `#ed4022`,
-        theme_color: `#ed4022`,
+        background_color: "#FA3000",
+        theme_color: "#FFF",
         display: `minimal-ui`,
-        // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `assets/images/favicon.png`,
       },
     },
     {

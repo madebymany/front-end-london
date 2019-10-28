@@ -97,7 +97,7 @@ const General = ({ data: { current }, location, children }) => {
   }, [ready, page, setReady])
 
   useEffect(() => {
-    const { skipTransition } = location.state
+    const skipTransition = location.state && location.state.skipTransition
     // If the state contains skipTransition, automatically set the page
     if (skipTransition) {
       setPage(location.pathname)

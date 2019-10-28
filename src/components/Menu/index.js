@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
-import { useTransition, animated } from "react-spring"
 
 import { MenuLink, ExternalMenuLink } from "../Links"
 import c from "../../styles/constants"
@@ -48,22 +47,9 @@ const Menu = ({ tickets, immediate, state = {} }) => {
     ...ticketsLink,
     ...siteMetadata,
   ]
-
-  const linkMenu = useTransition(menu, item => item.name, {
-    from: {
-      opacity: 0,
-      transform: `translateX(10%)`,
-    },
-    enter: {
-      opacity: 1,
-      transform: `translateX(0%)`,
-    },
-    trail: 200,
-    immediate,
-  })
   return (
     <MenuWrapper>
-      {linkMenu.map(({ item, key, props }) => {
+      {menu.map(item => {
         const external = item.link.indexOf("//") === 0
         const ComponentLink = external ? ExternalMenuLink : MenuLink
         const linkProps = {
@@ -71,9 +57,9 @@ const Menu = ({ tickets, immediate, state = {} }) => {
           to: item.link,
         }
         return (
-          <animated.div key={key} style={props}>
+          <div key={item.name}>
             <ComponentLink {...linkProps}>{item.name}</ComponentLink>
-          </animated.div>
+          </div>
         )
       })}
     </MenuWrapper>

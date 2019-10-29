@@ -12,7 +12,8 @@
       "topic": "Simplify writing code with deliberate commits",
       "description": "This talk will introduce 5 habits to adopt around committing your code which will help you break down gnarly, complex problems into smaller simpler problems and make it easier for you to write good code.",
       "slides_url": "",
-      "video_url": ""
+      "video_url": "//www.youtube.com/watch?v=mE8DZUfhdm4",
+      "poster": "../../assets/images/posters/mE8DZUfhdm4.jpg"
     },
     {
       "name": "Laurence Grinyer",
@@ -22,7 +23,8 @@
       "topic": "Shapes of design",
       "description": "Designers have become increasingly balkanised in recent years. At Lloyds Bank there are 9 different ‘guilds’ of design. This makes delivery more complex with regular ‘hand offs’ and turf wars. I’ll explore how we’re challenging this at Lloyds, and how service design is bringing together design and delivery.",
       "slides_url": "",
-      "video_url": ""
+      "video_url": "//www.youtube.com/watch?v=1GCzoQTXLt8",
+      "poster": "../../assets/images/posters/1GCzoQTXLt8.jpg"
     },
     {
       "name": "Alex Warren",
@@ -32,7 +34,8 @@
       "topic": "Why not fix your technical debt?",
       "description": "What is technical debt and why is it important? When should we fix it, and when is it not worth fixing? When it comes to a choice between \"fixing up old code\" or \"delivering new features\", it's often \"fixing up old code\" which loses - how can we fight back against that?",
       "slides_url": "",
-      "video_url": ""
+      "video_url": "//www.youtube.com/watch?v=TNcJqyNWTNY",
+      "poster": "../../assets/images/posters/TNcJqyNWTNY.jpg"
     }
   ]
 }

@@ -37,13 +37,18 @@ const Toggle = styled.button`
   height: 34px;
   color: currentColor;
   background: transparent;
-  border: none;
   padding: 0;
   margin-top: 10px;
+  border: 0px solid ${c.WHITE};
 
   ${large(css`
     display: none;
   `)}
+
+  &:focus {
+    outline: 0;
+    border-width: 2px;
+  }
 `
 
 const NavBar = ({ tickets, homepage, toggleMenu, open, ...props }) => {
@@ -62,7 +67,7 @@ const NavBar = ({ tickets, homepage, toggleMenu, open, ...props }) => {
     <div {...props}>
       <Container>
         <Wrapper theme={{ homepage, open }}>
-          <NavLogo homepage={homepage} open={open} />
+          <NavLogo homepage={homepage} />
           <NavLinks homepage={homepage} tickets={tickets} />
           <Toggle
             type="button"

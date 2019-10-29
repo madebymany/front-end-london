@@ -53,7 +53,7 @@ class Engine extends React.Component {
 
   render() {
     const { search, active, done, query } = this.state
-    const { talks, defaultQuery } = this.props
+    const { talks, defaultQuery, placeholder } = this.props
     return (
       <>
         <Search
@@ -75,6 +75,7 @@ class Engine extends React.Component {
           onLoadMore={this.onLoadMore}
           animate={!!query}
           done={!!query || done}
+          placeholder={placeholder}
         />
       </>
     )

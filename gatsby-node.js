@@ -65,6 +65,9 @@ exports.onPreBootstrap = async () => {
             .then(() => {
               resolve(url)
             })
+            .catch(e => {
+              resolve(false)
+            })
         )
         .catch(() => {
           resolve(false)
@@ -78,7 +81,7 @@ exports.onPreBootstrap = async () => {
 
   const eventData = events.map(path => readFileSync(path)).map(JSON.parse)
 
-  const foundPosters = []
+  let foundPosters = 0
 
   eventData.forEach((event, eventIndex) => {
     event.speakers.forEach(async (speaker, speakerIndex) => {
@@ -104,7 +107,7 @@ exports.onPreBootstrap = async () => {
           found = await fetchPoster(posters[i], id)
 
           if (found) {
-            foundPosters.push(found)
+            foundPosters += 1
 
             // Add poster to json and write back
             const newEventJson = { ...event }
@@ -125,5 +128,5 @@ exports.onPreBootstrap = async () => {
     })
   })
 
-  console.log(`Added ${foundPosters.length} new Youtube poster/s.`)
+  console.log(`Added ${foundPosters} new Youtube poster/s.`)
 }

@@ -13,7 +13,7 @@ const ResultsWrapper = styled.div`
 
 let timer
 
-const Results = ({ items, onLoadMore, done }) => {
+const Results = ({ items, onLoadMore, done, placeholder }) => {
   // Collection of rendered Results' heights
   const [loading, setLoading] = useState(false)
   // Setup a waypoint indicator
@@ -47,7 +47,7 @@ const Results = ({ items, onLoadMore, done }) => {
     <div>
       <ResultsWrapper>
         {items.map(item => (
-          <ArchivedTalk key={item.topic} {...item} />
+          <ArchivedTalk key={item.topic} {...item} placeholder={placeholder} />
         ))}
       </ResultsWrapper>
       {items && !done && !loading && <div style={{ height: 1 }} ref={ref} />}

@@ -46,8 +46,8 @@ const Preview = styled.a`
     width: 100%;
   }
 
-  &:before,
-  &:after {
+  a&:before,
+  a&:after {
     display: flex;
     position: absolute;
     bottom: 0;
@@ -61,11 +61,11 @@ const Preview = styled.a`
     `}
   }
 
-  &:before {
+  a&:before {
     background-color: ${c.ORANGE};
   }
 
-  &:after {
+  a&:after {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='14' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.97 6.97l-11.94 7v-14z' fill='%23FFF' fill-rule='evenodd'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -156,23 +156,27 @@ const ArchivedTalk = ({
   poster,
   video_url,
   slides_url,
-  timestamp,
+  placeholder,
 }) => {
   const [showLinks, setLinks] = useState(false)
   return (
     <TalkWrapper>
       <Row>
-        {poster && (
-          <Column md={0.27}>
+        <Column md={0.27}>
+          {poster ? (
             <Preview href={video_url} target="_blank" rel="noopener norefferer">
               <Img
                 fluid={poster.childImageSharp.fluid}
                 alt={`${topic} by ${name}`}
               />
             </Preview>
-          </Column>
-        )}
-        <PaddedColumn md={poster ? 0.73 : 1}>
+          ) : (
+            <Preview as="div">
+              <Img fluid={placeholder} alt={`${topic} by ${name}`} />
+            </Preview>
+          )}
+        </Column>
+        <PaddedColumn md={0.73}>
           <ContentWrapper>
             <Strap>
               {date}&nbsp;&nbsp;·&nbsp;&nbsp;{name}

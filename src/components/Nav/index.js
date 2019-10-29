@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useLayoutEffect } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
@@ -19,6 +19,10 @@ const Nav = ({ tickets, homepage, location }) => {
   useEffect(() => {
     setOpen(false)
   }, [location])
+
+  useLayoutEffect(() => {
+    document.body.classList[open ? "add" : "remove"]("nav--open")
+  }, [open])
 
   return (
     <NavWrapper theme={{ open }}>

@@ -7,6 +7,8 @@ import { setTimeout, clearTimeout } from "requestanimationframe-timer"
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 
+import { IconButton } from "../components/Button"
+
 import c from "../styles/constants"
 import { large } from "../styles/media"
 
@@ -29,25 +31,25 @@ const Sticky = styled.div`
   position: sticky;
   bottom: ${c.BASE};
   z-index: 1;
+  width: 100%;
+  margin: 0 auto;
+
+  ${large`
+    max-width: 1480px;
+  `}
 `
 
-const ScrollTopButton = styled.button`
+const ScrollTopButton = styled(IconButton)`
   margin: 0 ${c.BASE} 0 auto;
-  display: flex;
   width: 46px;
   height: 46px;
-  justify-content: center;
-  align-items: center;
-  background-color: ${c.ORANGE};
-  padding: 5px;
-  border: none;
-  cursor: pointer;
 
   ${large`
     width: 64px;
     height: 64px;
   `}
 `
+
 let pageChildren = {}
 let timer = null
 
@@ -158,6 +160,7 @@ const General = ({ data: { current }, location, children }) => {
         {scrollTop && (
           <Sticky>
             <ScrollTopButton
+              primary
               onClick={() =>
                 window.scrollTo({
                   top: 0,

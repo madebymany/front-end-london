@@ -11,7 +11,8 @@
       "topic": "The world keeps spinning round and round",
       "description": "The importance of educating yourself.",
       "slides_url": "//slides.com/arranrp/fel",
-      "video_url": "//www.youtube.com/watch?v=3zNBGyqX1V0"
+      "video_url": "//www.youtube.com/watch?v=3zNBGyqX1V0",
+      "poster": "../../assets/images/posters/3zNBGyqX1V0.jpg"
     },
     {
       "name": "Kaelig Deloumeau-Prigent",
@@ -21,7 +22,8 @@
       "topic": "Bridging the gap between developers and designers with Sass",
       "description": "There is often a vocabulary gap between designers an developers, who should aim towards a ubiquitous way of conversing about colours, typography, viewport sizes, or the responsive grid system of a digital product… To bridge this gap at the Guardian, we use a CSS pre-processor as a communication enabler through the abstractions it allows us to put in place.",
       "slides_url": "//www.slideshare.net/kaelig/bridging-the-gap-between-designers-and-developers-a-theguardian",
-      "video_url": "//www.youtube.com/watch?v=DAfW1RSWYDA"
+      "video_url": "//www.youtube.com/watch?v=DAfW1RSWYDA",
+      "poster": "../../assets/images/posters/DAfW1RSWYDA.jpg"
     },
     {
       "name": "Peter Gasston",
@@ -31,7 +33,8 @@
       "topic": "Over promised and under delivered",
       "description": "The mobile web arrived suddenly and grew exponentially. It’s created potential markets in new territories all over the world. So why is it so damned annoying to use? This talk will try to find out where we’re going wrong, using copious examples of bad practice and bitter experience.",
       "slides_url": "//speakerdeck.com/stopsatgreen/over-promised-and-under-delivered",
-      "video_url": "//www.youtube.com/watch?v=2Qd4mPHk7_w"
+      "video_url": "//www.youtube.com/watch?v=2Qd4mPHk7_w",
+      "poster": "../../assets/images/posters/2Qd4mPHk7_w.jpg"
     }
   ]
 }

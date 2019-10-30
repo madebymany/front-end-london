@@ -61,7 +61,7 @@ const WidthConstraint = styled.div`
   `}
 
   @media (min-width: 1460px) {
-    width: 85%;
+    width: 80%;
   }
 `
 

@@ -52,6 +52,15 @@ class Engine extends React.Component {
   render() {
     const { search, active, done, query } = this.state
     const { talks, defaultQuery, placeholder } = this.props
+
+    let copy = `${talks.length} talks`
+    if (query) {
+      copy = search.length
+        ? `Results for "${query}" ${search.length} result${
+            search.length > 1 ? "s" : ""
+          }`
+        : "Sorry, no results found."
+    }
     return (
       <>
         <Search
@@ -60,13 +69,7 @@ class Engine extends React.Component {
           onResults={this.onSearchResults}
           onQuery={this.onQuery}
           copyInline={!!query}
-          copy={
-            query
-              ? `Results for "${query}" ${search.length} result${
-                  search.length > 1 ? "s" : ""
-                }`
-              : `${talks.length} talks`
-          }
+          copy={copy}
         />
         <Results
           items={query ? search : active}

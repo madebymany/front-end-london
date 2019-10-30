@@ -27,7 +27,7 @@ const IndexPage = ({ data, location, ...rest }) => {
     talk.tickets_released =
       talk.tickets_released &&
       parse(talk.tickets_released, "yyyy-MM-dd HH:mm", new Date())
-    talk.availability = isPast(talk.tickets_released)
+    talk.availability = talk.tickets_released && isPast(talk.tickets_released)
 
     schema = {
       "@context": "https://schema.org",

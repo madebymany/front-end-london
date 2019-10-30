@@ -17,7 +17,7 @@ const LogoWrapper = styled.div`
 const NavLogo = ({ homepage }) => (
   <LogoWrapper theme={{ visible: !homepage }}>
     <Link to="/">
-      <img src={Logo} alt="Frontend London" />
+      <img src={Logo} alt="Front-end London" />
     </Link>
   </LogoWrapper>
 )

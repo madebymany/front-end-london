@@ -14,7 +14,7 @@ const MenuWrapper = styled.nav`
   }
 `
 
-const Menu = ({ tickets, exclude = [] }) => {
+const Menu = ({ tickets, onClick = () => {}, exclude = [] }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -55,6 +55,7 @@ const Menu = ({ tickets, exclude = [] }) => {
         const ComponentLink = external ? ExternalMenuLink : MenuLink
         const linkProps = {
           to: item.link,
+          onClick,
         }
         return (
           <div key={item.name}>

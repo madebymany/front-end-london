@@ -29,10 +29,10 @@ const Nav = ({ tickets, homepage, location }) => {
       <NavBar
         tickets={tickets}
         homepage={homepage}
-        toggleMenu={setOpen}
+        setOpen={setOpen}
         open={open}
       />
-      <NavModal tickets={tickets} open={open} />
+      <NavModal tickets={tickets} open={open} setOpen={setOpen} />
     </NavWrapper>
   )
 }

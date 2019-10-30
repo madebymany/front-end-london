@@ -48,7 +48,7 @@ const interpolator = interpolate([startPath, endPath], {
   precision: 0,
 })
 
-const MobileModal = ({ tickets, open }) => {
+const MobileModal = ({ tickets, open, setOpen }) => {
   const [size, setSize] = useState("100%")
 
   useEffect(() => {
@@ -92,7 +92,7 @@ const MobileModal = ({ tickets, open }) => {
   return (
     <>
       {blob.map(
-        ({ item, key, props: { x, d, state } }) =>
+        ({ item, key, props: { x, d } }) =>
           item && (
             <Modal key={key} open={open} zIndex={10} fullscreen>
               <MenuWrapper style={{ height: size }}>
@@ -109,7 +109,10 @@ const MobileModal = ({ tickets, open }) => {
                   <animated.path d={d.to(interpolator)} />
                 </MorphSvg>
                 <OuterWrapper style={fade}>
-                  <MobileMenu tickets={tickets} />
+                  <MobileMenu
+                    tickets={tickets}
+                    onClick={() => setOpen(false)}
+                  />
                 </OuterWrapper>
               </MenuWrapper>
             </Modal>

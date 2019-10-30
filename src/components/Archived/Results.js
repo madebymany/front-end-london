@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import { useInView } from "react-intersection-observer"
 import { setTimeout, clearTimeout } from "requestanimationframe-timer"
-
 import ArchivedTalk from "../ArchivedTalks/ArchivedTalk"
 
 const ResultsWrapper = styled.div`
@@ -28,7 +27,7 @@ const Results = ({ items, onLoadMore, done, placeholder }) => {
       if (inView && !loading) {
         onLoadMore()
       }
-    }, 500)
+    }, 200)
     return () => clearTimeout(timer)
   }, [inView, loading, onLoadMore])
 
@@ -39,18 +38,18 @@ const Results = ({ items, onLoadMore, done, placeholder }) => {
     setLoading(true)
     const delayTimer = setTimeout(() => {
       setLoading(false)
-    }, 500)
+    }, 200)
     return () => clearTimeout(delayTimer)
   }, [items, setLoading])
 
   return (
     <div>
-      <ResultsWrapper>
+      <ResultsWrapper aria-live="polite">
         {items.map(item => (
           <ArchivedTalk key={item.topic} {...item} placeholder={placeholder} />
         ))}
       </ResultsWrapper>
-      {items && !done && !loading && <div style={{ height: 1 }} ref={ref} />}
+      {!done && !loading && <div style={{ height: 1 }} ref={ref} />}
     </div>
   )
 }

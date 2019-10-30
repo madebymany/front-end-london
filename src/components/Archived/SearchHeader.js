@@ -151,7 +151,7 @@ const SearchHeader = ({
           />
         </FormWrapper>
       </MobileModal>
-      {copy && <SearchCopy>{copy}</SearchCopy>}
+      <div aria-live="polite">{copy && <SearchCopy>{copy}</SearchCopy>}</div>
     </HeaderWrapper>
   )
 }

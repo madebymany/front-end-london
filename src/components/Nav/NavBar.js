@@ -51,7 +51,7 @@ const Toggle = styled.button`
   }
 `
 
-const NavBar = ({ tickets, homepage, toggleMenu, open, ...props }) => {
+const NavBar = ({ tickets, homepage, setOpen, open, ...props }) => {
   // Prevent abuse on menu toggle
   const [toggleDirection, setToggleDirection] = useState(!open)
   const hamburger = useSpring({
@@ -71,7 +71,7 @@ const NavBar = ({ tickets, homepage, toggleMenu, open, ...props }) => {
           <NavLinks homepage={homepage} tickets={tickets} />
           <Toggle
             type="button"
-            onClick={() => toggleMenu(toggleDirection)}
+            onClick={() => setOpen(toggleDirection)}
             aria-label={open ? "open menu" : "close menu"}
             aria-expanded={open ? "false" : "true"}
           >

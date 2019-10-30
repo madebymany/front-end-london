@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 
+import SEO from "../components/seo"
 import Container from "../components/Container"
 
 import Archived from "../components/Archived"
@@ -32,6 +33,7 @@ const Archive = ({
     }, [])
   return (
     <>
+      <SEO title="Past talks" />
       <FillWrapper>
         <Container>
           <Archived

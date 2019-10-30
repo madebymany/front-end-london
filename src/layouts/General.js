@@ -71,6 +71,7 @@ const shouldUpdateScroll = location => {
   }
 
   // If the scroll is set (from shouldScrollUpdate - gatsby-browser.js)
+
   if (window.__fel_scroll) {
     timer = setTimeout(() => {
       window.scrollTo(...window.__fel_scroll)
@@ -107,7 +108,7 @@ const General = ({ data: { current }, location, children }) => {
     leave: {
       opacity: 0,
     },
-    onRest: item => {
+    onStart: item => {
       if (item.pathname === location.pathname) {
         shouldUpdateScroll(location)
       }

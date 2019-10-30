@@ -181,16 +181,14 @@ const HeroVideo = ({ open, setOpen }) => {
   useEffect(() => {
     clearTimeout(timer)
     if (scroll) {
-      timer = setTimeout(() => {
-        window.scrollTo({
-          top: videoRef.current.getBoundingClientRect().top,
-          left: 0,
-          behaviour: "smooth",
-        })
-      }, 500)
+      window.scrollTo({
+        top: isLarge ? 95 : 87,
+        left: 0,
+        behavior: "smooth",
+      })
     }
     return () => clearTimeout(timer)
-  }, [scroll])
+  }, [scroll, isLarge])
 
   useEffect(() => {
     if (open && videoRef) {

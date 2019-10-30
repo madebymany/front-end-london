@@ -22,7 +22,7 @@ const LinkGroup = styled.div`
   flex-direction: column;
 `
 
-const GiveATalkContent = () => (
+const GiveATalkContent = ({ form }) => (
   <Wrapper>
     <PaddedHeading>Want to give a talk at FEL?</PaddedHeading>
     <Copy>
@@ -32,14 +32,7 @@ const GiveATalkContent = () => (
     </Copy>
     <LinkGroup>
       <div>
-        <ExternalMonoLink to="mailto:fel@madebymany.co.uk">
-          fel@madebymany.co.uk
-        </ExternalMonoLink>
-      </div>
-      <div>
-        <ExternalMonoLink to="https://twitter.com/frontendlondon">
-          @frontendlondon
-        </ExternalMonoLink>
+        <ExternalMonoLink to={form}>Submit a talk</ExternalMonoLink>
       </div>
     </LinkGroup>
   </Wrapper>

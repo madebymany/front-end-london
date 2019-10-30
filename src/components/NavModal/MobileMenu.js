@@ -5,7 +5,7 @@ import Container from "../Container"
 import c from "../../styles/constants"
 
 import Menu from "../Menu"
-import MobileFooter from "./MobileFooter"
+// import MobileFooter from "./MobileFooter"
 
 const FullHeightContainer = styled(Container)`
   height: 100%;
@@ -32,13 +32,12 @@ const InnerWrapper = styled.div`
   margin-top: ${c.XL5};
 `
 
-const MobileMenu = ({ tickets }) => (
+const MobileMenu = ({ tickets, onClick }) => (
   <FullHeightContainer>
     <MenuWrapper>
       <InnerWrapper>
-        <Menu tickets={tickets} exclude={["/#give-a-talk"]} />
+        <Menu tickets={tickets} onClick={onClick} />
       </InnerWrapper>
-      <MobileFooter />
     </MenuWrapper>
   </FullHeightContainer>
 )

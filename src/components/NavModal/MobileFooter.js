@@ -16,20 +16,22 @@ const SmallHeading = styled.h4`
   margin: 0;
 `
 
-const MobileFooter = () => (
-  <MobileFooterWrapper>
-    <SmallHeading>Want to give a talk at FEL?</SmallHeading>
-    <Copy>
-      Contact us:{" "}
-      <ExternalCopyLink to="mailto:fel@madebymany.co.uk">
-        fel@madebymany.co.uk
-      </ExternalCopyLink>
-      <br />
-      <ExternalCopyLink to="https://twitter.com/frontendlondon">
-        @frontendlondon
-      </ExternalCopyLink>
-    </Copy>
-  </MobileFooterWrapper>
-)
+const MobileFooter = () => {
+  return (
+    <MobileFooterWrapper>
+      <SmallHeading>Want to give a talk at FEL?</SmallHeading>
+      <Copy>
+        Contact us:{" "}
+        <ExternalCopyLink to="mailto:fel@madebymany.co.uk">
+          fel@madebymany.co.uk
+        </ExternalCopyLink>
+        <br />
+        <ExternalCopyLink to="https://twitter.com/frontendlondon">
+          @frontendlondon
+        </ExternalCopyLink>
+      </Copy>
+    </MobileFooterWrapper>
+  )
+}
 
 export default MobileFooter

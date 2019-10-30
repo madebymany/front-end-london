@@ -5,6 +5,7 @@ module.exports = {
     description: `Front-end London is a monthly developer meetup in London hosted by Made by Many.`,
     author: `@madebymany`,
     image: `/share-16x9.jpg`,
+    form: `//mxm.io/talk-at-fel`,
     menuLinks: [
       {
         name: "Give a talk at FEL",

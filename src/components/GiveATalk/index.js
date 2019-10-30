@@ -27,6 +27,11 @@ const TalkRow = styled(Row)`
 const GiveATalk = () => {
   const data = useStaticQuery(graphql`
     query {
+      site {
+        siteMetadata {
+          form
+        }
+      }
       file(relativePath: { eq: "fel-audience.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
@@ -40,7 +45,7 @@ const GiveATalk = () => {
     <Wrapper id="give-a-talk">
       <TalkRow>
         <Column lg={0.43}>
-          <GiveATalkContent />
+          <GiveATalkContent form={data.site.siteMetadata.form} />
         </Column>
         <Column lg={0.57}>
           <GiveATalkImage image={data.file.childImageSharp.fluid} />

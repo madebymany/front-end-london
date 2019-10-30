@@ -5,7 +5,7 @@ module.exports = {
     author: `@madebymany`,
     menuLinks: [
       {
-        name: "Give a talk",
+        name: "Give a talk at FEL",
         link: "/#give-a-talk",
       },
       {

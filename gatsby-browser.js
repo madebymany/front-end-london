@@ -1,8 +1,11 @@
 import React from "react"
 import { enablePageScroll } from "scroll-lock"
+import smoothscroll from "smoothscroll-polyfill"
+
 import GlobalStyle from "./src/styles/globalStyle"
 
 const loadPolyfills = async () => {
+  smoothscroll.polyfill()
   if (typeof window.IntersectionObserver === "undefined") {
     await import("intersection-observer")
   }
@@ -49,6 +52,11 @@ const shouldUpdateScroll = ({
   routerProps: { location },
   getSavedScrollPosition,
 }) => {
+  // Always resest to top, so transitions look good
+  if (prevRouterProps.location.pathname !== location.pathname) {
+    window.scrollTo(0, 0)
+  }
+
   // When a an anchor link is clicked which has the same pathname as the target
   // This is the only place to smooth scroll to element (and we can do it instantly - no transition)
   // This is because the router doesnt detect the change in search or hash

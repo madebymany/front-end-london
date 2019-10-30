@@ -14,7 +14,7 @@ const MenuWrapper = styled.nav`
   }
 `
 
-const Menu = ({ tickets, immediate, state = {} }) => {
+const Menu = ({ tickets, exclude = [] }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -46,14 +46,14 @@ const Menu = ({ tickets, immediate, state = {} }) => {
     },
     ...ticketsLink,
     ...siteMetadata,
-  ]
+  ].filter(item => !exclude.includes(item.link))
+
   return (
     <MenuWrapper>
       {menu.map(item => {
         const external = item.link.indexOf("//") === 0
         const ComponentLink = external ? ExternalMenuLink : MenuLink
         const linkProps = {
-          ...(!external && { state }),
           to: item.link,
         }
         return (

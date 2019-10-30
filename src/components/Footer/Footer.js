@@ -37,7 +37,7 @@ const Footer = ({ tickets }) => (
     <Container>
       <Row>
         <Column md={0.5}>
-          <Menu tickets={tickets} immediate={true} />
+          <Menu tickets={tickets} />
         </Column>
         <LogoColumn md={0.5}>
           <FooterLogo src={Logo} alt="Frontend London" />

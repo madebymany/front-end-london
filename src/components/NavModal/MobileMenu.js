@@ -36,7 +36,7 @@ const MobileMenu = ({ tickets }) => (
   <FullHeightContainer>
     <MenuWrapper>
       <InnerWrapper>
-        <Menu tickets={tickets} state={{ skipTransition: true }} />
+        <Menu tickets={tickets} exclude={["/#give-a-talk"]} />
       </InnerWrapper>
       <MobileFooter />
     </MenuWrapper>

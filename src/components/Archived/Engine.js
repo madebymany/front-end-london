@@ -26,21 +26,19 @@ class Engine extends React.Component {
     const current = index + 1
     const done = current * chunk >= talks.length - 1
     const active = talks.slice(0, current * chunk)
-    this.timer = setTimeout(() => {
-      this.setState({
-        index: current,
-        active,
-        done,
-      })
+    this.setState({
+      index: current,
+      active,
+      done,
+    })
 
-      if (shouldNavigate) {
-        // Replace history with the new index to preserve scroll pos
-        navigate("/archive/", {
-          replace: true,
-          state: { lazyLoadIndex: index },
-        })
-      }
-    }, 500)
+    if (shouldNavigate) {
+      // Replace history with the new index to preserve scroll pos
+      navigate("/archive/", {
+        replace: true,
+        state: { lazyLoadIndex: index },
+      })
+    }
   }
 
   onQuery = query => {

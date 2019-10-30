@@ -160,10 +160,11 @@ const NewsletterForm = () => {
         <CopyColumn md={0.73}>
           <Text>
             We don’t want any funny business, we want to be clear about the data
-            we collect and how we use it. To find out the details click{" "}
+            we collect and how we use it.{" "}
             <ExternalCopyLink to={data.site.siteMetadata.privacyPolicy}>
-              here
+              Find out the details
             </ExternalCopyLink>
+            .
           </Text>
         </CopyColumn>
         {message && <StatusMessage theme={{ status }}>{message}</StatusMessage>}

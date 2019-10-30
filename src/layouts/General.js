@@ -71,8 +71,7 @@ const shouldUpdateScroll = location => {
   }
 
   // If the scroll is set (from shouldScrollUpdate - gatsby-browser.js)
-
-  if (window.__fel_scroll) {
+  if (typeof window !== "undefined" && window.__fel_scroll) {
     timer = setTimeout(() => {
       window.scrollTo(...window.__fel_scroll)
       timer = null

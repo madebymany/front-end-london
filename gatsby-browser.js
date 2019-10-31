@@ -1,6 +1,6 @@
 import React from "react"
-import { enablePageScroll } from "scroll-lock"
 import smoothscroll from "smoothscroll-polyfill"
+import { setTimeout } from "requestanimationframe-timer"
 
 import GlobalStyle from "./src/styles/globalStyle"
 
@@ -24,67 +24,47 @@ const wrapRootElement = ({ element, props }) => {
 
 const wrapPageElement = require("./src/wrapper")
 
-window.addEventListener("popstate", () => {
-  // If the browser back/forward buttons are pressed we should force scroll update
-  window.__fel_forcestate = true
-})
-
-const onPreRouteUpdate = ({ location, prevLocation }) => {
-  // Re-enable scrolling if the route changes, really an escape hatch
-  enablePageScroll()
-
-  // If there is no previous location attempt to fetch scroll data
-  if (!prevLocation) {
-    const scroll = window.sessionStorage.getItem(
-      `@@scroll|${location.key || location.pathname}`
-    )
-    if (scroll) {
-      window.__fel_scroll = scroll
-        .substring(1, scroll.length - 1)
-        .split(",")
-        .map(value => Number(value))
+const getTargetOffset = hash => {
+  const id = window.decodeURI(hash.replace(`#`, ``))
+  if (id !== ``) {
+    const element = document.getElementById(id)
+    if (element) {
+      return element.offsetTop
     }
   }
+  return null
 }
 
-const shouldUpdateScroll = ({
-  prevRouterProps,
-  routerProps: { location },
-  getSavedScrollPosition,
-}) => {
-  // Always resest to top, so transitions look good
-  // if (prevRouterProps.location.pathname !== location.pathname) {
-  //   window.scrollTo(0, 0)
-  // }
+const onInitialClientRender = () => {
+  requestAnimationFrame(() => {
+    // Wait for body render
+    setTimeout(() => {
+      const offset = getTargetOffset(window.location.hash)
+      if (offset !== null) {
+        window.scrollTo(0, offset)
+      }
+    }, 100)
+  })
+}
 
-  // When a an anchor link is clicked which has the same pathname as the target
-  // This is the only place to smooth scroll to element (and we can do it instantly - no transition)
-  // This is because the router doesnt detect the change in search or hash
-  if (
-    prevRouterProps.location.pathname === location.pathname &&
-    location.hash
-  ) {
-    const item = document.querySelector(location.hash).offsetTop
-    window.scrollTo({ top: item, left: 0, behavior: "smooth" })
-    window.__fel_scroll = null
-  } else if (prevRouterProps.location.pathname !== location.pathname) {
-    window.__fel_scroll = [0, 0]
+const shouldUpdateScroll = ({ prevRouterProps, routerProps: { location } }) => {
+  if (prevRouterProps.location.pathname === location.pathname) {
+    if (location.hash) {
+      const smoothOffset = getTargetOffset(location.hash)
+      if (smoothOffset) {
+        window.scrollTo({ top: smoothOffset, left: 0, behavior: "smooth" })
+      }
+    }
+    return false
   }
 
-  if (window.__fel_forcestate) {
-    window.__fel_scroll = getSavedScrollPosition(location)
-    window.scrollTo(...window.__fel_scroll)
-  }
-
-  // Reset state
-  window.__fel_forcestate = false
-
-  return false
+  const offset = getTargetOffset(location.hash)
+  return offset !== null ? [0, offset] : true
 }
 
 export {
   wrapPageElement,
   wrapRootElement,
-  onPreRouteUpdate,
+  onInitialClientRender,
   shouldUpdateScroll,
 }

@@ -60,25 +60,6 @@ const ScrollTopButton = styled(IconButton)`
 
 let pageChildren = {}
 
-const shouldUpdateScroll = location => {
-  // We are already scrolling
-  if (typeof window !== "undefined") {
-    return
-  }
-
-  // If there is a location hash smooth scroll to element
-  if (location && location.hash) {
-    const item = document.querySelector(location.hash).offsetTop
-    window.scrollTo({ top: item, left: 0, behavior: "smooth" })
-    return
-  }
-
-  // If the scroll is set (from shouldScrollUpdate - gatsby-browser.js)
-  if (window.__fel_scroll) {
-    window.scrollTo(...window.__fel_scroll)
-  }
-}
-
 const General = ({ data: { current }, location, children }) => {
   // Triggers the enter and exit of the transition animation
   const tickets = current.edges.length
@@ -102,11 +83,6 @@ const General = ({ data: { current }, location, children }) => {
     leave: {
       opacity: 0,
     },
-    onRest: item => {
-      if (item.pathname === location.pathname) {
-        shouldUpdateScroll(location)
-      }
-    },
   })
 
   return (
@@ -114,11 +90,14 @@ const General = ({ data: { current }, location, children }) => {
       <animated.div style={fadeIn}>
         <Nav tickets={tickets} homepage={isHomepage} location={location} />
         <Main>
-          {pages.map(({ item, props, key }) => (
-            <Wrapper key={key} style={props}>
-              {pageChildren[item.pathname]}
-            </Wrapper>
-          ))}
+          {pages.map(
+            ({ item, props, key }) =>
+              item.pathname === location.pathname && (
+                <Wrapper key={key} style={props}>
+                  {pageChildren[item.pathname]}
+                </Wrapper>
+              )
+          )}
         </Main>
         {scrollTop && (
           <Sticky>

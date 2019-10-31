@@ -15,7 +15,7 @@ const ResourceGroup = styled.div`
     display: block;
   `}
 
-  .focus-trap & {
+  [data-focus-lock="modal"] & {
     display: block;
     
     ${ExternalMonoArrowLink} {

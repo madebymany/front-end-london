@@ -3,7 +3,7 @@ import ReactDOM from "react-dom"
 import styled from "styled-components"
 import { rgba, cover } from "polished"
 import { Spring, animated } from "react-spring"
-import FocusTrap from "react-focus-trap"
+import FocusLock from "react-focus-lock"
 import { useMediaQuery } from "react-responsive"
 import { disablePageScroll, enablePageScroll } from "scroll-lock"
 
@@ -17,55 +17,45 @@ const ModalWrapper = styled.div`
   height: 100%;
   top: 0;
   left: 0;
-  background-color: ${rgba(c.BLACK, 0)};
-  transition: background-color 0.5s, opacity 0.2s;
   z-index: ${props => props.theme.zIndex};
+  ${props => props.theme.align && `justify-content: ${props.theme.align};`}
 
-  ${props =>
-    props.theme.open &&
-    `
-    background-color: ${rgba(c.BLACK, 0.55)};
-    `}
-
-  .focus-trap-wrapper {
-    display: flex;
-    flex-direction: column;
+  [data-focus-lock="modal"] {
+    outline: 0;
     z-index: 1;
-    ${props => props.theme.align && `justify-content: ${props.theme.align};`}
-    width: 100%;
-    height: 100%;
 
-    .focus-trap-backdrop {
-      ${cover()}
-    }
-
-    .focus-trap {
-      outline: 0;
-      z-index: 1;
-
-      ${props =>
-        props.theme.fullscreen &&
-        `
+    ${props =>
+      props.theme.fullscreen &&
+      `
         height: 100%;
 
         > div {
           height: 100%;
         }
       `}
-    }
   }
+`
+
+const Backdrop = styled.div`
+  ${cover()}
+  background-color: ${rgba(c.BLACK, 0)};
+  transition: background-color 0.5s, opacity 0.2s;
+
+  ${props =>
+    props.theme.open &&
+    `
+    background-color: ${rgba(c.BLACK, 0.55)};
+    `}
 `
 
 const directions = {
   down: {
     from: { transform: "translateY(-100%)" },
     to: { transform: "translateY(0%)" },
-    // config: { duration: 200 },
   },
   up: {
     from: { transform: "translateY(100%)" },
     to: { transform: "translateY(0%)" },
-    // config: { duration: 200 },
   },
 }
 
@@ -91,12 +81,9 @@ export const Modal = ({
     }
   }, [open])
   return ReactDOM.createPortal(
-    <ModalWrapper theme={{ open: active, align, fullscreen, zIndex }}>
-      <FocusTrap
-        onExit={() => {
-          setOpen(false)
-        }}
-      >
+    <ModalWrapper theme={{ align, fullscreen, zIndex }}>
+      <Backdrop theme={{ open: active }} onClick={() => setOpen(false)} />
+      <FocusLock group="modal">
         <Spring
           from={{ x: 0 }}
           to={{ x: 1 }}
@@ -122,7 +109,7 @@ export const Modal = ({
             </animated.div>
           )}
         </Spring>
-      </FocusTrap>
+      </FocusLock>
     </ModalWrapper>,
     document.body
   )

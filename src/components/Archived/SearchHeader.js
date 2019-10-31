@@ -101,7 +101,7 @@ const FormWrapper = styled.div`
     margin-bottom: ${c.XL6};
   `)}
 
-  .focus-trap & {
+  [data-focus-lock="modal"] & {
     display: block;
   }
 `

@@ -1,8 +1,7 @@
-import React, { useEffect } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { useSpring, useTransition, animated } from "react-spring"
-import { setTimeout, clearTimeout } from "requestanimationframe-timer"
 
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
@@ -15,8 +14,8 @@ import { large } from "../styles/media"
 import Arrow from "../../assets/icons/arrow.svg"
 
 const Main = styled.main`
-  transition: padding 0.5s;
   background: ${c.WHITE};
+  transition: padding 0.5s;
 
   & > div > *:first-child:not(.Hero) {
     padding-top: 100px;
@@ -24,6 +23,15 @@ const Main = styled.main`
     ${large`
       padding-top: 160px;
     `}
+  }
+`
+
+const Wrapper = styled(animated.div)`
+  & + & {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 `
 
@@ -51,31 +59,23 @@ const ScrollTopButton = styled(IconButton)`
 `
 
 let pageChildren = {}
-let timer = null
 
 const shouldUpdateScroll = location => {
   // We are already scrolling
-  if (timer !== null) {
+  if (typeof window !== "undefined") {
     return
   }
 
   // If there is a location hash smooth scroll to element
   if (location && location.hash) {
-    timer = setTimeout(() => {
-      const item = document.querySelector(location.hash).offsetTop
-      window.scrollTo({ top: item, left: 0, behavior: "smooth" })
-      timer = null
-    }, 300)
-
+    const item = document.querySelector(location.hash).offsetTop
+    window.scrollTo({ top: item, left: 0, behavior: "smooth" })
     return
   }
 
   // If the scroll is set (from shouldScrollUpdate - gatsby-browser.js)
-  if (typeof window !== "undefined" && window.__fel_scroll) {
-    timer = setTimeout(() => {
-      window.scrollTo(...window.__fel_scroll)
-      timer = null
-    }, 100)
+  if (window.__fel_scroll) {
+    window.scrollTo(...window.__fel_scroll)
   }
 }
 
@@ -86,11 +86,6 @@ const General = ({ data: { current }, location, children }) => {
     : ""
   const isHomepage = location.pathname === "/"
   const scrollTop = location.pathname === "/archive/"
-
-  // This should really never unmount, but just incase
-  useEffect(() => {
-    return () => clearTimeout(timer)
-  }, [])
 
   // Keep reference to the children so we can persist until transition is complete
   pageChildren[location.pathname] = children
@@ -107,7 +102,7 @@ const General = ({ data: { current }, location, children }) => {
     leave: {
       opacity: 0,
     },
-    onStart: item => {
+    onRest: item => {
       if (item.pathname === location.pathname) {
         shouldUpdateScroll(location)
       }
@@ -120,9 +115,9 @@ const General = ({ data: { current }, location, children }) => {
         <Nav tickets={tickets} homepage={isHomepage} location={location} />
         <Main>
           {pages.map(({ item, props, key }) => (
-            <animated.div key={key} style={props}>
+            <Wrapper key={key} style={props}>
               {pageChildren[item.pathname]}
-            </animated.div>
+            </Wrapper>
           ))}
         </Main>
         {scrollTop && (

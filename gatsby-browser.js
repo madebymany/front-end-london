@@ -53,9 +53,9 @@ const shouldUpdateScroll = ({
   getSavedScrollPosition,
 }) => {
   // Always resest to top, so transitions look good
-  if (prevRouterProps.location.pathname !== location.pathname) {
-    window.scrollTo(0, 0)
-  }
+  // if (prevRouterProps.location.pathname !== location.pathname) {
+  //   window.scrollTo(0, 0)
+  // }
 
   // When a an anchor link is clicked which has the same pathname as the target
   // This is the only place to smooth scroll to element (and we can do it instantly - no transition)
@@ -67,15 +67,13 @@ const shouldUpdateScroll = ({
     const item = document.querySelector(location.hash).offsetTop
     window.scrollTo({ top: item, left: 0, behavior: "smooth" })
     window.__fel_scroll = null
+  } else if (prevRouterProps.location.pathname !== location.pathname) {
+    window.__fel_scroll = [0, 0]
   }
 
   if (window.__fel_forcestate) {
     window.__fel_scroll = getSavedScrollPosition(location)
-  }
-  // If the pathname changes reset scroll to the top
-  // If there is a hash General.js will pick it up, and ignore this
-  else if (prevRouterProps.location.pathname !== location.pathname) {
-    window.__fel_scroll = [0, 0]
+    window.scrollTo(...window.__fel_scroll)
   }
 
   // Reset state

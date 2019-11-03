@@ -1,6 +1,13 @@
-import React, { useState, useEffect, useRef } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
-import { useSpring, useTransition, useChain, animated } from "react-spring"
+import {
+  motion,
+  AnimatePresence,
+  useSpring,
+  useTransform,
+  transform,
+} from "framer-motion"
+import { setTimeout, clearTimeout } from "requestanimationframe-timer"
 import { interpolate } from "polymorph-js"
 import debounce from "lodash.debounce"
 
@@ -8,12 +15,12 @@ import { Modal } from "../Modal"
 import MobileMenu from "./MobileMenu"
 import c from "../../styles/constants"
 
-const MenuWrapper = styled(animated.div)`
+const MenuWrapper = styled.div`
   height: 100%;
   overflow: auto;
 `
 
-const OuterWrapper = styled(animated.div)`
+const OuterWrapper = styled(motion.div)`
   position: relative;
   height: 100%;
   padding-top: ${c.XL8};
@@ -27,7 +34,7 @@ const OuterWrapper = styled(animated.div)`
   }
 `
 
-const MorphSvg = styled(animated.svg)`
+const MorphSvg = styled(motion.svg)`
   position: absolute;
   width: 120%;
   height: 110%;
@@ -48,8 +55,24 @@ const interpolator = interpolate([startPath, endPath], {
   precision: 0,
 })
 
+const springConfig = { damping: 300, stiffness: 100, mass: 2 }
+
 const MobileModal = ({ tickets, open, setOpen }) => {
   const [size, setSize] = useState("100%")
+  const pathPos = useSpring(0, { springConfig })
+  const path = useTransform(pathPos, value =>
+    interpolator(transform(value, [0, 1], [0, 1]))
+  )
+  useEffect(() => {
+    const timer = setTimeout(
+      () => {
+        pathPos.set(open ? 1 : 0)
+      },
+      open ? 400 : 500
+    )
+
+    return () => clearTimeout(timer)
+  }, [open, pathPos])
 
   useEffect(() => {
     const getSize = debounce(() => {
@@ -60,65 +83,52 @@ const MobileModal = ({ tickets, open, setOpen }) => {
     return () => window.removeEventListener("resize", getSize)
   }, [])
 
-  const fadeRef = useRef()
-  const fade = useSpring({
-    to: {
-      transform: open ? "translateX(0%)" : "translateX(60%)",
-      opacity: open ? 1 : 0,
-    },
-    ref: fadeRef,
-  })
-  const blobRef = useRef()
-  const blob = useTransition(open, null, {
-    from: {
-      d: 0,
-      x: 0,
-    },
-    enter: {
-      d: 1,
-      x: -120,
-    },
-    leave: {
-      d: 0,
-      x: 0,
-    },
-    config: {
-      duration: 600,
-    },
-    ref: blobRef,
-  })
-
-  useChain(open ? [blobRef, fadeRef] : [fadeRef, blobRef], [0, 0.3])
   return (
-    <>
-      {blob.map(
-        ({ item, key, props: { x, d } }) =>
-          item && (
-            <Modal key={key} open={open} zIndex={10} fullscreen>
-              <MenuWrapper style={{ height: size }}>
-                <MorphSvg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="100%"
-                  height="100%"
-                  viewBox="0 0 566.9 566.9"
-                  preserveAspectRatio="none"
-                  style={{
-                    transform: x.to(x => `translateX(${x}%)`),
-                  }}
-                >
-                  <animated.path d={d.to(interpolator)} />
-                </MorphSvg>
-                <OuterWrapper style={fade}>
-                  <MobileMenu
-                    tickets={tickets}
-                    onClick={() => setOpen(false)}
-                  />
-                </OuterWrapper>
-              </MenuWrapper>
-            </Modal>
-          )
+    <AnimatePresence>
+      {open && (
+        <Modal open={open} zIndex={10} fullscreen>
+          <MenuWrapper style={{ height: size }}>
+            <MorphSvg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 566.9 566.9"
+              preserveAspectRatio="none"
+              initial="closed"
+              exit="closed"
+              variants={{
+                closed: { x: "0%", transition: { delay: 0.6, duration: 0.6 } },
+                open: { x: "-120%", transition: { duration: 0.6 } },
+              }}
+              transition={{
+                type: "spring",
+                ...springConfig,
+              }}
+            >
+              <motion.path d={path} />
+            </MorphSvg>
+            <OuterWrapper
+              initial="closed"
+              variants={{
+                closed: {
+                  x: "60%",
+                  opacity: 0,
+                  transition: { duration: 0.6 },
+                },
+                open: {
+                  x: "0%",
+                  opacity: 1,
+                  transition: { delay: 0.6, duration: 0.6 },
+                },
+              }}
+              exit="closed"
+            >
+              <MobileMenu tickets={tickets} onClick={() => setOpen(false)} />
+            </OuterWrapper>
+          </MenuWrapper>
+        </Modal>
       )}
-    </>
+    </AnimatePresence>
   )
 }
 

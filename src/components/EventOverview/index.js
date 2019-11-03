@@ -19,22 +19,19 @@ const Wrapper = styled.div`
   `)}
 `
 
-const EventOverview = ({ talk }) => {
-  const talkSpreadable = (talk && { ...talk }) || {}
-  return (
-    <Wrapper>
-      <Container>
-        <Row justify="space-between">
-          <Column lg={0.3}>
-            <NextEvent {...talkSpreadable} />
-          </Column>
-          <Column lg={0.7}>
-            <EventSummary {...talkSpreadable} />
-          </Column>
-        </Row>
-      </Container>
-    </Wrapper>
-  )
-}
+const EventOverview = ({ talk = {} }) => (
+  <Wrapper>
+    <Container>
+      <Row justify="space-between">
+        <Column lg={0.3}>
+          <NextEvent {...talk} />
+        </Column>
+        <Column lg={0.7}>
+          <EventSummary {...talk} />
+        </Column>
+      </Row>
+    </Container>
+  </Wrapper>
+)
 
 export default EventOverview

@@ -46,13 +46,12 @@ const Wrapper = styled.div`
   left: 0;
   z-index: 1;
   visibility: visible;
-  transition: opacity 0.5s 1s, visibility 0.5s, max-height 0.5s;
+  transition: opacity 0.5s 1s, visibility 0.5s;
 
   ${props =>
     props.theme.open &&
     `
-    max-height: 0;
-    transition: opacity 0.5s, visibility 0.5s, max-height 0.5s 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: opacity 0.5s, visibility 0.5s;
     opacity: 0;
     visibility: hidden;
 

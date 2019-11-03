@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import { useSpring, useTransition, animated } from "react-spring"
+import { motion, AnimatePresence } from "framer-motion"
 
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
@@ -26,7 +26,7 @@ const Main = styled.main`
   }
 `
 
-const Wrapper = styled(animated.div)`
+const Wrapper = styled(motion.div)`
   & + & {
     position: absolute;
     top: 0;
@@ -58,8 +58,6 @@ const ScrollTopButton = styled(IconButton)`
   `}
 `
 
-let pageChildren = {}
-
 const General = ({ data: { current }, location, children }) => {
   // Triggers the enter and exit of the transition animation
   const tickets = current.edges.length
@@ -68,36 +66,21 @@ const General = ({ data: { current }, location, children }) => {
   const isHomepage = location.pathname === "/"
   const scrollTop = location.pathname === "/archive/"
 
-  // Keep reference to the children so we can persist until transition is complete
-  pageChildren[location.pathname] = children
-
-  const fadeIn = useSpring({ from: { opacity: 0 }, to: { opacity: 1 } })
-
-  const pages = useTransition(location, location => location.pathname, {
-    from: {
-      opacity: 0,
-    },
-    enter: {
-      opacity: 1,
-    },
-    leave: {
-      opacity: 0,
-    },
-  })
-
   return (
     <>
-      <animated.div style={fadeIn}>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <Nav tickets={tickets} homepage={isHomepage} location={location} />
         <Main>
-          {pages.map(
-            ({ item, props, key }) =>
-              item.pathname === location.pathname && (
-                <Wrapper key={key} style={props}>
-                  {pageChildren[item.pathname]}
-                </Wrapper>
-              )
-          )}
+          <AnimatePresence initial={false}>
+            <Wrapper
+              key={location.pathname}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              {children}
+            </Wrapper>
+          </AnimatePresence>
         </Main>
         {scrollTop && (
           <Sticky>
@@ -116,7 +99,7 @@ const General = ({ data: { current }, location, children }) => {
           </Sticky>
         )}
         <Footer tickets={tickets} />
-      </animated.div>
+      </motion.div>
     </>
   )
 }

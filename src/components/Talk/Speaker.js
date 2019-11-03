@@ -3,6 +3,7 @@ import styled, { css } from "styled-components"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import DelayMount from "../DelayMount"
 import { Row, Column } from "../Grid"
 import { Strap, Heading, Copy } from "../Text"
 import { ExternalLink } from "../Links"
@@ -39,9 +40,11 @@ const SpeakerHeading = styled(Heading)`
 const Speaker = ({ name, twitter, topic, description, pic }) => (
   <Wrapper>
     <PaddedXColumn xs={0.8} md={0.3}>
-      <Blob fill={c.WHITE} transform="scale(1.3)">
-        <Img fluid={pic.childImageSharp.fluid} alt={name} />
-      </Blob>
+      <DelayMount>
+        <Blob fill={c.WHITE} transform="scale(1.3)">
+          <Img fluid={pic.childImageSharp.fluid} alt={name} />
+        </Blob>
+      </DelayMount>
     </PaddedXColumn>
     <Column md={0.7}>
       <Strap>

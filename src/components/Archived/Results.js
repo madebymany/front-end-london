@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React, { useRef, useEffect, useState } from "react"
 import styled from "styled-components"
 import { useInView } from "react-intersection-observer"
 import { setTimeout, clearTimeout } from "requestanimationframe-timer"
-import ArchivedTalk from "../ArchivedTalks/ArchivedTalk"
+import ArchivedTalk from "../ArchivedTalk"
 
 const ResultsWrapper = styled.div`
   position: relative;
@@ -10,9 +10,8 @@ const ResultsWrapper = styled.div`
   transition: height 1s;
 `
 
-let timer
-
 const Results = ({ items, onLoadMore, done, placeholder }) => {
+  const timer = useRef(null)
   // Collection of rendered Results' heights
   const [loading, setLoading] = useState(false)
   // Setup a waypoint indicator
@@ -22,13 +21,13 @@ const Results = ({ items, onLoadMore, done, placeholder }) => {
   // It seems the inView value isn't correct after the delayTimer is fired
   // So poll the effect until it settles
   useEffect(() => {
-    clearTimeout(timer)
-    timer = setTimeout(() => {
+    clearTimeout(timer.current)
+    timer.current = setTimeout(() => {
       if (inView && !loading) {
         onLoadMore()
       }
     }, 200)
-    return () => clearTimeout(timer)
+    return () => clearTimeout(timer.current)
   }, [inView, loading, onLoadMore])
 
   // Whenever the items array changes set state to loading.

@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import styled, { css, keyframes } from "styled-components"
-import { animated } from "react-spring"
 import Img from "gatsby-image"
 
 import { Row, Column } from "../Grid"
@@ -19,7 +18,7 @@ const fadeIn = keyframes`
   to   { opacity: 1; }
 `
 
-const TalkWrapper = styled(animated.div)`
+const TalkWrapper = styled.div`
   background-color: ${c.WHITE};
   padding: 0;
   animation: ${fadeIn} 1s;

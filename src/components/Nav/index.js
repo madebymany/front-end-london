@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useLayoutEffect } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import { motion } from "framer-motion"
 import FocusLock from "react-focus-lock"
 
 import NavBar from "./NavBar"
@@ -28,13 +29,15 @@ const Nav = ({ tickets, homepage, location }) => {
   return (
     <FocusLock disabled={!open} group="modal">
       <NavWrapper theme={{ open }}>
-        <NavBar
-          tickets={tickets}
-          homepage={homepage}
-          setOpen={setOpen}
-          open={open}
-        />
-        <NavModal tickets={tickets} open={open} setOpen={setOpen} />
+        <motion.div initial={false} animate={open ? "open" : "closed"}>
+          <NavBar
+            tickets={tickets}
+            homepage={homepage}
+            setOpen={setOpen}
+            open={open}
+          />
+          <NavModal tickets={tickets} open={open} setOpen={setOpen} />
+        </motion.div>
       </NavWrapper>
     </FocusLock>
   )

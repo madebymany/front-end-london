@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import styled, { css } from "styled-components"
 
@@ -118,7 +118,6 @@ const SearchHeader = ({
   ...props
 }) => {
   const [open, setOpen] = useState(false)
-  const searchRef = useRef(null)
 
   const forwardOnSubmit = event => {
     setOpen(false)
@@ -135,7 +134,6 @@ const SearchHeader = ({
       <MobileModal
         open={open}
         setOpen={setOpen}
-        onEnter={() => searchRef.current.focus()}
         align="flex-start"
         direction="down"
         mobileOnly
@@ -146,7 +144,6 @@ const SearchHeader = ({
             onFocus={onFocus}
             onChange={onChange}
             onSubmit={forwardOnSubmit}
-            inputRef={searchRef}
             defaultValue={defaultValue}
           />
         </FormWrapper>

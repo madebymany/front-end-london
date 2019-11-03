@@ -1,17 +1,18 @@
-import React, { useState } from "react"
+import React, { useState, useMemo, useEffect } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import { useSpring, animated } from "react-spring"
+import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import uuid4 from "uuid/v4"
-import DelayMount from "../DelayMount"
 import c from "../../styles/constants"
+import DelayMount from "../DelayMount"
+import usePath from "../usePath"
 
 const Wrapper = styled.div`
   position: relative;
 `
 
-const ExpandedWrapper = styled(animated.div)`
+const ExpandedWrapper = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
@@ -59,38 +60,25 @@ const blobPaths = [
   "M300,108.24426056828446C362.53463247850823,99.61413963703055,429.79966834476966,115.82906968742573,471.3652069734833,163.3408076583217C514.8749719538562,213.07490520938035,530.8356674214307,285.2635256958223,509.6120634972989,347.8425856467122C490.27174700750845,404.8686604552246,427.77919457195543,426.5544386161602,373.35629589738403,452.32591800420937C319.63438031032905,477.7654530888262,263.08966428325243,513.4459598545931,208.2318643897213,490.5584971182956C151.1231859328926,466.7319354873762,117.6506070260426,404.6074854057095,111.41972820714781,343.0422164354394C105.94673095260963,288.9653265066188,145.1599893448571,246.03906853134714,179.19571107504856,203.66179431948996C213.00231806790333,161.56978680851432,246.51962276741222,115.62484480894395,300,108.24426056828446",
 ]
 
-const getRandomBlobs = () =>
-  blobPaths
-    .map(a => [Math.random(), a])
-    .sort((a, b) => a[0] - b[0])
-    .map(a => a[1])
-
 const Blob = ({ transform, fill, children }) => {
-  let blobs = getRandomBlobs()
-  const [ref, inView] = useInView({ threshold: 0 })
+  const startIndex = useMemo(
+    () => Math.floor(Math.random() * blobPaths.length),
+    []
+  )
   const [uuid] = useState(uuid4())
-  const blob = useSpring({
-    cancel: !inView,
-    from: {
-      d: blobs.pop(),
-    },
-    to: async next => {
-      let delay = 0
-      while (true) {
-        await next({
-          d: blobs.pop(),
-          config: { duration: 10000 },
-          delay,
-        })
+  const [blob, nextBlob] = usePath(blobPaths, startIndex)
+  const [ref, inView] = useInView({ threshold: 0 })
+  const controls = useAnimation()
 
-        if (!blobs.length) {
-          blobs = getRandomBlobs()
-        }
-
-        delay = (Math.random() * 8 + 5) * 1000
-      }
-    },
-  })
+  useEffect(() => {
+    if (inView) {
+      controls.start({
+        d: blob,
+      })
+    } else {
+      controls.stop()
+    }
+  }, [blob, inView, controls])
 
   return (
     <Wrapper ref={ref}>
@@ -108,7 +96,14 @@ const Blob = ({ transform, fill, children }) => {
               <mask id={`blob-${uuid}`}>
                 <rect x="0" y="0" fill="#fff" width="100%" height="100%" />
                 <PathGroup style={{ transform }}>
-                  <animated.path d={blob.d} fill="#000" />
+                  <motion.path
+                    d={blobPaths[startIndex]}
+                    initial={false}
+                    animate={controls}
+                    onAnimationComplete={nextBlob}
+                    transition={{ duration: 10, delay: Math.random() * 5 + 2 }}
+                    fill="#000"
+                  />
                 </PathGroup>
               </mask>
             </defs>

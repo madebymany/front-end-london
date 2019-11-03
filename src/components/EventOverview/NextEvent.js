@@ -68,12 +68,13 @@ const NextEvent = ({ availability, date, registration_url }) => (
 )
 
 NextEvent.propTypes = {
-  availability: PropTypes.bool.isRequired,
+  availability: PropTypes.bool,
   date: PropTypes.oneOfType([PropTypes.bool, PropTypes.instanceOf(Date)]),
   registration_url: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
 }
 
 NextEvent.defaultProps = {
+  availability: false,
   date: false,
   registration_url: false,
 }

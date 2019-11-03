@@ -1,7 +1,9 @@
-import React from "react"
-import { useSpring, animated } from "react-spring"
-import { useInView } from "react-intersection-observer"
+import React, { useEffect } from "react"
 import styled, { keyframes } from "styled-components"
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from "react-intersection-observer"
+
+import usePath from "../usePath"
 
 const offset = props => keyframes`
   from {
@@ -38,36 +40,21 @@ const wavePaths = [
   "M0,128L48,138.7C96,149,192,171,288,197.3C384,224,480,256,576,250.7C672,245,768,203,864,160C960,117,1056,75,1152,58.7C1248,43,1344,53,1392,58.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z",
 ]
 
-const getRandomWaves = () =>
-  wavePaths
-    .map(a => [Math.random(), a])
-    .sort((a, b) => a[0] - b[0])
-    .map(a => a[1])
-
-const WaveContainer = ({ fill, children, ...props }) => {
-  let waves = getRandomWaves()
+const WaveContainer = ({ fill, children }) => {
+  const [wave, nextWave] = usePath(wavePaths, 0)
   const [ref, inView] = useInView({ threshold: 0 })
-  const wave = useSpring({
-    cancel: !inView,
-    from: {
-      d: waves[0],
-    },
-    to: async next => {
-      while (true) {
-        await next({
-          d: waves.pop(),
-          config: {
-            duration: 10000,
-            easing: t => (1 - Math.cos(Math.PI * t)) / 2,
-          },
-        })
+  const controls = useAnimation()
 
-        if (!waves.length) {
-          waves = getRandomWaves()
-        }
-      }
-    },
-  })
+  useEffect(() => {
+    if (inView) {
+      controls.start({
+        d: wave,
+      })
+    } else {
+      controls.stop()
+    }
+  }, [wave, inView, controls])
+
   return (
     <Wrapper ref={ref}>
       <ExpandedWrapper>
@@ -79,8 +66,11 @@ const WaveContainer = ({ fill, children, ...props }) => {
           preserveAspectRatio="none"
         >
           <WaveGroup>
-            <animated.path
-              d={wave.d}
+            <motion.path
+              d={wavePaths[0]}
+              animate={controls}
+              onAnimationComplete={nextWave}
+              transition={{ duration: 10, delay: 2 }}
               transform="translate(-220 0)"
               fill={fill}
             />

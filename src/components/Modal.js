@@ -1,15 +1,15 @@
-import React, { useRef, useState, useEffect, useLayoutEffect } from "react"
+import React, { useState, useEffect, useLayoutEffect } from "react"
 import ReactDOM from "react-dom"
 import styled from "styled-components"
 import { rgba, cover } from "polished"
-import { Spring, animated } from "react-spring"
+import { motion, AnimatePresence } from "framer-motion"
 import FocusLock from "react-focus-lock"
 import { useMediaQuery } from "react-responsive"
 import { disablePageScroll, enablePageScroll } from "scroll-lock"
 
 import c from "../styles/constants"
 
-const ModalWrapper = styled.div`
+const ModalWrapper = styled(motion.div)`
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -36,80 +36,55 @@ const ModalWrapper = styled.div`
   }
 `
 
-const Backdrop = styled.div`
+const Backdrop = styled(motion.div)`
   ${cover()}
-  background-color: ${rgba(c.BLACK, 0)};
-  transition: background-color 0.5s, opacity 0.2s;
-
-  ${props =>
-    props.theme.open &&
-    `
-    background-color: ${rgba(c.BLACK, 0.55)};
-    `}
+  background-color: ${rgba(c.BLACK, 0.55)};
+  transition: opacity 0.2s;
 `
 
-const directions = {
-  down: {
-    from: { transform: "translateY(-100%)" },
-    to: { transform: "translateY(0%)" },
+const directionVariants = {
+  left: { closed: { x: "100%" }, open: { x: "0%" } },
+  right: { closed: { x: "-100%" }, open: { x: "0%" } },
+  down: { closed: { y: "-100%" }, open: { y: "0%" } },
+  up: { closed: { y: "100%" }, open: { y: "0%" } },
+}
+
+const modalVariants = {
+  open: {
+    transition: { staggerChildren: 0.07, delayChildren: 0.1 },
   },
-  up: {
-    from: { transform: "translateY(100%)" },
-    to: { transform: "translateY(0%)" },
+  closed: {
+    transition: { staggerChildren: 0.2, staggerDirection: -1 },
   },
 }
 
 export const Modal = ({
-  open,
   setOpen,
-  onClose,
-  onEnter,
-  direction,
   fullscreen,
   zIndex = 1000,
   align,
   children,
 }) => {
-  const ref = useRef(null)
-  const [active, setActive] = useState(open)
-  // Enable/Disable scroll when opened
   useLayoutEffect(() => {
-    if (open) {
-      disablePageScroll()
-    } else {
-      enablePageScroll()
-    }
-  }, [open])
+    disablePageScroll()
+    return () => enablePageScroll()
+  }, [])
+
   return ReactDOM.createPortal(
-    <ModalWrapper theme={{ align, fullscreen, zIndex }}>
-      <Backdrop theme={{ open: active }} onClick={() => setOpen(false)} />
-      <FocusLock group="modal">
-        <Spring
-          from={{ x: 0 }}
-          to={{ x: 1 }}
-          {...directions[direction]}
-          reverse={!open}
-          reset={!open}
-          onRest={() => {
-            if (!open) {
-              setActive(false)
-              if (onClose) {
-                onClose()
-              }
-            } else {
-              if (onEnter) {
-                onEnter()
-              }
-            }
-          }}
-        >
-          {props => (
-            <animated.div ref={ref} style={props}>
-              {children}
-            </animated.div>
-          )}
-        </Spring>
-      </FocusLock>
+    <ModalWrapper
+      variants={modalVariants}
+      animate="open"
+      exit="closed"
+      theme={{ align, fullscreen, zIndex }}
+    >
+      <Backdrop
+        initial="closed"
+        variants={{ open: { opacity: 1 }, closed: { opacity: 0 } }}
+        exit="closed"
+        transition={{ ease: "linear" }}
+        onClick={() => setOpen(false)}
+      />
+      <FocusLock group="modal">{children}</FocusLock>
     </ModalWrapper>,
     document.body
   )
@@ -121,34 +96,52 @@ export const MobileModal = ({
   setOpen,
   minWidth = 768,
   children,
+  direction,
+  onClose,
+  onEnter,
   ...props
 }) => {
   const isDevice = useMediaQuery({ query: `(min-width: ${minWidth}px)` })
   const [active, setActive] = useState(open)
   // Close the Modal view if opened on larger devices
   useEffect(() => {
-    if (open && !isDevice) {
-      setActive(true)
-    }
-
-    if (active && isDevice) {
+    if (open && isDevice) {
       setOpen(false)
     }
   }, [isDevice, open, setOpen, active])
   return (
-    <>
-      {active ? (
+    <AnimatePresence>
+      {open ? (
         <Modal
-          open={open}
+          key="modal"
           setOpen={setOpen}
           onClose={() => setActive(false)}
           {...props}
         >
-          {children}
+          <motion.div
+            initial="closed"
+            exit="closed"
+            variants={directionVariants[direction || "left"]}
+            transition={{ ease: "linear" }}
+            onAnimationComplete={() => {
+              //   if (!open) {
+              //     setActive(false)
+              //     if (onClose) {
+              //       onClose()
+              //     }
+              //   } else {
+              //     if (onEnter) {
+              //       onEnter()
+              //     }
+              //   }
+            }}
+          >
+            {children}
+          </motion.div>
         </Modal>
       ) : (
         children
       )}
-    </>
+    </AnimatePresence>
   )
 }

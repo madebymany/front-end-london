@@ -139,7 +139,7 @@ const HeroVideo = ({ open, setOpen }) => {
   useEffect(() => {
     if (isActive) {
       window.scrollTo({
-        top: isLarge ? 95 : 87,
+        top: isLarge ? 95 : 0,
         left: 0,
         behavior: "smooth",
       })
@@ -150,6 +150,12 @@ const HeroVideo = ({ open, setOpen }) => {
   useEffect(() => {
     if (open && videoRef) {
       player.current = new Player(videoRef.current)
+    } else {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      })
     }
   }, [videoRef, open])
 
@@ -164,7 +170,7 @@ const HeroVideo = ({ open, setOpen }) => {
       player.current.pause()
       player.current.setCurrentTime(0)
     }
-  }, [open, isActive, setActive])
+  }, [open, isActive])
 
   return (
     <VideoWrapper>

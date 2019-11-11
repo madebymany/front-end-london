@@ -37,26 +37,44 @@ events:
   #       description: ""
   #       slides_url: ""
   #       video_url: ""
-  
-      #   -
-      #   name: "Lydia Wozniak"
-      #   pic: "2019/07/wozniak-lydia.jpg"
-      #   company: "BBC Design + Engineering"
-      #   twitter: "LydiaMoo"
-      #   topic: "The women who helped build the internet"
-      #   description: "Throughout the 20th century women held a lot of technological responsibility but, often are not credited for their contributions. Lydia will share an alternative history of the internet by sharing the stories of women who helped create it."
-      #   slides_url: ""
-      #   video_url: ""
-      # -
-      #   name: "Sam Beckham"
-      #   pic: "2019/07/beckham-sam.jpg"
-      #   company: "GitLab"
-      #   twitter: "samdbeckham"
-      #   topic: "Making GitLab a PWA"
-      #   description: "Turning a large scale website into a PWA doesn't have to be hard. In this talk, I will show you how I made GitLab into a PWA with less than 100 lines of code."
-      #   slides_url: ""
-      #   video_url: ""
-  
+  -
+    date: "2019-11-28 19:00"
+    registration_url: "https://www.eventbrite.com/e/front-end-london-nov-2019-tickets-81302406687"
+    tickets_released: "2019-11-19 10:00"
+    duration: 2.5
+    writeups:
+      -
+        author: ""
+        twitter: ""
+        writeup_url: ""
+    speakers:
+      -
+        name: "Jag Reehal"
+        pic: "2019/11/reehal-jag.jpeg"
+        company: ""
+        twitter: "jagreehal"
+        topic: "Build Components and not Walls"
+        description: "With a new JavaScript framework out at the end of every other week, it's difficult to know what's the right choice. Then when you finally decide, it can be a rollercoaster journey. \n \n At the moment React is the king, before that it was Angular, before that Backbone. In this talk, I'll share my experience of building, sharing and reusing components that can be used with legacy, current and frameworks of the future."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "Jonathan Wagner"
+        pic: "2019/11/wagner-jonathan.jpg"
+        company: "Theodo"
+        twitter: "john_waitforit"
+        topic: "Apps are dead - long live PWAs"
+        description: "Did you ever wish you could create a mobile app in JS working across desktop and mobile? PWAs are a great way to do this quickly with less deployment complexity, faster deployment and reduced developer resources. \n \n PWAs are not limited by app stores rules and you can ship multiple times a day. Uber, Lyft, Tinder, Pinterest and Twitter did it and improved their mobile user stickiness massively. This talk will present what PWAs can do, their limitations and the problems I encountered developing one."
+        slides_url: ""
+        video_url: ""
+      -
+        name: "TBA"
+        pic: "blank.png"
+        company: ""
+        twitter: ""
+        topic: ""
+        description: ""
+        slides_url: ""
+        video_url: ""
   -
     date: "2019-10-31 19:00"
     registration_url: "https://www.eventbrite.com/e/front-end-london-oct-2019-tickets-76800106185"

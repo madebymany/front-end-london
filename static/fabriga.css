@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Fabriga";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fabriga") url(/static/fonts/FabrigaMedium.woff2) format("woff2"),
+    url(/static/fonts/FabrigaMedium.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Fabriga";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fabriga"), url(/static/fonts/FabrigaMedium.ttf) format("truetype");
+}

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://beta.frontendlondon.co.uk`,
+    siteUrl: `https://frontendlondon.co.uk`,
     title: `Front-end London`,
     description: `Front-end London is a monthly developer meetup in London hosted by Made by Many.`,
     author: `@madebymany`,

@@ -37,7 +37,7 @@ const NavToggle = props => (
       <g stroke="currentColor" strokeWidth="2" fill="none" fillRule="evenodd">
         <motion.path
           d="M0,3 L24,3"
-          initial={{ originX: "50%", originY: 3 }}
+          initial={{ originX: "50%", originY: "3px" }}
           variants={{
             closed: { rotate: 0, y: 0 },
             open: {
@@ -57,7 +57,7 @@ const NavToggle = props => (
         />
         <motion.path
           d="M0,17 L24,17"
-          initial={{ originX: "50%", originY: 17 }}
+          initial={{ originX: "50%", originY: "17px" }}
           variants={{
             closed: { rotate: 0, y: 0 },
             open: {

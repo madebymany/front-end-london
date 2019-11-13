@@ -12,7 +12,8 @@
       "topic": "Saving the Planet Using SVG",
       "description": "SVGs are incredibly powerful, yet still relatively underused on the web. I’ll talk about how we use SVG at Unmade, share some tips to make working with them easier, and describe how they’re helping us make fashion less polluting.",
       "slides_url": "",
-      "video_url": ""
+      "video_url": "//www.youtube.com/watch?v=ehgByorTug4",
+      "poster": "../../assets/images/posters/ehgByorTug4.jpg"
     },
     {
       "name": "Leo Siddall-Butchers",
@@ -22,7 +23,8 @@
       "topic": "Blueprint and Formik: combining the right form-ula",
       "description": "UI frameworks and form libraries, cornerstones of the modern internet. Whilst finding the right ones is hard, making them work together can be even more difficult. I’ll discuss how I linked Formik and Blueprint together to help make killer products.",
       "slides_url": "",
-      "video_url": ""
+      "video_url": "//www.youtube.com/watch?v=Au-bEMmVoew",
+      "poster": "../../assets/images/posters/Au-bEMmVoew.jpg"
     },
     {
       "name": "Mike Laurie",
@@ -32,7 +34,8 @@
       "topic": "Hand-offs from hell",
       "description": "Over the last twenty years, many service organisations have cut costs by separating out different types of work. This can reduce training costs but creates poor service for customers. I’m going to talk about how we reversed that by prototyping new ways of servicing customers in a large contact centre.",
       "slides_url": "",
-      "video_url": ""
+      "video_url": "//www.youtube.com/watch?v=rdRxSPgaj6Y",
+      "poster": "../../assets/images/posters/rdRxSPgaj6Y.jpg"
     }
   ]
 }

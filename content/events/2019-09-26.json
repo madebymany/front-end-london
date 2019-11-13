@@ -12,7 +12,8 @@
       "topic": "SVGs so good you dodge the Blue Shell",
       "description": "Icons on the web are everywhere, but sometimes it feels like just using normal img tags with PNGs is the easiest way. This talks looks at some common icon use-cases, and how using SVGs can make your life easier, and your website shinier.",
       "slides_url": "",
-      "video_url": ""
+      "video_url": "//www.youtube.com/watch?v=oxInrNWKcIw",
+      "poster": "../../assets/images/posters/oxInrNWKcIw.jpg"
     },
     {
       "name": "Tara Ojo",
@@ -22,7 +23,8 @@
       "topic": "Learning Together - Sharing knowledge across teams",
       "description": "When we work with many engineers, spanning different teams and different projects, it’s hard to keep up with changes. Tara will share how FutureLearn utilises their culture of learning, to keep engineers up-to-date on topics from ECMAScript changes to wilder concepts like generative art.",
       "slides_url": "",
-      "video_url": ""
+      "video_url": "//www.youtube.com/watch?v=ur1Wn7wAA3E",
+      "poster": "../../assets/images/posters/ur1Wn7wAA3E.jpg"
     },
     {
       "name": "Ana Pasparan",
@@ -32,7 +34,8 @@
       "topic": "Supercharge your whiteboarding and pair programming",
       "description": "Is it hard to refine and assign tickets? Do you find it hard to do code reviews? How about when some team members are off on holiday? In this talk, Ana will share her learnings about how effective whiteboarding and pair programming can help you to solve these types of issues.",
       "slides_url": "",
-      "video_url": ""
+      "video_url": "//www.youtube.com/watch?v=rtJuD0VyFHw",
+      "poster": "../../assets/images/posters/rtJuD0VyFHw.jpg"
     }
   ]
 }

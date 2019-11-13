@@ -12,7 +12,8 @@
       "topic": "How Learning Works: The Science of Learning",
       "description": "How we think about learning often doesn't align with the research into how the brain works. Come to this talk to explore how the science of learning can unlock your ability to grow your skills and career.",
       "slides_url": "",
-      "video_url": ""
+      "video_url": "//www.youtube.com/watch?v=Ch41Kv9yhsc",
+      "poster": "../../assets/images/posters/Ch41Kv9yhsc.jpg"
     },
     {
       "name": "Nicky Thompson",
@@ -22,7 +23,8 @@
       "topic": "Lightning talk: Making engineering management easier using software engineering practices",
       "description": "As an engineering manager, your responsibility is not to build features, but to build systems to support the people building the features. This talk will give some tips on using familiar tools and techniques from your time as a software engineer to help make management easier and more systematic.",
       "slides_url": "",
-      "video_url": ""
+      "video_url": "//www.youtube.com/watch?v=6yzr0NfJWHM",
+      "poster": "../../assets/images/posters/6yzr0NfJWHM.jpg"
     },
     {
       "name": "Lydia Wozniak",
@@ -32,7 +34,8 @@
       "topic": "The Women Who Helped Build the Internet",
       "description": "Throughout the 20th century women held a lot of technological responsibility but, often are not credited for their contributions. Lydia will share an alternative history of the internet by sharing the stories of women who helped create it.",
       "slides_url": "",
-      "video_url": ""
+      "video_url": "//www.youtube.com/watch?v=qJ3PsIMvKuY&t=5s",
+      "poster": "../../assets/images/posters/qJ3PsIMvKuY.jpg"
     }
   ]
 }

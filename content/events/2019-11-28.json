@@ -18,7 +18,7 @@
       "name": "Richard Ng",
       "pic": "../../assets/images/speakers/2019/11/ng-richard.jpg",
       "company": "WhiteHat",
-      "twitter": "",
+      "twitter": "richardcrng",
       "topic": "Redux-Leaves: write once, reduce anywhere!",
       "description": "With the new React-Redux hooks, Redux is now even more useful, powerful and great. But it can still be hard for new developers to learn, tedious for experienced developers to set up, and painful for code boilerplate and file structuring. What if we could make it easier for developers to get the use, power and great developer experience from Redux? \n \n In this talk, I’ll introduce Redux-Leaves, a library that I wrote to make Redux simpler to learn and easier to scale. I’ll try to demonstrate the practical benefits of the library and how it particularly complements middleware like Redux-Thunk or Redux-Saga. I’ll also talk about my ongoing experience in writing the library, such as lessons learned in refactoring it into Typescript and 'Documentation-Driven Development'.",
       "slides_url": "",

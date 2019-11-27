@@ -62,19 +62,15 @@ const IndexPage = ({ data, location, ...rest }) => {
         price: 0,
         priceCurrency: "GBP",
         validFrom: format(talk.date, "yyyy-MM-dd'T'HH:mm"),
-      }
-
-      if (talk.availability) {
-        schema.offers.availability = "http://schema.org/InStock"
+        availability: "http://schema.org/InStock",
       }
     }
+
     const performers = talk.speakers.reduce((accum, speaker) => {
       let person = {
         "@type": "Person",
         name: speaker.name,
         image: `${location.origin}${speaker.pic.childImageSharp.fluid.src}`,
-        worksFor: speaker.company,
-        url: `https://twitter.com/${speaker.twitter}`,
       }
 
       if (speaker.company) {

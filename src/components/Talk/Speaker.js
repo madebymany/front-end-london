@@ -37,32 +37,39 @@ const SpeakerHeading = styled(Heading)`
   `}
 `
 
-const Speaker = ({ name, twitter, topic, description, pic }) => (
-  <Wrapper>
-    <PaddedXColumn xs={0.8} md={0.3}>
-      <DelayMount>
-        <Blob fill={c.WHITE} transform="scale(1.3)">
-          <Img fluid={pic.childImageSharp.fluid} alt={name} />
-        </Blob>
-      </DelayMount>
-    </PaddedXColumn>
-    <Column md={0.7}>
-      <Strap>
-        {name}
-        {twitter && (
-          <>
-            &nbsp;&nbsp;·&nbsp;&nbsp;
-            <ExternalLink to={`https://twitter.com/${twitter}`}>
-              @{twitter}
-            </ExternalLink>
-          </>
-        )}
-      </Strap>
-      <SpeakerHeading>{topic}</SpeakerHeading>
-      <Copy>{description}</Copy>
-    </Column>
-  </Wrapper>
-)
+const renderDescription = paragraphs =>
+  paragraphs.map((p, i) => <Copy key={i}>{p}</Copy>)
+
+const Speaker = ({ name, twitter, topic, description, pic }) => {
+  const descriptionParagraphs = description.match(/[^\r\n]+/g)
+
+  return (
+    <Wrapper>
+      <PaddedXColumn xs={0.8} md={0.3}>
+        <DelayMount>
+          <Blob fill={c.WHITE} transform="scale(1.3)">
+            <Img fluid={pic.childImageSharp.fluid} alt={name} />
+          </Blob>
+        </DelayMount>
+      </PaddedXColumn>
+      <Column md={0.7}>
+        <Strap>
+          {name}
+          {twitter && (
+            <>
+              &nbsp;&nbsp;·&nbsp;&nbsp;
+              <ExternalLink to={`https://twitter.com/${twitter}`}>
+                @{twitter}
+              </ExternalLink>
+            </>
+          )}
+        </Strap>
+        <SpeakerHeading>{topic}</SpeakerHeading>
+        {renderDescription(descriptionParagraphs)}
+      </Column>
+    </Wrapper>
+  )
+}
 
 export const fragment = graphql`
   fragment Speaker on EventsJsonSpeakers {

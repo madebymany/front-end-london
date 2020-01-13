@@ -1,0 +1,38 @@
+{
+  "date": "2020-01-30 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-jan-2020-tickets-89544996495",
+  "tickets_released": "2020-01-21 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Shaun Stanworth",
+      "pic": "../../assets/images/speakers/2020/01/stanworth-shaun.jpg",
+      "company": "Freeformers",
+      "twitter": "shauns_uk",
+      "topic": "Practical refactoring for testable React components",
+      "description": "A collection of beginner-friendly, simple yet powerful techniques you can apply to remove the barriers to functional testing in your React and React Native projects - creating better components along the way.",
+      "slides_url": "",
+      "video_url": ""
+    },
+    {
+      "name": "Pedro Filho",
+      "pic": "../../assets/images/speakers/2020/01/filho-pedro.jpg",
+      "company": "GameAnalytics",
+      "twitter": "pedrofilhome",
+      "topic": "Unification of the Frontend",
+      "description": "Over the last seven years, I've seen the same pattern over and over again, where companies focus totally on their app and let their marketing team (with freelancers) handle the website. Not anymore. \n This year I proposed to make a change in our company; unify the frontend application and let our team handle everything, creating a stable user experience through the entire project, making it scalable, cutting costs and improving the quality. \n In this talk, I discuss our process of migrating from WordPress/Angular to a full React stack",
+      "slides_url": "",
+      "video_url": ""
+    },
+    {
+      "name": "TBA",
+      "pic": "../../assets/images/speakers/blank.png",
+      "company": "",
+      "twitter": "",
+      "topic": "TBA",
+      "description": "TBA",
+      "slides_url": "",
+      "video_url": ""
+    }
+  ]
+}

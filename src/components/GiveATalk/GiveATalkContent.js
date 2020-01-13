@@ -27,7 +27,7 @@ const GiveATalkContent = ({ form }) => (
     <PaddedHeading>Want to give a talk at FEL?</PaddedHeading>
     <Copy>
       We love hearing from first-time and seasoned speakers alike. Get in touch
-      if you’d like to bounce an idea for a talk of us, propose a topic, or
+      if you’d like to bounce an idea for a talk off us, propose a topic, or
       recommend a speaker:
     </Copy>
     <LinkGroup>

@@ -5,16 +5,6 @@
   "duration": 2.5,
   "speakers": [
     {
-      "name": "Shaun Stanworth",
-      "pic": "../../assets/images/speakers/2020/01/stanworth-shaun.jpg",
-      "company": "Freeformers",
-      "twitter": "shauns_uk",
-      "topic": "Practical refactoring for testable React components",
-      "description": "A collection of beginner-friendly, simple yet powerful techniques you can apply to remove the barriers to functional testing in your React and React Native projects - creating better components along the way.",
-      "slides_url": "",
-      "video_url": ""
-    },
-    {
       "name": "Pedro Filho",
       "pic": "../../assets/images/speakers/2020/01/filho-pedro.jpg",
       "company": "GameAnalytics",
@@ -25,12 +15,22 @@
       "video_url": ""
     },
     {
-      "name": "TBA",
-      "pic": "../../assets/images/speakers/blank.png",
-      "company": "",
-      "twitter": "",
-      "topic": "TBA",
-      "description": "TBA",
+      "name": "Nikhil Verma",
+      "pic": "../../assets/images/speakers/2020/01/verma-nikhil.jpg",
+      "company": "Magiclab",
+      "twitter": "NikhilVerma",
+      "topic": "Technical terms I didn’t understand, then decided to find out",
+      "description": "I'd often read Twitter threads where people talk about things like idempotence, soundness and lexical scope, and felt overwhelmed. So I decided to understand these terms and in this talk I want to present you my mental model for what they mean.",
+      "slides_url": "",
+      "video_url": ""
+    },
+    {
+      "name": "Shaun Stanworth",
+      "pic": "../../assets/images/speakers/2020/01/stanworth-shaun.jpg",
+      "company": "Freeformers",
+      "twitter": "shauns_uk",
+      "topic": "Practical refactoring for testable React components",
+      "description": "A collection of beginner-friendly, simple yet powerful techniques you can apply to remove the barriers to functional testing in your React and React Native projects - creating better components along the way.",
       "slides_url": "",
       "video_url": ""
     }

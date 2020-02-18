@@ -1,0 +1,38 @@
+{
+  "date": "2020-02-27 19:00",
+  "registration_url": "//www.eventbrite.com/e/front-end-london-feb-2020-tickets-93970388963",
+  "tickets_released": "2020-02-18 10:00",
+  "duration": 2.5,
+  "speakers": [
+    {
+      "name": "Kristof Goossens",
+      "pic": "../../assets/images/speakers/blank.png",
+      "company": "",
+      "twitter": "",
+      "topic": "",
+      "description": "Topic TBC",
+      "slides_url": "",
+      "video_url": ""
+    },
+    {
+      "name": "Jonathan Fielding",
+      "pic": "../../assets/images/speakers/2020/02/fielding-jonathan.jpg",
+      "company": "Uswitch",
+      "twitter": "jonthanfielding",
+      "topic": "Being eco-friendly with JavaScript",
+      "description": "As developers we have access to huge amounts of data about the world around us. This talk will use live coding to look at the data of the world around us so we can better optimise our lives to be eco-friendly.",
+      "slides_url": "",
+      "video_url": ""
+    },
+    {
+      "name": "Jo Franchetti",
+      "pic": "../../assets/images/speakers/2020/02/franchetti-jo.jpg",
+      "company": "Developer advocate at Ably",
+      "twitter": "thisisjofrank",
+      "topic": "Perfectionism, Impostor Syndrome and Anxiety - Understanding your fears and learning to be kind to yourself",
+      "description": "Ever felt like everyone knows more than you? Spent hours procrastinating rather than starting or finishing a project? Perfectionism, anxiety & impostor syndrome affect many people in the tech industry. Learn how to spot harmful thought patterns, how to avoid anxious spirals and be kind to yourself!",
+      "slides_url": "",
+      "video_url": ""
+    }
+  ]
+}

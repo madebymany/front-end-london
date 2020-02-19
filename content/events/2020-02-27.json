@@ -6,11 +6,11 @@
   "speakers": [
     {
       "name": "Kristof Goossens",
-      "pic": "../../assets/images/speakers/blank.png",
-      "company": "",
-      "twitter": "",
-      "topic": "",
-      "description": "Topic TBC",
+      "pic": "../../assets/images/speakers/2020/02/goossens-kristof.jpg",
+      "company": "Made by Many",
+      "twitter": "KristofGoossens",
+      "topic": "It is time for data to bring value",
+      "description": "How do you build a successful data-driven product? Magic? A few data scientists? In his talk, Kristof, product designer at Made by Many will share what they learned building and launching a data-driven product from scratch.",
       "slides_url": "",
       "video_url": ""
     },
